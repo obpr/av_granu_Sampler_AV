@@ -17,8 +17,9 @@ Choose sounds and vidéos and build interactions between:
 
 
 - [AV_GRANU](#av_granu)  
-![Alt text](/doc/img/avgra_step.jpeg)
-  - [Step sequencers](#step-sequencers)
+
+  - [Step sequencers](#step-sequencers) 
+  ![Alt text](/doc/img/avgra_step.jpeg)
     - [`[=IT]`](#it)
     - [`[≠IT]`](#it-1)
     - [`[%T]`](#t)
