@@ -11,6 +11,7 @@ Choose sounds and vidéos and build interactions between:
 - (2) Time stresh modules
 - (3) Step Sequencers
 - (4) Synthetizers
+- (10) Speed and Pitch playback
 
 
 (https://obpr.balik.network)
