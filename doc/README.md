@@ -317,4 +317,4 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 ## Synthetizers  
 (4)  
 
-![Alt text](/doc/img/avgra_avgra_synths.jpeg)  
+![Alt text](/doc/img/avgra_synths.jpeg)  
