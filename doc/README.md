@@ -71,6 +71,7 @@ Choose sounds and vidéos and build interactions between:
 
 ## Step sequencers
 (3)
+![Alt text](/doc/img/avgra_step.jpeg)
 
 Two Step sequencers called A and B generating number sequence according to:
 
@@ -127,6 +128,7 @@ Turn this step mute
 
 ## Selectors and modulations
 
+
 Choose position(s) to the starting point of the loop:
 
 - Add value to this position(s)
@@ -136,6 +138,7 @@ Choose position(s) to the starting point of the loop:
 
 ### Gate
 (14)
+![Alt text]doc/img/avgra_gate.jpegg)
 Set the position of the playhead where to start the playback loop
 
 ### `[raw]`
@@ -175,6 +178,7 @@ s&p, speed, or pitch
 
 
 ## Audio modulations
+![Alt text](doc/img/avgra_audiomods.jpeg)
 
 - (10) Speed and pitch 50 = 0= stop, 75= go forward , 25= go back
 - (11) Speed only 50 = 0= stop, 75= go forward , 25= go back
@@ -216,6 +220,7 @@ Choose between `44100`/`88200` hz
 
 ## Time stretching until drone
 (2)
+![Alt text](doc/img/avgra_timestretch.jpeg) 
 Advance your number sequence, pattern, over the entire sample.
 
 Make the pattern you are making with Stepseq `A` or `B` sliding along the loop lenght more a less rapidly:
@@ -226,6 +231,7 @@ Make the pattern you are making with Stepseq `A` or `B` sliding along the loop l
 
 ## Audio analysis
 (1)
+![Alt text](doc/img/avgra_audioanlalyse.jpeg)
 
 Analyze silences and attacks in the audio signal of sampler or synthesizer. Send the values as `[‘’a]` or `[‘’b]`
 
@@ -250,7 +256,7 @@ Suite de valeurs opposées `0-100`, `25-75`, etc.
 
 ## Files selection
 (14)
-
+![Alt text](doc/img/avgra_fileselection.jpeg)
 Select audio and vidéo loop. Call bank or single audio and video files:
 
 - Data bank video
@@ -271,6 +277,7 @@ under the speed of Step sequencer `[BB](A)` or `[ BB1](B)`
 
 ## Video settings
 (15)
+![Alt text](doc/img/avgra_videospecs.jpeg)
 
 Set video specifications. Dimension, frame rate, incrustations and image modulations
 
@@ -288,15 +295,3 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 - Receive On/off
 - Invert color
 - Audio control opacity
-
-## Conventions employées dans la documentation
-### La syntaxe ?
-
-- Elle est décrite [dans les spécifications de Markdown](https://daringfireball.net/projects/markdown/syntax) (y'en a pour 25 minutes de lecture)
-- TOC made with [nGitHubTOC](https://imthenachoman.github.io/nGitHubTOC/)
-
-### Comment participer ?
-
-- Il faut cliquer sur [le stylo là haut pour éditer la page](https://github.com/smonff/trop-simple/edit/master/README.md)
-- Il ne faut pas hésiter à regarder [le code source](https://raw.githubusercontent.com/smonff/trop-simple/master/README.md)
-- Il est possible décrire [des livres entiers en utilisant ce principe](https://github.com/progit/progit2/tree/master/book)
