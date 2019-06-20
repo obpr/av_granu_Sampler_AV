@@ -1,7 +1,7 @@
 # av_granu_Sampler_AV
 Sampling_AV_with_stepsequencers
 
-
+![Alt text](/doc/img/avgra_tout.jpeg)
 # AV_GRANU
 
 
