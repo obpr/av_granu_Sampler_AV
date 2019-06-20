@@ -70,8 +70,10 @@ Choose sounds and vidéos and build interactions between:
   
 
 ## Step sequencers
-(3)
-![Alt text](/doc/img/avgra_step.jpeg)
+(3)  
+
+![Alt text](/doc/img/avgra_step.jpeg)  
+
 
 Two Step sequencers called A and B generating number sequence according to:
 
@@ -137,8 +139,12 @@ Choose position(s) to the starting point of the loop:
 
 
 ### Gate
-(14)
-![Alt text]doc/img/avgra_gate.jpegg)
+(14)   
+
+ 
+![Alt text](/doc/img/avgra_gate.jpeg)
+
+
 Set the position of the playhead where to start the playback loop
 
 ### `[raw]`
@@ -177,8 +183,9 @@ Trigger the Step sequencer `[A]` or `[B]` as selected in
 s&p, speed, or pitch
 
 
-## Audio modulations
-![Alt text](doc/img/avgra_audiomods.jpeg)
+## Audio modulations  
+
+![Alt text](/doc/img/avgra_audiomods.jpeg)
 
 - (10) Speed and pitch 50 = 0= stop, 75= go forward , 25= go back
 - (11) Speed only 50 = 0= stop, 75= go forward , 25= go back
@@ -220,7 +227,7 @@ Choose between `44100`/`88200` hz
 
 ## Time stretching until drone
 (2)
-![Alt text](doc/img/avgra_timestretch.jpeg) 
+![Alt text](/doc/img/avgra_timestretch.jpeg) 
 Advance your number sequence, pattern, over the entire sample.
 
 Make the pattern you are making with Stepseq `A` or `B` sliding along the loop lenght more a less rapidly:
@@ -231,7 +238,7 @@ Make the pattern you are making with Stepseq `A` or `B` sliding along the loop l
 
 ## Audio analysis
 (1)
-![Alt text](doc/img/avgra_audioanlalyse.jpeg)
+![Alt text](/doc/img/avgra_audioanlalyse.jpeg)
 
 Analyze silences and attacks in the audio signal of sampler or synthesizer. Send the values as `[‘’a]` or `[‘’b]`
 
@@ -256,7 +263,7 @@ Suite de valeurs opposées `0-100`, `25-75`, etc.
 
 ## Files selection
 (14)
-![Alt text](doc/img/avgra_fileselection.jpeg)
+![Alt text](/doc/img/avgra_fileselection.jpeg)
 Select audio and vidéo loop. Call bank or single audio and video files:
 
 - Data bank video
@@ -277,7 +284,7 @@ under the speed of Step sequencer `[BB](A)` or `[ BB1](B)`
 
 ## Video settings
 (15)
-![Alt text](doc/img/avgra_videospecs.jpeg)
+![Alt text](/doc/img/avgra_videospecs.jpeg)
 
 Set video specifications. Dimension, frame rate, incrustations and image modulations
 
