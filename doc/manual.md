@@ -1,6 +1,6 @@
 # AV_GRANU
 
-
+![Alt text](/doc/img/avgra_tout.jpeg)
 
 
 Play music with video samples.
@@ -16,7 +16,8 @@ Choose sounds and vidéos and build interactions between:
 (https://obpr.balik.network)
 
 
-- [AV_GRANU](#av_granu)
+- [AV_GRANU](#av_granu)  
+
   - [Step sequencers](#step-sequencers)
     - [`[=IT]`](#it)
     - [`[≠IT]`](#it-1)
@@ -53,24 +54,26 @@ Choose sounds and vidéos and build interactions between:
         - [`[44]`](#44)
         - [`[O]`](#o-2)
       - [Choose data source](#choose-data-source-1)
-        - [`[A]`, `[B]`, `[‘’a]` or `[‘’b]`](#a-b-a-or-b-1)
-  - [Time stretching until drone](#time-stretching-until-drone)
-  - [Audio analysis](#audio-analysis)
+        - [`[A]`, `[B]`, `[‘’a]` or `[‘’b]`](#a-b-a-or-b-1)  
+     - [Time stretching until drone](#time-stretching-until-drone)
+  - [Audio analysis](#audio-analysis)  
     - [Select a source](#select-a-source)
       - [`[A]`](#a-2)
       - [`[C]`](#c)
       - [`Mode scratch` / `[sctch]`](#mode-scratch--sctch)
       - [Sensibility](#sensibility)
       - [Progressivity](#progressivity)
-      - [[stp]](#stp)
+      - [[stp]](#stp)  
   - [Files selection](#files-selection)
   - [Video settings](#video-settings)
-  - [Conventions employées dans la documentation](#conventions-employes-dans-la-documentation)
-    - [La syntaxe ?](#la-syntaxe-)
-    - [Comment participer ?](#comment-participer-)
+  
+  
 
 ## Step sequencers
-(3)
+(3)  
+
+![Alt text](/doc/img/avgra_step.jpeg)  
+
 
 Two Step sequencers called A and B generating number sequence according to:
 
@@ -127,6 +130,7 @@ Turn this step mute
 
 ## Selectors and modulations
 
+
 Choose position(s) to the starting point of the loop:
 
 - Add value to this position(s)
@@ -135,7 +139,12 @@ Choose position(s) to the starting point of the loop:
 
 
 ### Gate
-(14)
+(14)   
+
+ 
+![Alt text](/doc/img/avgra_gate.jpeg)
+
+
 Set the position of the playhead where to start the playback loop
 
 ### `[raw]`
@@ -174,7 +183,9 @@ Trigger the Step sequencer `[A]` or `[B]` as selected in
 s&p, speed, or pitch
 
 
-## Audio modulations
+## Audio modulations  
+
+![Alt text](/doc/img/avgra_audiomods.jpeg)
 
 - (10) Speed and pitch 50 = 0= stop, 75= go forward , 25= go back
 - (11) Speed only 50 = 0= stop, 75= go forward , 25= go back
@@ -214,8 +225,11 @@ Choose between `44100`/`88200` hz
 ##### `[A]`, `[B]`, `[‘’a]` or `[‘’b]`
 
 
-## Time stretching until drone
-(2)
+## Time stretching until drone  
+
+(2)  
+
+![Alt text](/doc/img/avgra_timestretch.jpeg) 
 Advance your number sequence, pattern, over the entire sample.
 
 Make the pattern you are making with Stepseq `A` or `B` sliding along the loop lenght more a less rapidly:
@@ -224,8 +238,11 @@ Make the pattern you are making with Stepseq `A` or `B` sliding along the loop l
 - Select exit point
 - Select stretching value
 
-## Audio analysis
-(1)
+## Audio analysis  
+
+(1)  
+
+![Alt text](/doc/img/avgra_audioanlalyse.jpeg)
 
 Analyze silences and attacks in the audio signal of sampler or synthesizer. Send the values as `[‘’a]` or `[‘’b]`
 
@@ -248,8 +265,11 @@ Suite de valeurs opposées `0-100`, `25-75`, etc.
 - number of step$ 1 to 5
 
 
-## Files selection
-(14)
+## Files selection  
+
+(14)  
+
+![Alt text](/doc/img/avgra_fileselection.jpeg)  
 
 Select audio and vidéo loop. Call bank or single audio and video files:
 
@@ -269,8 +289,12 @@ under the speed of Step sequencer `[BB](A)` or `[ BB1](B)`
 - Drop down menu
 
 
-## Video settings
-(15)
+## Video settings  
+
+(15)  
+
+![Alt text](/doc/img/avgra_videospecs.jpeg)  
+
 
 Set video specifications. Dimension, frame rate, incrustations and image modulations
 
@@ -289,14 +313,16 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 - Invert color
 - Audio control opacity
 
-## Conventions employées dans la documentation
-### La syntaxe ?
 
-- Elle est décrite [dans les spécifications de Markdown](https://daringfireball.net/projects/markdown/syntax) (y'en a pour 25 minutes de lecture)
-- TOC made with [nGitHubTOC](https://imthenachoman.github.io/nGitHubTOC/)
+## Synthetizers  
+(4)  
 
-### Comment participer ?
+![Alt text](/doc/img/avgra_synths.jpeg)  
 
-- Il faut cliquer sur [le stylo là haut pour éditer la page](https://github.com/smonff/trop-simple/edit/master/README.md)
-- Il ne faut pas hésiter à regarder [le code source](https://raw.githubusercontent.com/smonff/trop-simple/master/README.md)
-- Il est possible décrire [des livres entiers en utilisant ce principe](https://github.com/progit/progit2/tree/master/book)
+## Equalizer, dynamic enveloppe and reverb 
+
+![Alt text](/doc/img/avgra_EQ_ENV_Reverb.jpeg)
+
+## output video
+
+![Alt text](/doc/img/avgra_outputvideo.jpeg) 
