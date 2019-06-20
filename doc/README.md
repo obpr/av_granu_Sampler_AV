@@ -318,3 +318,11 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 (4)  
 
 ![Alt text](/doc/img/avgra_synths.jpeg)  
+
+## Equalizer, dynamic enveloppe and reverb 
+
+![Alt text](/doc/img/avgra_EQ_ENV_Reverb.jpeg)
+
+## output video
+
+![Alt text](/doc/img/avgra_outputvideo.jpeg) 
