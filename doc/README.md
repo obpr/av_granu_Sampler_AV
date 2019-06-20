@@ -18,8 +18,7 @@ Choose sounds and vidéos and build interactions between:
 
 - [AV_GRANU](#av_granu)  
 
-  - [Step sequencers](#step-sequencers) 
-  ![Alt text](/doc/img/avgra_step.jpeg)
+  - [Step sequencers](#step-sequencers)
     - [`[=IT]`](#it)
     - [`[≠IT]`](#it-1)
     - [`[%T]`](#t)
@@ -55,21 +54,20 @@ Choose sounds and vidéos and build interactions between:
         - [`[44]`](#44)
         - [`[O]`](#o-2)
       - [Choose data source](#choose-data-source-1)
-        - [`[A]`, `[B]`, `[‘’a]` or `[‘’b]`](#a-b-a-or-b-1)
-  - [Time stretching until drone](#time-stretching-until-drone)
-  - [Audio analysis](#audio-analysis)
+        - [`[A]`, `[B]`, `[‘’a]` or `[‘’b]`](#a-b-a-or-b-1)  
+     - [Time stretching until drone](#time-stretching-until-drone)
+  - [Audio analysis](#audio-analysis)  
     - [Select a source](#select-a-source)
       - [`[A]`](#a-2)
       - [`[C]`](#c)
       - [`Mode scratch` / `[sctch]`](#mode-scratch--sctch)
       - [Sensibility](#sensibility)
       - [Progressivity](#progressivity)
-      - [[stp]](#stp)
+      - [[stp]](#stp)  
   - [Files selection](#files-selection)
   - [Video settings](#video-settings)
-  - [Conventions employées dans la documentation](#conventions-employes-dans-la-documentation)
-    - [La syntaxe ?](#la-syntaxe-)
-    - [Comment participer ?](#comment-participer-)
+  
+  
 
 ## Step sequencers
 (3)
