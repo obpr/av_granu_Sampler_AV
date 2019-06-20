@@ -1,6 +1,6 @@
 # AV_GRANU
 
-
+![Alt text](/doc/img/avgra_tout.jpeg)
 
 
 Play music with video samples.
