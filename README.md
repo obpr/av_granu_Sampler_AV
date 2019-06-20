@@ -1,11 +1,18 @@
 # av_granu_Sampler_AV
 Sampling_AV_with_stepsequencers
 
-
+  ![Alt text](/doc/img/avgra_step.jpeg)
+ ![Alt text]doc/img/avgra_gate.jpegg)
+![Alt text](doc/img/avgra_audiomods.jpeg)
+ ![Alt text](doc/img/avgra_audioanlalyse.jpeg)
+  ![Alt text](doc/img/avgra_fileselection.jpeg)
+  ![Alt text](doc/img/avgra_videospecs.jpeg) 
+ ![Alt text](doc/img/avgra_timestretch.jpeg) 
+  
 # AV_GRANU
 
 
-
+![Alt text](/doc/img/avgra_tout.jpeg)
 
 Play music with video samples.
 Realize live montages and generative installations.
