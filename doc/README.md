@@ -16,7 +16,8 @@ Choose sounds and vidéos and build interactions between:
 (https://obpr.balik.network)
 
 
-- [AV_GRANU](#av_granu)
+- [AV_GRANU](#av_granu)  
+![Alt text](/doc/img/avgra_step.jpeg)
   - [Step sequencers](#step-sequencers)
     - [`[=IT]`](#it)
     - [`[≠IT]`](#it-1)
