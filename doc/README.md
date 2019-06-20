@@ -225,8 +225,10 @@ Choose between `44100`/`88200` hz
 ##### `[A]`, `[B]`, `[‘’a]` or `[‘’b]`
 
 
-## Time stretching until drone
-(2)
+## Time stretching until drone  
+
+(2)  
+
 ![Alt text](/doc/img/avgra_timestretch.jpeg) 
 Advance your number sequence, pattern, over the entire sample.
 
@@ -236,8 +238,10 @@ Make the pattern you are making with Stepseq `A` or `B` sliding along the loop l
 - Select exit point
 - Select stretching value
 
-## Audio analysis
-(1)
+## Audio analysis  
+
+(1)  
+
 ![Alt text](/doc/img/avgra_audioanlalyse.jpeg)
 
 Analyze silences and attacks in the audio signal of sampler or synthesizer. Send the values as `[‘’a]` or `[‘’b]`
@@ -261,9 +265,12 @@ Suite de valeurs opposées `0-100`, `25-75`, etc.
 - number of step$ 1 to 5
 
 
-## Files selection
-(14)
-![Alt text](/doc/img/avgra_fileselection.jpeg)
+## Files selection  
+
+(14)  
+
+![Alt text](/doc/img/avgra_fileselection.jpeg)  
+
 Select audio and vidéo loop. Call bank or single audio and video files:
 
 - Data bank video
@@ -282,9 +289,12 @@ under the speed of Step sequencer `[BB](A)` or `[ BB1](B)`
 - Drop down menu
 
 
-## Video settings
-(15)
-![Alt text](/doc/img/avgra_videospecs.jpeg)
+## Video settings  
+
+(15)  
+
+![Alt text](/doc/img/avgra_videospecs.jpeg)  
+
 
 Set video specifications. Dimension, frame rate, incrustations and image modulations
 
@@ -302,3 +312,9 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 - Receive On/off
 - Invert color
 - Audio control opacity
+
+
+## Synthetizers  
+(4)  
+
+![Alt text](/doc/img/avgra_avgra_synths.jpeg)  
