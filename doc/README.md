@@ -324,6 +324,15 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 
 ![Alt text](/doc/img/avgra_EQ_ENV_Reverb.jpeg)
 
+# audio specs: .wav, lenght under 30 seconds at 88200 Hz 1 minute at 44100 Hz
+( change from  88200 Hz to 44100 Hz with the [44] button in Pitch and speed module(10)
+
+
 ## output video
 
-![Alt text](/doc/img/avgra_outputvideo.jpeg) 
+![Alt text](/doc/img/avgra_outputvideo.jpeg)
+
+
+# video specs: H.264, P frame every frame ( done with quicktime player 7 for exemple)
+
+
