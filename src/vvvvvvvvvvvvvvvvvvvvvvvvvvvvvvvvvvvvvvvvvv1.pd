@@ -189,7 +189,7 @@ threshold \, then the pixel alpha is set to the other value.;
 #X obj -929 1330 r $A-motionBlur1;
 #X obj -1127 994 r $B-colorInv;
 #X obj -1065 -251 r moviefileB;
-#X obj -983 -330 gemhead 1;
+#X obj -983 -330 gemhead 13;
 #X connect 0 0 34 0;
 #X connect 1 0 36 0;
 #X connect 2 0 1 0;

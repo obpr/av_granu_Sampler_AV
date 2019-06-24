@@ -1,4 +1,4 @@
-#N canvas 439 0 1294 878 12;
+#N canvas 386 22 1294 878 12;
 #X text -1193 793 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text -1837 860 Here \, rather than ask you to push the read pointer
 back and forth in the sample \, we use a phasor~. This makes it possible
@@ -211,7 +211,7 @@ push : off;
 0 1;
 #X obj 48 207 tgl 25 0 empty empty Bng 2 10 0 10 -1 -262144 -262144
 1 1;
-#X obj 31 92 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856 0
+#X obj 31 92 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856 1
 1;
 #X obj -16 746 * -1;
 #X obj -15 687 r freestepsouts1;
@@ -247,12 +247,12 @@ push : off;
 #X obj 365 110 s onofdispay0;
 #X obj 312 7 s Aonoff;
 #X obj -936 -114 r IT≠T;
-#X obj 351 -62 s A';
 #X obj 67 -62 notein 2;
 #X floatatom 62 6 5 0 0 0 - - -, f 5;
 #X floatatom 120 5 5 0 0 0 - - -, f 5;
 #X obj 36 7 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X obj 351 -62 s Amod;
 #X connect 3 0 189 0;
 #X connect 6 0 33 0;
 #X connect 7 0 35 0;
@@ -449,7 +449,7 @@ push : off;
 #X connect 161 0 95 1;
 #X connect 162 0 30 1;
 #X connect 164 0 36 0;
-#X connect 164 0 204 0;
+#X connect 164 0 208 0;
 #X connect 165 0 130 0;
 #X connect 166 0 104 1;
 #X connect 167 0 105 1;
@@ -493,7 +493,7 @@ push : off;
 #X connect 198 0 92 0;
 #X connect 200 0 192 0;
 #X connect 203 0 183 0;
-#X connect 205 0 206 0;
-#X connect 205 0 208 0;
-#X connect 205 1 207 0;
+#X connect 204 0 205 0;
+#X connect 204 0 207 0;
+#X connect 204 1 206 0;
 #X coords 0 -1 1 1 130 165 2 0 90;

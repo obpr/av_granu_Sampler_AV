@@ -1,4 +1,4 @@
-#N canvas 240 296 1440 732 12;
+#N canvas 760 216 1440 732 12;
 #X text -1193 793 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text -1837 860 Here \, rather than ask you to push the read pointer
 back and forth in the sample \, we use a phasor~. This makes it possible
@@ -139,10 +139,10 @@ push : off;
 #X obj -1007 709 * 1;
 #X obj -1072 211 r B;
 #X obj 111 291 spigot-toggle_orange;
-#X obj 31 119 tgl 25 0 empty empty A 8 14 1 17 -1 -262144 -262144 0
+#X obj 31 119 tgl 25 0 empty empty A 8 14 1 17 -1 -262144 -262144 1
 1;
-#X obj 31 145 tgl 25 0 empty empty B' 8 14 1 17 -1 -262144 -262144
-0 1;
+#X obj 31 145 tgl 25 0 empty empty B 8 14 1 17 -1 -262144 -262144 0
+1;
 #X obj 77 120 tgl 25 0 empty empty A 8 12 0 16 -1 -262144 -262144 0
 1;
 #X obj 77 145 tgl 25 0 empty empty B 8 12 0 16 -1 -262144 -262144 0
@@ -155,7 +155,7 @@ push : off;
 #X obj 48 228 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -260097
 0 1;
 #X obj 2 205 tgl 25 0 empty empty Trg 1 10 0 10 -1 -262144 -262144
-0 1;
+1 1;
 #X obj 2 228 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -262144
 0 1;
 #X obj 103 122 tgl 25 0 empty empty ->- 2 12 0 12 -1 -262144 -262144
@@ -187,8 +187,8 @@ push : off;
 #X obj 80 228 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
 #X obj 48 207 tgl 25 0 empty empty Bng 2 10 0 10 -1 -262144 -262144
-0 1;
-#X obj 31 92 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856 0
+1 1;
+#X obj 31 92 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856 1
 1;
 #X obj -16 746 * -1;
 #X obj -15 687 r freestepsouts1;
@@ -200,7 +200,7 @@ push : off;
 #X obj -1006 2 * -1;
 #X obj -1004 36 spigot-toggle_orange;
 #X obj -1004 -44 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X msg -1063 316 0;
 #X obj 58 152 bng 17 250 50 0 empty empty +0 3 8 0 8 -1 -262144 -262144
 ;

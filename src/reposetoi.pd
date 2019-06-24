@@ -1,5 +1,5 @@
-#N canvas 133 52 1440 826 10;
-#X obj 101 101 cnv 15 255 138 empty empty time_stretching_until_drone
+#N canvas 130 365 1440 826 10;
+#X obj 623 8 cnv 15 255 138 empty empty time_stretching_until_drone
 28 10 0 12 -262144 -1 0;
 #X obj 246 481 f;
 #X obj 304 483 f;
@@ -16,7 +16,7 @@
 #X obj 494 19 loadbang;
 #X msg 651 77 1000;
 #X obj 246 602 hsl 300 8 0 1000 0 0 empty empty empty -2 -8 0 10 -1
--258113 -1 0 1;
+-258113 -1 2274 1;
 #X obj 242 619 select 1000;
 #X obj 241 652 delay 10;
 #X obj 245 684 delay 10;
@@ -32,7 +32,7 @@
 #X msg 737 190 9999;
 #X floatatom 836 306 5 0 0 0 - - -, f 5;
 #X floatatom 835 349 5 0 0 0 - - -, f 5;
-#X obj -18 181 r nbrdebit;
+#X obj -12 112 r nbrdebit;
 #X obj -9 241 t b f;
 #X obj -6 281 * 1;
 #X obj 777 562 f;
@@ -115,6 +115,7 @@ la vitesse à la volée vitesse +/- vitesse normal de lecture \,;
 #X obj 241 580 spigot-toggle_violet;
 #X msg 458 215 3;
 #X obj 139 619 / 1000;
+#X floatatom 47 122 5 0 0 1 IN - -, f 5;
 #X connect 1 0 39 0;
 #X connect 2 0 39 1;
 #X connect 3 0 4 0;
@@ -153,6 +154,7 @@ la vitesse à la volée vitesse +/- vitesse normal de lecture \,;
 #X connect 24 0 41 0;
 #X connect 25 0 42 0;
 #X connect 26 0 37 0;
+#X connect 26 0 96 0;
 #X connect 27 0 28 0;
 #X connect 27 1 28 1;
 #X connect 28 0 71 0;
