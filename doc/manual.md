@@ -323,23 +323,20 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 ## Equalizer, dynamic enveloppe and reverb 
 
 ![Alt text](/doc/img/avgra_EQ_ENV_Reverb.jpeg)
-<<<<<<< HEAD:doc/manual.md
+
+## Pure data specs:
+- Pd 0.48.0  
+- Download and instal library from obpr/av_granu_Sampler_AV/scr/avgrau_libs.zip 
 
 ## output video
 
 ![Alt text](/doc/img/avgra_outputvideo.jpeg) 
 =======
 
-# audio specs: .wav, lenght under 30 seconds at 88200 Hz 1 minute at 44100 Hz
-( change from  88200 Hz to 44100 Hz with the [44] button in Pitch and speed module(10)
+# video specs:  
+- H.264, P frame every frame ( done with quicktime player 7 for exemple)
 
+# audio specs:  
+- .wav, lenght under 30 seconds at 88200 Hz 1 minute at 44100 Hz  
+- Change from  88200 Hz to 44100 Hz with the [44] button in Pitch and speed module(10)
 
-## output video
-
-![Alt text](/doc/img/avgra_outputvideo.jpeg)
-
-
-# video specs: H.264, P frame every frame ( done with quicktime player 7 for exemple)
-
-
->>>>>>> 78cf7bcf0496e1c0d8e8716ebbee960849447a1d:doc/README.md
