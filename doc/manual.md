@@ -324,9 +324,8 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 
 ![Alt text](/doc/img/avgra_EQ_ENV_Reverb.jpeg)
 
-## Pure data specs
-- Pd 0.48.0
-
+## Pure data specs:
+- Pd 0.48.0  
 - Download and instal library :
 obpr/av_granu_Sampler_AV/scr/avgrau_libs.zip 
 
@@ -336,9 +335,9 @@ obpr/av_granu_Sampler_AV/scr/avgrau_libs.zip
 =======
 
 # video specs:  
-H.264, P frame every frame ( done with quicktime player 7 for exemple)
+- H.264, P frame every frame ( done with quicktime player 7 for exemple)
 
 # audio specs:  
-.wav, lenght under 30 seconds at 88200 Hz 1 minute at 44100 Hz
-change from  88200 Hz to 44100 Hz with the [44] button in Pitch and speed module(10)
+- .wav, lenght under 30 seconds at 88200 Hz 1 minute at 44100 Hz  
+- Change from  88200 Hz to 44100 Hz with the [44] button in Pitch and speed module(10)
 
