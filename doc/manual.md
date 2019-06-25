@@ -326,8 +326,7 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 
 ## Pure data specs:
 - Pd 0.48.0  
-- Download and instal library :
-obpr/av_granu_Sampler_AV/scr/avgrau_libs.zip 
+- Download and instal library from obpr/av_granu_Sampler_AV/scr/avgrau_libs.zip 
 
 ## output video
 
