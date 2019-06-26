@@ -1,4 +1,4 @@
-#N canvas 673 54 1247 878 10;
+#N canvas 734 34 1247 878 10;
 #X obj -937 -27 pix_texture;
 #X obj -928 -91 translateXYZ;
 #X obj -927 -119 pix_separator;
@@ -157,7 +157,7 @@ threshold \, then the pixel alpha is set to the other value.;
 #X obj 954 1107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 770 1175 r lo;
-#X msg 985 1207 0.254237 0.254237 0.254237;
+#X msg 985 1207 0.305085 0.305085 0.305085;
 #X msg 825 1207 1 1 1;
 #X obj 850 1178 loadbang;
 #X obj 724 1172 sel;
@@ -189,7 +189,7 @@ threshold \, then the pixel alpha is set to the other value.;
 #X obj -929 1330 r $A-motionBlur1;
 #X obj -1127 994 r $B-colorInv;
 #X obj -1065 -251 r moviefileB;
-#X obj -983 -330 gemhead 13;
+#X obj -983 -330 gemhead 1;
 #X connect 0 0 34 0;
 #X connect 1 0 36 0;
 #X connect 2 0 1 0;

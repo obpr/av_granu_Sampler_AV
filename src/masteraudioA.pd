@@ -1,28 +1,28 @@
-#N canvas 172 137 906 623 10;
-#X obj 185 124 hsl 70 20 0 1 0 0 empty empty cut_out 3 7 0 10 -1 -262144
--260097 6100 1;
-#X obj 185 103 hsl 70 20 0 1 0 0 empty empty cut_in 3 7 0 10 -1 -262144
--262144 800 1;
-#X obj 103 106 vsl 15 110 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 6800 1;
-#X obj 137 106 vsl 15 110 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 6300 1;
-#X obj 120 106 vsl 15 110 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 6400 1;
-#X obj 184 164 hsl 70 20 0 1 0 0 empty empty fade_in 3 7 0 10 -228856
--1 -262144 1800 1;
-#X obj 184 185 hsl 70 20 1 0 0 0 empty empty fadeNcut_out -1 7 0 10
--228856 -1 -260097 5300 1;
-#X obj 157 106 vsl 20 110 0.02 2 1 0 empty empty VL 3 6 0 10 -1 -262144
--1 9400 1;
+#N canvas 774 275 906 623 10;
+#X obj 182 244 hsl 70 20 0 1 0 0 empty empty cut_out 3 7 0 10 -1 -262144
+-262144 6900 1;
+#X obj 105 244 hsl 70 20 0 1 0 0 empty empty cut_in 3 7 0 10 -1 -262144
+-262144 2700 1;
+#X obj 103 106 vsl 15 90 0.02 2 1 0 empty empty empty 12 12 0 10 -1
+-262144 -1 8900 1;
+#X obj 137 106 vsl 15 90 0.02 2 1 0 empty empty empty 12 12 0 10 -1
+-262144 -1 8900 1;
+#X obj 120 106 vsl 15 90 0.02 2 1 0 empty empty empty 12 12 0 10 -1
+-262144 -1 8900 1;
+#X obj 105 202 hsl 70 20 0 1 0 0 empty empty fade_in 3 7 0 10 -228856
+-1 -1 4900 1;
+#X obj 182 202 hsl 70 20 1 0 0 0 empty empty fadeNcut_out -1 7 0 10
+-228856 -1 -1 4800 1;
+#X obj 156 106 vsl 20 90 0.02 2 1 0 empty empty VL 3 6 0 10 -1 -262144
+-1 7900 1;
 #X obj -43 258 vfreeverb~;
-#X obj 105 224 hsl 70 20 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -262144
--260097 -1 0 0;
-#X obj 105 246 hsl 70 20 0 2 0 1 empty empty damp 3 8 0 10 -262144
+#X obj 183 175 hsl 70 20 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -262144
+-260097 -1 4100 0;
+#X obj 183 153 hsl 70 20 0 2 0 1 empty empty damp 3 8 0 10 -262144
 -260097 -1 2500 0;
-#X obj 184 246 hsl 70 20 0 1 0 1 empty empty wet 3 8 0 10 -262144 -260097
--1 0 0;
-#X obj 184 224 hsl 70 20 0 1 0 1 empty empty dry 3 8 0 10 -262144 -260097
+#X obj 183 131 hsl 70 20 0 1 0 1 empty empty wet_reverb 3 8 0 10 -262144
+-260097 -1 1200 0;
+#X obj 183 109 hsl 70 20 0 1 0 1 empty empty dry 3 8 0 10 -262144 -260097
 -1 3800 0;
 #X obj 86 65 inlet;
 #X obj 126 65 inlet;
@@ -124,7 +124,7 @@
 #X floatatom 353 -1243 12 0 0 0 - - -, f 12;
 #X floatatom 354 -1197 12 0 0 0 - - -, f 12;
 #X obj 391 -1316 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 367 -1297 metro 44;
 #X floatatom -323 -1139 12 0 0 0 - - -, f 12;
 #X obj 355 -1152 /;
@@ -186,15 +186,19 @@
 #X obj 262 -187 ctlin 7;
 #X obj 369 152 - 1;
 #X obj 368 173 * -1;
-#X obj 184 205 hsl 70 18 0 1 0 0 empty empty fade_out_granu -1 8 0
-9 -260097 -1 -262144 6900 1;
-#X obj 185 145 hsl 70 18 0 1 0 0 empty empty %_out_granu 2 8 0 9 -260097
--262144 -262144 6900 1;
+#X obj 182 225 hsl 70 15 0 1 0 0 empty empty with_silence 3 8 0 9 -260097
+-1 -262144 6900 1;
+#X obj 144 707 hsl 70 18 0 1 0 0 empty empty %_out_granu 2 8 0 9 -260097
+-262144 -262144 1100 1;
 #X obj 290 373 r lo;
 #X obj -395 35 r lo;
 #X obj -157 -670 r directinA;
 #X msg 156 12 0;
+#X obj 369 202 - 1;
+#X obj 368 223 * -1;
+#X text 105 226 enveloppe;
 #X connect 0 0 142 0;
+#X connect 0 0 180 0;
 #X connect 1 0 141 0;
 #X connect 2 0 17 1;
 #X connect 3 0 17 3;
@@ -374,4 +378,5 @@
 #X connect 179 0 3 0;
 #X connect 179 0 4 0;
 #X connect 179 0 2 0;
+#X connect 180 0 181 0;
 #X coords 0 -1 1 1 158 170 2 100 100;
