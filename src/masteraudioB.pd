@@ -4,17 +4,17 @@
 #X obj 106 246 hsl 70 20 0 1 0 0 empty empty cut_in 3 7 0 10 -1 -262144
 -262144 0 1;
 #X obj 103 110 vsl 15 90 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 5792 1;
+-262144 -1 5800 1;
 #X obj 137 110 vsl 15 90 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 6595 1;
+-262144 -1 6000 1;
 #X obj 120 110 vsl 15 90 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 6377 1;
+-262144 -1 5200 1;
 #X obj 104 207 hsl 70 20 0 1 0 0 empty empty fade_in 3 7 0 10 -228856
--1 -1 0 1;
+-1 -1 600 1;
 #X obj 182 206 hsl 70 20 1 0 0 0 empty empty fadeNcut_out -1 7 0 10
--228856 -1 -1 6900 1;
+-228856 -1 -1 5800 1;
 #X obj 157 109 vsl 20 90 0.02 2 1 0 empty empty VL 3 6 0 10 -1 -262144
--1 6739 1;
+-1 4300 1;
 #X obj -43 258 vfreeverb~;
 #X obj 183 154 hsl 70 20 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -262144
 -260097 -1 0 0;

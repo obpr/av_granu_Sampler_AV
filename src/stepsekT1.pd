@@ -1,4 +1,4 @@
-#N canvas 644 5 1117 698 12;
+#N canvas 65 218 1117 698 12;
 #X obj -16867 -1324 f;
 #X obj -16809 -1324 f;
 #X obj -16752 -1324 f;
@@ -16,15 +16,15 @@
 #X obj -16867 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj -16809 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 1200 256;
+0 10 -262144 -1 -1 645 256;
 #X obj -16752 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 200 256;
+0 10 -262144 -1 -1 415 256;
 #X obj -16694 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 100 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16586 -1343 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj -16411 -1343 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 400 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16234 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj -16180 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -55,7 +55,7 @@
 #X obj -15924 -1473 inlet;
 #X obj -15642 -1384 inlet;
 #X obj -15870 -1477 inlet;
-#X floatatom -17056 -893 5 0 0 0 - - -, f 5;
+#X floatatom -17055 -894 5 0 0 0 - - -, f 5;
 #X obj -15686 -927 outlet;
 #X obj -16799 -846 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1
 -1 1 1;
@@ -67,14 +67,14 @@
 0 10 -262144 -1 -1 200 256;
 #X obj -16485 -1474 inlet;
 #X obj -16525 -1343 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 100 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16567 -1474 inlet;
 #X obj -16862 -1003 inlet;
 #X obj -15771 -1030 line;
 #X obj -17054 -869 mod;
 #X floatatom -17056 -841 5 0 0 0 - - -, f 5;
 #X floatatom -15654 -1094 5 0 0 0 - - -, f 5;
-#X obj -16799 -751 outlet;
+#X obj -16796 -721 outlet;
 #X obj -16788 -670 outlet;
 #X obj -16799 -773 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -111,15 +111,15 @@
 #X obj -16850 -1389 * 1;
 #X obj -16790 -1415 t b f;
 #X obj -16789 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 1200 256;
+0 10 -262144 -1 -1 645 256;
 #X obj -16790 -1389 * 1;
 #X obj -16732 -1415 t b f;
 #X obj -16731 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 200 256;
+0 10 -262144 -1 -1 415 256;
 #X obj -16732 -1389 * 1;
 #X obj -16672 -1415 t b f;
 #X obj -16671 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 100 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16672 -1389 * 1;
 #X obj -16580 -1415 t b f;
 #X obj -16579 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -127,7 +127,7 @@
 #X obj -16580 -1389 * 1;
 #X obj -16520 -1415 t b f;
 #X obj -16519 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 100 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16520 -1389 * 1;
 #X obj -16460 -1415 t b f;
 #X obj -16459 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -135,7 +135,7 @@
 #X obj -16460 -1389 * 1;
 #X obj -16400 -1415 t b f;
 #X obj -16399 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 400 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16400 -1389 * 1;
 #X obj -16302 -1415 t b f;
 #X obj -16301 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -213,7 +213,7 @@
 #X floatatom -15526 -1226 5 0 0 0 - - -, f 5;
 #X obj -15750 -1236 spigot-toggle_jaunenoir;
 #X obj -15844 -1248 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1
--1 1 1;
+-1 0 1;
 #X obj -15777 -1250 spigot-toggle_jaunenoir;
 #X obj -15848 -1223 - 1;
 #X obj -15846 -1196 * -1;
@@ -221,13 +221,32 @@
 #X obj -16713 -786 spigot-toggle_jaunenoir;
 #X obj -16900 -813 ==;
 #X floatatom -16903 -785 5 0 0 0 - - -, f 5;
-#X obj -16903 -756 s ≠ITstep1;
+#X obj -16297 -394 s ≠ITstep1;
 #X obj 37 37;
 #X obj 37 37;
 #X obj 37 37;
 #X obj -16940 -832 spigot-toggle_jaunenoir;
-#X obj -16971 -809 + 1;
 #X obj -16703 -690 s bbstpt;
+#X obj -16201 -594 + 1;
+#X floatatom -16257 -569 5 0 0 0 - - -, f 5;
+#X floatatom -16162 -592 5 0 0 0 - - -, f 5;
+#X obj -16251 -594 f;
+#X obj -16256 -519 mod;
+#X obj -16255 -492 sel;
+#X obj -16255 -463 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom -16236 -540 5 0 0 0 - - -, f 5;
+#X obj -16178 -538 r IT1;
+#X obj -16980 -819 + 1;
+#X obj -16294 -421 spigot-toggle_jaunenoir;
+#X obj -16242 -617 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -16261 -653 sel;
+#X msg -16260 -426 0;
+#X msg -16221 -426 1;
+#X msg -16115 -512 iteration avec ≠IT plusieur valeur de temps par
+stepG . une stp G qui se retpet et qui recoit plusieur fois plusieurs
+valeur de temps venant de stepseq T1;
 #X connect 0 0 174 0;
 #X connect 1 0 174 0;
 #X connect 2 0 174 0;
@@ -288,11 +307,11 @@
 #X connect 54 0 157 0;
 #X connect 55 0 56 0;
 #X connect 56 0 162 0;
-#X connect 56 0 190 0;
+#X connect 56 0 200 0;
 #X connect 57 0 47 1;
+#X connect 60 0 190 0;
 #X connect 60 0 58 0;
 #X connect 60 0 182 0;
-#X connect 60 0 191 0;
 #X connect 61 0 137 0;
 #X connect 61 0 55 1;
 #X connect 61 0 183 1;
@@ -484,6 +503,23 @@
 #X connect 181 0 177 0;
 #X connect 182 0 80 0;
 #X connect 183 0 184 0;
-#X connect 184 0 185 0;
+#X connect 184 0 201 0;
+#X connect 184 0 203 0;
 #X connect 189 0 183 0;
-#X connect 190 0 189 0;
+#X connect 191 0 194 1;
+#X connect 192 0 195 0;
+#X connect 193 0 191 1;
+#X connect 194 0 191 0;
+#X connect 194 0 192 0;
+#X connect 195 0 196 0;
+#X connect 196 0 197 0;
+#X connect 196 0 205 0;
+#X connect 196 1 204 0;
+#X connect 198 0 195 1;
+#X connect 199 0 198 0;
+#X connect 200 0 189 0;
+#X connect 201 0 185 0;
+#X connect 202 0 194 0;
+#X connect 203 1 202 0;
+#X connect 204 0 201 1;
+#X connect 205 0 201 1;
