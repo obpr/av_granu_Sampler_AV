@@ -1,8 +1,8 @@
-#N canvas 1074 137 1440 922 12;
+#N canvas 719 116 1440 922 12;
 #X obj 45 321 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 45 235 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1652 256;
+-262144 -1 -1 1785 256;
 #X obj 42 207 inlet;
 #X obj 281 683 line;
 #X obj 320 887 outlet;
@@ -29,13 +29,13 @@
 #X floatatom 111 287 5 0 0 0 - - -, f 5;
 #X obj 805 87 f;
 #X obj 774 216 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 7 256;
+-262144 -1 -1 0 256;
 #X obj 863 87 f;
 #X obj 845 216 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 6.25 256;
 #X obj 920 87 f;
 #X obj 902 216 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 12.5 256;
+-262144 -1 -1 0 256;
 #X obj 978 87 f;
 #X obj 961 215 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
@@ -76,7 +76,7 @@
 #X obj 1748 216 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
 #X obj 802 59 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 7 256;
+-262144 -1 -1 0 256;
 #X obj 860 59 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 6.25 256;
 #X obj 917 59 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
