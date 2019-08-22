@@ -1,4 +1,4 @@
-#N canvas 750 27 747 624 10;
+#N canvas 111 36 747 624 10;
 #X obj 294 483 outlet;
 #X floatatom 235 119 5 0 0 0 - - -, f 5;
 #X obj 235 177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144

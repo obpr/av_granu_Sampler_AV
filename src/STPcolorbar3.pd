@@ -1,7 +1,7 @@
 #N canvas 449 455 879 573 10;
 #X text 198 -67 vertical;
 #X floatatom 388 109 5 0 0 0 - - -, f 5;
-#X obj 1 1 cnv 13 214 18 empty NBRcolorbar3 empty 20 12 0 14 -241291
+#X obj 1 1 cnv 13 214 18 empty NBRcolorbar3 empty 20 12 0 14 -262144
 -4034 0;
 #X text 653 238 label-color;
 #X msg 559 355 color \$1 \$2;

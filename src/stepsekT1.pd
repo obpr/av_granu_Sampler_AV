@@ -1,4 +1,4 @@
-#N canvas 65 218 1117 698 12;
+#N canvas 3053 472 1055 652 12;
 #X obj -16867 -1324 f;
 #X obj -16809 -1324 f;
 #X obj -16752 -1324 f;
@@ -14,11 +14,11 @@
 #X obj -15904 -1322 f;
 #X obj -15844 -1322 f;
 #X obj -16867 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 200 256;
+0 10 -262144 -1 -1 212 256;
 #X obj -16809 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 645 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16752 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 415 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16694 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj -16586 -1343 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -58,7 +58,7 @@
 #X floatatom -17055 -894 5 0 0 0 - - -, f 5;
 #X obj -15686 -927 outlet;
 #X obj -16799 -846 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1
--1 1 1;
+-1 0 1;
 #X floatatom -16725 -857 5 0 0 0 - - -, f 5;
 #X floatatom -16332 -972 5 0 0 0 - - -, f 5;
 #X obj -15770 -1055 pack \$1 \$2;
@@ -107,15 +107,15 @@
 #X obj -16561 -830 * 1;
 #X obj -16850 -1415 t b f;
 #X obj -16849 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 200 256;
+0 10 -262144 -1 -1 212 256;
 #X obj -16850 -1389 * 1;
 #X obj -16790 -1415 t b f;
 #X obj -16789 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 645 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16790 -1389 * 1;
 #X obj -16732 -1415 t b f;
 #X obj -16731 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 415 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16732 -1389 * 1;
 #X obj -16672 -1415 t b f;
 #X obj -16671 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -204,7 +204,7 @@
 #X obj -16934 -969 - 1;
 #X obj -16933 -944 * -1;
 #X obj -16933 -993 tgl 15 0 empty empty IT_control_chgnmt_de_step_de_stepseqT_ou_pas
-17 7 0 10 -262144 -1 -1 0 1;
+17 7 0 10 -262144 -1 -1 1 1;
 #X obj -16933 -1055 r IT≠T1;
 #X obj -15607 -1321 r ITB;
 #X obj -15510 -1258 / 1;
@@ -213,7 +213,7 @@
 #X floatatom -15526 -1226 5 0 0 0 - - -, f 5;
 #X obj -15750 -1236 spigot-toggle_jaunenoir;
 #X obj -15844 -1248 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1
--1 0 1;
+-1 1 1;
 #X obj -15777 -1250 spigot-toggle_jaunenoir;
 #X obj -15848 -1223 - 1;
 #X obj -15846 -1196 * -1;
@@ -222,9 +222,6 @@
 #X obj -16900 -813 ==;
 #X floatatom -16903 -785 5 0 0 0 - - -, f 5;
 #X obj -16297 -394 s ≠ITstep1;
-#X obj 37 37;
-#X obj 37 37;
-#X obj 37 37;
 #X obj -16940 -832 spigot-toggle_jaunenoir;
 #X obj -16703 -690 s bbstpt;
 #X obj -16201 -594 + 1;
@@ -244,9 +241,9 @@
 #X obj -16261 -653 sel;
 #X msg -16260 -426 0;
 #X msg -16221 -426 1;
-#X msg -16115 -512 iteration avec ≠IT plusieur valeur de temps par
+#X msg -16116 -512 iteration avec ≠IT plusieur valeur de temps par
 stepG . une stp G qui se retpet et qui recoit plusieur fois plusieurs
-valeur de temps venant de stepseq T1;
+des valeurs de temps venant de stepseq T1;
 #X connect 0 0 174 0;
 #X connect 1 0 174 0;
 #X connect 2 0 174 0;
@@ -307,11 +304,11 @@ valeur de temps venant de stepseq T1;
 #X connect 54 0 157 0;
 #X connect 55 0 56 0;
 #X connect 56 0 162 0;
-#X connect 56 0 200 0;
+#X connect 56 0 197 0;
 #X connect 57 0 47 1;
-#X connect 60 0 190 0;
 #X connect 60 0 58 0;
 #X connect 60 0 182 0;
+#X connect 60 0 187 0;
 #X connect 61 0 137 0;
 #X connect 61 0 55 1;
 #X connect 61 0 183 1;
@@ -480,7 +477,7 @@ valeur de temps venant de stepseq T1;
 #X connect 165 0 136 0;
 #X connect 166 0 42 0;
 #X connect 167 0 168 0;
-#X connect 168 0 189 1;
+#X connect 168 0 186 1;
 #X connect 168 0 182 1;
 #X connect 169 0 167 0;
 #X connect 169 0 166 1;
@@ -503,23 +500,23 @@ valeur de temps venant de stepseq T1;
 #X connect 181 0 177 0;
 #X connect 182 0 80 0;
 #X connect 183 0 184 0;
-#X connect 184 0 201 0;
-#X connect 184 0 203 0;
-#X connect 189 0 183 0;
-#X connect 191 0 194 1;
-#X connect 192 0 195 0;
-#X connect 193 0 191 1;
-#X connect 194 0 191 0;
-#X connect 194 0 192 0;
-#X connect 195 0 196 0;
-#X connect 196 0 197 0;
-#X connect 196 0 205 0;
-#X connect 196 1 204 0;
-#X connect 198 0 195 1;
-#X connect 199 0 198 0;
-#X connect 200 0 189 0;
-#X connect 201 0 185 0;
-#X connect 202 0 194 0;
-#X connect 203 1 202 0;
-#X connect 204 0 201 1;
-#X connect 205 0 201 1;
+#X connect 184 0 198 0;
+#X connect 184 0 200 0;
+#X connect 186 0 183 0;
+#X connect 188 0 191 1;
+#X connect 189 0 192 0;
+#X connect 190 0 188 1;
+#X connect 191 0 188 0;
+#X connect 191 0 189 0;
+#X connect 192 0 193 0;
+#X connect 193 0 194 0;
+#X connect 193 0 202 0;
+#X connect 193 1 201 0;
+#X connect 195 0 192 1;
+#X connect 196 0 195 0;
+#X connect 197 0 186 0;
+#X connect 198 0 185 0;
+#X connect 199 0 191 0;
+#X connect 200 1 199 0;
+#X connect 201 0 198 1;
+#X connect 202 0 198 1;
