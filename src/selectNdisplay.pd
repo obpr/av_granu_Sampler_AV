@@ -1,4 +1,4 @@
-#N canvas -313 324 1367 878 12;
+#N canvas -1531 252 1367 878 12;
 #N canvas 67 224 450 432 :: 0;
 #X text 24 16 the format [pix_film] is able to decode depends on the
 system you are running Gem.;
@@ -38,7 +38,7 @@ that under linux i could play most formats...;
 #X obj 1023 35 outlet;
 #X obj 815 80 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 818 -23 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 818 -23 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 851 -15 spigot-toggle_red;
 #X obj 845 80 spigot-toggle_red;
@@ -124,7 +124,7 @@ that under linux i could play most formats...;
 -262144;
 #X obj 575 68 tgl 20 0 empty empty BB 5 10 0 10 -1 -262144 -262144
 0 1;
-#X obj 431 9 tgl 20 0 empty empty A 6 11 0 12 -1 -262144 -262144 0
+#X obj 431 9 tgl 20 0 empty empty A 6 11 0 12 -1 -262144 -262144 1
 1;
 #X obj 463 9 tgl 20 0 empty empty B 6 11 0 12 -1 -262144 -262144 0
 1;
@@ -152,7 +152,7 @@ that under linux i could play most formats...;
 #X msg 423 815 drumnbuttongrid/*.wav;
 #X msg 423 787 montage_bo/*.wav;
 #X msg 409 -473 montage_bo/*.mov;
-#X obj 309 63 tgl 15 0 empty empty v 3 7 1 18 -262144 -1 -1 1 1;
+#X obj 309 63 tgl 15 0 empty empty v 3 7 1 18 -262144 -1 -1 0 1;
 #X obj 283 150 spigot-toggle_red;
 #X obj 338 265 outlet;
 #X obj 364 204 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -168,25 +168,13 @@ that under linux i could play most formats...;
 -1;
 #X obj 169 88 bng 15 250 50 0 empty empty asmpl -5 20 1 10 -191407
 -4034 -1;
-#X obj 199 88 bng 15 250 50 0 empty empty empty -5 20 1 10 -191407
--4034 -1;
-#X obj 229 88 bng 15 250 50 0 empty empty empty -5 20 1 10 -191407
--4034 -1;
 #X obj 139 25 bng 15 250 50 0 empty empty empty -5 20 1 10 -191407
 -4034 -1;
 #X obj 169 25 bng 15 250 50 0 empty empty BO_A -2 -5 1 8 -191407 -4034
 -1;
-#X obj 199 25 bng 15 250 50 0 empty empty empty -5 20 1 10 -191407
--4034 -1;
-#X obj 229 25 bng 15 250 50 0 empty empty empty -5 20 1 10 -191407
--4034 -1;
 #X obj 139 60 bng 15 250 50 0 empty empty animo -5 -10 1 10 -191407
 -4034 -1;
 #X obj 169 60 bng 15 250 50 0 empty empty empty -5 20 1 10 -191407
--4034 -1;
-#X obj 199 60 bng 15 250 50 0 empty empty empty -5 20 1 10 -191407
--4034 -1;
-#X obj 229 60 bng 15 250 50 0 empty empty empty -5 20 1 10 -191407
 -4034 -1;
 #X floatatom 296 231 5 0 0 0 - - -, f 5;
 #X obj 294 322 s øSbangA;
@@ -252,7 +240,7 @@ that under linux i could play most formats...;
 #X connect 41 0 37 0;
 #X connect 42 0 58 0;
 #X connect 43 0 38 0;
-#X connect 44 0 136 0;
+#X connect 44 0 130 0;
 #X connect 45 0 6 0;
 #X connect 46 0 86 0;
 #X connect 46 0 93 0;
@@ -278,19 +266,19 @@ that under linux i could play most formats...;
 #X connect 70 0 43 1;
 #X connect 71 0 78 0;
 #X connect 72 0 97 0;
-#X connect 73 0 135 0;
+#X connect 73 0 129 0;
 #X connect 74 0 49 0;
 #X connect 75 0 74 0;
 #X connect 76 0 31 1;
-#X connect 77 0 140 0;
+#X connect 77 0 134 0;
 #X connect 77 1 7 0;
-#X connect 77 1 136 0;
+#X connect 77 1 130 0;
 #X connect 77 2 2 0;
 #X connect 78 1 11 0;
-#X connect 78 1 130 0;
+#X connect 78 1 124 0;
 #X connect 78 1 6 0;
 #X connect 78 2 33 0;
-#X connect 79 0 129 0;
+#X connect 79 0 123 0;
 #X connect 80 0 4 0;
 #X connect 80 0 71 0;
 #X connect 81 0 5 0;
@@ -329,7 +317,7 @@ that under linux i could play most formats...;
 #X connect 106 0 107 1;
 #X connect 107 0 94 0;
 #X connect 109 0 108 0;
-#X connect 109 0 128 0;
+#X connect 109 0 122 0;
 #X connect 110 0 112 0;
 #X connect 110 0 111 0;
 #X connect 111 0 77 0;
@@ -337,15 +325,15 @@ that under linux i could play most formats...;
 #X connect 113 0 6 0;
 #X connect 114 0 4 0;
 #X connect 115 0 71 0;
-#X connect 116 0 132 0;
-#X connect 120 0 139 0;
-#X connect 123 0 134 0;
-#X connect 123 0 133 0;
-#X connect 127 0 108 0;
-#X connect 129 0 78 0;
-#X connect 132 0 78 0;
+#X connect 116 0 126 0;
+#X connect 118 0 133 0;
+#X connect 119 0 128 0;
+#X connect 119 0 127 0;
+#X connect 121 0 108 0;
+#X connect 123 0 78 0;
+#X connect 126 0 78 0;
+#X connect 127 0 78 0;
+#X connect 128 0 77 0;
+#X connect 130 0 129 0;
 #X connect 133 0 78 0;
-#X connect 134 0 77 0;
-#X connect 136 0 135 0;
-#X connect 139 0 78 0;
 #X coords 0 -1 1 1 700 120 2 0 0;

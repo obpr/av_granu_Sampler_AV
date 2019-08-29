@@ -1,4 +1,4 @@
-#N canvas -1183 0 1294 878 12;
+#N canvas 444 180 1294 878 12;
 #X text -1193 813 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text -1837 880 Here \, rather than ask you to push the read pointer
 back and forth in the sample \, we use a phasor~. This makes it possible
@@ -70,7 +70,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)
 #X obj -21 880 spigot-toggle_orange;
 #X obj -20 1001 r lo;
 #X obj -22 903 spigot-toggle_orange;
-#X obj -52 870 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 1 1
+#X obj -52 870 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 0 1
 ;
 #X obj 2 830 onoff0x;
 #X obj 0 879 onoff2x;
@@ -169,13 +169,13 @@ push : off;
 ;
 #X obj 57 103 vsl 20 52 0 0.5 0 0 empty empty mod 2 44 0 9 -1 -262144
 -262144 0 1;
-#X obj 4 213 cnv 20 75 27 empty empty -A- 22 10 0 10 -1 -262144 0;
-#X obj 4 243 cnv 12 75 21 empty empty -B- 22 8 0 10 -1 -262144 0;
-#X obj 48 229 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -260097
+#X obj 5 214 cnv 20 75 27 empty empty -A- 22 10 0 10 -1 -262144 0;
+#X obj 4 240 cnv 12 75 21 empty empty -B- 22 8 0 10 -1 -262144 0;
+#X obj 49 235 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -260097
 0 1;
-#X obj 2 214 tgl 25 0 empty empty Trg 1 10 0 10 -1 -262144 -262144
+#X obj 3 215 tgl 25 0 empty empty Trg 1 10 0 10 -1 -262144 -262144
 0 1;
-#X obj 2 229 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -262144
+#X obj 3 235 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -262144
 0 1;
 #X obj 103 131 tgl 25 0 empty empty ->- 2 12 0 12 -1 -262144 -262144
 0 1;
@@ -185,7 +185,7 @@ push : off;
 0 1;
 #X obj 103 154 tgl 25 0 empty empty ->- 2 12 0 12 -1 -262144 -262144
 0 1;
-#X obj 66 181 tgl 30 0 empty empty løc 5 15 0 12 -260097 -1 -1 1 1
+#X obj 66 181 tgl 30 0 empty empty løc 5 15 0 12 -260097 -1 -1 0 1
 ;
 #X obj 34 181 tgl 30 0 empty empty >ø 5 15 0 15 -260097 -1 -1 0 1
 ;
@@ -195,15 +195,15 @@ push : off;
 0 1;
 #X obj 78 114 cnv 15 50 15 empty empty empty 20 12 0 14 -262144 -66577
 0;
-#X floatatom 76 114 6 0 0 0 - - -, f 6;
+#X floatatom 78 114 6 0 0 0 - - -, f 6;
 #X obj 2 181 tgl 30 0 empty empty @A 5 15 0 14 -260097 -1 -1 0 1;
-#X obj 103 213 tgl 25 0 empty empty ø 6 10 0 14 -1 -262144 -260097
+#X obj 102 214 tgl 25 0 empty empty ø 6 10 0 14 -1 -262144 -260097
 0 1;
-#X obj 103 238 tgl 25 0 empty empty ø 6 10 0 15 -1 -262144 -260097
+#X obj 102 236 tgl 25 0 empty empty ø 6 10 0 15 -1 -262144 -260097
 0 1;
-#X obj 80 213 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
+#X obj 79 214 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
-#X obj 80 238 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
+#X obj 79 236 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
 #X obj 31 101 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856
 0 1;
@@ -218,7 +218,7 @@ push : off;
 #X obj -928 -71 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 1 1;
 #X msg -1063 336 0;
-#X obj 58 161 bng 17 250 50 0 empty empty +0 3 8 0 8 -1 -262144 -262144
+#X obj 58 160 bng 17 250 50 0 empty empty +0 3 8 0 8 -1 -262144 -262144
 ;
 #X obj 249 142 s øAtiTS1;
 #X obj 104 352 * 1;
@@ -267,7 +267,7 @@ push : off;
 -1 -1;
 #X floatatom -1044 799 5 0 0 0 - - -, f 5;
 #X msg 37 30 1;
-#X obj 48 216 tgl 25 0 empty empty Bng 2 10 0 10 -1 -262144 -262144
+#X obj 49 215 tgl 25 0 empty empty Bng 2 10 0 10 -1 -262144 -262144
 0 1;
 #X obj -941 607 * 1;
 #X connect 3 0 180 0;

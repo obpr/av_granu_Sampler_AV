@@ -14,7 +14,7 @@
 #X obj 421 36 loadbang;
 #X msg 651 77 1000;
 #X obj 246 602 hsl 300 8 0 1000 0 0 empty empty empty -2 -8 0 10 -1
--258113 -1 26328 1;
+-258113 -1 0 1;
 #X obj 242 619 select 1000;
 #X obj 241 652 delay 10;
 #X obj 245 684 delay 10;
@@ -70,24 +70,24 @@
 #X obj 642 421 t b b b b;
 #X obj 25 386 * 0.5;
 #X obj 685 469 delay 100;
-#X floatatom 117 122 5 0 0 1 IN - -, f 5;
-#X floatatom 306 122 5 0 0 0 OUT - -, f 5;
-#X floatatom 115 175 8 0 0 2 free_lenght - -, f 8;
-#X obj 180 205 bng 20 250 50 0 empty empty resume 23 11 0 12 -1 -260097
+#X floatatom 135 125 5 0 0 1 IN - -, f 5;
+#X floatatom 220 125 5 0 0 0 OUT - -, f 5;
+#X floatatom 123 165 8 0 0 2 free_lenght - -, f 8;
+#X obj 112 210 bng 20 250 50 0 empty empty resume 23 11 0 12 -1 -260097
 -1;
-#X floatatom 310 194 5 0 0 0 /X - -, f 5;
-#X obj 332 213 tgl 15 0 empty empty B 4 9 0 12 -1 -260097 -260097 0
+#X floatatom 252 207 5 0 0 0 /X - -, f 5;
+#X obj 269 191 tgl 15 0 empty empty B 4 9 0 12 -1 -260097 -260097 0
 1;
-#X floatatom 218 175 8 0 0 2 layerA.lenght - -, f 8;
-#X obj 113 205 bng 20 250 50 0 empty empty pause 23 8 0 11 -1 -260097
+#X floatatom 209 165 8 0 0 2 _A.lenght - -, f 8;
+#X obj 112 190 bng 20 250 50 0 empty empty pause 23 8 0 11 -1 -260097
 -1;
-#X floatatom 184 122 8 0 0 0 - - -, f 8;
-#X obj 194 175 tgl 15 0 empty empty << 2 7 0 10 -262144 -1 -1 0 1;
-#X obj 121 137 hsl 220 10 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+#X floatatom 167 110 8 0 0 0 - - -, f 8;
+#X obj 188 165 tgl 15 0 empty empty << 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 67 hsl 220 10 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 121 148 hsl 220 10 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 109 78 hsl 220 10 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 21900 1;
-#X obj 310 213 tgl 15 0 empty empty A 4 9 0 12 -1 -260097 -260097 0
+#X obj 253 191 tgl 15 0 empty empty A 4 9 0 12 -1 -260097 -260097 0
 1;
 #X obj 22 150 r lo;
 #X obj 103 27 inlet;
@@ -101,7 +101,7 @@
 #X obj 2 -21 r send_reposetoinoffA;
 #X obj 190 459 spigot-toggle_violet;
 #X obj 245 458 spigot-toggle_violet;
-#X obj 171 444 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 171 444 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 215 411 r lo;
 #X floatatom 729 694 12 0 0 0 - - -, f 12;
@@ -256,4 +256,4 @@
 #X connect 100 0 91 0;
 #X connect 100 0 19 0;
 #X connect 101 0 98 0;
-#X coords 0 -1 1 1 257 140 1 100 100;
+#X coords 0 -1 1 1 200 140 1 100 100;
