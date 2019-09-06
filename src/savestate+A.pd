@@ -1,768 +1,768 @@
 #N canvas 0 112 1680 867 10;
-#X obj 101 102 hradio 15 1 0 4 empty empty empty -50 7 0 10 -262144
--1 -1 2;
+#X obj 101 102 hradio 18 1 0 4 empty empty empty -50 7 0 10 -262144
+-1 -1 0;
 #X obj 216 75 sel 0 1 2;
-#X obj 180 102 hradio 15 1 0 4 empty empty empty -26 7 0 10 -262144
+#X obj 176 102 hradio 18 1 0 4 empty empty empty -26 7 0 10 -262144
 -1 -1 0;
 #X obj 218 145 sel 0 1 2;
-#X floatatom 963 27 5 0 0 0 receive_+_progr_ +_progr_ -, f 5;
+#X floatatom 963 27 5 0 0 0 receive_+_progr_ +_progr_ -;
 #X obj 957 79 f;
 #X obj 924 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 940 148 f;
 #X obj 929 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 958 107 5 0 0 0 - - -, f 5;
-#X floatatom 942 174 5 0 0 0 send_+_progr_ - send_+_progr_, f 5;
-#X floatatom 1109 27 5 0 0 0 receive_+step +step -, f 5;
+#X floatatom 958 107 5 0 0 0 - - -;
+#X floatatom 942 174 5 0 0 0 send_+_progr_ - send_+_progr_;
+#X floatatom 1109 27 5 0 0 0 receive_+step +step -;
 #X obj 1103 79 f;
 #X obj 1080 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1086 148 f;
 #X obj 1085 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1104 107 5 0 0 0 - - -, f 5;
-#X floatatom 1088 174 5 0 0 0 send_+step - send_+step, f 5;
-#X floatatom 1253 27 5 0 0 0 receive_+1 +1 -, f 5;
+#X floatatom 1104 107 5 0 0 0 - - -;
+#X floatatom 1088 174 5 0 0 0 send_+step - send_+step;
+#X floatatom 1253 27 5 0 0 0 receive_+1 +1 -;
 #X obj 1247 79 f;
 #X obj 1224 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1230 148 f;
 #X obj 1229 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1248 107 5 0 0 0 - - -, f 5;
-#X floatatom 1232 174 5 0 0 0 send_+1 - send_+1, f 5;
-#X floatatom 1393 27 5 0 0 0 receive_+2 +2 -, f 5;
+#X floatatom 1248 107 5 0 0 0 - - -;
+#X floatatom 1232 174 5 0 0 0 send_+1 - send_+1;
+#X floatatom 1393 27 5 0 0 0 receive_+2 +2 -;
 #X obj 1387 79 f;
 #X obj 1364 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1370 148 f;
 #X obj 1369 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1388 107 5 0 0 0 - - -, f 5;
-#X floatatom 1372 174 5 0 0 0 send_+2 - send_+2, f 5;
-#X floatatom 1533 27 5 0 0 0 receive_+3 +3 -, f 5;
+#X floatatom 1388 107 5 0 0 0 - - -;
+#X floatatom 1372 174 5 0 0 0 send_+2 - send_+2;
+#X floatatom 1533 27 5 0 0 0 receive_+3 +3 -;
 #X obj 1527 79 f;
 #X obj 1504 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1510 148 f;
 #X obj 1509 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1528 107 5 0 0 0 - - -, f 5;
-#X floatatom 1512 174 5 0 0 0 send_+3 - send_+3, f 5;
-#X floatatom 1913 27 5 0 0 0 receive_+6 +6 -, f 5;
+#X floatatom 1528 107 5 0 0 0 - - -;
+#X floatatom 1512 174 5 0 0 0 send_+3 - send_+3;
+#X floatatom 1913 27 5 0 0 0 receive_+6 +6 -;
 #X obj 1907 79 f;
 #X obj 1884 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1890 148 f;
 #X obj 1889 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1908 107 5 0 0 0 - - -, f 5;
-#X floatatom 1892 174 5 0 0 0 send_+6 - send_+6, f 5;
-#X floatatom 2043 27 5 0 0 0 receive_+7 +7 -, f 5;
+#X floatatom 1908 107 5 0 0 0 - - -;
+#X floatatom 1892 174 5 0 0 0 send_+6 - send_+6;
+#X floatatom 2043 27 5 0 0 0 receive_+7 +7 -;
 #X obj 2037 79 f;
 #X obj 2014 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2020 148 f;
 #X obj 2019 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2038 107 5 0 0 0 - - -, f 5;
-#X floatatom 2022 174 5 0 0 0 send_+7 - send_+7, f 5;
-#X floatatom 2183 27 5 0 0 0 receive_+8 +8 -, f 5;
+#X floatatom 2038 107 5 0 0 0 - - -;
+#X floatatom 2022 174 5 0 0 0 send_+7 - send_+7;
+#X floatatom 2183 27 5 0 0 0 receive_+8 +8 -;
 #X obj 2177 79 f;
 #X obj 2154 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2160 148 f;
 #X obj 2159 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2178 107 5 0 0 0 - - -, f 5;
-#X floatatom 2162 174 5 0 0 0 send_+8 - send_+8, f 5;
-#X floatatom 2324 27 5 0 0 0 receive_+9 +9 -, f 5;
+#X floatatom 2178 107 5 0 0 0 - - -;
+#X floatatom 2162 174 5 0 0 0 send_+8 - send_+8;
+#X floatatom 2324 27 5 0 0 0 receive_+9 +9 -;
 #X obj 2318 79 f;
 #X obj 2295 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2301 148 f;
 #X obj 2300 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2319 107 5 0 0 0 - - -, f 5;
-#X floatatom 2303 174 5 0 0 0 send_+9 - send_+9, f 5;
-#X floatatom 2464 27 5 0 0 0 receive_+10 +10 -, f 5;
+#X floatatom 2319 107 5 0 0 0 - - -;
+#X floatatom 2303 174 5 0 0 0 send_+9 - send_+9;
+#X floatatom 2464 27 5 0 0 0 receive_+10 +10 -;
 #X obj 2458 79 f;
 #X obj 2435 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2441 148 f;
 #X obj 2440 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2459 107 5 0 0 0 - - -, f 5;
-#X floatatom 2443 174 5 0 0 0 send_+10 - send_+10, f 5;
-#X floatatom 2594 27 5 0 0 0 receive_+11 +11 -, f 5;
+#X floatatom 2459 107 5 0 0 0 - - -;
+#X floatatom 2443 174 5 0 0 0 send_+10 - send_+10;
+#X floatatom 2594 27 5 0 0 0 receive_+11 +11 -;
 #X obj 2588 79 f;
 #X obj 2565 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2571 148 f;
 #X obj 2570 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2589 107 5 0 0 0 - - -, f 5;
-#X floatatom 2573 174 5 0 0 0 send_+11 - send_+11, f 5;
-#X floatatom 2734 27 5 0 0 0 receive_+12 +12 -, f 5;
+#X floatatom 2589 107 5 0 0 0 - - -;
+#X floatatom 2573 174 5 0 0 0 send_+11 - send_+11;
+#X floatatom 2734 27 5 0 0 0 receive_+12 +12 -;
 #X obj 2728 79 f;
 #X obj 2705 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2711 148 f;
 #X obj 2710 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2729 107 5 0 0 0 - - -, f 5;
-#X floatatom 2713 174 5 0 0 0 send_+12 - send_+12, f 5;
-#X floatatom 2874 27 5 0 0 0 receive_+13 +13 -, f 5;
+#X floatatom 2729 107 5 0 0 0 - - -;
+#X floatatom 2713 174 5 0 0 0 send_+12 - send_+12;
+#X floatatom 2874 27 5 0 0 0 receive_+13 +13 -;
 #X obj 2868 79 f;
 #X obj 2845 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2851 148 f;
 #X obj 2850 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2869 107 5 0 0 0 - - -, f 5;
-#X floatatom 2853 174 5 0 0 0 send_+13 - send_+13, f 5;
-#X floatatom 3014 27 5 0 0 0 receive_+14 +14 -, f 5;
+#X floatatom 2869 107 5 0 0 0 - - -;
+#X floatatom 2853 174 5 0 0 0 send_+13 - send_+13;
+#X floatatom 3014 27 5 0 0 0 receive_+14 +14 -;
 #X obj 3008 79 f;
 #X obj 2985 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2991 148 f;
 #X obj 2990 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3009 107 5 0 0 0 - - -, f 5;
-#X floatatom 2993 174 5 0 0 0 send_+14 - send_+14, f 5;
-#X floatatom 3144 27 5 0 0 0 receive_+15 +15 -, f 5;
+#X floatatom 3009 107 5 0 0 0 - - -;
+#X floatatom 2993 174 5 0 0 0 send_+14 - send_+14;
+#X floatatom 3144 27 5 0 0 0 receive_+15 +15 -;
 #X obj 3138 79 f;
 #X obj 3115 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 3121 148 f;
 #X obj 3120 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3139 107 5 0 0 0 - - -, f 5;
-#X floatatom 3123 174 5 0 0 0 send_+15 - send_+15, f 5;
-#X floatatom 3284 27 5 0 0 0 receive_+16 +16 -, f 5;
+#X floatatom 3139 107 5 0 0 0 - - -;
+#X floatatom 3123 174 5 0 0 0 send_+15 - send_+15;
+#X floatatom 3284 27 5 0 0 0 receive_+16 +16 -;
 #X obj 3278 79 f;
 #X obj 3255 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 3261 148 f;
 #X obj 3260 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3279 107 5 0 0 0 - - -, f 5;
-#X floatatom 3263 174 5 0 0 0 send_+16 - send_+16, f 5;
-#X floatatom 373 27 5 0 0 0 receive_+XT +XT -, f 5;
+#X floatatom 3279 107 5 0 0 0 - - -;
+#X floatatom 3263 174 5 0 0 0 send_+16 - send_+16;
+#X floatatom 373 27 5 0 0 0 receive_+XT +XT -;
 #X obj 367 79 f;
 #X obj 344 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 350 148 f;
 #X obj 349 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 368 107 5 0 0 0 - - -, f 5;
-#X floatatom 352 174 5 0 0 0 send_+XT - send_+XT, f 5;
-#X floatatom 563 27 5 0 0 0 receive_Trgr-+ Trgr-+ -, f 5;
+#X floatatom 368 107 5 0 0 0 - - -;
+#X floatatom 352 174 5 0 0 0 send_+XT - send_+XT;
+#X floatatom 563 27 5 0 0 0 receive_Trgr-+ Trgr-+ -;
 #X obj 557 79 f;
 #X obj 534 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 540 148 f;
 #X obj 539 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 558 107 5 0 0 0 - - -, f 5;
-#X floatatom 542 174 5 0 0 0 send_Trgr-+ - send_Trgr-+, f 5;
-#X floatatom 763 27 5 0 0 0 receive_+-t +-t -, f 5;
+#X floatatom 558 107 5 0 0 0 - - -;
+#X floatatom 542 174 5 0 0 0 send_Trgr-+ - send_Trgr-+;
+#X floatatom 763 27 5 0 0 0 receive_+-t +-t -;
 #X obj 757 79 f;
 #X obj 734 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 740 148 f;
 #X obj 739 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 758 107 5 0 0 0 - - -, f 5;
-#X floatatom 742 174 5 0 0 0 send_+-t - send_+-t, f 5;
+#X floatatom 758 107 5 0 0 0 - - -;
+#X floatatom 742 174 5 0 0 0 send_+-t - send_+-t;
 #X obj 108 62 inlet;
 #X obj 158 62 inlet;
-#X floatatom 1652 27 5 0 0 0 receive_+4 +4 -, f 5;
+#X floatatom 1652 27 5 0 0 0 receive_+4 +4 -;
 #X obj 1646 79 f;
 #X obj 1623 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1629 148 f;
 #X obj 1628 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1647 107 5 0 0 0 - - -, f 5;
-#X floatatom 1631 174 5 0 0 0 send_+4 - send_+4, f 5;
-#X floatatom 1792 27 5 0 0 0 receive_+5 +5 -, f 5;
+#X floatatom 1647 107 5 0 0 0 - - -;
+#X floatatom 1631 174 5 0 0 0 send_+4 - send_+4;
+#X floatatom 1792 27 5 0 0 0 receive_+5 +5 -;
 #X obj 1786 79 f;
 #X obj 1763 58 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1769 148 f;
 #X obj 1768 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1787 107 5 0 0 0 - - -, f 5;
-#X floatatom 1771 174 5 0 0 0 send_+5 - send_+5, f 5;
-#X floatatom 963 207 5 0 0 0 receive_+_progr_ +_progr_ -, f 5;
+#X floatatom 1787 107 5 0 0 0 - - -;
+#X floatatom 1771 174 5 0 0 0 send_+5 - send_+5;
+#X floatatom 963 207 5 0 0 0 receive_+_progr_ +_progr_ -;
 #X obj 957 259 f;
 #X obj 924 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 940 328 f;
 #X obj 929 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 958 287 5 0 0 0 - - -, f 5;
-#X floatatom 942 354 5 0 0 0 send_+_progr_ - send_+_progr_, f 5;
-#X floatatom 1109 207 5 0 0 0 receive_+step +step -, f 5;
+#X floatatom 958 287 5 0 0 0 - - -;
+#X floatatom 942 354 5 0 0 0 send_+_progr_ - send_+_progr_;
+#X floatatom 1109 207 5 0 0 0 receive_+step +step -;
 #X obj 1103 259 f;
 #X obj 1080 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1086 328 f;
 #X obj 1085 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1104 287 5 0 0 0 - - -, f 5;
-#X floatatom 1088 354 5 0 0 0 send_+step - send_+step, f 5;
-#X floatatom 1253 207 5 0 0 0 receive_+1 +1 -, f 5;
+#X floatatom 1104 287 5 0 0 0 - - -;
+#X floatatom 1088 354 5 0 0 0 send_+step - send_+step;
+#X floatatom 1253 207 5 0 0 0 receive_+1 +1 -;
 #X obj 1247 259 f;
 #X obj 1224 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1230 328 f;
 #X obj 1229 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1248 287 5 0 0 0 - - -, f 5;
-#X floatatom 1232 354 5 0 0 0 send_+1 - send_+1, f 5;
-#X floatatom 1393 207 5 0 0 0 receive_+2 +2 -, f 5;
+#X floatatom 1248 287 5 0 0 0 - - -;
+#X floatatom 1232 354 5 0 0 0 send_+1 - send_+1;
+#X floatatom 1393 207 5 0 0 0 receive_+2 +2 -;
 #X obj 1387 259 f;
 #X obj 1364 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1370 328 f;
 #X obj 1369 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1388 287 5 0 0 0 - - -, f 5;
-#X floatatom 1372 354 5 0 0 0 send_+2 - send_+2, f 5;
-#X floatatom 1533 207 5 0 0 0 receive_+3 +3 -, f 5;
+#X floatatom 1388 287 5 0 0 0 - - -;
+#X floatatom 1372 354 5 0 0 0 send_+2 - send_+2;
+#X floatatom 1533 207 5 0 0 0 receive_+3 +3 -;
 #X obj 1527 259 f;
 #X obj 1504 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1510 328 f;
 #X obj 1509 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1528 287 5 0 0 0 - - -, f 5;
-#X floatatom 1512 354 5 0 0 0 send_+3 - send_+3, f 5;
-#X floatatom 1913 207 5 0 0 0 receive_+6 +6 -, f 5;
+#X floatatom 1528 287 5 0 0 0 - - -;
+#X floatatom 1512 354 5 0 0 0 send_+3 - send_+3;
+#X floatatom 1913 207 5 0 0 0 receive_+6 +6 -;
 #X obj 1907 259 f;
 #X obj 1884 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1890 328 f;
 #X obj 1889 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1908 287 5 0 0 0 - - -, f 5;
-#X floatatom 1892 354 5 0 0 0 send_+6 - send_+6, f 5;
-#X floatatom 2043 207 5 0 0 0 receive_+7 +7 -, f 5;
+#X floatatom 1908 287 5 0 0 0 - - -;
+#X floatatom 1892 354 5 0 0 0 send_+6 - send_+6;
+#X floatatom 2043 207 5 0 0 0 receive_+7 +7 -;
 #X obj 2037 259 f;
 #X obj 2014 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2020 328 f;
 #X obj 2019 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2038 287 5 0 0 0 - - -, f 5;
-#X floatatom 2022 354 5 0 0 0 send_+7 - send_+7, f 5;
-#X floatatom 2183 207 5 0 0 0 receive_+8 +8 -, f 5;
+#X floatatom 2038 287 5 0 0 0 - - -;
+#X floatatom 2022 354 5 0 0 0 send_+7 - send_+7;
+#X floatatom 2183 207 5 0 0 0 receive_+8 +8 -;
 #X obj 2177 259 f;
 #X obj 2154 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2160 328 f;
 #X obj 2159 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2178 287 5 0 0 0 - - -, f 5;
-#X floatatom 2162 354 5 0 0 0 send_+8 - send_+8, f 5;
-#X floatatom 2324 207 5 0 0 0 receive_+9 +9 -, f 5;
+#X floatatom 2178 287 5 0 0 0 - - -;
+#X floatatom 2162 354 5 0 0 0 send_+8 - send_+8;
+#X floatatom 2324 207 5 0 0 0 receive_+9 +9 -;
 #X obj 2318 259 f;
 #X obj 2295 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2301 328 f;
 #X obj 2300 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2319 287 5 0 0 0 - - -, f 5;
-#X floatatom 2303 354 5 0 0 0 send_+9 - send_+9, f 5;
-#X floatatom 2464 207 5 0 0 0 receive_+10 +10 -, f 5;
+#X floatatom 2319 287 5 0 0 0 - - -;
+#X floatatom 2303 354 5 0 0 0 send_+9 - send_+9;
+#X floatatom 2464 207 5 0 0 0 receive_+10 +10 -;
 #X obj 2458 259 f;
 #X obj 2435 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2441 328 f;
 #X obj 2440 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2459 287 5 0 0 0 - - -, f 5;
-#X floatatom 2443 354 5 0 0 0 send_+10 - send_+10, f 5;
-#X floatatom 2594 207 5 0 0 0 receive_+11 +11 -, f 5;
+#X floatatom 2459 287 5 0 0 0 - - -;
+#X floatatom 2443 354 5 0 0 0 send_+10 - send_+10;
+#X floatatom 2594 207 5 0 0 0 receive_+11 +11 -;
 #X obj 2588 259 f;
 #X obj 2565 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2571 328 f;
 #X obj 2570 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2589 287 5 0 0 0 - - -, f 5;
-#X floatatom 2573 354 5 0 0 0 send_+11 - send_+11, f 5;
-#X floatatom 2734 207 5 0 0 0 receive_+12 +12 -, f 5;
+#X floatatom 2589 287 5 0 0 0 - - -;
+#X floatatom 2573 354 5 0 0 0 send_+11 - send_+11;
+#X floatatom 2734 207 5 0 0 0 receive_+12 +12 -;
 #X obj 2728 259 f;
 #X obj 2705 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2711 328 f;
 #X obj 2710 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2729 287 5 0 0 0 - - -, f 5;
-#X floatatom 2713 354 5 0 0 0 send_+12 - send_+12, f 5;
-#X floatatom 2874 207 5 0 0 0 receive_+13 +13 -, f 5;
+#X floatatom 2729 287 5 0 0 0 - - -;
+#X floatatom 2713 354 5 0 0 0 send_+12 - send_+12;
+#X floatatom 2874 207 5 0 0 0 receive_+13 +13 -;
 #X obj 2868 259 f;
 #X obj 2845 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2851 328 f;
 #X obj 2850 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2869 287 5 0 0 0 - - -, f 5;
-#X floatatom 2853 354 5 0 0 0 send_+13 - send_+13, f 5;
-#X floatatom 3014 207 5 0 0 0 receive_+14 +14 -, f 5;
+#X floatatom 2869 287 5 0 0 0 - - -;
+#X floatatom 2853 354 5 0 0 0 send_+13 - send_+13;
+#X floatatom 3014 207 5 0 0 0 receive_+14 +14 -;
 #X obj 3008 259 f;
 #X obj 2985 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2991 328 f;
 #X obj 2990 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3009 287 5 0 0 0 - - -, f 5;
-#X floatatom 2993 354 5 0 0 0 send_+14 - send_+14, f 5;
-#X floatatom 3144 207 5 0 0 0 receive_+15 +15 -, f 5;
+#X floatatom 3009 287 5 0 0 0 - - -;
+#X floatatom 2993 354 5 0 0 0 send_+14 - send_+14;
+#X floatatom 3144 207 5 0 0 0 receive_+15 +15 -;
 #X obj 3138 259 f;
 #X obj 3115 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 3121 328 f;
 #X obj 3120 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3139 287 5 0 0 0 - - -, f 5;
-#X floatatom 3123 354 5 0 0 0 send_+15 - send_+15, f 5;
-#X floatatom 3284 207 5 0 0 0 receive_+16 +16 -, f 5;
+#X floatatom 3139 287 5 0 0 0 - - -;
+#X floatatom 3123 354 5 0 0 0 send_+15 - send_+15;
+#X floatatom 3284 207 5 0 0 0 receive_+16 +16 -;
 #X obj 3278 259 f;
 #X obj 3255 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 3261 328 f;
 #X obj 3260 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3279 287 5 0 0 0 - - -, f 5;
-#X floatatom 3263 354 5 0 0 0 send_+16 - send_+16, f 5;
-#X floatatom 373 207 5 0 0 0 receive_+XT +XT -, f 5;
+#X floatatom 3279 287 5 0 0 0 - - -;
+#X floatatom 3263 354 5 0 0 0 send_+16 - send_+16;
+#X floatatom 373 207 5 0 0 0 receive_+XT +XT -;
 #X obj 367 259 f;
 #X obj 344 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 350 328 f;
 #X obj 349 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 368 287 5 0 0 0 - - -, f 5;
-#X floatatom 352 354 5 0 0 0 send_+XT - send_+XT, f 5;
-#X floatatom 563 207 5 0 0 0 receive_Trgr-+ Trgr-+ -, f 5;
+#X floatatom 368 287 5 0 0 0 - - -;
+#X floatatom 352 354 5 0 0 0 send_+XT - send_+XT;
+#X floatatom 563 207 5 0 0 0 receive_Trgr-+ Trgr-+ -;
 #X obj 557 259 f;
 #X obj 534 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 540 328 f;
 #X obj 539 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 558 287 5 0 0 0 - - -, f 5;
-#X floatatom 542 354 5 0 0 0 send_Trgr-+ - send_Trgr-+, f 5;
-#X floatatom 763 207 5 0 0 0 receive_+-t +-t -, f 5;
+#X floatatom 558 287 5 0 0 0 - - -;
+#X floatatom 542 354 5 0 0 0 send_Trgr-+ - send_Trgr-+;
+#X floatatom 763 207 5 0 0 0 receive_+-t +-t -;
 #X obj 757 259 f;
 #X obj 734 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 740 328 f;
 #X obj 739 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 758 287 5 0 0 0 - - -, f 5;
-#X floatatom 742 354 5 0 0 0 send_+-t - send_+-t, f 5;
-#X floatatom 1652 207 5 0 0 0 receive_+4 +4 -, f 5;
+#X floatatom 758 287 5 0 0 0 - - -;
+#X floatatom 742 354 5 0 0 0 send_+-t - send_+-t;
+#X floatatom 1652 207 5 0 0 0 receive_+4 +4 -;
 #X obj 1646 259 f;
 #X obj 1623 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1629 328 f;
 #X obj 1628 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1647 287 5 0 0 0 - - -, f 5;
-#X floatatom 1631 354 5 0 0 0 send_+4 - send_+4, f 5;
-#X floatatom 1792 207 5 0 0 0 receive_+5 +5 -, f 5;
+#X floatatom 1647 287 5 0 0 0 - - -;
+#X floatatom 1631 354 5 0 0 0 send_+4 - send_+4;
+#X floatatom 1792 207 5 0 0 0 receive_+5 +5 -;
 #X obj 1786 259 f;
 #X obj 1763 238 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1769 328 f;
 #X obj 1768 306 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1787 287 5 0 0 0 - - -, f 5;
-#X floatatom 1771 354 5 0 0 0 send_+5 - send_+5, f 5;
-#X floatatom 963 387 5 0 0 0 receive_+_progr_ +_progr_ -, f 5;
+#X floatatom 1787 287 5 0 0 0 - - -;
+#X floatatom 1771 354 5 0 0 0 send_+5 - send_+5;
+#X floatatom 963 387 5 0 0 0 receive_+_progr_ +_progr_ -;
 #X obj 957 439 f;
 #X obj 924 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 940 508 f;
 #X obj 929 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 958 467 5 0 0 0 - - -, f 5;
-#X floatatom 942 534 5 0 0 0 send_+_progr_ - send_+_progr_, f 5;
-#X floatatom 1109 387 5 0 0 0 receive_+step +step -, f 5;
+#X floatatom 958 467 5 0 0 0 - - -;
+#X floatatom 942 534 5 0 0 0 send_+_progr_ - send_+_progr_;
+#X floatatom 1109 387 5 0 0 0 receive_+step +step -;
 #X obj 1103 439 f;
 #X obj 1080 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1086 508 f;
 #X obj 1085 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1104 467 5 0 0 0 - - -, f 5;
-#X floatatom 1088 534 5 0 0 0 send_+step - send_+step, f 5;
-#X floatatom 1253 387 5 0 0 0 receive_+1 +1 -, f 5;
+#X floatatom 1104 467 5 0 0 0 - - -;
+#X floatatom 1088 534 5 0 0 0 send_+step - send_+step;
+#X floatatom 1253 387 5 0 0 0 receive_+1 +1 -;
 #X obj 1247 439 f;
 #X obj 1224 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1230 508 f;
 #X obj 1229 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1248 467 5 0 0 0 - - -, f 5;
-#X floatatom 1232 534 5 0 0 0 send_+1 - send_+1, f 5;
-#X floatatom 1393 387 5 0 0 0 receive_+2 +2 -, f 5;
+#X floatatom 1248 467 5 0 0 0 - - -;
+#X floatatom 1232 534 5 0 0 0 send_+1 - send_+1;
+#X floatatom 1393 387 5 0 0 0 receive_+2 +2 -;
 #X obj 1387 439 f;
 #X obj 1364 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1370 508 f;
 #X obj 1369 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1388 467 5 0 0 0 - - -, f 5;
-#X floatatom 1372 534 5 0 0 0 send_+2 - send_+2, f 5;
-#X floatatom 1533 387 5 0 0 0 receive_+3 +3 -, f 5;
+#X floatatom 1388 467 5 0 0 0 - - -;
+#X floatatom 1372 534 5 0 0 0 send_+2 - send_+2;
+#X floatatom 1533 387 5 0 0 0 receive_+3 +3 -;
 #X obj 1527 439 f;
 #X obj 1504 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1510 508 f;
 #X obj 1509 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1528 467 5 0 0 0 - - -, f 5;
-#X floatatom 1512 534 5 0 0 0 send_+3 - send_+3, f 5;
-#X floatatom 1913 387 5 0 0 0 receive_+6 +6 -, f 5;
+#X floatatom 1528 467 5 0 0 0 - - -;
+#X floatatom 1512 534 5 0 0 0 send_+3 - send_+3;
+#X floatatom 1913 387 5 0 0 0 receive_+6 +6 -;
 #X obj 1907 439 f;
 #X obj 1884 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1890 508 f;
 #X obj 1889 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1908 467 5 0 0 0 - - -, f 5;
-#X floatatom 1892 534 5 0 0 0 send_+6 - send_+6, f 5;
-#X floatatom 2043 387 5 0 0 0 receive_+7 +7 -, f 5;
+#X floatatom 1908 467 5 0 0 0 - - -;
+#X floatatom 1892 534 5 0 0 0 send_+6 - send_+6;
+#X floatatom 2043 387 5 0 0 0 receive_+7 +7 -;
 #X obj 2037 439 f;
 #X obj 2014 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2020 508 f;
 #X obj 2019 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2038 467 5 0 0 0 - - -, f 5;
-#X floatatom 2022 534 5 0 0 0 send_+7 - send_+7, f 5;
-#X floatatom 2183 387 5 0 0 0 receive_+8 +8 -, f 5;
+#X floatatom 2038 467 5 0 0 0 - - -;
+#X floatatom 2022 534 5 0 0 0 send_+7 - send_+7;
+#X floatatom 2183 387 5 0 0 0 receive_+8 +8 -;
 #X obj 2177 439 f;
 #X obj 2154 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2160 508 f;
 #X obj 2159 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2178 467 5 0 0 0 - - -, f 5;
-#X floatatom 2162 534 5 0 0 0 send_+8 - send_+8, f 5;
-#X floatatom 2324 387 5 0 0 0 receive_+9 +9 -, f 5;
+#X floatatom 2178 467 5 0 0 0 - - -;
+#X floatatom 2162 534 5 0 0 0 send_+8 - send_+8;
+#X floatatom 2324 387 5 0 0 0 receive_+9 +9 -;
 #X obj 2318 439 f;
 #X obj 2295 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2301 508 f;
 #X obj 2300 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2319 467 5 0 0 0 - - -, f 5;
-#X floatatom 2303 534 5 0 0 0 send_+9 - send_+9, f 5;
-#X floatatom 2464 387 5 0 0 0 receive_+10 +10 -, f 5;
+#X floatatom 2319 467 5 0 0 0 - - -;
+#X floatatom 2303 534 5 0 0 0 send_+9 - send_+9;
+#X floatatom 2464 387 5 0 0 0 receive_+10 +10 -;
 #X obj 2458 439 f;
 #X obj 2435 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2441 508 f;
 #X obj 2440 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2459 467 5 0 0 0 - - -, f 5;
-#X floatatom 2443 534 5 0 0 0 send_+10 - send_+10, f 5;
-#X floatatom 2594 387 5 0 0 0 receive_+11 +11 -, f 5;
+#X floatatom 2459 467 5 0 0 0 - - -;
+#X floatatom 2443 534 5 0 0 0 send_+10 - send_+10;
+#X floatatom 2594 387 5 0 0 0 receive_+11 +11 -;
 #X obj 2588 439 f;
 #X obj 2565 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2571 508 f;
 #X obj 2570 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2589 467 5 0 0 0 - - -, f 5;
-#X floatatom 2573 534 5 0 0 0 send_+11 - send_+11, f 5;
-#X floatatom 2734 387 5 0 0 0 receive_+12 +12 -, f 5;
+#X floatatom 2589 467 5 0 0 0 - - -;
+#X floatatom 2573 534 5 0 0 0 send_+11 - send_+11;
+#X floatatom 2734 387 5 0 0 0 receive_+12 +12 -;
 #X obj 2728 439 f;
 #X obj 2705 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2711 508 f;
 #X obj 2710 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2729 467 5 0 0 0 - - -, f 5;
-#X floatatom 2713 534 5 0 0 0 send_+12 - send_+12, f 5;
-#X floatatom 2874 387 5 0 0 0 receive_+13 +13 -, f 5;
+#X floatatom 2729 467 5 0 0 0 - - -;
+#X floatatom 2713 534 5 0 0 0 send_+12 - send_+12;
+#X floatatom 2874 387 5 0 0 0 receive_+13 +13 -;
 #X obj 2868 439 f;
 #X obj 2845 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2851 508 f;
 #X obj 2850 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2869 467 5 0 0 0 - - -, f 5;
-#X floatatom 2853 534 5 0 0 0 send_+13 - send_+13, f 5;
-#X floatatom 3014 387 5 0 0 0 receive_+14 +14 -, f 5;
+#X floatatom 2869 467 5 0 0 0 - - -;
+#X floatatom 2853 534 5 0 0 0 send_+13 - send_+13;
+#X floatatom 3014 387 5 0 0 0 receive_+14 +14 -;
 #X obj 3008 439 f;
 #X obj 2985 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2991 508 f;
 #X obj 2990 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3009 467 5 0 0 0 - - -, f 5;
-#X floatatom 2993 534 5 0 0 0 send_+14 - send_+14, f 5;
-#X floatatom 3144 387 5 0 0 0 receive_+15 +15 -, f 5;
+#X floatatom 3009 467 5 0 0 0 - - -;
+#X floatatom 2993 534 5 0 0 0 send_+14 - send_+14;
+#X floatatom 3144 387 5 0 0 0 receive_+15 +15 -;
 #X obj 3138 439 f;
 #X obj 3115 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 3121 508 f;
 #X obj 3120 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3139 467 5 0 0 0 - - -, f 5;
-#X floatatom 3123 534 5 0 0 0 send_+15 - send_+15, f 5;
-#X floatatom 3284 387 5 0 0 0 receive_+16 +16 -, f 5;
+#X floatatom 3139 467 5 0 0 0 - - -;
+#X floatatom 3123 534 5 0 0 0 send_+15 - send_+15;
+#X floatatom 3284 387 5 0 0 0 receive_+16 +16 -;
 #X obj 3278 439 f;
 #X obj 3255 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 3261 508 f;
 #X obj 3260 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3279 467 5 0 0 0 - - -, f 5;
-#X floatatom 3263 534 5 0 0 0 send_+16 - send_+16, f 5;
-#X floatatom 373 387 5 0 0 0 receive_+XT +XT -, f 5;
+#X floatatom 3279 467 5 0 0 0 - - -;
+#X floatatom 3263 534 5 0 0 0 send_+16 - send_+16;
+#X floatatom 373 387 5 0 0 0 receive_+XT +XT -;
 #X obj 367 439 f;
 #X obj 344 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 350 508 f;
 #X obj 349 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 368 467 5 0 0 0 - - -, f 5;
-#X floatatom 352 534 5 0 0 0 send_+XT - send_+XT, f 5;
-#X floatatom 563 387 5 0 0 0 receive_Trgr-+ Trgr-+ -, f 5;
+#X floatatom 368 467 5 0 0 0 - - -;
+#X floatatom 352 534 5 0 0 0 send_+XT - send_+XT;
+#X floatatom 563 387 5 0 0 0 receive_Trgr-+ Trgr-+ -;
 #X obj 557 439 f;
 #X obj 534 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 540 508 f;
 #X obj 539 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 558 467 5 0 0 0 - - -, f 5;
-#X floatatom 542 534 5 0 0 0 send_Trgr-+ - send_Trgr-+, f 5;
-#X floatatom 763 387 5 0 0 0 receive_+-t +-t -, f 5;
+#X floatatom 558 467 5 0 0 0 - - -;
+#X floatatom 542 534 5 0 0 0 send_Trgr-+ - send_Trgr-+;
+#X floatatom 763 387 5 0 0 0 receive_+-t +-t -;
 #X obj 757 439 f;
 #X obj 734 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 740 508 f;
 #X obj 739 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 758 467 5 0 0 0 - - -, f 5;
-#X floatatom 742 534 5 0 0 0 send_+-t - send_+-t, f 5;
-#X floatatom 1652 387 5 0 0 0 receive_+4 +4 -, f 5;
+#X floatatom 758 467 5 0 0 0 - - -;
+#X floatatom 742 534 5 0 0 0 send_+-t - send_+-t;
+#X floatatom 1652 387 5 0 0 0 receive_+4 +4 -;
 #X obj 1646 439 f;
 #X obj 1623 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1629 508 f;
 #X obj 1628 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1647 467 5 0 0 0 - - -, f 5;
-#X floatatom 1631 534 5 0 0 0 send_+4 - send_+4, f 5;
-#X floatatom 1792 387 5 0 0 0 receive_+5 +5 -, f 5;
+#X floatatom 1647 467 5 0 0 0 - - -;
+#X floatatom 1631 534 5 0 0 0 send_+4 - send_+4;
+#X floatatom 1792 387 5 0 0 0 receive_+5 +5 -;
 #X obj 1786 439 f;
 #X obj 1763 418 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1769 508 f;
 #X obj 1768 486 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1787 467 5 0 0 0 - - -, f 5;
-#X floatatom 1771 534 5 0 0 0 send_+5 - send_+5, f 5;
-#X floatatom 963 567 5 0 0 0 receive_+_progr_ +_progr_ -, f 5;
+#X floatatom 1787 467 5 0 0 0 - - -;
+#X floatatom 1771 534 5 0 0 0 send_+5 - send_+5;
+#X floatatom 963 567 5 0 0 0 receive_+_progr_ +_progr_ -;
 #X obj 957 619 f;
 #X obj 924 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 940 688 f;
 #X obj 929 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 958 647 5 0 0 0 - - -, f 5;
-#X floatatom 942 714 5 0 0 0 send_+_progr_ - send_+_progr_, f 5;
-#X floatatom 1109 567 5 0 0 0 receive_+step +step -, f 5;
+#X floatatom 958 647 5 0 0 0 - - -;
+#X floatatom 942 714 5 0 0 0 send_+_progr_ - send_+_progr_;
+#X floatatom 1109 567 5 0 0 0 receive_+step +step -;
 #X obj 1103 619 f;
 #X obj 1080 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1086 688 f;
 #X obj 1085 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1104 647 5 0 0 0 - - -, f 5;
-#X floatatom 1088 714 5 0 0 0 send_+step - send_+step, f 5;
-#X floatatom 1253 567 5 0 0 0 receive_+1 +1 -, f 5;
+#X floatatom 1104 647 5 0 0 0 - - -;
+#X floatatom 1088 714 5 0 0 0 send_+step - send_+step;
+#X floatatom 1253 567 5 0 0 0 receive_+1 +1 -;
 #X obj 1247 619 f;
 #X obj 1224 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1230 688 f;
 #X obj 1229 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1248 647 5 0 0 0 - - -, f 5;
-#X floatatom 1232 714 5 0 0 0 send_+1 - send_+1, f 5;
-#X floatatom 1393 567 5 0 0 0 receive_+2 +2 -, f 5;
+#X floatatom 1248 647 5 0 0 0 - - -;
+#X floatatom 1232 714 5 0 0 0 send_+1 - send_+1;
+#X floatatom 1393 567 5 0 0 0 receive_+2 +2 -;
 #X obj 1387 619 f;
 #X obj 1364 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1370 688 f;
 #X obj 1369 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1388 647 5 0 0 0 - - -, f 5;
-#X floatatom 1372 714 5 0 0 0 send_+2 - send_+2, f 5;
-#X floatatom 1533 567 5 0 0 0 receive_+3 +3 -, f 5;
+#X floatatom 1388 647 5 0 0 0 - - -;
+#X floatatom 1372 714 5 0 0 0 send_+2 - send_+2;
+#X floatatom 1533 567 5 0 0 0 receive_+3 +3 -;
 #X obj 1527 619 f;
 #X obj 1504 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1510 688 f;
 #X obj 1509 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1528 647 5 0 0 0 - - -, f 5;
-#X floatatom 1512 714 5 0 0 0 send_+3 - send_+3, f 5;
-#X floatatom 1913 567 5 0 0 0 receive_+6 +6 -, f 5;
+#X floatatom 1528 647 5 0 0 0 - - -;
+#X floatatom 1512 714 5 0 0 0 send_+3 - send_+3;
+#X floatatom 1913 567 5 0 0 0 receive_+6 +6 -;
 #X obj 1907 619 f;
 #X obj 1884 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1890 688 f;
 #X obj 1889 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1908 647 5 0 0 0 - - -, f 5;
-#X floatatom 1892 714 5 0 0 0 send_+6 - send_+6, f 5;
-#X floatatom 2043 567 5 0 0 0 receive_+7 +7 -, f 5;
+#X floatatom 1908 647 5 0 0 0 - - -;
+#X floatatom 1892 714 5 0 0 0 send_+6 - send_+6;
+#X floatatom 2043 567 5 0 0 0 receive_+7 +7 -;
 #X obj 2037 619 f;
 #X obj 2014 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2020 688 f;
 #X obj 2019 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2038 647 5 0 0 0 - - -, f 5;
-#X floatatom 2022 714 5 0 0 0 send_+7 - send_+7, f 5;
-#X floatatom 2183 567 5 0 0 0 receive_+8 +8 -, f 5;
+#X floatatom 2038 647 5 0 0 0 - - -;
+#X floatatom 2022 714 5 0 0 0 send_+7 - send_+7;
+#X floatatom 2183 567 5 0 0 0 receive_+8 +8 -;
 #X obj 2177 619 f;
 #X obj 2154 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2160 688 f;
 #X obj 2159 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2178 647 5 0 0 0 - - -, f 5;
-#X floatatom 2162 714 5 0 0 0 send_+8 - send_+8, f 5;
-#X floatatom 2324 567 5 0 0 0 receive_+9 +9 -, f 5;
+#X floatatom 2178 647 5 0 0 0 - - -;
+#X floatatom 2162 714 5 0 0 0 send_+8 - send_+8;
+#X floatatom 2324 567 5 0 0 0 receive_+9 +9 -;
 #X obj 2318 619 f;
 #X obj 2295 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2301 688 f;
 #X obj 2300 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2319 647 5 0 0 0 - - -, f 5;
-#X floatatom 2303 714 5 0 0 0 send_+9 - send_+9, f 5;
-#X floatatom 2464 567 5 0 0 0 receive_+10 +10 -, f 5;
+#X floatatom 2319 647 5 0 0 0 - - -;
+#X floatatom 2303 714 5 0 0 0 send_+9 - send_+9;
+#X floatatom 2464 567 5 0 0 0 receive_+10 +10 -;
 #X obj 2458 619 f;
 #X obj 2435 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2441 688 f;
 #X obj 2440 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2459 647 5 0 0 0 - - -, f 5;
-#X floatatom 2443 714 5 0 0 0 send_+10 - send_+10, f 5;
-#X floatatom 2594 567 5 0 0 0 receive_+11 +11 -, f 5;
+#X floatatom 2459 647 5 0 0 0 - - -;
+#X floatatom 2443 714 5 0 0 0 send_+10 - send_+10;
+#X floatatom 2594 567 5 0 0 0 receive_+11 +11 -;
 #X obj 2588 619 f;
 #X obj 2565 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2571 688 f;
 #X obj 2570 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2589 647 5 0 0 0 - - -, f 5;
-#X floatatom 2573 714 5 0 0 0 send_+11 - send_+11, f 5;
-#X floatatom 2734 567 5 0 0 0 receive_+12 +12 -, f 5;
+#X floatatom 2589 647 5 0 0 0 - - -;
+#X floatatom 2573 714 5 0 0 0 send_+11 - send_+11;
+#X floatatom 2734 567 5 0 0 0 receive_+12 +12 -;
 #X obj 2728 619 f;
 #X obj 2705 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2711 688 f;
 #X obj 2710 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2729 647 5 0 0 0 - - -, f 5;
-#X floatatom 2713 714 5 0 0 0 send_+12 - send_+12, f 5;
-#X floatatom 2874 567 5 0 0 0 receive_+13 +13 -, f 5;
+#X floatatom 2729 647 5 0 0 0 - - -;
+#X floatatom 2713 714 5 0 0 0 send_+12 - send_+12;
+#X floatatom 2874 567 5 0 0 0 receive_+13 +13 -;
 #X obj 2868 619 f;
 #X obj 2845 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2851 688 f;
 #X obj 2850 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 2869 647 5 0 0 0 - - -, f 5;
-#X floatatom 2853 714 5 0 0 0 send_+13 - send_+13, f 5;
-#X floatatom 3014 567 5 0 0 0 receive_+14 +14 -, f 5;
+#X floatatom 2869 647 5 0 0 0 - - -;
+#X floatatom 2853 714 5 0 0 0 send_+13 - send_+13;
+#X floatatom 3014 567 5 0 0 0 receive_+14 +14 -;
 #X obj 3008 619 f;
 #X obj 2985 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2991 688 f;
 #X obj 2990 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3009 647 5 0 0 0 - - -, f 5;
-#X floatatom 2993 714 5 0 0 0 send_+14 - send_+14, f 5;
-#X floatatom 3144 567 5 0 0 0 receive_+15 +15 -, f 5;
+#X floatatom 3009 647 5 0 0 0 - - -;
+#X floatatom 2993 714 5 0 0 0 send_+14 - send_+14;
+#X floatatom 3144 567 5 0 0 0 receive_+15 +15 -;
 #X obj 3138 619 f;
 #X obj 3115 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 3121 688 f;
 #X obj 3120 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3139 647 5 0 0 0 - - -, f 5;
-#X floatatom 3123 714 5 0 0 0 send_+15 - send_+15, f 5;
-#X floatatom 3284 567 5 0 0 0 receive_+16 +16 -, f 5;
+#X floatatom 3139 647 5 0 0 0 - - -;
+#X floatatom 3123 714 5 0 0 0 send_+15 - send_+15;
+#X floatatom 3284 567 5 0 0 0 receive_+16 +16 -;
 #X obj 3278 619 f;
 #X obj 3255 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 3261 688 f;
 #X obj 3260 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 3279 647 5 0 0 0 - - -, f 5;
-#X floatatom 3263 714 5 0 0 0 send_+16 - send_+16, f 5;
-#X floatatom 373 567 5 0 0 0 receive_+XT +XT -, f 5;
+#X floatatom 3279 647 5 0 0 0 - - -;
+#X floatatom 3263 714 5 0 0 0 send_+16 - send_+16;
+#X floatatom 373 567 5 0 0 0 receive_+XT +XT -;
 #X obj 367 619 f;
 #X obj 344 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 350 688 f;
 #X obj 349 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 368 647 5 0 0 0 - - -, f 5;
-#X floatatom 352 714 5 0 0 0 send_+XT - send_+XT, f 5;
-#X floatatom 563 567 5 0 0 0 receive_Trgr-+ Trgr-+ -, f 5;
+#X floatatom 368 647 5 0 0 0 - - -;
+#X floatatom 352 714 5 0 0 0 send_+XT - send_+XT;
+#X floatatom 563 567 5 0 0 0 receive_Trgr-+ Trgr-+ -;
 #X obj 557 619 f;
 #X obj 534 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 540 688 f;
 #X obj 539 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 558 647 5 0 0 0 - - -, f 5;
-#X floatatom 542 714 5 0 0 0 send_Trgr-+ - send_Trgr-+, f 5;
-#X floatatom 763 567 5 0 0 0 receive_+-t +-t -, f 5;
+#X floatatom 558 647 5 0 0 0 - - -;
+#X floatatom 542 714 5 0 0 0 send_Trgr-+ - send_Trgr-+;
+#X floatatom 763 567 5 0 0 0 receive_+-t +-t -;
 #X obj 757 619 f;
 #X obj 734 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 740 688 f;
 #X obj 739 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 758 647 5 0 0 0 - - -, f 5;
-#X floatatom 742 714 5 0 0 0 send_+-t - send_+-t, f 5;
-#X floatatom 1652 567 5 0 0 0 receive_+4 +4 -, f 5;
+#X floatatom 758 647 5 0 0 0 - - -;
+#X floatatom 742 714 5 0 0 0 send_+-t - send_+-t;
+#X floatatom 1652 567 5 0 0 0 receive_+4 +4 -;
 #X obj 1646 619 f;
 #X obj 1623 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1629 688 f;
 #X obj 1628 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1647 647 5 0 0 0 - - -, f 5;
-#X floatatom 1631 714 5 0 0 0 send_+4 - send_+4, f 5;
-#X floatatom 1792 567 5 0 0 0 receive_+5 +5 -, f 5;
+#X floatatom 1647 647 5 0 0 0 - - -;
+#X floatatom 1631 714 5 0 0 0 send_+4 - send_+4;
+#X floatatom 1792 567 5 0 0 0 receive_+5 +5 -;
 #X obj 1786 619 f;
 #X obj 1763 598 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 1769 688 f;
 #X obj 1768 666 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
-#X floatatom 1787 647 5 0 0 0 - - -, f 5;
-#X floatatom 1771 714 5 0 0 0 send_+5 - send_+5, f 5;
+#X floatatom 1787 647 5 0 0 0 - - -;
+#X floatatom 1771 714 5 0 0 0 send_+5 - send_+5;
 #X connect 0 0 1 0;
 #X connect 1 0 118 0;
 #X connect 1 1 267 0;
@@ -1439,4 +1439,4 @@
 #X connect 591 0 590 0;
 #X connect 591 0 486 0;
 #X connect 592 0 590 1;
-#X coords 0 -1 1 1 150 19 2 100 100;
+#X coords 0 -1 1 1 150 22 2 100 100;

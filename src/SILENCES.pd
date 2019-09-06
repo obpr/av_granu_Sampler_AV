@@ -1,35 +1,35 @@
-#N canvas 1196 67 852 715 10;
+#N canvas 828 67 852 715 10;
 #X obj 37 -47 r lo;
 #X obj -109 821 s env0;
 #X obj -105 747 env~;
-#X obj 30 101 cnv 15 129 524 empty empty AUDIO_ANALYSE 25 18 0 10 -1
+#X obj 30 101 cnv 15 129 515 empty empty AUDIO_ANALYSE 25 8 0 10 -1
 -262144 0;
 #X obj 12 670 s fll0;
-#X obj 34 126 cnv 10 123 245 empty empty empty -1 148 0 15 -262144
+#X obj 34 118 cnv 10 123 245 empty empty empty -1 148 0 15 -262144
 -1 0;
-#X floatatom 124 163 3 0 0 0 ><_snslbt - -, f 3;
-#X floatatom 124 242 3 0 0 0 stp_snslbt - -, f 3;
-#X floatatom 36 301 3 0 0 2 - - -, f 3;
-#X floatatom 80 349 3 0 0 2 send_"a - -, f 3;
-#X floatatom 124 181 3 0 0 0 ><_progre - -, f 3;
-#X obj 57 132 tgl 22 0 empty empty C 7 11 2 12 -228856 -1 -1 0 1;
+#X floatatom 124 163 3 0 0 0 ><_snslbt - -;
+#X floatatom 124 242 3 0 0 0 stp_snslbt - -;
+#X floatatom 36 301 3 0 0 2 - - -;
+#X floatatom 80 347 3 0 0 2 send_"a - -;
+#X floatatom 124 181 3 0 0 0 ><_progre - -;
+#X obj 65 128 tgl 22 0 empty empty C 7 11 2 12 -228856 -1 -1 0 1;
 #X msg 71 -23 0;
-#X floatatom 124 259 3 0 0 0 progr - -, f 3;
+#X floatatom 124 259 3 0 0 0 progr - -;
 #X obj 9 643 * 0.01;
 #X msg 101 -23 1;
-#X floatatom 60 301 3 0 0 2 - - -, f 3;
-#X floatatom 124 276 3 0 0 0 steps - -, f 3;
-#X floatatom 83 301 3 0 0 3 50=0 - -, f 3;
-#X floatatom 104 301 3 0 0 1 - - -, f 3;
-#X floatatom 127 301 3 0 0 1 - - -, f 3;
-#X floatatom -47 689 3 0 0 0 - - -, f 3;
-#X obj 36 132 tgl 22 0 empty empty A 7 11 2 12 -228856 -1 -1 0 1;
+#X floatatom 60 301 3 0 0 2 - - -;
+#X floatatom 124 276 3 0 0 0 steps - -;
+#X floatatom 83 301 3 0 0 3 50=0 - -;
+#X floatatom 104 301 3 0 0 1 - - -;
+#X floatatom 127 301 3 0 0 1 - - -;
+#X floatatom -47 689 3 0 0 0 - - -;
+#X obj 44 128 tgl 22 0 empty empty A 7 11 2 12 -228856 -1 -1 0 1;
 #X obj -62 634 *~;
-#X obj 60 348 tgl 16 0 empty empty bck 1 8 0 8 -1 -262144 -262144 0
+#X obj 60 346 tgl 16 0 empty empty bck 1 8 0 8 -1 -262144 -262144 0
 1;
 #X obj 82 670 sel;
 #X msg 82 692 75;
-#X floatatom -108 769 5 0 0 0 - - -, f 5;
+#X floatatom -108 769 5 0 0 0 - - -;
 #X obj -108 788 spigot-toggle_jaune;
 #X obj -62 604 *~;
 #X obj -67 574 r~ C;
@@ -40,27 +40,27 @@
 ;
 #X msg 40 -23 1;
 #X obj 152 -47 r lo;
-#X obj 34 375 cnv 10 123 245 empty empty empty -1 148 0 15 -262144
+#X obj 34 367 cnv 10 123 245 empty empty empty -1 148 0 15 -262144
 -1 0;
-#X floatatom 125 417 3 0 0 0 ><_snslbt - -, f 3;
-#X floatatom 125 498 3 0 0 0 stp_snslbt - -, f 3;
-#X floatatom 37 555 3 0 0 2 - - -, f 3;
-#X floatatom 81 602 3 0 0 2 send_"a - -, f 3;
-#X floatatom 125 437 3 0 0 0 ><_progre - -, f 3;
-#X obj 58 380 tgl 22 0 empty empty D 7 11 2 12 -228856 -1 -1 0 1;
+#X floatatom 125 417 3 0 0 0 ><_snslbt - -;
+#X floatatom 125 498 3 0 0 0 stp_snslbt - -;
+#X floatatom 37 555 3 0 0 2 - - -;
+#X floatatom 81 597 3 0 0 2 send_"a - -;
+#X floatatom 125 437 3 0 0 0 ><_progre - -;
+#X obj 63 380 tgl 22 0 empty empty D 7 11 2 12 -228856 -1 -1 0 1;
 #X msg 186 -23 0;
-#X floatatom 125 515 3 0 0 0 progr - -, f 3;
+#X floatatom 125 515 3 0 0 0 progr - -;
 #X obj 581 437 * 0.01;
 #X msg 216 -23 1;
-#X floatatom 61 555 3 0 0 2 - - -, f 3;
-#X floatatom 125 532 3 0 0 0 steps - -, f 3;
-#X floatatom 84 555 3 0 0 3 50=0 - -, f 3;
-#X floatatom 105 555 3 0 0 1 - - -, f 3;
-#X floatatom 127 555 3 0 0 1 - - -, f 3;
-#X floatatom 508 522 3 0 0 0 - - -, f 3;
-#X obj 36 380 tgl 22 0 empty empty B 7 11 2 12 -228856 -1 -1 0 1;
+#X floatatom 61 555 3 0 0 2 - - -;
+#X floatatom 125 532 3 0 0 0 steps - -;
+#X floatatom 84 555 3 0 0 3 50=0 - -;
+#X floatatom 105 555 3 0 0 1 - - -;
+#X floatatom 127 555 3 0 0 1 - - -;
+#X floatatom 508 522 3 0 0 0 - - -;
+#X obj 41 380 tgl 22 0 empty empty B 7 11 2 12 -228856 -1 -1 0 1;
 #X obj 486 493 *~;
-#X obj 61 600 tgl 16 0 empty empty bck 1 8 0 8 -1 -262144 -262144 0
+#X obj 61 595 tgl 16 0 empty empty bck 1 8 0 8 -1 -262144 -262144 0
 1;
 #X obj 350 363 sel;
 #X msg 350 385 75;
@@ -75,7 +75,7 @@
 #X obj 438 460 r~ A1;
 #X obj -52 822 s env1;
 #X obj -56 754 env~;
-#X floatatom -55 777 5 0 0 0 - - -, f 5;
+#X floatatom -55 777 5 0 0 0 - - -;
 #X obj -51 796 spigot-toggle_jaune;
 #X msg 250 261 75;
 #X msg 250 281 25;
@@ -180,4 +180,4 @@
 #X connect 80 0 9 0;
 #X connect 81 0 23 0;
 #X connect 81 0 77 0;
-#X coords 0 -1 1 1 130 525 1 30 100;
+#X coords 0 -1 1 1 130 515 1 30 100;

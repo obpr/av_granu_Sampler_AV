@@ -1,4 +1,4 @@
-#N canvas 3053 472 1055 652 12;
+#N canvas 865 406 1055 652 12;
 #X obj -16867 -1324 f;
 #X obj -16809 -1324 f;
 #X obj -16752 -1324 f;
@@ -14,7 +14,7 @@
 #X obj -15904 -1322 f;
 #X obj -15844 -1322 f;
 #X obj -16867 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 212 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16809 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj -16752 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -107,7 +107,7 @@
 #X obj -16561 -830 * 1;
 #X obj -16850 -1415 t b f;
 #X obj -16849 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 212 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16850 -1389 * 1;
 #X obj -16790 -1415 t b f;
 #X obj -16789 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -204,7 +204,7 @@
 #X obj -16934 -969 - 1;
 #X obj -16933 -944 * -1;
 #X obj -16933 -993 tgl 15 0 empty empty IT_control_chgnmt_de_step_de_stepseqT_ou_pas
-17 7 0 10 -262144 -1 -1 1 1;
+17 7 0 10 -262144 -1 -1 0 1;
 #X obj -16933 -1055 r IT≠T1;
 #X obj -15607 -1321 r ITB;
 #X obj -15510 -1258 / 1;
@@ -500,8 +500,7 @@ des valeurs de temps venant de stepseq T1;
 #X connect 181 0 177 0;
 #X connect 182 0 80 0;
 #X connect 183 0 184 0;
-#X connect 184 0 198 0;
-#X connect 184 0 200 0;
+#X connect 184 0 185 0;
 #X connect 186 0 183 0;
 #X connect 188 0 191 1;
 #X connect 189 0 192 0;
