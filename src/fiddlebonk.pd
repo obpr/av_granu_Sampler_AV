@@ -1,8 +1,8 @@
-#N canvas 710 176 970 852 10;
+#N canvas 472 830 970 852 10;
 #X obj -755 4 pack 0 0;
 #X obj -755 25 line;
-#X floatatom -756 46 5 0 0 0 - - -, f 5;
-#X floatatom -522 -432 5 0 0 0 - - -, f 5;
+#X floatatom -756 46 5 0 0 0 - - -;
+#X floatatom -522 -432 5 0 0 0 - - -;
 #X obj -760 175 outlet;
 #X obj -1129 -762 inlet~;
 #X obj -531 -606 inlet;
@@ -15,34 +15,34 @@
 #X obj -476 -690 inlet;
 #X floatatom -483 -533 0 0 0 0 tout_les_combien_ça_change_le_variant/note_A/R
 - -;
-#X floatatom -529 -352 5 0 0 0 25_norm - -, f 5;
+#X floatatom -529 -352 5 0 0 0 25_norm - -;
 #X obj -532 -401 r lo;
-#X floatatom -1037 -112 5 0 0 0 - - -, f 5;
+#X floatatom -1037 -112 5 0 0 0 - - -;
 #X obj -1037 -177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -624 -240 f;
 #X obj -626 -209 pack 0 0;
 #X obj -626 -188 line;
-#X floatatom -530 -154 5 0 0 0 - - -, f 5;
+#X floatatom -530 -154 5 0 0 0 - - -;
 #X obj -621 -442 f;
 #X obj -588 -442 + 1;
 #X obj -621 -442 f;
 #X obj -628 -269 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -1036 -200 sel 0 1;
-#X floatatom -763 -49 5 0 0 0 - - -, f 5;
+#X floatatom -763 -49 5 0 0 0 - - -;
 #X obj -300 -880 loadbang;
 #X obj -859 -722 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom -590 -725 5 0 0 0 - - -, f 5;
-#X floatatom -756 146 5 0 0 0 - - -, f 5;
-#X floatatom -1038 -28 5 0 0 0 - - -, f 5;
-#X floatatom -988 -112 5 0 0 0 - - -, f 5;
+#X floatatom -590 -725 5 0 0 0 - - -;
+#X floatatom -756 146 5 0 0 0 - - -;
+#X floatatom -1038 -28 5 0 0 0 - - -;
+#X floatatom -988 -112 5 0 0 0 - - -;
 #X obj -988 -177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom -989 -28 5 0 0 0 - - -, f 5;
+#X floatatom -989 -28 5 0 0 0 - - -;
 #X msg -528 -380 25;
-#X floatatom -431 -353 5 0 0 0 25_norm - -, f 5;
+#X floatatom -431 -353 5 0 0 0 25_norm - -;
 #X obj -434 -402 r lo;
 #X msg -430 -381 25;
 #X obj -585 -241 f;
@@ -64,38 +64,38 @@
 #X obj -894 -765 bonk~;
 #X obj -412 -471 * 1;
 #X obj -402 -497 inlet;
-#X floatatom -414 -436 5 0 0 0 - - -, f 5;
+#X floatatom -414 -436 5 0 0 0 - - -;
 #X obj -528 -192 inlet;
-#X floatatom -351 -353 5 0 0 0 25_norm - -, f 5;
+#X floatatom -351 -353 5 0 0 0 25_norm - -;
 #X obj -354 -402 r lo;
 #X msg -350 -381 25;
 #X obj -332 -471 * 1;
 #X obj -322 -497 inlet;
-#X floatatom -334 -436 5 0 0 0 - - -, f 5;
-#X floatatom -241 -353 5 0 0 0 25_norm - -, f 5;
+#X floatatom -334 -436 5 0 0 0 - - -;
+#X floatatom -241 -353 5 0 0 0 25_norm - -;
 #X obj -244 -402 r lo;
 #X msg -240 -381 25;
 #X obj -222 -471 * 1;
 #X obj -212 -497 inlet;
-#X floatatom -224 -436 5 0 0 0 - - -, f 5;
+#X floatatom -224 -436 5 0 0 0 - - -;
 #X obj -542 -240 f;
 #X obj -546 -269 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -508 -241 f;
 #X obj -512 -270 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom -131 -353 5 0 0 0 25_norm - -, f 5;
+#X floatatom -131 -353 5 0 0 0 25_norm - -;
 #X obj -134 -402 r lo;
 #X msg -130 -381 25;
 #X obj -112 -471 * 1;
 #X obj -102 -497 inlet;
-#X floatatom -114 -436 5 0 0 0 - - -, f 5;
+#X floatatom -114 -436 5 0 0 0 - - -;
 #X obj -467 -240 f;
 #X obj -471 -269 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -619 -393 sel 0 1 2 4;
-#X floatatom -975 -318 5 0 0 0 - - -, f 5;
-#X floatatom -696 -71 5 0 0 0 - - -, f 5;
+#X floatatom -975 -318 5 0 0 0 - - -;
+#X floatatom -696 -71 5 0 0 0 - - -;
 #X obj -620 -420 mod 1;
 #X obj -988 -51 + 0;
 #X obj -1037 -51 - 0;

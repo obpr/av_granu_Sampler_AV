@@ -23,7 +23,7 @@
 #X floatatom 104 295 3 0 0 1 - - -;
 #X floatatom 127 295 3 0 0 1 - - -;
 #X floatatom -47 689 3 0 0 0 - - -;
-#X obj 44 128 tgl 22 0 empty empty A 7 11 2 12 -228856 -1 -1 0 1;
+#X obj 44 128 tgl 22 0 empty empty A 7 11 2 12 -228856 -1 -1 1 1;
 #X obj -62 634 *~;
 #X obj 60 336 tgl 16 0 empty empty bck 1 8 0 8 -1 -262144 -262144 0
 1;
@@ -36,7 +36,7 @@
 #X obj 124 212 tgl 22 0 empty empty stp 1 11 0 11 -228856 -1 -1 0 1
 ;
 #X obj -871 -745 inlet;
-#X obj 124 138 tgl 22 0 empty empty >< 4 11 0 12 -228856 -1 -1 0 1
+#X obj 124 138 tgl 22 0 empty empty >< 4 11 0 12 -228856 -1 -1 1 1
 ;
 #X msg 40 -23 1;
 #X obj 152 -47 r lo;
@@ -58,7 +58,7 @@
 #X floatatom 105 548 3 0 0 1 - - -;
 #X floatatom 127 548 3 0 0 1 - - -;
 #X floatatom 508 522 3 0 0 0 - - -;
-#X obj 41 380 tgl 22 0 empty empty B 7 11 2 12 -228856 -1 -1 0 1;
+#X obj 41 380 tgl 22 0 empty empty B 7 11 2 12 -228856 -1 -1 1 1;
 #X obj 486 493 *~;
 #X obj 61 588 tgl 16 0 empty empty bck 1 8 0 8 -1 -262144 -262144 0
 1;
@@ -67,7 +67,7 @@
 #X obj 486 463 *~;
 #X obj 125 465 tgl 22 0 empty empty stp 1 11 0 11 -228856 -1 -1 0 1
 ;
-#X obj 125 391 tgl 22 0 empty empty >< 4 11 0 12 -228856 -1 -1 0 1
+#X obj 125 391 tgl 22 0 empty empty >< 4 11 0 12 -228856 -1 -1 1 1
 ;
 #X msg 155 -23 1;
 #X obj 584 464 s fll1;
@@ -88,8 +88,9 @@
 #X obj -163 695 *~;
 #X obj -123 695 *~;
 #X obj 336 579 fiddlebonk;
-#X obj 68 746 fiddlebonk;
-#X obj -110 601 r~ A0;
+#X obj 436 303 fiddlebonk;
+#X obj -257 558 r~ A0;
+#X msg 289 251 2;
 #X connect 0 0 12 0;
 #X connect 0 0 34 0;
 #X connect 0 0 15 0;
@@ -167,6 +168,7 @@
 #X connect 71 0 17 0;
 #X connect 71 0 69 0;
 #X connect 72 0 71 0;
+#X connect 72 0 82 0;
 #X connect 73 0 74 0;
 #X connect 73 0 39 0;
 #X connect 73 0 49 0;
@@ -180,4 +182,6 @@
 #X connect 80 0 9 0;
 #X connect 81 0 23 0;
 #X connect 81 0 77 0;
+#X connect 82 0 6 0;
+#X connect 82 0 37 0;
 #X coords 0 -1 1 1 130 515 1 30 100;
