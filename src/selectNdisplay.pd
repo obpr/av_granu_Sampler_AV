@@ -35,7 +35,7 @@ that under linux i could play most formats...;
 #X obj 1023 35 outlet;
 #X obj 815 80 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 818 -23 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 818 -23 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 851 -15 spigot-toggle_red;
 #X obj 845 80 spigot-toggle_red;
@@ -114,14 +114,14 @@ that under linux i could play most formats...;
 -1 -1;
 #X obj 549 9 bng 20 250 50 0 empty empty rdm 1 10 0 10 -33289 -262144
 -262144;
-#X obj 574 9 tgl 20 0 empty empty BB 5 10 0 10 -1 -262144 -262144 1
+#X obj 574 9 tgl 20 0 empty empty BB 5 10 0 10 -1 -262144 -262144 0
 1;
 #X floatatom 621 9 4 0 0 1 every - -;
 #X obj 550 68 bng 20 250 50 0 empty empty rdm 1 10 0 10 -1 -262144
 -262144;
 #X obj 575 68 tgl 20 0 empty empty BB 5 10 0 10 -1 -262144 -262144
 0 1;
-#X obj 431 9 tgl 20 0 empty empty A 6 11 0 12 -1 -262144 -262144 0
+#X obj 431 9 tgl 20 0 empty empty A 6 11 0 12 -1 -262144 -262144 1
 1;
 #X obj 463 9 tgl 20 0 empty empty B 6 11 0 12 -1 -262144 -262144 0
 1;
@@ -186,20 +186,17 @@ that under linux i could play most formats...;
 #X msg 619 -226 open \$1;
 #X msg 579 -559 climat/*.mov;
 #X msg 592 857 BO_animo/*.wav;
-#X msg 157 625 asmpl/*.wav;
 #X floatatom 319 -225 5 0 0 0 - - -;
 #X obj 542 462 splitfilename;
 #X obj 673 460 splitfilename;
 #X obj 405 456 splitfilename;
-#X msg 408 -327 sel/*.mov;
-#X msg 417 598 sel/*.wav;
-#X obj 46 -90 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
-0;
 #X obj 665 613 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 607 588 > 0;
 #X obj 609 612 sel;
 #X obj 732 626 s TRGnB_@s B1fromselnd;
+#X msg 417 598 dance/*.wav;
+#X msg 408 -327 dance/*.mov;
 #X connect 1 0 3 0;
 #X connect 2 0 24 1;
 #X connect 4 0 74 0;
@@ -276,14 +273,14 @@ that under linux i could play most formats...;
 #X connect 71 0 46 0;
 #X connect 72 0 71 0;
 #X connect 73 0 28 1;
-#X connect 74 0 131 0;
+#X connect 74 0 130 0;
 #X connect 74 1 127 0;
-#X connect 74 1 134 0;
+#X connect 74 1 133 0;
 #X connect 74 2 2 0;
 #X connect 75 0 118 0;
 #X connect 75 1 121 0;
 #X connect 75 1 6 0;
-#X connect 75 1 133 0;
+#X connect 75 1 132 0;
 #X connect 75 2 30 0;
 #X connect 76 0 120 0;
 #X connect 77 0 4 0;
@@ -332,25 +329,23 @@ that under linux i could play most formats...;
 #X connect 111 0 4 0;
 #X connect 112 0 68 0;
 #X connect 113 0 123 0;
-#X connect 115 0 130 0;
 #X connect 116 0 125 0;
 #X connect 116 0 124 0;
-#X connect 117 0 135 0;
-#X connect 117 0 136 0;
-#X connect 118 0 139 0;
+#X connect 117 0 139 0;
+#X connect 117 0 138 0;
+#X connect 118 0 135 0;
 #X connect 120 0 75 0;
 #X connect 123 0 75 0;
 #X connect 124 0 75 0;
 #X connect 125 0 74 0;
 #X connect 127 0 126 0;
-#X connect 130 0 75 0;
-#X connect 132 1 7 0;
-#X connect 133 1 8 0;
-#X connect 134 1 1 0;
-#X connect 135 0 74 0;
-#X connect 136 0 75 0;
-#X connect 138 0 141 0;
-#X connect 138 0 119 0;
-#X connect 139 0 140 0;
-#X connect 140 1 138 0;
+#X connect 131 1 7 0;
+#X connect 132 1 8 0;
+#X connect 133 1 1 0;
+#X connect 134 0 137 0;
+#X connect 134 0 119 0;
+#X connect 135 0 136 0;
+#X connect 136 1 134 0;
+#X connect 138 0 75 0;
+#X connect 139 0 74 0;
 #X coords 0 -1 1 1 700 120 2 0 0;

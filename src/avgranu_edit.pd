@@ -1,4 +1,4 @@
-#N canvas 27 110 1459 645 16;
+#N canvas 221 67 1459 645 16;
 #X floatatom 2587 628 5 0 0 0 - - -;
 #X floatatom -1488 621 5 0 0 0 - - -;
 #X floatatom 3069 542 5 0 0 0 - - -;
@@ -267,21 +267,21 @@
 #X obj -197 -393 s lo;
 #X msg -246 -434 1;
 #X obj -1075 723 r Bonoff;
-#X obj 5 268 pluckagop;
+#X obj 5 269 pluckagop;
 #X obj 854 435 hsl 695 80 0 1 0 0 empty empty ________6.25_______12.5_______18.7________25_______31.2________37.5________43.*
--3 77 0 7 -262144 -1 -1 67370 1;
+-3 77 0 7 -262144 -1 -1 60681 1;
 #N canvas 0 23 450 300 (subpatch) 0;
-#X array table24 990192 float 2;
-#X coords 0 1.02 990192 -1.02 698 80 2 0 0;
+#X array table24 418950 float 2;
+#X coords 0 1.02 418950 -1.02 698 80 2 0 0;
 #X restore 852 434 graph;
 #X obj 854 514 hsl 695 9 0 100 0 1 empty empty empty -2 4 0 10 -1 -262144
 -262144 26000 0;
 #X obj -977 783 s itA;
 #X obj 6 435 hsl 695 80 0 1 0 0 empty empty ________6.25_______12.5_______18.7________25_______31.2________37.5________43.*
--3 77 0 7 -262144 -1 -1 20178 1;
+-3 77 0 7 -262144 -1 -1 790 1;
 #N canvas 0 22 450 300 (subpatch) 0;
-#X array table23 990192 float 2;
-#X coords 0 1.02 990192 -1.02 698 80 2 0 0;
+#X array table23 418950 float 2;
+#X coords 0 1.02 418950 -1.02 698 80 2 0 0;
 #X restore 5 435 graph;
 #X obj -31 1221 + 1;
 #X obj -191 1220 + 1;
@@ -316,7 +316,7 @@
 #X obj 2297 761 bng 16 250 50 0 empty empty invert_trigr -85 8 0 10
 -191407 -258113 -1;
 #X obj 386 765 hradio 43 1 0 16 empty empty __1___2___3___4___5___6___7___8___9___10__11__12__13__14__15__16
--5 35 1 19 -228856 -1 -1 2;
+-5 35 1 19 -228856 -1 -1 0;
 #X obj 403 768 spigot-toggle_red;
 #X obj 443 768 spigot-toggle_red;
 #X obj 485 768 spigot-toggle_red;
@@ -1048,13 +1048,13 @@
 #X connect 94 0 93 0;
 #X connect 94 0 10 0;
 #X coords 0 1 100 -1 500 140 1 -3 100;
-#X restore 204 128 graph;
+#X restore 203 128 graph;
 #X obj -304 104 r øAtiTS1;
 #X obj -208 103 r posvisu;
 #X obj -120 269 s frA;
 #X obj -187 269 s A=V1;
 #X obj -606 124 s ø@S;
-#X obj 546 271 masteraudioA;
+#X obj 545 272 masteraudioA;
 #X obj -372 992 r looplenghtA;
 #X floatatom -449 126 5 0 0 0 - - -;
 #X floatatom -379 126 5 0 0 0 - - -;
@@ -1063,8 +1063,8 @@
 #X obj 712 3 SILENCES;
 #X obj 852 126 reposetoiB;
 #X obj 1001 268 s&pspeedpitchB;
-#X obj 1389 268 masteraudioB;
-#X obj 852 267 pluckagopB;
+#X obj 1389 270 masteraudioB;
+#X obj 852 268 pluckagopB;
 #X obj 2182 279 s TmstrchB$;
 #X obj 1881 104 r trgTS2;
 #X obj 1685 107 r øAtiTS2;
@@ -1109,13 +1109,13 @@
 #X obj 443 64 inlet;
 #X obj 498 90 inlet;
 #X obj 323 118 vsl 15 110 0 1 0 0 empty empty empty 7 40 0 10 -1 -262144
--262144 0 1;
+-262144 10900 1;
 #X obj 593 293 r lo;
 #X obj 413 413 r lo;
 #X obj -21 597 rectangle 4 3;
 #X obj 463 190 spigot-toggle_red;
 #X obj 296 116 tgl 25 0 empty empty ø 7 12 0 17 -1 -260097 -262144
-0 1;
+1 1;
 #X obj 804 24 inlet;
 #X obj 321 292 spigot-toggle_red;
 #X obj 296 145 tgl 25 0 empty empty rcv 0 12 0 12 -1 -4034 -262144
@@ -1316,7 +1316,7 @@
 #X connect 87 0 78 0;
 #X connect 88 0 77 0;
 #X coords 0 1 100 -1 495 140 1 -3 100;
-#X restore 1055 127 graph;
+#X restore 1053 127 graph;
 #X obj 852 4 selectNdisplay1;
 #X floatatom 1803 108 5 0 0 2 opa+ - -;
 #X obj 2083 261 s frB;
@@ -1392,7 +1392,7 @@
 #X obj 67 1948 s ITA%ITA;
 #X obj 69 1918 r sendITA%ITA;
 #X obj -554 449 s STPA;
-#X obj 3 128 reposetoi;
+#X obj 2 127 reposetoi;
 #X obj -400 448 s add;
 #X obj -1802 825 int;
 #X obj -1376 859 int;
@@ -1587,7 +1587,7 @@
 #X obj 1040 537 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 388 627 hsl 680 8 1.27 100 0 1 empty empty empty -2 -8 0 10
--1 -258113 -1 0 0;
+-1 -258113 -1 26203 0;
 #X obj 386 635 STPcolorbar2;
 #X obj 386 703 STPcolorbar5;
 #X floatatom 686 702 4 0 0 0 - - -;
@@ -1682,7 +1682,7 @@
 #X obj 267 539 tgl 30 0 empty empty A 7 16 0 30 -1 -262144 -262144
 1 1;
 #X obj 19 590 hsl 70 16 0.001 1 0 0 empty empty T*<1 5 10 0 15 -1 -262144
--262144 5000 0;
+-262144 6900 0;
 #X obj 215 612 cnv 15 30 103 empty empty empty 20 12 0 14 -262144 -66577
 0;
 #X floatatom 260 603 6 0 0 2 result - -;
@@ -1766,7 +1766,7 @@
 #X obj 387 811 cnv 15 686 20 empty empty empty 20 12 0 14 -162280 -66577
 0;
 #X obj 385 831 hsl 680 8 1.27 100 1 1 empty empty empty -2 -8 0 10
--1 -258113 -1 67900 0;
+-1 -258113 -1 43821 0;
 #X floatatom 687 885 4 0 0 0 - - -;
 #X floatatom 730 885 4 0 0 0 - - -;
 #X floatatom 773 885 4 0 0 0 - - -;
