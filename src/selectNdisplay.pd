@@ -35,7 +35,7 @@ that under linux i could play most formats...;
 #X obj 1023 35 outlet;
 #X obj 815 80 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 818 -23 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 818 -23 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 851 -15 spigot-toggle_red;
 #X obj 845 80 spigot-toggle_red;
@@ -121,7 +121,7 @@ that under linux i could play most formats...;
 -262144;
 #X obj 575 68 tgl 20 0 empty empty BB 5 10 0 10 -1 -262144 -262144
 0 1;
-#X obj 431 9 tgl 20 0 empty empty A 6 11 0 12 -1 -262144 -262144 1
+#X obj 431 9 tgl 20 0 empty empty A 6 11 0 12 -1 -262144 -262144 0
 1;
 #X obj 463 9 tgl 20 0 empty empty B 6 11 0 12 -1 -262144 -262144 0
 1;

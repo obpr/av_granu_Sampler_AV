@@ -222,7 +222,7 @@
 #X obj 370 105 tgl 20 0 empty empty bck 3 9 0 8 -262144 -1 -1 1 1;
 #X obj 104 105 tgl 20 0 empty empty bck 3 10 0 8 -262144 -1 -1 1 1
 ;
-#X obj 190 105 tgl 20 0 empty empty 44 4 10 0 10 -262144 -1 -1 0 1
+#X obj 190 105 tgl 20 0 empty empty 44 4 10 0 10 -262144 -1 -1 1 1
 ;
 #X floatatom 139 137 5 0 0 0 - - -;
 #X obj 101 133 bng 25 250 50 0 empty empty empty 3 7 0 8 -262144 -1
@@ -250,7 +250,7 @@
 #X obj 820 315 s pitchAa;
 #X obj 820 229 s speedAa;
 #X obj 819 260 s speedBa;
-#X obj -539 856 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 0 1
+#X obj -539 856 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 1 1
 ;
 #X obj -593 773 * -1;
 #X obj -592 714 r freestepsouts1;
@@ -260,6 +260,7 @@
 #X obj -201 147 s pitchA;
 #X obj -273 147 s speedA;
 #X obj 446 1018 * 2;
+#X obj 229 26 s 44/88_A;
 #X connect 0 0 44 0;
 #X connect 1 0 44 0;
 #X connect 2 0 44 0;
@@ -497,6 +498,7 @@
 #X connect 177 0 107 1;
 #X connect 178 0 129 0;
 #X connect 178 0 127 0;
+#X connect 178 0 211 0;
 #X connect 179 0 207 0;
 #X connect 180 0 37 0;
 #X connect 181 0 63 0;

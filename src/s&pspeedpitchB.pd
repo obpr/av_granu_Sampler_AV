@@ -214,7 +214,7 @@
 #X obj 366 105 tgl 20 0 empty empty bck 3 9 0 8 -262144 -1 -1 1 1;
 #X obj 104 105 tgl 20 0 empty empty bck 3 10 0 8 -262144 -1 -1 1 1
 ;
-#X obj 190 105 tgl 20 0 empty empty 44 4 10 0 10 -262144 -1 -1 0 1
+#X obj 190 105 tgl 20 0 empty empty 44 4 10 0 10 -262144 -1 -1 1 1
 ;
 #X floatatom 138 137 5 0 0 0 - - -;
 #X obj 101 133 bng 25 250 50 0 empty empty empty 3 7 0 8 -262144 -1
@@ -230,7 +230,7 @@
 #X obj 690 -47 tgl 25 0 empty empty A=V 4 12 0 10 -1 -262144 -262144
 1 1;
 #X msg 688 129 0;
-#X obj -554 864 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 0 1
+#X obj -554 864 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 1 1
 ;
 #X obj -593 773 * -1;
 #X obj -592 714 r freestepsouts1;
@@ -263,6 +263,7 @@
 #X obj -486 898 onoff11x;
 #X obj -489 846 onoff9x;
 #X obj 446 1018 * 2;
+#X obj 161 40 s 44/88_B;
 #X connect 0 0 43 0;
 #X connect 1 0 43 0;
 #X connect 2 0 43 0;
@@ -493,6 +494,7 @@
 #X connect 169 0 102 1;
 #X connect 170 0 121 0;
 #X connect 170 0 119 0;
+#X connect 170 0 214 0;
 #X connect 171 0 186 0;
 #X connect 172 0 37 0;
 #X connect 173 0 62 0;

@@ -16,13 +16,13 @@
 #X obj -15882 -489 f;
 #X obj -15813 -492 f;
 #X obj -16726 -533 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 6 256;
+0 10 -262144 -1 -1 1 256;
 #X obj -16663 -534 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 1 256;
+0 10 -262144 -1 -1 2 256;
 #X obj -16612 -516 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 4 256;
-#X obj -16554 -516 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 1 256;
+#X obj -16554 -516 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
+0 10 -262144 -1 -1 4 256;
 #X obj -16463 -519 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 1 256;
 #X obj -16285 -519 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -30,9 +30,9 @@
 #X obj -16204 -520 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 1 256;
 #X obj -16134 -520 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 2 256;
+0 10 -262144 -1 -1 1 256;
 #X obj -16065 -514 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 8 256;
+0 10 -262144 -1 -1 1 256;
 #X obj -16005 -517 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 1 256;
 #X obj -15739 -522 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -57,7 +57,7 @@
 #X obj -15934 -558 inlet;
 #X obj -16363 -493 f;
 #X obj -16352 -518 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 4 256;
+0 10 -262144 -1 -1 1 256;
 #X obj -16528 -558 inlet;
 #X obj -16422 -492 f;
 #X obj -16406 -520 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -128,7 +128,7 @@
 #X obj -16271 -1117 r stpT$;
 #X obj -16646 -1010 r lo;
 #X obj -16571 -804 nbx 2 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -228856 -1 -1 1 256;
+0 10 -228856 -1 -1 0 256;
 #X obj -16571 -860 bng 19 250 50 0 empty empty empty 17 7 0 10 -228856
 -1 -1;
 #X text -16537 -805 <= counter value;
