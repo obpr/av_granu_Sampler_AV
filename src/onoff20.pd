@@ -1,6 +1,6 @@
-#N canvas 542 115 507 613 10;
-#X floatatom 234 119 5 0 0 0 - - -, f 5;
-#X floatatom 344 372 5 0 0 0 - - -, f 5;
+#N canvas 292 166 507 613 10;
+#X floatatom 234 119 5 0 0 0 - - -;
+#X floatatom 344 372 5 0 0 0 - - -;
 #X obj 233 201 float;
 #X obj 279 213 + 1;
 #X obj 234 177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -14,20 +14,20 @@
 #X msg 267 324 1;
 #X obj 416 506 outlet;
 #X obj 233 152 select 16;
-#X floatatom 302 176 5 0 0 0 - - -, f 5;
+#X floatatom 302 176 5 0 0 0 - - -;
 #X obj 326 127 r lo;
-#X msg 328 151 20;
-#X floatatom 396 365 5 0 0 0 - - -, f 5;
+#X msg 337 164 20;
+#X floatatom 396 365 5 0 0 0 - - -;
 #X obj 377 268 sel 0 1 2;
 #X msg 352 321 1;
 #X msg 389 320 1;
 #X msg 432 319 0;
 #X msg 469 317 0;
-#X obj 382 182 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 382 182 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 387 212 - 1;
 #X obj 416 212 * -1;
-#X obj 330 255 spigot-toggle_red;
+#X obj 298 249 spigot-toggle_red;
 #X obj 384 239 spigot-toggle_red;
 #X obj 379 125 r invertonof;
 #X connect 0 0 13 0;
