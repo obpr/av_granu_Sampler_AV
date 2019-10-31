@@ -1,4 +1,4 @@
-#N canvas 0 169 1624 859 12;
+#N canvas 78 649 1624 859 12;
 #X text -1334 869 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X floatatom -1389 434 4 0 900 0 - - -;
 #X obj -703 174 r trgrA;
@@ -133,14 +133,14 @@ push : off;
 1;
 #X obj 78 90 cnv 20 52 14 empty empty gate 10 6 0 11 -1 -262144 0;
 #X obj 59 93 vsl 20 52 0 0.5 0 0 empty empty mod 2 44 0 9 -1 -262144
--262144 0 1;
+-262144 2700 1;
 #X obj 27 206 cnv 12 25 25 empty empty -A- 4 12 0 10 -1 -262144 0;
 #X obj 27 230 cnv 12 25 25 empty empty -B- 4 12 0 10 -1 -262144 0;
-#X obj 53 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -260097
+#X obj 2 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -260097
 0 1;
-#X obj 53 206 tgl 25 0 empty empty Trg 1 10 0 10 -1 -262144 -262144
-1 1;
-#X obj 1 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -262144
+#X obj 3 206 tgl 25 0 empty empty Trg 1 10 0 10 -1 -262144 -262144
+0 1;
+#X obj 53 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -262144
 0 1;
 #X obj 105 120 tgl 25 0 empty empty ->- 2 12 0 12 -1 -262144 -262144
 0 1;
@@ -161,16 +161,16 @@ push : off;
 #X obj 80 104 cnv 15 50 15 empty empty empty 20 12 0 14 -262144 -66577
 0;
 #X floatatom 79 104 7 0 0 0 - - -;
-#X obj 1 178 tgl 28 0 empty empty @B 5 15 0 14 -260097 -262144 -1 1
+#X obj 1 178 tgl 28 0 empty empty @B 5 15 0 14 -260097 -262144 -1 0
 1;
 #X obj 105 207 tgl 25 0 empty empty ø 10 10 0 14 -1 -262144 -260097
 0 1;
 #X obj 105 230 tgl 25 0 empty empty ø 10 10 0 15 -1 -262144 -260097
-0 1;
+1 1;
 #X obj 79 207 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
 #X obj 79 230 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
-0 1;
+1 1;
 #X obj 33 91 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856 1
 1;
 #X obj -18 755 * -1;
@@ -258,7 +258,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X floatatom -1046 788 5 0 0 0 - - -;
 #X obj -969 711 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1 206 tgl 25 0 empty empty Bng 4 12 0 10 -1 -262144 -262144
+#X obj 53 206 tgl 25 0 empty empty Bng 4 12 0 10 -1 -262144 -262144
 1 1;
 #X obj -943 596 * 1;
 #X obj -886 -163 r TRGnB_@sA1fromselnd;
@@ -304,6 +304,8 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 223 499 r s&pAb;
 #X obj 174 527 r s&pBb;
 #X obj -704 536 s trgrvolee;
+#X obj 307 331 s trgrmodB;
+#X obj -609 347 s trgrmodB;
 #X connect 1 0 168 0;
 #X connect 2 0 26 0;
 #X connect 3 0 28 0;
@@ -321,6 +323,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 14 0 65 1;
 #X connect 14 0 139 0;
 #X connect 14 0 16 0;
+#X connect 14 0 260 0;
 #X connect 15 0 22 0;
 #X connect 15 0 9 0;
 #X connect 17 0 183 0;
@@ -435,19 +438,20 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 113 0 179 0;
 #X connect 113 0 218 0;
 #X connect 113 0 247 0;
+#X connect 113 0 122 0;
 #X connect 114 0 121 0;
 #X connect 114 0 112 0;
 #X connect 114 0 59 1;
 #X connect 114 0 82 0;
 #X connect 114 0 175 0;
 #X connect 114 0 243 0;
+#X connect 114 0 123 0;
 #X connect 115 0 62 1;
 #X connect 115 0 228 0;
 #X connect 116 0 61 1;
 #X connect 116 0 230 0;
 #X connect 118 0 90 1;
 #X connect 118 0 70 1;
-#X connect 121 0 123 0;
 #X connect 121 0 27 1;
 #X connect 121 0 94 0;
 #X connect 121 0 169 0;
@@ -574,7 +578,6 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 211 1 213 0;
 #X connect 212 0 190 1;
 #X connect 213 0 210 0;
-#X connect 214 0 122 0;
 #X connect 214 0 12 1;
 #X connect 214 0 25 1;
 #X connect 214 0 169 0;

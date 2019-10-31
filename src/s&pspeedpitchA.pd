@@ -1,4 +1,4 @@
-#N canvas 400 80 1280 698 10;
+#N canvas 400 44 1280 698 10;
 #X obj -181 713 spigot-toggle_jaunenoir;
 #X obj -223 713 spigot-toggle_red;
 #X obj -254 714 spigot-toggle_vert;
@@ -107,7 +107,7 @@
 #X obj -487 873 onoff6x;
 #X obj -486 898 onoff7x;
 #X obj 983 124 - 0.02;
-#X obj 127 307 sel;
+#X obj 125 304 sel;
 #X obj 103 332 spigot-toggle_orange;
 #X obj 124 408 line;
 #X obj 126 382 pack f f;
@@ -134,7 +134,7 @@
 #X obj 80 406 * -1;
 #X obj 125 134 cnv 15 60 130 empty empty empty 20 12 0 14 -262144 -66577
 0;
-#X obj 131 159 tgl 25 0 empty empty A 8 14 0 16 -1 -262144 -260097
+#X obj 131 160 tgl 25 0 empty empty A 8 14 0 16 -1 -262144 -260097
 0 1;
 #X obj 160 160 tgl 22 1 empty empty empty 17 7 0 10 -1 -262144 -260097
 0 1;
@@ -183,7 +183,7 @@
 #X obj 454 161 vsl 25 100 0 1 0 0 empty empty empty 1 17 0 10 -1 -262144
 -1 4950 1;
 #X obj 368 161 vsl 25 100 0 1 0 0 empty empty ____ 1 15 0 10 -1 -262144
--1 2450 1;
+-1 4950 1;
 #X obj 397 159 tgl 25 0 empty empty A 8 14 0 16 -1 -262144 -260097
 0 1;
 #X obj 427 161 tgl 22 1 empty empty empty 17 7 0 10 -1 -262144 -260097
@@ -222,7 +222,7 @@
 #X obj 370 105 tgl 20 0 empty empty bck 3 9 0 8 -262144 -1 -1 0 1;
 #X obj 104 105 tgl 20 0 empty empty bck 3 10 0 8 -262144 -1 -1 0 1
 ;
-#X obj 190 105 tgl 20 0 empty empty 44 4 10 0 10 -262144 -1 -1 1 1
+#X obj 190 105 tgl 20 0 empty empty 88 4 10 0 10 -262144 -1 -1 1 1
 ;
 #X floatatom 144 137 5 0 0 0 - - -;
 #X obj 101 133 bng 25 250 50 0 empty empty empty 3 7 0 8 -262144 -1
@@ -330,6 +330,8 @@
 #X obj -607 0 r send_$sA;
 #X obj -698 0 r send_$s&pA;
 #X obj -661 31 r T$mod;
+#X obj -226 804 s pitchNspeedA01;
+#X obj -84 241 s speedAdrct;
 #X connect 0 0 44 0;
 #X connect 1 0 44 0;
 #X connect 2 0 44 0;
@@ -379,6 +381,7 @@
 #X connect 42 0 43 0;
 #X connect 43 0 41 0;
 #X connect 44 0 34 0;
+#X connect 44 0 281 0;
 #X connect 45 0 57 0;
 #X connect 46 0 45 0;
 #X connect 47 0 46 0;
@@ -604,6 +607,7 @@
 #X connect 184 0 105 0;
 #X connect 185 0 188 0;
 #X connect 185 0 189 0;
+#X connect 185 0 178 0;
 #X connect 186 0 187 0;
 #X connect 187 0 184 0;
 #X connect 188 0 184 1;
