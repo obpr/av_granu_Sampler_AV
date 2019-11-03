@@ -1,4 +1,4 @@
-#N canvas 137 24 1469 1004 16;
+#N canvas 143 0 1469 1004 16;
 #X floatatom 2587 658 5 0 0 0 - - -;
 #X floatatom -1488 651 5 0 0 0 - - -;
 #X floatatom 3069 572 5 0 0 0 - - -;
@@ -249,7 +249,7 @@
 #X obj -1075 773 r Bonoff;
 #X obj 6 289 pluckagop;
 #X obj 854 459 hsl 695 80 0 1 0 0 empty empty ________6.25_______12.5_______18.7________25_______31.2________37.5________43.*
--3 77 0 7 -262144 -1 -1 37808 1;
+-3 77 0 7 -262144 -1 -1 0 1;
 #N canvas 0 23 450 300 (subpatch) 0;
 #X array table24 1.0277e+06 float 2;
 #X coords 0 1.02 1.0277e+06 -1.02 698 80 2 0 0;
@@ -258,10 +258,10 @@
 -262144 5300 0;
 #X obj -977 833 s itA;
 #X obj 6 460 hsl 695 80 0 1 0 0 empty empty ________6.25_______12.5_______18.7________25_______31.2________37.5________43.*
--3 77 0 7 -262144 -1 -1 38833 1;
+-3 77 0 7 -262144 -1 -1 47397 1;
 #N canvas 0 22 450 300 (subpatch) 0;
-#X array table23 42343 float 2;
-#X coords 0 1.02 42343 -1.02 698 80 2 0 0;
+#X array table23 232224 float 2;
+#X coords 0 1.02 232224 -1.02 698 80 2 0 0;
 #X restore 5 460 graph;
 #X obj -964 597 s onoffA;
 #X obj -1093 650 * 5;
@@ -294,7 +294,7 @@
 #X obj 2297 791 bng 16 250 50 0 empty empty invert_trigr -85 8 0 10
 -191407 -258113 -1;
 #X obj 386 815 hradio 43 1 0 16 empty empty __1___2___3___4___5___6___7___8___9___10__11__12__13__14__15__16
--5 35 1 19 -228856 -1 -1 0;
+-5 35 1 19 -228856 -1 -1 1;
 #X obj 403 818 spigot-toggle_red;
 #X obj 443 818 spigot-toggle_red;
 #X obj 485 818 spigot-toggle_red;
@@ -344,14 +344,14 @@
 #X obj 485 794 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 253 1661 tgl 30 0 empty empty T.B 2 15 0 15 -66577 -260097 -260097
-0 1;
+1 1;
 #X obj 2296 587 bng 16 250 50 0 empty empty invert_trigr -85 8 0 10
 -191407 -258113 -1;
 #X obj -916 833 s itB;
 #X obj -765 625 s BB;
 #X obj -531 911 stepsekT1, f 12;
 #X obj 259 1370 tgl 30 0 empty empty Ø 2 17 1 33 -1 -260097 -260097
-0 1;
+1 1;
 #X obj 368 2282 s invertonof;
 #X obj 368 2238 s invertonof1;
 #X obj 236 1443 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -813,7 +813,7 @@
 #X obj 413 413 r lo;
 #X obj 472 190 spigot-toggle_red;
 #X obj 301 104 tgl 25 0 empty empty ø 7 12 0 17 -1 -260097 -262144
-1 1;
+0 1;
 #X obj 804 24 inlet;
 #X obj 327 270 spigot-toggle_red;
 #X obj 301 138 tgl 25 0 empty empty rcv 0 12 0 12 -1 -4034 -262144
@@ -1103,13 +1103,13 @@
 #X obj 443 64 inlet;
 #X obj 498 90 inlet;
 #X obj 324 142 vsl 15 90 0 1 0 0 empty empty empty 7 40 0 10 -1 -262144
--262144 8900 1;
+-262144 7694 1;
 #X obj 593 293 r lo;
 #X obj 413 413 r lo;
 #X obj -21 597 rectangle 4 3;
 #X obj 463 190 spigot-toggle_red;
 #X obj 296 106 tgl 25 0 empty empty ø 7 12 0 17 -1 -260097 -262144
-1 1;
+0 1;
 #X obj 804 24 inlet;
 #X obj 321 292 spigot-toggle_red;
 #X obj 296 140 tgl 25 0 empty empty rcv 0 12 0 12 -1 -4034 -262144
@@ -1469,7 +1469,7 @@
 #X obj 9 791 cnv 15 370 190 empty empty empty 20 12 0 14 -262144 -66577
 0;
 #X obj 94 846 hsl 70 16 1 10 0 0 empty empty T*>1 5 10 0 15 -1 -262144
--262144 6900 0;
+-262144 0 0;
 #X obj 18 846 hsl 70 16 0.001 1 0 0 empty empty T*<1 5 10 0 15 -1 -262144
 -262144 6900 0;
 #X obj 271 913 cnv 15 63 20 empty empty empty 20 12 0 14 -262144 -66577
@@ -1522,7 +1522,7 @@
 #X obj 48 911 tgl 22 0 empty empty %T 3 13 1 12 -1 -262144 -262144
 1 1;
 #X obj 273 793 tgl 30 0 empty empty B 7 16 0 30 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 344 819 tgl 15 0 empty empty >< 1 7 2 13 -262144 -1 -1 1 1;
 #X obj 307 793 bng 30 250 50 0 empty empty next 5 15 0 9 -262144 -1
 -1;
@@ -1534,13 +1534,13 @@
 ;
 #X obj 192 798 bng 25 250 50 0 empty empty AøB 4 12 0 10 -191407 -260097
 -1;
-#X obj 145 814 tgl 25 0 empty empty TA 3 12 1 15 -262144 -1 -1 1 1
+#X obj 145 814 tgl 25 0 empty empty TA 3 12 1 15 -262144 -1 -1 0 1
 ;
 #X floatatom 223 803 3 0 0 2 - - -;
 #X obj 11 662 cnv 15 1060 91 empty empty empty 18 12 0 14 -128992 -66577
 0;
 #X obj 384 588 hradio 43 1 0 16 empty empty __1___2___3___4___5___6___7___8___9___10__11__12__13__14__15__16
--5 35 1 19 -228856 -1 -1 0;
+-5 35 1 19 -228856 -1 -1 2;
 #X obj 397 590 spigot-toggle_red;
 #X obj 440 590 spigot-toggle_red;
 #X obj 482 590 spigot-toggle_red;
@@ -1590,7 +1590,7 @@
 #X obj 1040 567 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 388 657 hsl 680 8 1.27 100 0 1 empty empty empty -2 -8 0 10
--1 -258113 -1 0 0;
+-1 -258113 -1 23495 0;
 #X obj 386 665 STPcolorbar2;
 #X obj 386 733 STPcolorbar5;
 #X floatatom 686 732 4 0 0 0 - - -;
@@ -1681,9 +1681,9 @@
 #X obj 11 570 cnv 15 375 186 empty empty empty 20 12 0 14 -262144 -66577
 0;
 #X obj 95 620 hsl 70 16 1 10 0 0 empty empty T*>1 5 10 0 15 -1 -262144
--262144 3500 0;
+-262144 6900 0;
 #X obj 267 572 tgl 30 0 empty empty A 7 16 0 30 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 19 620 hsl 70 16 0.001 1 0 0 empty empty T*<1 5 10 0 15 -1 -262144
 -262144 6900 0;
 #X obj 215 642 cnv 15 30 103 empty empty empty 20 12 0 14 -262144 -66577
@@ -1725,7 +1725,7 @@
 #X floatatom 16 663 3 0 0 2 *T - -;
 #X text 173 660 time;
 #X obj 50 639 tgl 22 0 empty ITDETonoffload =IT 4 11 0 10 -1 -262144
--262144 0 1;
+-262144 1 1;
 #X floatatom 14 590 8 0 0 2 loop.lenght - -;
 #X obj 146 589 tgl 25 0 empty empty TB 3 12 1 15 -262144 -1 -1 0 1
 ;
@@ -1761,7 +1761,7 @@
 #X obj 387 858 cnv 15 686 20 empty empty empty 20 12 0 14 -162280 -66577
 0;
 #X obj 385 881 hsl 680 8 1.27 100 1 1 empty empty empty -2 -8 0 10
--1 -258113 -1 44386 0;
+-1 -258113 -1 67777 0;
 #X floatatom 687 935 4 0 0 0 - - -;
 #X floatatom 730 935 4 0 0 0 - - -;
 #X floatatom 773 935 4 0 0 0 - - -;

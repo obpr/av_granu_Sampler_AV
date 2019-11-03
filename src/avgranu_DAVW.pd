@@ -1,2 +1,2 @@
-#N canvas 1570 571 1680 1005 10;
-#X obj 9 0 avgranu_edit;
+#N canvas 22 0 1680 1005 10;
+#X obj 19 -5 avgranu_edit;
