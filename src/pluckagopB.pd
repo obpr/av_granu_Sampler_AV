@@ -135,12 +135,12 @@ push : off;
 #X obj 59 93 vsl 20 52 0 0.5 0 0 empty empty mod 2 44 0 9 -1 -262144
 -262144 0 1;
 #X obj 27 206 cnv 12 25 25 empty empty -A- 4 12 0 10 -1 -262144 0;
-#X obj 27 230 cnv 12 25 25 empty empty -B- 4 12 0 10 -1 -262144 0;
+#X obj 26 230 cnv 12 25 25 empty empty -B- 4 12 0 10 -1 -262144 0;
 #X obj 2 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -260097
 0 1;
 #X obj 3 206 tgl 25 0 empty empty Trg 1 10 0 10 -1 -262144 -262144
 0 1;
-#X obj 53 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -262144
+#X obj 52 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -262144
 0 1;
 #X obj 105 120 tgl 25 0 empty empty ->- 2 12 0 12 -1 -262144 -262144
 0 1;
@@ -163,15 +163,15 @@ push : off;
 #X floatatom 79 104 7 0 0 0 - - -;
 #X obj 1 178 tgl 28 0 empty empty @B 5 15 0 14 -260097 -262144 -1 0
 1;
-#X obj 105 207 tgl 25 0 empty empty ø 10 10 0 14 -1 -262144 -260097
+#X obj 104 207 tgl 25 0 empty empty ø 10 10 0 14 -1 -262144 -260097
 0 1;
-#X obj 105 230 tgl 25 0 empty empty ø 10 10 0 15 -1 -262144 -260097
+#X obj 104 230 tgl 25 0 empty empty ø 10 10 0 15 -1 -262144 -260097
 0 1;
-#X obj 79 207 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
+#X obj 78 207 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
-#X obj 79 230 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
+#X obj 78 230 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
-#X obj 33 91 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856 0
+#X obj 33 91 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856 1
 1;
 #X obj -18 755 * -1;
 #X obj -17 696 r freestepsouts1;
@@ -258,8 +258,8 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X floatatom -1046 788 5 0 0 0 - - -;
 #X obj -969 711 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 53 206 tgl 25 0 empty empty Bng 4 12 0 10 -1 -262144 -262144
-0 1;
+#X obj 53 207 tgl 25 0 empty empty Bng 4 12 0 10 -1 -262144 -262144
+1 1;
 #X obj -943 596 * 1;
 #X obj -886 -163 r TRGnB_@sA1fromselnd;
 #X obj 35 -637 r send_BA;

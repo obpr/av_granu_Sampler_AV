@@ -1,4 +1,4 @@
-#N canvas 152 63 1247 878 10;
+#N canvas 277 288 1247 878 10;
 #X obj -928 49 translateXYZ;
 #X obj -927 -119 pix_separator;
 #X obj -928 -163 pix_separator;
