@@ -1,29 +1,29 @@
-#N canvas 516 405 906 623 10;
+#N canvas 741 72 906 777 10;
 #X obj 182 240 hsl 70 20 0 1 0 0 empty empty cut_out 3 7 0 10 -1 -262144
--262144 6800 1;
+-262144 6900 1;
 #X obj 105 240 hsl 70 20 0 1 0 0 empty empty cut_in 3 7 0 10 -1 -262144
--262144 300 1;
+-262144 0 1;
 #X obj 103 104 vsl 15 90 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 6450 1;
+-262144 -1 7560 1;
 #X obj 137 104 vsl 15 90 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 6812 1;
+-262144 -1 6667 1;
 #X obj 120 104 vsl 15 90 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 6377 1;
+-262144 -1 7560 1;
 #X obj 105 219 hsl 70 20 0 1 0 0 empty empty fade_in 3 7 0 10 -228856
--1 -1 679 1;
+-1 -1 652 1;
 #X obj 182 219 hsl 70 20 1 0 0 0 empty empty fadeNcut_out -1 7 0 10
--228856 -1 -1 5600 1;
+-228856 -1 -1 6411 1;
 #X obj 156 104 vsl 20 72 0 2 0 0 empty empty VL 3 6 0 10 -1 -262144
--1 2695 1;
+-1 0 1;
 #X obj 94 435 vfreeverb~;
-#X obj 183 153 hsl 70 20 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -262144
+#X obj 183 138 hsl 70 15 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -262144
 -260097 -1 0 0;
-#X obj 183 177 hsl 70 20 0 2 0 1 empty empty damp 3 8 0 10 -262144
+#X obj 183 155 hsl 70 15 0 2 0 1 empty empty damp 3 8 0 10 -262144
 -260097 -1 1600 0;
-#X obj 183 130 hsl 70 20 0 1 0 1 empty empty wet_reverb 3 8 0 10 -262144
+#X obj 183 120 hsl 70 15 0 1 0 1 empty empty wet_reverb 3 8 0 10 -262144
 -260097 -1 0 0;
-#X obj 183 102 hsl 70 20 0 1 0 1 empty empty dry 3 8 0 10 -262144 -260097
--1 6900 0;
+#X obj 183 102 hsl 70 15 0 1 0 1 empty empty dry 3 8 0 10 -262144 -260097
+-1 900 0;
 #X obj 86 61 inlet;
 #X obj 126 61 inlet;
 #X obj 176 61 inlet;
@@ -205,14 +205,26 @@
 #X obj -14 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 106 199 hsl 147 8 0 1 0 0 empty empty O:::::::::sharpness:::::::::1
-4 4 0 8 -262144 -258113 -1 2000 1;
+4 4 0 8 -262144 -258113 -1 2920 1;
 #X obj 105 209 hsl 70 10 0 1 0 0 empty empty O:::::::::::1 4 5 0 8
--262144 -258113 -1 945 1;
+-262144 -258113 -1 1380 1;
 #X obj -89 284 s envfadreducin;
 #X obj 182 208 hsl 70 10 0 1 0 0 empty empty O:::::::::::1 4 5 0 8
--262144 -258113 -1 4045 1;
+-262144 -258113 -1 1380 1;
 #X obj -83 312 s envfadreducout;
 #X msg -17 134 0.2;
+#X obj -404 198 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 220 176 5 0 0 0 time:: - -;
+#X obj 324 234 s envRNGmidiloop;
+#X obj 274 157 r T$;
+#X obj 273 260 spigot-toggle_red;
+#X obj 298 262 r lo;
+#X obj 379 273;
+#X obj 382 276 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 209 177 tgl 12 0 empty empty empty 17 7 0 10 -260097 -1 -1 0
+1;
 #X connect 0 0 139 0;
 #X connect 0 0 172 0;
 #X connect 1 0 138 0;
@@ -418,4 +430,10 @@
 #X connect 195 0 190 0;
 #X connect 195 0 191 0;
 #X connect 195 0 193 0;
+#X connect 196 0 140 0;
+#X connect 197 0 198 0;
+#X connect 199 0 200 0;
+#X connect 200 0 197 0;
+#X connect 201 0 204 0;
+#X connect 204 0 200 1;
 #X coords 0 -1 1 1 158 165 2 100 100;

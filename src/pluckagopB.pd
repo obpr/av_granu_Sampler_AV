@@ -171,7 +171,7 @@ push : off;
 0 1;
 #X obj 78 230 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
-#X obj 33 91 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856 1
+#X obj 33 91 tgl 26 0 empty empty ø 6 10 0 25 -1 -262144 -228856 0
 1;
 #X obj -18 755 * -1;
 #X obj -17 696 r freestepsouts1;
@@ -259,7 +259,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj -969 711 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 53 207 tgl 25 0 empty empty Bng 4 12 0 10 -1 -262144 -262144
-1 1;
+0 1;
 #X obj -943 596 * 1;
 #X obj -886 -163 r TRGnB_@sA1fromselnd;
 #X obj 35 -637 r send_BA;

@@ -1,4 +1,4 @@
-#N canvas 369 444 1680 878 10;
+#N canvas 0 150 1680 878 10;
 #X obj 289 64 sel 0 1 2;
 #X obj 289 134 sel 0 1 2;
 #X obj 100 38 inlet;
@@ -1436,9 +1436,9 @@
 #X obj 3051 -541 onoff26;
 #X obj 3051 -181 onoff26;
 #X obj 102 102 hradio 18 1 0 4 empty empty empty 8 -10 0 10 -99865
--262144 -262144 2;
+-262144 -262144 0;
 #X obj 176 102 hradio 18 1 0 4 empty empty empty 1 -10 0 10 -128992
--1 -262144 2;
+-1 -262144 0;
 #X floatatom 2024 -436 5 0 0 0 - - -;
 #X floatatom 830 -239 5 0 0 2 stp1_2 #0-stp1_2.r -;
 #X floatatom 806 40 5 0 0 3 stp1_2 - #0-stp1_2.s;
