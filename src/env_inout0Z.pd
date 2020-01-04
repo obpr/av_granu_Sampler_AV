@@ -147,14 +147,14 @@
 #X obj 332 -293 r envfadreducin;
 #X obj 242 -478 r envfadreducout;
 #X floatatom -257 -216 5 0 0 0 - - -;
-#X obj -1076 -343 r recordlivemidiloopBNG;
-#X obj -1075 -318 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -1025 -295 r recordlivemidiloopBNG;
+#X obj -1024 -274 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom -749 -321 5 0 0 0 - - -;
 #X msg -765 -438 0;
 #X msg -358 -233 0;
 #X obj 116 -321 r env_recmidi_out;
-#X obj -914 -145 r env_recmidi_in;
+#X obj -1023 -258 r env_recmidi_in;
 #X obj 110 -291 r recordlivemidiloopBNG;
 #X obj 111 -266 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -350,7 +350,7 @@
 #X connect 140 0 14 0;
 #X connect 141 0 142 0;
 #X connect 142 0 154 0;
-#X connect 142 0 83 0;
+#X connect 142 0 82 0;
 #X connect 143 0 154 1;
 #X connect 143 0 0 0;
 #X connect 145 0 81 1;
@@ -364,7 +364,7 @@
 #X connect 151 0 153 0;
 #X connect 152 0 20 0;
 #X connect 153 0 152 0;
-#X connect 154 0 82 0;
+#X connect 154 0 83 0;
 #X connect 155 0 20 0;
 #X connect 156 0 143 0;
 #X connect 157 0 155 0;

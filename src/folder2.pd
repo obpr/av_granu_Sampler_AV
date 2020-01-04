@@ -131,8 +131,8 @@
 #X obj -27 438 outlet;
 #X obj 402 173 r \$2-bang;
 #X obj 597 257 s \$2-cnv;
-#X obj 51 51 cnv 7 300 20 empty \$2-cnv Select... 2 7 1 15 -233017
--66577 0;
+#X obj 51 51 cnv 7 188 20 empty \$2-cnv braveneworld37s720.mov 2 7
+1 15 -233017 -66577 0;
 #X obj 579 115 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 577 41 inlet;
@@ -203,4 +203,4 @@
 #X connect 50 0 35 1;
 #X connect 50 1 22 0;
 #X connect 51 1 25 0;
-#X coords 0 -1 1 1 300 20 1 50 50;
+#X coords 0 -1 1 1 184 20 1 50 50;
