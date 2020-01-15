@@ -1,4 +1,4 @@
-#N canvas 79 389 734 566 10;
+#N canvas 633 299 734 566 10;
 #X obj 172 263 list;
 #X obj 217 263 list;
 #X obj 292 229 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
@@ -114,7 +114,7 @@
 #X obj 338 351 list;
 #X obj 338 373 list-iter;
 #X obj 305 59 t b b b b;
-#X obj 53 53 hradio 10 1 0 9 \$1-bang empty empty 0 -8 0 10 -262144
+#X obj 53 54 hradio 10 1 0 9 \$1-bang empty empty 0 -8 0 10 -262144
 -1 -1 1;
 #X obj 237 380 list length;
 #X obj 172 229 folder_list;
@@ -127,7 +127,7 @@
 #X text 313 228 <-reset;
 #X floatatom 2 403 5 0 0 0 - - -;
 #X obj 3 438 outlet;
-#X obj 51 51 cnv 9 300 20 empty \$1-cnv enculage.wav 2 7 1 15 -233017
+#X obj 51 51 cnv 9 184 20 empty \$1-cnv Select... 2 7 1 15 -233017
 -66577 0;
 #X obj 401 173 r \$1-bang;
 #X obj 597 257 s \$1-cnv;
@@ -210,4 +210,4 @@
 #X connect 50 1 21 0;
 #X connect 51 1 24 0;
 #X connect 54 0 55 0;
-#X coords 0 -1 1 1 300 20 1 50 50;
+#X coords 0 -1 1 1 184 20 1 50 50;

@@ -1,4 +1,4 @@
-#N canvas 184 150 1275 878 10;
+#N canvas 0 0 1275 609 10;
 #X floatatom -436 -664 5 0 0 0 - - -;
 #X obj -440 -732 inlet;
 #X obj -590 -578 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -83,7 +83,7 @@
 -1 -1;
 #X obj -101 -271 * -1;
 #X obj -353 -286 r lo;
-#X obj -152 -241 f;
+#X obj -152 -234 f;
 #X floatatom -101 -249 5 0 0 0 - - -;
 #X obj -394 -185 f;
 #X obj -153 -259 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -98,7 +98,7 @@
 #X obj -587 -275 - 1;
 #X obj -587 -250 * -1;
 #X obj -508 -348 spigot-toggle_jaunenoir;
-#X obj -99 -298 - 1;
+#X obj -99 -297 - 1;
 #X obj -489 -362 r lo;
 #X obj -599 -450 delay;
 #X obj -495 -239 - 1;
@@ -145,13 +145,12 @@
 #X obj -259 -240 * 1;
 #X obj 321 -241 t b f;
 #X obj 332 -293 r envfadreducin;
-#X obj 242 -478 r envfadreducout;
+#X obj 404 -597 r envfadreducout;
 #X floatatom -257 -216 5 0 0 0 - - -;
 #X obj -1025 -295 r recordlivemidiloopBNG;
-#X obj -1024 -274 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -1039 -277 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom -749 -321 5 0 0 0 - - -;
-#X msg -765 -438 0;
 #X msg -358 -233 0;
 #X obj 116 -321 r env_recmidi_out;
 #X obj -1023 -258 r env_recmidi_in;
@@ -162,7 +161,7 @@
 #X obj -207 -70 delay;
 #X msg -205 -26 1;
 #X obj -208 -50 spigot-toggle_red;
-#X obj -806 -259 delay 100;
+#X obj -803 -168 delay 100;
 #X msg -85 138 1;
 #X obj -747 -385 r envRNGmidiloop;
 #X obj -64 118 delay;
@@ -172,6 +171,13 @@
 -1;
 #X obj -75 73 spigot-toggle_red;
 #X obj -30 17 r recordlivemidiloopstop1;
+#X obj -1130 -301 spigot-toggle_jaunenoir;
+#X obj -952 -331 r bonkAouBtoenvA;
+#X obj -1126 -324 r bonkAA;
+#X obj 445 -243 * -1;
+#X obj 447 -269 - 1;
+#X obj -1114 -245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 66 1;
 #X connect 0 0 94 1;
 #X connect 0 0 118 0;
@@ -278,7 +284,7 @@
 #X connect 80 0 79 1;
 #X connect 81 0 74 0;
 #X connect 82 0 79 0;
-#X connect 82 0 151 0;
+#X connect 82 0 150 0;
 #X connect 83 0 81 0;
 #X connect 83 0 131 0;
 #X connect 85 0 89 0;
@@ -329,8 +335,8 @@
 #X connect 123 0 121 0;
 #X connect 123 1 121 1;
 #X connect 124 0 71 1;
-#X connect 124 0 151 1;
-#X connect 124 0 157 1;
+#X connect 124 0 150 1;
+#X connect 124 0 156 1;
 #X connect 125 0 127 0;
 #X connect 125 1 127 1;
 #X connect 126 0 130 0;
@@ -345,29 +351,36 @@
 #X connect 136 0 140 0;
 #X connect 137 0 136 0;
 #X connect 137 1 136 1;
-#X connect 138 0 135 0;
+#X connect 138 0 165 0;
 #X connect 139 0 128 0;
 #X connect 140 0 14 0;
 #X connect 141 0 142 0;
-#X connect 142 0 154 0;
+#X connect 142 0 153 0;
 #X connect 142 0 82 0;
-#X connect 143 0 154 1;
+#X connect 143 0 153 1;
 #X connect 143 0 0 0;
-#X connect 145 0 81 1;
-#X connect 146 0 104 0;
-#X connect 146 0 82 0;
-#X connect 147 0 83 0;
-#X connect 148 0 149 0;
-#X connect 149 0 104 0;
-#X connect 150 0 153 1;
-#X connect 150 0 160 1;
-#X connect 151 0 153 0;
-#X connect 152 0 20 0;
-#X connect 153 0 152 0;
-#X connect 154 0 83 0;
-#X connect 155 0 20 0;
-#X connect 156 0 143 0;
-#X connect 157 0 155 0;
-#X connect 158 0 160 0;
-#X connect 160 0 157 0;
-#X connect 161 0 157 0;
+#X connect 144 0 81 1;
+#X connect 145 0 104 0;
+#X connect 145 0 82 0;
+#X connect 146 0 83 0;
+#X connect 147 0 148 0;
+#X connect 148 0 104 0;
+#X connect 149 0 152 1;
+#X connect 149 0 159 1;
+#X connect 150 0 152 0;
+#X connect 151 0 20 0;
+#X connect 152 0 151 0;
+#X connect 153 0 83 0;
+#X connect 154 0 20 0;
+#X connect 155 0 143 0;
+#X connect 156 0 154 0;
+#X connect 157 0 159 0;
+#X connect 159 0 156 0;
+#X connect 160 0 156 0;
+#X connect 161 0 166 0;
+#X connect 162 0 161 1;
+#X connect 162 0 92 0;
+#X connect 163 0 161 0;
+#X connect 164 0 135 0;
+#X connect 165 0 164 0;
+#X connect 166 0 142 0;

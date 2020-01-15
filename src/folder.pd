@@ -130,7 +130,7 @@
 #X floatatom 2 403 5 0 0 0 - - -;
 #X obj 14 231 r \$0-bang;
 #X obj 3 438 outlet;
-#X obj 51 51 cnv 7 300 20 empty \$0-cnv Select... 2 7 1 15 -233017
+#X obj 51 51 cnv 7 182 20 empty \$0-cnv Select... 2 7 1 15 -233017
 -66577 0;
 #X obj 571 72 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -204,4 +204,4 @@
 #X connect 51 0 36 1;
 #X connect 51 1 21 0;
 #X connect 52 1 26 0;
-#X coords 0 -1 1 1 300 20 1 50 50;
+#X coords 0 -1 1 1 184 20 1 50 50;

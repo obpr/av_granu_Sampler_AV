@@ -1,13 +1,13 @@
-#N canvas 240 153 1384 998 12;
+#N canvas 240 30 1384 998 12;
 #X floatatom -58 320 5 0 0 2 W.IT=T #0-IT=T.r W.IT=T;
 #X floatatom -58 342 5 0 0 3 S.IT=T S.IT=T #0-IT=T.s;
-#X obj 101 102 cnv 15 148 20 empty empty empty 22 10 0 14 -262144 -1
-0;
-#X obj 103 103 bng 18 250 50 0 \$0-save.s \$0-save.r save 20 10 0 10
--262144 -1 -1;
-#X obj 200 103 bng 18 250 50 0 \$0-load.s \$0-load.r load 20 10 0 10
--262144 -1 -1;
-#X obj -9 50 cnv 15 400 20 \$0-preset.name.s \$0-preset.name.r PRESET_FILE:tt6
+#X obj 101 101 cnv 15 148 21 empty empty >>.txt>> 50 11 1 14 -228856
+-262144 0;
+#X obj 103 103 bng 18 250 50 0 \$0-save.s \$0-save.r save 20 10 1 10
+-228856 -1 -262144;
+#X obj 230 103 bng 18 250 50 0 \$0-load.s \$0-load.r load -21 10 1
+10 -228856 -1 -262144;
+#X obj -9 50 cnv 15 400 20 \$0-preset.name.s \$0-preset.name.r PRESET_FILE:no_preset_loaded
 5 10 0 10 -86853 -261682 0;
 #N canvas 0 0 1531 1028 presets 0;
 #N canvas 27 528 666 385 read.write 0;
@@ -377,7 +377,6 @@ W.reposetoinoffAB;
 #X floatatom 1255 415 5 0 0 2 R.stp14ø #0-stp14ø.r R.stp14ø;
 #X floatatom 1347 415 5 0 0 2 R.stp15ø #0-stp15ø.r R.stp15ø;
 #X floatatom 1435 415 5 0 0 2 R.stp16ø #0-stp16ø.r R.stp16ø;
-#X text 148 104 >.txt >;
 #X floatatom -703 539 5 0 0 3 S.TA=TB S.TA=TB #0-TA=TB.s;
 #X floatatom -703 519 5 0 0 2 W.TA=TB #0-TA=TB.r W.TA=TB;
 #X text -94 344 save;

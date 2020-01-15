@@ -1,4 +1,4 @@
-#N canvas 76 162 1322 866 10;
+#N canvas 358 162 1322 866 10;
 #X floatatom 796 -625 5 0 0 0 - - -;
 #X obj 628 -675 inlet;
 #X obj 798 -691 inlet;
@@ -116,6 +116,18 @@
 #X obj 976 -301 * 1;
 #X obj 980 -367 r envfadreducin1;
 #X obj 1398 -401 r envfadreducout1;
+#X obj 341 -246 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 250 -270 spigot-toggle_jaunenoir;
+#X obj 266 -214 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 501 -305 5 0 0 0 - - -;
+#X obj 447 -152 delay 100;
+#X obj 254 -293 r bonkBB;
+#X obj 365 -291 r bonkAouBtoenvB;
+#X obj 355 -264 r recordlivemidiloopBNGB;
+#X obj 357 -227 r env_recmidi_inB;
+#X obj 503 -369 r envRNGmidiloopB;
 #X connect 0 0 48 1;
 #X connect 0 0 67 1;
 #X connect 0 0 10 0;
@@ -247,3 +259,15 @@
 #X connect 106 0 14 0;
 #X connect 107 0 103 0;
 #X connect 108 0 96 0;
+#X connect 109 0 113 0;
+#X connect 110 0 111 0;
+#X connect 111 0 109 0;
+#X connect 112 0 113 1;
+#X connect 112 0 0 0;
+#X connect 113 0 74 0;
+#X connect 114 0 110 0;
+#X connect 115 0 110 1;
+#X connect 115 0 71 0;
+#X connect 116 0 109 0;
+#X connect 117 0 74 0;
+#X connect 118 0 112 0;

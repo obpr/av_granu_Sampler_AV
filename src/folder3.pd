@@ -139,10 +139,10 @@
 #X obj 126 295 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 59 100 int;
-#X obj 57 57 hradio 10 1 0 9 \$3-bang empty empty 0 -3 0 10 -191407
+#X obj 57 58 hradio 10 1 0 9 \$3-bang empty empty 0 -3 0 10 -191407
 -1 -1 3;
-#X obj 51 51 cnv 15 182 20 empty \$3-cnv Time Passing.wav 20 12 0 14
--233017 -66577 0;
+#X obj 51 51 cnv 15 182 20 empty \$3-cnv Kick-C78.aiff 20 12 0 14 -233017
+-66577 0;
 #X obj 338 395 splitfilename;
 #X obj 513 318 splitfilename;
 #X connect 0 0 1 0;

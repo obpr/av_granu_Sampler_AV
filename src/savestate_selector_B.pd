@@ -1,4 +1,4 @@
-#N canvas 346 312 925 1028 12;
+#N canvas 346 0 925 1028 12;
 #X obj 116 167 sel 0 1 2;
 #X obj 358 145 sel 0 1 2;
 #X obj 957 79 f;
@@ -150,10 +150,10 @@
 #X obj 1768 126 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
 #X floatatom 1787 107 5 0 0 0 - - -;
-#X obj 101 101 hradio 18 1 0 4 empty empty empty 8 -10 0 10 -99865
--262144 -262144 1;
-#X obj 174 101 hradio 18 1 0 4 empty empty save_<all_B>_load -50 -10
-0 10 -99865 -1 -262144 2;
+#X obj 100 103 hradio 19 1 0 4 empty empty empty -70 -5 1 10 -99865
+-262144 -262144 2;
+#X obj 177 103 hradio 19 1 0 4 empty empty ALL_SAVE_<<•>>_ALL_LOAD
+-70 -5 1 10 -99865 -1 -191407 1;
 #X obj 243 174 outlet;
 #X obj 303 176 outlet;
 #X obj 475 180 s send_s@pBA;
@@ -3146,4 +3146,4 @@
 #X connect 1293 0 1282 1;
 #X connect 1296 0 1115 0;
 #X connect 1296 0 1297 0;
-#X coords 0 -1 1 1 149 20 1 100 100;
+#X coords 0 -1 1 1 155 24 1 100 100;
