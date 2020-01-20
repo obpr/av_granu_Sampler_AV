@@ -1,4 +1,4 @@
-#N canvas 760 553 1680 867 10;
+#N canvas -585 373 1680 867 10;
 #X obj 216 75 sel 0 1 2;
 #X obj 218 145 sel 0 1 2;
 #X floatatom 963 7 5 0 0 0 receive_+_progr_ +_progr_ -;
@@ -802,7 +802,7 @@
 #X floatatom 3047 93 5 0 0 0 W.+_A14 W.+_A14 -;
 #X floatatom 3046 121 5 0 0 0 S.+_A14 - S.+_A14;
 #X floatatom 3178 93 5 0 0 0 W.+_A15 W.+_A15 -;
-#X floatatom 3177 121 5 0 0 0 S.progA15 - S.progA15;
+#X floatatom 3177 121 5 0 0 0 S.+A15 - S.+A15;
 #X floatatom 3327 93 5 0 0 0 W.+_A16 W.+_A16 -;
 #X floatatom 3326 121 5 0 0 0 S.+_A16 - S.+_A16;
 #X connect 0 0 100 0;

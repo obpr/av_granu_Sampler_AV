@@ -1,4 +1,4 @@
-#N canvas 31 205 1680 1028 10;
+#N canvas 1587 446 1680 1028 10;
 #X obj 217 75 sel 0 1 2;
 #X obj 217 145 sel 0 1 2;
 #X floatatom 1473 17 5 0 0 0 receive_TprogA TprogA -;
@@ -868,9 +868,9 @@
 #X floatatom 364 862 5 0 0 0 - - -;
 #X floatatom 347 930 5 0 0 0 sendITA%ITA - sendITA%ITA;
 #X obj 102 102 hradio 18 1 0 4 empty empty empty 8 -10 0 10 -99865
--262144 -262144 1;
+-262144 -262144 2;
 #X obj 176 102 hradio 18 1 0 4 empty empty empty 1 -10 0 10 -128992
--1 -262144 0;
+-1 -262144 1;
 #X floatatom 414 27 5 0 0 0 TA=TB TA=TB -;
 #X obj 397 69 f;
 #X obj 374 48 bng 15 250 50 0 empty empty write -35 7 0 10 -262144

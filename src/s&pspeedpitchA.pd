@@ -169,13 +169,13 @@
 #X obj 263 103 tgl 25 0 empty empty empty 17 7 0 10 -1 -262144 -1 0
 1;
 #X obj 236 130 tgl 25 0 empty empty ''b 8 14 1 16 -1 -262144 -260097
-1 1;
+0 1;
 #X obj 263 130 tgl 25 0 empty empty empty 17 7 0 10 -1 -262144 -1 0
 1;
 #X obj 289 52 vsl 10 100 -2 2 0 0 empty empty empty 1 17 0 10 -1 -262144
--1 7400 1;
+-1 6187 1;
 #X obj 225 52 vsl 10 100 -2 2 0 0 empty empty ____ 1 15 0 10 -1 -260097
--1 9900 1;
+-1 6187 1;
 #X obj 236 49 tgl 25 0 empty empty A 8 14 0 16 -1 -262144 -260097 0
 1;
 #X obj 263 49 tgl 25 1 empty empty empty 17 7 0 10 -1 -262144 -260097
@@ -195,7 +195,7 @@
 #X obj 119 50 vsl 10 102 0 1 0 0 empty empty empty 1 17 0 10 -1 -262144
 -1 7575 1;
 #X obj 55 50 vsl 10 102 0 1 0 0 empty empty ____ 1 15 0 10 -1 -260097
--1 5375 1;
+-1 7575 1;
 #X obj 54 9 cnv 20 75 23 empty empty s&p 32 12 1 11 -1 -262144 0;
 #X obj 141 9 cnv 20 75 23 empty empty speed 25 12 1 11 -1 -262144 0
 ;
@@ -206,7 +206,7 @@
 #X floatatom 71 33 6 0 0 0 - - -;
 #X obj 55 32 bng 17 250 50 0 empty empty empty 3 7 0 8 -262144 -1 -1
 ;
-#X obj 112 32 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 111 32 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X floatatom 474 613 5 0 0 0 - - -;
 #X obj 585 -61 inlet;
@@ -239,10 +239,10 @@
 #X obj -358 25 s speedA;
 #X obj 1011 896 * 2;
 #X obj -236 20 s 44/88_A;
-#X obj 636 821 sel;
+#X obj 625 783 sel;
 #X obj 527 784 * 1;
-#X msg 622 779 0.5;
-#X msg 658 778 1;
+#X msg 597 784 0.5;
+#X msg 652 784 1;
 #X obj 78 -415 r send_s@pAA;
 #X obj 77 -367 r send_s@pAB;
 #X obj 78 -395 s s@pAA;
@@ -389,7 +389,7 @@
 -1 -1;
 #X obj 142 10 tgl 20 0 empty empty bck 2 10 1 10 -1 -262144 -260097
 0 1;
-#X obj 196 10 tgl 20 0 empty empty 88 5 10 1 10 -1 -262144 -260097
+#X obj 196 10 tgl 20 0 empty empty pad 3 10 1 10 -1 -262144 -260097
 1 1;
 #X obj 8 658 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -443,6 +443,7 @@
 #X obj -152 585 line;
 #X floatatom -94 542 5 0 0 0 - - -;
 #X floatatom -151 608 5 0 0 0 - - -;
+#X obj 553 784 t b f;
 #X connect 0 0 44 0;
 #X connect 1 0 44 0;
 #X connect 2 0 44 0;
@@ -735,12 +736,12 @@
 #X connect 194 0 192 0;
 #X connect 195 0 191 0;
 #X connect 199 0 135 0;
-#X connect 201 0 204 0;
-#X connect 201 1 203 0;
+#X connect 201 0 203 0;
+#X connect 201 1 204 0;
 #X connect 202 0 168 0;
 #X connect 202 0 332 0;
-#X connect 203 0 202 1;
-#X connect 204 0 202 1;
+#X connect 203 0 374 0;
+#X connect 204 0 374 0;
 #X connect 205 0 131 0;
 #X connect 206 0 156 0;
 #X connect 209 0 158 0;
@@ -883,4 +884,6 @@
 #X connect 370 0 371 0;
 #X connect 371 0 373 0;
 #X connect 372 0 370 1;
+#X connect 374 0 202 0;
+#X connect 374 1 202 1;
 #X coords 0 -1 1 1 304 166 1 0 0;

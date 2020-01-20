@@ -193,15 +193,15 @@
 #X obj 208 129 hsl 100 18 1 0 0 0 empty empty fade_out 3 7 1 10 -260097
 -262144 -262144 9900 1;
 #X obj 432 103 vsl 30 70 0 2 0 0 empty empty gain 6 6 0 7 -1 -260097
--260097 6300 1;
+-260097 3450 1;
 #X obj 466 141 hsl 145 17 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -1
--260097 -262144 8500 0;
+-260097 -262144 0 0;
 #X obj 466 159 hsl 145 17 0 2 0 1 empty empty damp 3 8 0 10 -1 -260097
 -262144 3400 0;
 #X obj 466 121 hsl 145 19 0 1 0 1 empty empty wet_reverb 3 8 0 10 -1
--260097 -262144 6000 0;
+-260097 -262144 0 0;
 #X obj 466 101 hsl 145 19 0 1 0 1 empty empty dry 3 8 0 10 -1 -260097
--262144 8700 0;
+-262144 14400 0;
 #X obj 338 101 bng 30 250 50 0 empty empty RST 7 15 0 8 -1 -4034 -260097
 ;
 #X obj 103 101 hsl 206 13 0 1 0 0 empty empty O:::::::::::::÷::sharpness::::::::::::::1
@@ -253,16 +253,18 @@
 0 1;
 #X obj 398 -13 spigot-toggle_red;
 #X obj 402 15 s envRNGmidiloopB;
-#X msg 519 -85 0;
-#X msg 548 -86 1;
-#X msg 638 90 1;
-#X obj 638 66 r lo;
+#X msg 316 211 0;
+#X msg 345 210 1;
+#X msg 659 84 1;
+#X obj 658 59 r lo;
 #X msg 179 35 0.2;
 #X obj 179 15 r lo;
 #X obj 399 -44 r T1;
 #X obj -679 -51 r BangBtoenvB;
 #X msg -545 -1585 read ../sound/voice.wav table24;
 #X obj -274 -1687 r soundfileB;
+#X msg 659 122 0.5;
+#X msg 659 103 0;
 #X connect 0 0 171 0;
 #X connect 1 0 182 0;
 #X connect 2 0 181 0;
@@ -442,6 +444,7 @@
 #X connect 188 0 0 4;
 #X connect 189 0 0 3;
 #X connect 190 0 218 0;
+#X connect 190 0 228 0;
 #X connect 191 0 192 0;
 #X connect 191 0 193 0;
 #X connect 192 0 175 0;
@@ -453,13 +456,14 @@
 #X connect 217 0 189 0;
 #X connect 217 0 188 0;
 #X connect 217 0 185 0;
-#X connect 218 0 189 0;
 #X connect 218 0 188 0;
 #X connect 219 0 180 0;
 #X connect 219 0 182 0;
 #X connect 219 0 181 0;
 #X connect 219 0 185 0;
 #X connect 220 0 219 0;
+#X connect 220 0 227 0;
+#X connect 220 0 228 0;
 #X connect 221 0 191 0;
 #X connect 222 0 221 0;
 #X connect 222 0 195 0;
@@ -468,4 +472,7 @@
 #X connect 224 0 136 0;
 #X connect 225 0 72 0;
 #X connect 226 0 120 0;
+#X connect 227 0 189 0;
+#X connect 228 0 188 0;
+#X connect 228 0 186 0;
 #X coords 0 -1 1 1 514 77 1 100 100;
