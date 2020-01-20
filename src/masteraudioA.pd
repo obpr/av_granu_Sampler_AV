@@ -1,29 +1,29 @@
-#N canvas 0 78 906 777 10;
+#N canvas 316 86 906 777 10;
 #X obj 209 148 hsl 100 15 0 1 0 0 empty empty cut_out 3 7 1 10 -1 -262144
--262144 9900 1;
+-262144 19800 1;
 #X obj 104 148 hsl 100 15 0 1 0 0 empty empty cut_in 3 7 1 10 -1 -262144
 -262144 0 1;
 #X obj 370 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 5861 1;
+-262144 -1 0 1;
 #X obj 412 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 2561 1;
+-262144 -1 0 1;
 #X obj 391 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--262144 -1 5861 1;
+-262144 -1 0 1;
 #X obj 104 129 hsl 100 18 0 1 0 0 empty empty fade_in 3 7 1 10 -260097
--262144 -262144 400 1;
+-262144 -262144 0 1;
 #X obj 209 129 hsl 100 18 1 0 0 0 empty empty fade_out 3 7 1 10 -260097
--262144 -262144 9300 1;
+-262144 -262144 19800 1;
 #X obj 433 103 vsl 30 70 0 2 0 0 empty empty gain 6 6 0 7 -1 -260097
--260097 3450 1;
+-260097 0 1;
 #X obj -5 430 vfreeverb~;
 #X obj 467 141 hsl 145 17 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -1
 -260097 -262144 0 0;
 #X obj 467 159 hsl 145 17 0 2 0 1 empty empty damp 3 8 0 10 -1 -260097
--262144 5200 0;
+-262144 10400 0;
 #X obj 467 121 hsl 145 19 0 1 0 1 empty empty wet_reverb 3 8 0 10 -1
 -260097 -262144 0 0;
 #X obj 467 101 hsl 145 19 0 1 0 1 empty empty dry 3 8 0 10 -1 -260097
--262144 3400 0;
+-262144 28800 0;
 #X obj -13 56 inlet;
 #X obj 27 56 inlet;
 #X obj 78 55 inlet;
@@ -123,7 +123,7 @@
 #X floatatom 254 -1252 12 0 0 0 - - -;
 #X floatatom 255 -1206 12 0 0 0 - - -;
 #X obj 292 -1325 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 268 -1306 metro 44;
 #X floatatom -422 -1148 12 0 0 0 - - -;
 #X obj 256 -1161 /;
@@ -201,12 +201,12 @@
 #X obj 339 101 bng 30 250 50 0 empty empty RST 7 15 0 8 -1 -4034 -260097
 ;
 #X obj 104 101 hsl 206 13 0 1 0 0 empty empty O:::::::::::::÷::sharpness::::::::::::::1
-0 4 0 8 -1 -258113 -191407 4100 1;
+0 4 0 8 -1 -258113 -191407 8200 1;
 #X obj 104 115 hsl 100 13 0 1 0 0 empty empty ::::::::::::::::::::::
--2 5 0 8 -1 -258113 -191407 1980 1;
+-2 5 0 8 -1 -258113 -191407 3960 1;
 #X obj -188 279 s envfadreducin;
 #X obj 209 115 hsl 100 13 0 1 0 0 empty empty ::::::::::::::::::::
-0 5 0 8 -1 -258113 -191407 1980 1;
+0 5 0 8 -1 -258113 -191407 3960 1;
 #X obj -182 307 s envfadreducout;
 #X msg -165 77 0.2;
 #X floatatom 310 132 7 0 0 3 - - -;
@@ -477,6 +477,7 @@
 #X connect 184 0 7 0;
 #X connect 184 0 12 0;
 #X connect 185 0 12 0;
+#X connect 185 0 186 0;
 #X connect 186 0 184 0;
 #X connect 186 0 183 0;
 #X connect 187 0 188 0;

@@ -1,4 +1,4 @@
-#N canvas 0 150 1680 878 10;
+#N canvas 85 451 1680 878 10;
 #X obj 289 64 sel 0 1 2;
 #X obj 289 134 sel 0 1 2;
 #X obj 100 38 inlet;
@@ -1323,7 +1323,7 @@
 #X obj 2279 26 s of23;
 #X obj 3939 26 s of31;
 #X obj 3519 -121 r lo;
-#X floatatom 278 -561 5 0 0 0 receive_reposetoiX#A reposetoiX#A -;
+#X floatatom 313 -544 5 0 0 0 receive_reposetoiX#A reposetoiX#A -;
 #X obj 301 -509 f;
 #X obj 278 -530 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
@@ -1331,7 +1331,7 @@
 #X obj 283 -462 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
 #X floatatom 302 -481 5 0 0 0 - - -;
-#X floatatom 286 -414 5 0 0 0 send_reposetoiX#A - send_reposetoiX#A
+#X floatatom 285 -414 5 0 0 0 send_reposetoiX#A - send_reposetoiX#A
 ;
 #X floatatom 367 -494 5 0 0 0 - - -;
 #X obj 367 -514 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
@@ -1359,7 +1359,7 @@
 #X floatatom 373 -68 5 0 0 0 - - -;
 #X obj 381 -166 r reposetoinoffA;
 #X obj 357 -9 s send_reposetoinoffA;
-#X floatatom 604 -525 5 0 0 0 receives_ITDETonoff ITDETonoff -;
+#X floatatom 604 -525 5 0 0 0 receives_IT≠T IT≠T -;
 #X obj 589 -483 f;
 #X obj 589 -501 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
@@ -1367,8 +1367,7 @@
 #X obj 570 -459 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
 #X floatatom 589 -460 5 0 0 0 - - -;
-#X floatatom 572 -414 5 0 0 0 send__ITDETonoffload - ITDETonoffload
-;
+#X floatatom 572 -414 5 0 0 0 sendIT≠T - sendIT≠T;
 #X floatatom 642 -163 5 0 0 0 receives_ITDETonoff ITDETonoff -;
 #X obj 636 -111 f;
 #X obj 613 -132 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
@@ -1436,14 +1435,14 @@
 #X obj 3051 -541 onoff26;
 #X obj 3051 -181 onoff26;
 #X obj 102 102 hradio 18 1 0 4 empty empty empty 8 -10 0 10 -99865
--262144 -262144 0;
+-262144 -262144 2;
 #X obj 176 102 hradio 18 1 0 4 empty empty empty 1 -10 0 10 -128992
--1 -262144 0;
+-1 -262144 2;
 #X floatatom 2024 -436 5 0 0 0 - - -;
-#X floatatom 830 -239 5 0 0 2 stp1_2 #0-stp1_2.r -;
-#X floatatom 806 40 5 0 0 3 stp1_2 - #0-stp1_2.s;
-#X floatatom 580 -270 5 0 0 0 S.IT=T - S.IT=T;
-#X floatatom 596 -680 5 0 0 0 W.IT=T W..IT=T -;
+#X floatatom 841 -213 5 0 0 2 stp1_2 #0-stp1_2.r -;
+#X floatatom 827 20 5 0 0 3 stp1_2 - #0-stp1_2.s;
+#X floatatom 580 -270 5 0 0 0 S.IT≠T - S.IT≠T;
+#X floatatom 596 -680 5 0 0 0 W.IT≠T W..IT≠T -;
 #X floatatom 709 -265 5 0 0 0 S.stpA - S.stpA;
 #X floatatom 716 -678 5 0 0 0 R.stpA R.stpA -;
 #X floatatom 881 -583 5 0 0 0 R.stp1 R.stp1 -;
@@ -1510,6 +1509,10 @@
 #X floatatom 3649 -673 5 0 0 2 R.stp14ø R.stp14ø -;
 #X floatatom 3848 -673 5 0 0 2 R.stp15ø R.stp15ø -;
 #X floatatom 4086 -673 5 0 0 2 R.stp16ø R.stp16ø -;
+#X floatatom 276 -607 5 0 0 2 W.reposetoinoffA W.reposetoinoffA -;
+#X floatatom 298 -285 5 0 0 3 S.reposetoinoffA - S.reposetoinoffA;
+#X floatatom 426 -607 5 0 0 2 W.reposetoi#A W.reposetoi#A -;
+#X floatatom 448 -285 5 0 0 3 S.reposetoi#A - S.reposetoi#A;
 #X connect 0 0 1048 0;
 #X connect 0 1 1062 0;
 #X connect 0 2 506 0;
@@ -2792,11 +2795,13 @@
 #X connect 1050 0 1056 0;
 #X connect 1050 0 1078 0;
 #X connect 1051 0 1049 1;
+#X connect 1051 0 1218 0;
 #X connect 1053 0 1055 1;
 #X connect 1054 0 1053 0;
 #X connect 1055 0 1057 0;
 #X connect 1056 0 1059 0;
 #X connect 1057 0 1056 1;
+#X connect 1057 0 1220 0;
 #X connect 1058 0 1054 0;
 #X connect 1060 0 1061 1;
 #X connect 1061 0 1065 0;
@@ -2925,4 +2930,6 @@
 #X connect 1214 0 727 0;
 #X connect 1215 0 740 0;
 #X connect 1216 0 767 0;
+#X connect 1217 0 1051 0;
+#X connect 1219 0 1057 0;
 #X coords 0 -1 1 1 152 22 2 100 100;

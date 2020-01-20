@@ -157,7 +157,7 @@ push : off;
 #X obj 147 128 tgl 28 0 empty empty A 8 14 1 17 -1 -262144 -262144
 0 1;
 #X obj 147 157 tgl 28 0 empty empty B 8 14 1 17 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 125 98 cnv 17 79 16 empty empty Entry_point 17 8 1 12 -1 -262144
 0;
 #X obj 126 131 vsl 20 80 0 0.5 0 0 empty empty mod 2 10 0 9 -1 -260097
@@ -201,7 +201,7 @@ push : off;
 0 1;
 #X obj 153 237 tgl 25 0 empty empty << 5 10 1 11 -1 -262144 -262144
 0 1;
-#X obj 98 99 tgl 28 0 empty empty ø 8 12 1 22 -1 -262144 -262144 1
+#X obj 98 99 tgl 28 0 empty empty ø 8 12 1 22 -1 -262144 -262144 0
 1;
 #X obj 45 766 * -1;
 #X obj 45 739 - 1;
@@ -378,7 +378,7 @@ push : off;
 #X obj -755 51 * 1;
 #X obj -602 490 r lo;
 #X obj 1 99 tgl 25 0 empty empty press 0 12 1 10 -66577 -262144 -262144
-1 1;
+0 1;
 #X obj 713 234 spigot-toggle_violet;
 #X obj 4 175 hsl 46 10 0 1 0 0 empty empty %sharp 1 5 2 11 -66577 -262144
 -262144 4500 1;

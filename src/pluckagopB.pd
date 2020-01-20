@@ -1,4 +1,4 @@
-#N canvas 1916 237 1624 859 12;
+#N canvas 1902 0 1624 859 12;
 #X text -1268 869 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X obj 1826 150 r trgrA;
 #X obj 1815 191 r trgrB;
@@ -152,7 +152,7 @@ push : off;
 #X obj 68 91 tgl 28 0 empty empty raw 1 12 0 12 -260097 -262144 -45076
 0 1;
 #X obj 176 178 tgl 28 0 empty empty ø@S 3 13 0 12 -260097 -262144
--1 1 1;
+-1 0 1;
 #X floatatom 146 104 8 0 0 0 - - -;
 #X obj 68 178 tgl 28 0 empty empty @B 5 15 0 14 -260097 -262144 -1
 0 1;
@@ -164,7 +164,7 @@ push : off;
 0 1;
 #X obj 153 229 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
-#X obj 97 91 tgl 28 0 empty empty ø 6 10 0 25 -1 -262144 -228856 1
+#X obj 97 91 tgl 28 0 empty empty ø 6 10 0 25 -1 -262144 -228856 0
 1;
 #X obj 48 755 * -1;
 #X obj 49 696 r freestepsouts1;
@@ -273,13 +273,13 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 176 -312 s reposetoinoffBA;
 #X obj 154 -699 r send_B<<B;
 #X obj 155 -678 s B<<B;
-#X obj 177 -592 r send_BøB;
-#X obj 177 -570 s BøB;
+#X obj 212 -589 r send_BøB;
+#X obj 212 -567 s BøB;
 #X obj 155 -745 r send_B<<A;
 #X obj 155 -723 s B<<A;
-#X obj 178 -545 r send_BøA;
-#X obj 178 -523 s BøA;
-#X obj 105 -556 s BBbuton;
+#X obj 213 -542 r send_BøA;
+#X obj 213 -520 s BøA;
+#X obj 106 -552 s BBbuton;
 #X obj 100 -578 r send_BBbuton;
 #X obj 598 83 s save_dataposB;
 #X obj 597 57 r send_save_dataposB;
@@ -363,7 +363,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj -668 21 * 1;
 #X obj -515 460 r lo;
 #X obj 1 91 tgl 25 0 empty empty press 0 12 1 10 -66577 -262144 -262144
-1 1;
+0 1;
 #X obj 4 166 hsl 46 10 0 1 0 0 empty empty %sharp 1 5 2 11 -66577 -262144
 -262144 4500 1;
 #X obj -269 542 r lo;
