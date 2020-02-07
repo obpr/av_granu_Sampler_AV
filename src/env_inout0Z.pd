@@ -1,4 +1,4 @@
-#N canvas 0 0 1275 609 10;
+#N canvas 405 419 1275 609 10;
 #X floatatom -436 -664 5 0 0 0 - - -;
 #X obj -440 -732 inlet;
 #X obj -590 -578 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -107,7 +107,7 @@
 #X obj -662 -186 - 1;
 #X obj -662 -163 * -1;
 #X obj -546 -213 sel;
-#X obj -544 -238 spigot-toggle_jaunenoir;
+#X obj -549 -248 spigot-toggle_jaunenoir;
 #X obj -532 -270 r lo;
 #X obj -54 -276 sel;
 #X msg -38 -250 0;
@@ -178,6 +178,9 @@
 #X obj 447 -269 - 1;
 #X obj -1114 -245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X obj 75 -119 s gateinA;
+#X obj 156 -121 s gateoutA;
+#X obj 156 -65 s trigA;
 #X connect 0 0 66 1;
 #X connect 0 0 94 1;
 #X connect 0 0 118 0;
@@ -285,8 +288,10 @@
 #X connect 81 0 74 0;
 #X connect 82 0 79 0;
 #X connect 82 0 150 0;
+#X connect 82 0 168 0;
 #X connect 83 0 81 0;
 #X connect 83 0 131 0;
+#X connect 83 0 167 0;
 #X connect 85 0 89 0;
 #X connect 85 0 91 0;
 #X connect 85 0 101 0;

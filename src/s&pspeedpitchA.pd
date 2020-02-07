@@ -43,7 +43,7 @@
 #X floatatom 988 667 5 0 0 0 - - -;
 #X obj 954 596 spigot-toggle_vert;
 #X obj 998 634 * 1;
-#X obj 471 637 * 1;
+#X obj 491 640 * 1;
 #X floatatom 1007 822 5 0 0 0 - - -;
 #X obj 1007 797 * 4;
 #X obj 1057 773 t b f;
@@ -132,7 +132,7 @@
 #X obj -3 298 + 1;
 #X obj 40 276 - 1;
 #X obj 30 300 * -1;
-#X obj 66 49 tgl 25 0 empty empty A 8 14 0 16 -1 -262144 -260097 0
+#X obj 66 49 tgl 25 0 empty empty A 8 14 0 16 -1 -262144 -260097 1
 1;
 #X obj 93 49 tgl 25 1 empty empty empty 17 7 0 10 -1 -262144 -260097
 0 1;
@@ -182,7 +182,7 @@
 0 1;
 #X obj 66 76 tgl 25 0 empty empty B 8 14 0 16 -1 -262144 -260097 0
 1;
-#X obj 93 76 tgl 25 0 empty empty empty 17 7 0 10 -1 -262144 -1 0 1
+#X obj 93 76 tgl 25 0 empty empty empty 17 7 0 10 -1 -262144 -1 1 1
 ;
 #X obj 66 103 tgl 25 0 empty empty ''a 8 14 1 16 -1 -262144 -260097
 0 1;
@@ -444,6 +444,7 @@
 #X floatatom -94 542 5 0 0 0 - - -;
 #X floatatom -151 608 5 0 0 0 - - -;
 #X obj 553 784 t b f;
+#X obj 360 838 s Amods&p;
 #X connect 0 0 44 0;
 #X connect 1 0 44 0;
 #X connect 2 0 44 0;
@@ -855,6 +856,7 @@
 #X connect 330 0 283 0;
 #X connect 331 0 318 0;
 #X connect 331 0 44 0;
+#X connect 332 0 375 0;
 #X connect 333 0 321 0;
 #X connect 334 0 324 1;
 #X connect 335 0 321 0;

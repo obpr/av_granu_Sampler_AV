@@ -1,4 +1,4 @@
-#N canvas 170 137 1510 891 12;
+#N canvas 156 392 1510 891 12;
 #N canvas 67 224 450 432 :: 0;
 #X text 24 16 the format [pix_film] is able to decode depends on the
 system you are running Gem.;
@@ -40,13 +40,13 @@ that under linux i could play most formats...;
 #X obj 550 314 spigot-toggle_red;
 #X obj 490 294 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 521 337 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 521 337 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 523 240 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 490 240 spigot-toggle_red;
 #X obj 556 240 spigot-toggle_red;
-#X obj 550 337 spigot-toggle_red;
+#X obj 569 376 spigot-toggle_red;
 #X obj 490 317 spigot-toggle_red;
 #X obj 213 -391 random;
 #X floatatom 100 -275 5 0 0 0 - - -;
@@ -78,7 +78,7 @@ that under linux i could play most formats...;
 #X obj 638 285 spigot-toggle_red;
 #X obj 688 325 outlet;
 #X obj 688 295 outlet;
-#X obj 553 444 * 100;
+#X obj 488 407 * 100;
 #X msg 127 1366 asmpl/*.wav;
 #X obj 112 711 r BB;
 #X msg 126 1203 APL/*.wav;
@@ -121,9 +121,9 @@ that under linux i could play most formats...;
 #X obj 101 484 tgl 20 0 empty empty A 6 11 0 12 -1 -262144 -262144
 0 1;
 #X obj 122 484 tgl 20 0 empty empty B 6 11 0 12 -1 -262144 -262144
-0 1;
+1 1;
 #X floatatom 214 486 4 0 0 0 every - -;
-#X floatatom 102 465 5 0 0 0 - - -;
+#X floatatom 101 465 5 0 0 0 - - -;
 #X obj 145 465 bng 18 250 50 0 empty empty pnl 21 12 0 12 -262144 -260097
 -1;
 #X obj 138 527 bng 36 250 50 0 empty empty aplle 7 17 1 10 -1 -4034
@@ -355,6 +355,7 @@ that under linux i could play most formats...;
 #X connect 82 0 169 0;
 #X connect 83 0 62 0;
 #X connect 84 0 99 0;
+#X connect 84 0 167 0;
 #X connect 85 0 39 0;
 #X connect 86 0 55 0;
 #X connect 87 0 97 0;

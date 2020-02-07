@@ -27,7 +27,7 @@
 1;
 #X obj 601 296 *~;
 #X obj 76 120 tgl 20 0 empty empty BCK 2 11 1 8 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 463 258 sel;
 #X msg 463 280 75;
 #X floatatom -108 769 5 0 0 0 - - -;

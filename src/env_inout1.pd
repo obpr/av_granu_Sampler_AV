@@ -84,7 +84,7 @@
 #X msg 1200 -172 0;
 #X obj 441 -586 r øSbangB;
 #X obj 905 45 hsl 128 15 -2 2 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 9525 1;
+-1 -1 0 1;
 #X obj 1402 -461 inlet;
 #X obj 931 -346 inlet;
 #X floatatom 1389 -502 12 0 0 0 - - -;
@@ -128,6 +128,7 @@
 #X obj 355 -264 r recordlivemidiloopBNGB;
 #X obj 357 -227 r env_recmidi_inB;
 #X obj 503 -369 r envRNGmidiloopB;
+#X obj 1149 -74 s gateinB;
 #X connect 0 0 48 1;
 #X connect 0 0 67 1;
 #X connect 0 0 10 0;
@@ -223,6 +224,7 @@
 #X connect 72 0 73 0;
 #X connect 73 0 50 1;
 #X connect 74 0 51 0;
+#X connect 74 0 119 0;
 #X connect 75 0 76 0;
 #X connect 76 1 77 0;
 #X connect 77 0 73 0;
