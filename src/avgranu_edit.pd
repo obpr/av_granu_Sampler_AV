@@ -248,7 +248,7 @@
 #X obj -929 747 r Bonoff;
 #X obj 198 212 pluckagop;
 #X obj 895 430 hsl 510 110 0 1 0 0 empty empty empty -3 77 0 7 -262144
--1 -1 3041 1;
+-1 -1 0 1;
 #N canvas 0 23 450 300 (subpatch) 0;
 #X array table24 353667 float 2;
 #X coords 0 1.02 353667 -1.02 515 110 2 0 0;
@@ -257,7 +257,7 @@
 -262144 -262144 22300 0;
 #X obj -967 688 s itA;
 #X obj 201 430 hsl 510 110 0 1 0 0 empty empty empty -3 77 0 7 -262144
--1 -1 18459 1;
+-1 -1 0 1;
 #X obj -883 572 s onoffA;
 #X obj -1174 603 * 5;
 #X obj -1161 991 * 5;
@@ -751,13 +751,13 @@
 #X floatatom 11540 912 4 0 0 0 - send_+_progr_B -;
 #X floatatom 11584 912 4 0 0 0 - send_+stepB -;
 #X floatatom 11414 912 4 0 0 0 - send_+XTB -;
-#X obj 1599 5 cnv 15 130 535 empty empty VIDEO_OUT 33 6 0 11 -261682
+#X obj 1599 5 cnv 15 130 535 empty empty VIDEO_OUT 1 6 0 10 -261682
 -1 0;
-#X obj 1630 153 bng 17 250 50 0 empty empty destroy 22 8 1 12 -260097
+#X obj 1602 152 bng 17 250 50 0 empty empty destroy 22 8 1 12 -260097
 -4034 -1;
 #X floatatom 182 1669 5 0 0 0 send_syncAB - syncAB;
 #X floatatom 182 1629 5 0 0 0 receive_syncABsave syncABsave -;
-#X obj 1629 45 bng 15 250 50 0 empty empty 768_576 17 7 0 10 -262144
+#X obj 1604 45 bng 15 250 50 0 empty empty 768_576 17 7 0 10 -262144
 -1 -1;
 #X floatatom 6814 512 4 0 0 0 - - #2-out;
 #X floatatom 6856 512 4 0 0 0 - - #3-out;
@@ -1492,9 +1492,9 @@
 #X obj -1854 552 / 8.4666;
 #X obj -1806 982 / 8.4666;
 #X obj -1798 1039 + 1;
-#X obj 1629 77 bng 15 250 50 0 empty empty 640_480 17 7 0 10 -262144
+#X obj 1604 77 bng 15 250 50 0 empty empty 640_480 17 7 0 10 -262144
 -1 -1;
-#X obj 1629 29 bng 15 250 50 0 empty empty 800_400 17 7 0 10 -262144
+#X obj 1604 29 bng 15 250 50 0 empty empty 800_400 17 7 0 10 -262144
 -1 -1;
 #X msg 1635 -254 reset \, dimen 640 480 \, create \, 1;
 #X msg 1636 -201 reset \, dimen 800 400 \, create \, 1;
@@ -1502,7 +1502,7 @@
 #X obj -1854 584 int;
 #X obj 231 1975 s IT1;
 #X obj 231 1828 s IT;
-#X obj 1706 98 vradio 17 1 0 3 empty empty empty 0 -8 0 10 -262144
+#X obj 1638 98 vradio 17 1 0 3 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
 #X floatatom 1642 -116 5 0 0 0 - - -;
 #X obj 1644 -138 + 1;
@@ -1564,7 +1564,7 @@
 #X floatatom 197 885 2 0 0 0 - - -;
 #X obj 44 886 tgl 22 0 empty empty %T 3 13 1 12 -1 -262144 -262144
 1 1;
-#X obj 129 768 tgl 30 0 empty empty B 6 16 1 31 -262144 -1 -1 1 1;
+#X obj 129 768 tgl 30 0 empty empty B 6 16 1 31 -262144 -1 -1 0 1;
 #X obj 316 782 tgl 15 0 empty empty >< 1 7 2 13 -1 -260097 -262144
 0 1;
 #X obj 284 780 bng 30 250 50 0 empty empty next 5 15 0 9 -1 -260097
@@ -1720,7 +1720,7 @@
 0;
 #X obj 86 600 hsl 70 20 1 10 0 0 empty empty * 10 15 1 22 -1 -262144
 -262144 0 0;
-#X obj 128 546 tgl 30 0 empty empty A 7 16 0 30 -262144 -1 -1 1 1;
+#X obj 128 546 tgl 30 0 empty empty A 7 16 0 30 -262144 -1 -1 0 1;
 #X obj 10 599 hsl 70 20 0.001 1 0 0 empty empty % 41 9 1 12 -1 -262144
 -262144 6900 0;
 #X floatatom 223 614 6 0 0 2 - - -;
@@ -1994,7 +1994,7 @@
 #X obj 456 1943 * 0.789;
 #X obj 404 1900 t b f;
 #X obj 2071 427 r lo;
-#X obj 1629 61 bng 15 250 50 0 empty empty 480_240 17 7 0 10 -262144
+#X obj 1604 61 bng 15 250 50 0 empty empty 480_240 17 7 0 10 -262144
 -1 -1;
 #X msg 1645 -295 reset \, dimen 480 240 \, create \, 1;
 #X obj -292 137 r 44/88_A;
@@ -2127,14 +2127,16 @@
 #X obj -615 550 * 0.5;
 #X obj -462 772 * 0.5;
 #X obj -605 772 r looplenghtB;
-#X obj 1165 545 multioscilateurA;
-#X text 1599 98 fullscreen.1;
-#X text 1599 114 fullscreen.2;
-#X text 1599 129 fullscreen.3;
+#X obj 1244 545 multioscilateurA;
 #X obj 1599 175 cnv 15 130 365 empty empty VIDEO_OUT 33 6 0 11 -1 -1
 0;
 #X obj 1036 746 hradio 15 1 0 4 empty empty A+B 4 8 1 13 -66577 -262144
 -260097 3;
+#X text 1599 114 F.S.2;
+#X text 1599 129 F.S.3;
+#X text 1599 98 F.S.1;
+#X obj 1165 545 cnv 15 78 418 empty empty VIDEO_OUT 33 6 0 11 -1 -1
+0;
 #X connect 0 0 58 0;
 #X connect 1 0 1076 0;
 #X connect 2 0 175 0;
@@ -3776,6 +3778,6 @@
 #X connect 1388 0 1325 0;
 #X connect 1389 0 1308 0;
 #X connect 1390 0 1389 0;
-#X connect 1396 0 1277 0;
-#X connect 1396 0 1278 0;
+#X connect 1393 0 1277 0;
+#X connect 1393 0 1278 0;
 #X coords 0 -10 1 1 1965 965 2 0 0;
