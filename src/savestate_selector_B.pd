@@ -1,4 +1,4 @@
-#N canvas 1810 0 1680 1028 12;
+#N canvas 0 0 1680 1028 12;
 #X obj 116 167 sel 0 1 2;
 #X obj 358 145 sel 0 1 2;
 #X obj 957 59 f;
@@ -1662,12 +1662,12 @@
 #X obj 6601 902 s send_save_trgBB;
 #X obj 5674 612 f;
 #X floatatom 5702 601 5 0 0 0 - - -;
-#X obj 101 101 cnv 15 156 21 empty empty empty 20 12 0 14 -260097 -66577
+#X obj 101 101 cnv 15 126 20 empty empty empty 20 12 0 14 -260097 -66577
 0;
-#X obj 102 102 hradio 19 1 0 4 empty empty empty -70 -5 1 10 -162280
--262144 -262144 2;
-#X obj 179 102 hradio 19 1 0 4 empty empty empty -70 -5 1 10 -162280
--1 -191407 1;
+#X obj 103 104 hradio 15 1 0 4 empty empty empty -70 -5 1 10 -162280
+-262144 -262144 3;
+#X obj 164 104 hradio 15 1 0 4 empty empty empty -70 -5 1 10 -162280
+-1 -191407 3;
 #X floatatom 505 -74 5 0 0 0 W.s@pBA W.s@pBA -;
 #X floatatom 503 221 5 0 0 0 S.s@pBA - S.s@pBA;
 #X floatatom 635 -74 5 0 0 0 W.s@pBB W.s@pBB -;
@@ -3335,4 +3335,4 @@
 #X connect 1387 0 1190 0;
 #X connect 1388 0 1195 0;
 #X connect 1389 0 1200 0;
-#X coords 0 -1 1 1 160 25 1 100 100;
+#X coords 0 -1 1 1 128 22 1 100 100;

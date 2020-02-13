@@ -1,8 +1,8 @@
-#N canvas 0 139 906 777 10;
+#N canvas 317 180 906 777 10;
 #X obj 209 148 hsl 100 15 0 1 0 0 empty empty cut_out 3 7 1 10 -1 -262144
--262144 9900 1;
+-262144 2600 1;
 #X obj 104 148 hsl 100 15 0 1 0 0 empty empty cut_in 3 7 1 10 -1 -262144
--262144 0 1;
+-262144 900 1;
 #X obj 370 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
 -262144 -1 5861 1;
 #X obj 412 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
@@ -10,11 +10,11 @@
 #X obj 391 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
 -262144 -1 5861 1;
 #X obj 104 129 hsl 100 18 0 1 0 0 empty empty fade_in 3 7 1 10 -260097
--262144 -262144 0 1;
+-262144 -262144 2000 1;
 #X obj 209 129 hsl 100 18 1 0 0 0 empty empty fade_out 3 7 1 10 -260097
--262144 -262144 9900 1;
+-262144 -262144 5100 1;
 #X obj 433 103 vsl 30 70 0 2 0 0 empty empty gain 6 6 0 7 -1 -260097
--260097 450 1;
+-260097 3450 1;
 #X obj -5 430 vfreeverb~;
 #X obj 467 141 hsl 145 17 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -1
 -260097 -262144 0 0;
@@ -30,7 +30,7 @@
 #X obj -53 56 inlet;
 #X obj -47 541 dj-eq;
 #X obj -50 504 *~;
-#X obj 20 489 dac~;
+#X obj -56 637 dac~;
 #X obj -8 349 s V1A;
 #X floatatom -424 -509 4 0 100 0 - - -;
 #X floatatom -426 -586 0 0 200 0 - - -;
@@ -161,7 +161,7 @@
 #X obj 87 25 r lo;
 #X obj 234 6 - 1;
 #X obj 233 27 * -1;
-#X obj -50 567 s~ A0;
+#X obj -116 592 s~ A0;
 #X obj -36 -426 * 0.01;
 #X obj -771 187 * -1;
 #X obj -772 166 - 1;

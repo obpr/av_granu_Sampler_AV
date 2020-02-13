@@ -1,4 +1,4 @@
-#N canvas -670 455 1680 1028 12;
+#N canvas -404 0 1680 1028 12;
 #X text 613 830 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text 325 984 Here \, rather than ask you to push the read pointer
 back and forth in the sample \, we use a phasor~. This makes it possible
@@ -148,15 +148,15 @@ push : off;
 #X obj 140 331 spigot-toggle_orange;
 #X obj 98 128 tgl 28 0 empty empty A 8 14 1 17 -1 -262144 -262144 0
 1;
-#X obj 98 157 tgl 28 0 empty empty Bmd 2 14 1 12 -1 -262144 -262144
+#X obj 98 157 tgl 28 0 empty empty B 8 14 1 17 -1 -262144 -262144 0
+1;
+#X obj 147 129 tgl 28 0 empty empty A 8 14 1 17 -1 -262144 -262144
 0 1;
-#X obj 147 128 tgl 28 0 empty empty A 8 14 1 17 -1 -262144 -262144
-0 1;
-#X obj 147 157 tgl 28 0 empty empty B 8 14 1 17 -1 -262144 -262144
+#X obj 147 158 tgl 28 0 empty empty B 8 14 1 17 -1 -262144 -262144
 0 1;
 #X obj 125 98 cnv 17 79 16 empty empty Entry_point 17 8 1 12 -1 -262144
 0;
-#X obj 126 131 vsl 20 80 0 1 0 0 empty empty mod 2 10 0 9 -1 -260097
+#X obj 126 132 vsl 20 80 0 1 0 0 empty empty mod 2 10 0 9 -1 -260097
 -262144 0 1;
 #X obj 101 214 cnv 20 25 25 empty empty -A- 4 12 0 10 -1 -262144 0
 ;
@@ -168,21 +168,21 @@ push : off;
 0 1;
 #X obj 69 237 tgl 25 0 empty empty Trg 2 10 0 10 -1 -262144 -262144
 0 1;
-#X obj 176 128 tgl 28 0 empty empty ->- 3 12 1 14 -1 -262144 -262144
+#X obj 176 129 tgl 28 0 empty empty ->- 3 12 1 14 -1 -262144 -262144
 0 1;
 #X obj 69 128 tgl 28 0 empty empty A@ 4 12 1 14 -260097 -262144 -262144
 0 1;
 #X obj 69 157 tgl 28 0 empty empty @re 2 13 1 12 -260097 -262144 -262144
 0 1;
-#X obj 176 157 tgl 28 0 empty empty ->- 3 12 1 14 -1 -262144 -262144
+#X obj 176 158 tgl 28 0 empty empty ->- 3 12 1 14 -1 -262144 -262144
 0 1;
-#X obj 147 186 tgl 28 0 empty empty løc 3 13 0 12 -260097 -262144
+#X obj 147 187 tgl 28 0 empty empty løc 3 13 0 12 -260097 -262144
 -1 0 1;
 #X obj 97 186 tgl 28 0 empty empty >ø 3 13 0 15 -260097 -262144 -1
 0 1;
 #X obj 69 99 tgl 28 0 empty empty raw 4 13 1 13 -260097 -262144 -262144
 0 1;
-#X obj 176 186 tgl 28 0 empty empty ø@S 3 13 0 12 -260097 -262144
+#X obj 176 187 tgl 28 0 empty empty ø@S 3 13 0 12 -260097 -262144
 -1 0 1;
 #X obj 478 -200 cnv 15 50 15 empty empty empty 20 12 0 14 -262144 -66577
 0;
@@ -426,15 +426,15 @@ motor off;
 #X obj 1258 121 * 1;
 #X obj 1258 93 t b f;
 #X obj 1308 127 r øs@Agate;
-#X obj 722 9 r Bmod;
 #X obj 350 100 s øs@Aloopnotnstartat0;
 #X obj 264 711 sel;
 #X msg 281 741 1;
 #X floatatom 1349 210 2 0 0 0 - - -;
 #X floatatom 1419 77 2 0 0 0 - - -;
 #X obj 293 671 sel;
-#X msg 307 703 1;
-#X connect 5 0 364 0;
+#X msg 306 715 1;
+#X obj 722 9 r B;
+#X connect 5 0 363 0;
 #X connect 5 0 357 0;
 #X connect 6 0 29 0;
 #X connect 7 0 26 0;
@@ -642,8 +642,8 @@ motor off;
 #X connect 147 0 223 0;
 #X connect 147 0 238 0;
 #X connect 148 0 353 1;
-#X connect 148 0 360 0;
-#X connect 148 0 365 0;
+#X connect 148 0 359 0;
+#X connect 148 0 364 0;
 #X connect 150 0 288 0;
 #X connect 150 0 352 0;
 #X connect 151 0 122 0;
@@ -720,7 +720,7 @@ motor off;
 #X connect 212 0 82 0;
 #X connect 212 0 107 0;
 #X connect 212 0 248 0;
-#X connect 212 0 361 0;
+#X connect 212 0 360 0;
 #X connect 213 0 171 0;
 #X connect 215 0 144 0;
 #X connect 215 0 135 0;
@@ -843,6 +843,7 @@ motor off;
 #X connect 328 0 292 0;
 #X connect 328 1 292 0;
 #X connect 329 0 135 0;
+#X connect 329 0 359 0;
 #X connect 330 0 331 1;
 #X connect 331 0 276 0;
 #X connect 332 0 150 0;
@@ -867,16 +868,16 @@ motor off;
 #X connect 354 0 355 0;
 #X connect 355 0 353 0;
 #X connect 356 0 27 0;
-#X connect 356 0 363 0;
+#X connect 356 0 362 0;
 #X connect 357 0 356 0;
 #X connect 357 1 356 1;
 #X connect 358 0 356 0;
-#X connect 359 0 69 0;
-#X connect 359 0 71 0;
-#X connect 361 1 362 0;
-#X connect 362 0 183 0;
-#X connect 365 1 366 0;
-#X connect 366 0 212 0;
-#X connect 366 0 139 0;
-#X connect 366 0 183 0;
+#X connect 360 1 361 0;
+#X connect 361 0 183 0;
+#X connect 364 1 365 0;
+#X connect 365 0 212 0;
+#X connect 365 0 139 0;
+#X connect 365 0 183 0;
+#X connect 366 0 69 0;
+#X connect 366 0 71 0;
 #X coords 0 -1 1 1 205 165 2 0 98;

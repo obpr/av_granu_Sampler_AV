@@ -770,10 +770,10 @@
 #X obj 213 345 sel 1;
 #X obj 218 394 sel 2;
 #X obj 223 444 sel 3;
-#X obj 102 102 hradio 18 1 0 4 empty empty empty 8 -10 0 10 -99865
+#X obj 102 102 hradio 15 1 0 4 empty empty empty 8 -10 0 10 -99865
 -262144 -262144 1;
-#X obj 176 102 hradio 18 1 0 4 empty empty empty 1 -10 0 10 -128992
--1 -262144 0;
+#X obj 163 102 hradio 15 1 0 4 empty empty empty 1 -10 0 10 -128992
+-1 -262144 1;
 #X floatatom 448 93 5 0 0 0 W.progrXT_B W.progrXT_B -;
 #X floatatom 449 121 5 0 0 0 S.progrXT_B - S.progrXT_B;
 #X floatatom 646 93 5 0 0 0 W.Trgr-progr_B W.Trgr-progr_B -;
@@ -1537,4 +1537,4 @@
 #X connect 634 0 98 0;
 #X connect 636 0 105 0;
 #X connect 638 0 112 0;
-#X coords 0 -1 1 1 150 22 2 100 100;
+#X coords 0 -1 1 1 125 20 2 100 100;

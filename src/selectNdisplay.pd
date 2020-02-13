@@ -1,4 +1,4 @@
-#N canvas 927 122 1367 877 12;
+#N canvas 309 170 1367 877 12;
 #N canvas 67 224 450 432 :: 0;
 #X text 24 16 the format [pix_film] is able to decode depends on the
 system you are running Gem.;
@@ -82,7 +82,7 @@ that under linux i could play most formats...;
 #X obj 628 229 outlet;
 #X obj 628 199 outlet;
 #X obj 446 326 * 100;
-#X msg 26 1266 asmpl/*.wav;
+#X msg 28 1279 asmpl/*.wav;
 #X obj 11 611 r BB;
 #X msg 25 1103 APL/*.wav;
 #X obj 386 169 r BB1;

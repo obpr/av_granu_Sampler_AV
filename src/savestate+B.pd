@@ -759,9 +759,9 @@
 -1 -1;
 #X floatatom 1787 727 5 0 0 0 - - -;
 #X floatatom 1771 794 5 0 0 0 send_+5B - send_+5B;
-#X obj 102 102 hradio 18 1 0 4 empty empty empty 8 -10 0 10 -99865
+#X obj 102 102 hradio 15 1 0 4 empty empty empty 8 -10 0 10 -99865
 -262144 -262144 1;
-#X obj 176 102 hradio 18 1 0 4 empty empty empty 1 -10 0 10 -128992
+#X obj 163 102 hradio 15 1 0 4 empty empty empty 1 -10 0 10 -128992
 -1 -262144 1;
 #X floatatom 431 73 5 0 0 0 W.+_XT_B W.+_XT_B -;
 #X floatatom 432 101 5 0 0 0 S.+_XT_B - S.+_XT_B;
@@ -1524,4 +1524,4 @@
 #X connect 630 0 98 0;
 #X connect 632 0 105 0;
 #X connect 634 0 112 0;
-#X coords 0 -1 1 1 150 22 2 100 100;
+#X coords 0 -1 1 1 125 20 2 100 100;

@@ -1,4 +1,4 @@
-#N canvas 1940 104 1680 1028 10;
+#N canvas 1920 30 1680 1028 10;
 #X floatatom 1454 26 5 0 0 0 receive_TprogB TprogB -;
 #X obj 1437 70 f;
 #X obj 1422 44 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
@@ -873,9 +873,9 @@
 #X obj 90 265 sel 1;
 #X obj 91 289 sel 2;
 #X obj 90 315 sel 3;
-#X obj 102 102 hradio 18 1 0 4 empty empty empty 8 -10 0 10 -99865
--262144 -262144 2;
-#X obj 176 102 hradio 18 1 0 4 empty empty empty 1 -10 0 10 -128992
+#X obj 102 102 hradio 15 1 0 4 empty empty empty 8 -10 0 10 -99865
+-262144 -262144 3;
+#X obj 163 102 hradio 15 1 0 4 empty empty empty 1 -10 0 10 -128992
 -1 -262144 0;
 #X floatatom 584 114 5 0 0 3 S.ITB%ITB - S.ITB%ITB;
 #X floatatom 583 91 5 0 0 2 W.ITB%ITB W.ITB%ITB -;
@@ -1772,4 +1772,4 @@
 #X connect 737 0 735 1;
 #X connect 737 0 740 0;
 #X connect 739 0 737 0;
-#X coords 0 -1 1 1 150 22 2 100 100;
+#X coords 0 -1 1 1 125 20 2 100 100;

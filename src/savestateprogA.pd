@@ -1,4 +1,4 @@
-#N canvas 419 13 1680 867 10;
+#N canvas 0 13 1680 867 10;
 #X obj 216 75 sel 0 1 2;
 #X obj 216 145 sel 0 1 2;
 #X floatatom 953 -3 5 0 0 0 receive_progr_progr progr_progr -;
@@ -735,10 +735,10 @@
 -1 -1;
 #X floatatom 1787 687 5 0 0 0 - - -;
 #X floatatom 1771 754 5 0 0 0 send_prog5 - send_prog5;
-#X obj 102 102 hradio 18 1 0 4 empty empty empty 8 -10 0 10 -99865
+#X obj 102 102 hradio 15 1 0 4 empty empty empty 8 -10 0 10 -99865
 -262144 -262144 0;
-#X obj 176 102 hradio 18 1 0 4 empty empty empty 1 -10 0 10 -128992
--1 -262144 0;
+#X obj 163 102 hradio 15 1 0 4 empty empty empty 1 -10 0 10 -128992
+-1 -262144 2;
 #X floatatom 943 86 5 0 0 0 - - -;
 #X floatatom 1089 86 5 0 0 0 - - -;
 #X floatatom 1235 86 5 0 0 0 - - -;
@@ -1526,4 +1526,4 @@
 #X connect 630 0 137 1;
 #X connect 632 0 282 1;
 #X connect 634 0 427 1;
-#X coords 0 -1 1 1 150 22 2 100 100;
+#X coords 0 -1 1 1 125 20 2 100 100;

@@ -1,4 +1,4 @@
-#N canvas 2585 524 1680 1001 10;
+#N canvas 1920 57 1680 1001 10;
 #X floatatom 1102 -133 5 0 0 0 receive_#1B #1B -;
 #X obj 1096 -81 f;
 #X obj 1073 -102 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
@@ -1433,10 +1433,10 @@
 #X obj 1983 407 onoff36;
 #X obj 1983 1027 onoff36;
 #X obj 1983 737 onoff36;
-#X obj 102 102 hradio 18 1 0 4 empty empty empty 8 -10 0 10 -99865
--262144 -262144 1;
-#X obj 176 102 hradio 18 1 0 4 empty empty empty 1 -10 0 10 -128992
--1 -262144 0;
+#X obj 102 102 hradio 15 1 0 4 empty empty empty 8 -10 0 10 -99865
+-262144 -262144 2;
+#X obj 163 102 hradio 15 1 0 4 empty empty empty 1 -10 0 10 -128992
+-1 -262144 3;
 #X floatatom 802 -180 5 0 0 2 W.IT=TB W.IT=TB -;
 #X floatatom 813 122 5 0 0 3 S.IT=TB - S.IT=TB;
 #X floatatom 1097 125 5 0 0 3 S.stp1B - S.stp1B;
@@ -2929,4 +2929,4 @@
 #X connect 1215 0 177 0;
 #X connect 1216 0 195 0;
 #X connect 1217 0 208 0;
-#X coords 0 -1 1 1 150 22 2 100 100;
+#X coords 0 -1 1 1 125 20 2 100 100;
