@@ -36,7 +36,7 @@
 #X obj 142 78 r \$0-glide;
 #X obj 373 95 r \$0-glide;
 #X obj 253 607 s~ wave0;
-#X obj 205 439 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1.25
+#X obj 205 439 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 105 503 dj-eq;
 #X obj 116 458 r M2;
@@ -226,7 +226,7 @@
 #X text -665 518 The binary signal operators can be configured to combine
 two signals as above \, or \, if you give a numeric argument \, audio
 signals are combined with scalars:;
-#X obj 205 439 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1.25
+#X obj 228 437 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 101 489 dj-eq;
 #X obj 116 458 r M2;
@@ -305,7 +305,7 @@ signals are combined with scalars:;
 #X connect 50 0 37 0;
 #X connect 51 0 27 0;
 #X restore 150 37 pd triangle;
-#N canvas 564 302 1116 726 pulse 1;
+#N canvas 564 302 1116 726 pulse 0;
 #X floatatom 603 58 5 0 0 0 - - -;
 #X floatatom 81 65 5 0 0 0 - - -;
 #X obj 78 588 *~;
@@ -354,7 +354,7 @@ signals are combined with scalars:;
 #X obj 398 96 r \$0-glide;
 #X obj 456 268 r \$0-pwm;
 #X obj 190 272 r \$0-pwm;
-#X obj 238 560 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1.25
+#X obj 238 560 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 175 639 dj-eq;
 #X obj 214 587 r M2;
@@ -602,7 +602,7 @@ signals are combined with scalars:;
 #X obj 603 104 t b b;
 #X obj 146 93 r \$0-glide;
 #X obj 385 94 r \$0-glide;
-#X obj 208 419 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1.25
+#X obj 208 419 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 208 389 r 2mfreqadd;
 #X obj 177 484 dj-eq;
