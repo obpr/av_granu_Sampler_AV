@@ -1,4 +1,4 @@
-#N canvas 667 57 1624 859 12;
+#N canvas -83 372 1624 859 12;
 #X text -1268 869 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X obj 1826 150 r trgrA;
 #X obj 1769 145 r BB;
@@ -130,7 +130,7 @@ push : off;
 #X obj 68 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -260097
 0 1;
 #X obj 68 206 tgl 25 0 empty empty Trg 1 10 0 10 -1 -262144 -262144
-0 1;
+1 1;
 #X obj 120 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -262144
 0 1;
 #X obj 176 120 tgl 28 0 empty empty ->- 2 12 0 12 -1 -262144 -262144
@@ -148,7 +148,7 @@ push : off;
 #X obj 68 91 tgl 28 0 empty empty raw 1 12 0 12 -260097 -262144 -45076
 0 1;
 #X obj 176 178 tgl 28 0 empty empty ø@S 3 13 0 12 -260097 -262144
--1 0 1;
+-1 1 1;
 #X floatatom 146 104 8 0 0 0 - - -;
 #X obj 68 178 tgl 28 0 empty empty @B 5 15 0 14 -260097 -262144 -1
 0 1;
@@ -160,7 +160,7 @@ push : off;
 0 1;
 #X obj 153 229 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
-#X obj 97 91 tgl 28 0 empty empty ø 6 10 0 25 -1 -262144 -228856 0
+#X obj 97 91 tgl 28 0 empty empty ø 6 10 0 25 -1 -262144 -228856 1
 1;
 #X obj 48 755 * -1;
 #X obj 49 696 r freestepsouts1;
@@ -247,7 +247,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 662 748 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 120 207 tgl 25 0 empty empty Bng 4 12 0 10 -1 -262144 -262144
-0 1;
+1 1;
 #X obj 1442 69 * 1;
 #X obj 101 -637 r send_BA;
 #X obj 101 -614 s BA;
@@ -607,6 +607,8 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 124 0 19 1;
 #X connect 124 0 339 0;
 #X connect 124 0 341 0;
+#X connect 124 0 205 0;
+#X connect 124 0 115 0;
 #X connect 125 0 177 0;
 #X connect 125 0 206 0;
 #X connect 126 0 171 0;
