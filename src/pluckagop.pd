@@ -1,4 +1,4 @@
-#N canvas 70 233 1680 1028 12;
+#N canvas 70 150 1680 1028 12;
 #X text 613 830 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text 325 984 Here \, rather than ask you to push the read pointer
 back and forth in the sample \, we use a phasor~. This makes it possible
@@ -165,14 +165,14 @@ push : off;
 #X obj 127 237 tgl 25 0 empty empty Bng 2 10 0 10 -1 -262144 -262144
 0 1;
 #X obj 67 215 tgl 25 0 empty empty empty 2 10 0 10 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 69 237 tgl 25 0 empty empty Trg 2 10 0 10 -1 -262144 -262144
 0 1;
 #X obj 176 129 tgl 28 0 empty empty ->- 3 12 1 14 -1 -262144 -262144
 0 1;
-#X obj 69 128 tgl 28 0 empty empty A@ 4 12 1 14 -260097 -262144 -262144
+#X obj 69 128 tgl 28 0 empty empty A@ 4 12 1 14 -260097 -262144 -1
 0 1;
-#X obj 69 157 tgl 28 0 empty empty @re 2 13 1 12 -260097 -262144 -262144
+#X obj 69 157 tgl 28 0 empty empty @re 2 13 1 12 -260097 -262144 -1
 0 1;
 #X obj 176 158 tgl 28 0 empty empty ->- 3 12 1 14 -1 -262144 -262144
 0 1;
@@ -180,7 +180,7 @@ push : off;
 -1 0 1;
 #X obj 97 186 tgl 28 0 empty empty >ø 3 13 0 15 -260097 -262144 -1
 0 1;
-#X obj 69 99 tgl 28 0 empty empty raw 4 13 1 13 -260097 -262144 -262144
+#X obj 69 99 tgl 28 0 empty empty raw 4 13 1 13 -260097 -262144 -1
 0 1;
 #X obj 176 187 tgl 28 0 empty empty ø@S 3 13 0 12 -260097 -262144
 -1 0 1;
@@ -197,7 +197,7 @@ push : off;
 0 1;
 #X obj 153 237 tgl 25 0 empty empty << 5 10 1 11 -1 -262144 -262144
 0 1;
-#X obj 97 99 tgl 28 0 empty empty ø 8 12 1 22 -1 -262144 -262144 1
+#X obj 97 99 tgl 28 0 empty empty ø 8 12 1 22 -1 -262144 -262144 0
 1;
 #X obj 45 766 * -1;
 #X obj 45 739 - 1;
@@ -258,7 +258,7 @@ push : off;
 -1 -1;
 #X floatatom 964 435 5 0 0 0 - - -;
 #X obj 127 216 tgl 25 0 empty empty empty 2 10 0 10 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 1174 -220 r TRGnB_@s B1fromselnd;
 #X obj 174 -97 s reposetoinoffAB;
 #X obj 174 -118 r send_reposetoinoffAB;
