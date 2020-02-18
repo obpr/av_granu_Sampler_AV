@@ -1,4 +1,4 @@
-#N canvas -83 372 1624 859 12;
+#N canvas -74 457 1624 859 12;
 #X text -1268 869 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X obj 1826 150 r trgrA;
 #X obj 1769 145 r BB;
@@ -16,7 +16,7 @@
 -1 -1;
 #X obj 1859 308 outlet;
 #X floatatom 1477 97 12 0 0 0 - - -;
-#X msg 110 -49 0;
+#X msg 231 -38 0;
 #X obj 1514 47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 1478 19 0;
@@ -59,7 +59,7 @@ on;
 push : off;
 #X obj 112 -964 - 1;
 #X obj 155 -963 * -1;
-#X obj 1427 246 spigot-toggle_red;
+#X obj 1426 246 spigot-toggle_red;
 #X obj 1414 223 spigot-toggle_vert;
 #X obj 1455 245 spigot-toggle_red;
 #X obj 1455 221 spigot-toggle_vert;
@@ -113,7 +113,7 @@ push : off;
 #X obj 994 642 r lo;
 #X obj 1003 670 spigot-toggle_vert;
 #X obj 107 -117 r lo;
-#X obj 1426 185 r B;
+#X obj 1449 164 r B;
 #X obj 175 300 spigot-toggle_orange;
 #X obj 97 120 tgl 28 0 empty empty A 8 14 1 17 -1 -262144 -262144 0
 1;
@@ -130,7 +130,7 @@ push : off;
 #X obj 68 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -260097
 0 1;
 #X obj 68 206 tgl 25 0 empty empty Trg 1 10 0 10 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 120 230 tgl 25 0 empty empty empty 5 10 0 15 -1 -262144 -262144
 0 1;
 #X obj 176 120 tgl 28 0 empty empty ->- 2 12 0 12 -1 -262144 -262144
@@ -148,7 +148,7 @@ push : off;
 #X obj 68 91 tgl 28 0 empty empty raw 1 12 0 12 -260097 -262144 -45076
 0 1;
 #X obj 176 178 tgl 28 0 empty empty ø@S 3 13 0 12 -260097 -262144
--1 1 1;
+-1 0 1;
 #X floatatom 146 104 8 0 0 0 - - -;
 #X obj 68 178 tgl 28 0 empty empty @B 5 15 0 14 -260097 -262144 -1
 0 1;
@@ -160,15 +160,15 @@ push : off;
 0 1;
 #X obj 153 229 tgl 25 0 empty empty <<<<<< 1 10 0 11 -1 -262144 -260097
 0 1;
-#X obj 97 91 tgl 28 0 empty empty ø 6 10 0 25 -1 -262144 -228856 1
+#X obj 97 91 tgl 28 0 empty empty ø 6 10 0 25 -1 -262144 -228856 0
 1;
 #X obj 48 755 * -1;
 #X obj 49 696 r freestepsouts1;
 #X obj 48 728 - 1;
-#X obj 1656 -110 - 1;
-#X obj 1656 -87 * -1;
-#X obj 1646 -51 spigot-toggle_orange;
-#X obj 1655 -135 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 1607 -50 - 1;
+#X obj 1607 -27 * -1;
+#X obj 1597 9 spigot-toggle_orange;
+#X obj 1606 -75 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
 #X msg 1464 301 0;
 #X obj 126 107 bng 20 250 50 0 empty empty +0 4 10 0 8 -1 -260097 -262144
@@ -201,12 +201,12 @@ push : off;
 #X obj 179 -637 s TmstrchBTR1;
 #X obj 94 786 s Bonoff;
 #X obj 428 552 s trgrvolee1;
-#X obj 1650 -158 r IT≠T1;
+#X obj 1601 -98 r IT≠T1;
 #X obj 117 635 s slctdisplayonoff1;
 #X obj 64 490 s @B;
 #X obj 106 490 s ø>B;
 #X obj 103 890 onoff13x;
-#X obj 1476 122 outlet;
+#X obj 1476 124 outlet;
 #X obj 200 55 s øAtiTS2;
 #X obj 109 -772 s onofdispay1;
 #X obj 145 19 s Bmod;
@@ -247,7 +247,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 662 748 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 120 207 tgl 25 0 empty empty Bng 4 12 0 10 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 1442 69 * 1;
 #X obj 101 -637 r send_BA;
 #X obj 101 -614 s BA;
@@ -375,8 +375,8 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj -523 302 r lo;
 #X msg -523 324 0;
 #X msg -506 -138 record slip.mid;
-#X obj 1409 273 spigot-toggle_jaunenoir;
-#X obj 1430 274 spigot-toggle_jaunenoir;
+#X obj 1409 269 spigot-toggle_jaunenoir;
+#X obj 1430 270 spigot-toggle_jaunenoir;
 #X obj 53 90 cnv 7 14 164 empty empty empty 20 12 0 14 -1 -66577 0
 ;
 #X obj -661 -88 cyclone/seq seq2.mid;
@@ -388,8 +388,8 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj -529 578 s recordlivemidiloopBNGB;
 #X obj -189 371 r anafromarduinoB;
 #X obj -197 322 r midifromarduinoB;
-#X obj 1590 44 s BangBtoenvB;
-#X obj 1654 -15 r TRGnB_@sA1fromselndB;
+#X obj 1607 83 s BangBtoenvB;
+#X obj 1605 45 r TRGnB_@sA1fromselndB;
 #X obj 1 203 tgl 25 0 empty empty A 8 13 1 14 -66577 -262144 -262144
 0 1;
 #X obj -168 -30 spigot-toggle_orange;
@@ -410,7 +410,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 1881 228 * 1;
 #X obj 1878 201 t b f;
 #X floatatom 2039 185 2 0 0 0 - - -;
-#X obj 1873 175 r trgrB;
+#X obj 1892 148 r trgrB;
 #X obj 1928 234 r øs@Bgate;
 #X obj 1414 165 r A;
 #X connect 1 0 21 0;
@@ -830,11 +830,12 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 336 0 337 0;
 #X connect 337 0 328 0;
 #X connect 337 0 332 0;
+#X connect 337 0 131 0;
 #X connect 338 0 15 0;
 #X connect 340 1 342 0;
 #X connect 341 1 342 0;
 #X connect 342 0 167 0;
-#X connect 343 0 12 0;
+#X connect 343 0 23 0;
 #X connect 344 0 343 0;
 #X connect 344 1 343 1;
 #X connect 346 0 345 0;

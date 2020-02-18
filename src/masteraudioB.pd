@@ -1,4 +1,4 @@
-#N canvas 774 93 906 623 10;
+#N canvas 497 247 906 623 10;
 #X obj -157 113 vfreeverb~;
 #X obj 449 -312 inlet;
 #X obj 489 -312 inlet;
@@ -167,9 +167,9 @@
 #X obj 238 255 s envfadreducout1;
 #X obj 129 255 s envfadreducin1;
 #X obj 208 148 hsl 100 15 0 1 0 0 empty empty cut_out 3 7 1 10 -1 -262144
--262144 8000 1;
+-262144 9900 1;
 #X obj 103 148 hsl 100 15 0 1 0 0 empty empty cut_in 3 7 1 10 -1 -262144
--262144 1100 1;
+-262144 0 1;
 #X obj 369 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
 -262144 -1 5861 1;
 #X obj 411 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
@@ -181,7 +181,7 @@
 #X obj 208 129 hsl 100 18 1 0 0 0 empty empty fade_out 3 7 1 10 -260097
 -262144 -262144 9900 1;
 #X obj 432 103 vsl 30 70 0 2 0 0 empty empty gain 6 6 0 7 -1 -260097
--260097 950 1;
+-260097 2950 1;
 #X obj 466 141 hsl 145 17 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -1
 -260097 -262144 0 0;
 #X obj 466 159 hsl 145 17 0 2 0 1 empty empty damp 3 8 0 10 -1 -260097
@@ -189,7 +189,7 @@
 #X obj 466 121 hsl 145 19 0 1 0 1 empty empty wet_reverb 3 8 0 10 -1
 -260097 -262144 0 0;
 #X obj 466 101 hsl 145 19 0 1 0 1 empty empty dry 3 8 0 10 -1 -260097
--262144 1500 0;
+-262144 7200 0;
 #X obj 338 101 bng 30 250 50 0 empty empty RST 7 15 0 8 -1 -4034 -260097
 ;
 #X obj 103 101 hsl 206 13 0 1 0 0 empty empty O:::::::::::::÷::sharpness::::::::::::::1
@@ -295,6 +295,7 @@
 #X obj -24 -1452 r øs@Bloopnotnstartat0;
 #X obj -52 -1306 s øs@Bgate;
 #X obj -272 -1446 * 0.25;
+#X msg -693 198 1;
 #X connect 0 0 163 0;
 #X connect 1 0 170 0;
 #X connect 2 0 169 0;
@@ -574,4 +575,5 @@
 #X connect 255 0 244 0;
 #X connect 255 0 250 0;
 #X connect 257 0 247 0;
+#X connect 258 0 157 0;
 #X coords 0 -1 1 1 514 77 1 100 100;

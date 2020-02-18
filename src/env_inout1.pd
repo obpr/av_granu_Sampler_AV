@@ -1,4 +1,4 @@
-#N canvas 358 162 1322 866 10;
+#N canvas 195 247 1322 866 10;
 #X floatatom 796 -625 5 0 0 0 - - -;
 #X obj 628 -675 inlet;
 #X obj 798 -691 inlet;
@@ -84,7 +84,7 @@
 #X msg 1200 -172 0;
 #X obj 441 -586 r øSbangB;
 #X obj 905 45 hsl 128 15 -2 2 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 9525 1;
 #X obj 1402 -461 inlet;
 #X obj 931 -346 inlet;
 #X floatatom 1389 -502 12 0 0 0 - - -;
@@ -196,6 +196,8 @@
 #X connect 50 0 19 0;
 #X connect 51 0 20 0;
 #X connect 52 0 51 1;
+#X connect 52 0 46 0;
+#X connect 52 0 74 0;
 #X connect 53 0 69 0;
 #X connect 53 0 9 0;
 #X connect 54 0 53 0;

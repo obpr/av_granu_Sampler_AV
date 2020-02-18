@@ -1,4 +1,4 @@
-#N canvas 70 150 1680 1028 12;
+#N canvas -148 54 1680 1028 12;
 #X text 613 830 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text 325 984 Here \, rather than ask you to push the read pointer
 back and forth in the sample \, we use a phasor~. This makes it possible
@@ -13,7 +13,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)
 #X text 1659 96 <-- position \, 0-1;
 #X text 1656 123 <-- trgr on/off;
 #X obj 1253 67 r trgrA;
-#X obj 1270 163 r trgrB;
+#X obj 1295 246 r trgrB;
 #X obj 1207 173 r BB;
 #X obj 1209 195 r BB1;
 #X obj 1168 173 r T$;
@@ -24,7 +24,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)
 #X obj 1172 263 spigot-toggle_red;
 #X obj 1172 241 spigot-toggle_vert;
 #X floatatom 1170 301 5 0 0 0 - - -;
-#X floatatom 1292 302 2 0 0 0 - - -;
+#X floatatom 1305 288 2 0 0 0 - - -;
 #X obj 1222 317 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1234 347 outlet;
