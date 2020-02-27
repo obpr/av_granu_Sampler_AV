@@ -1,4 +1,4 @@
-#N canvas 2216 17 1384 998 12;
+#N canvas 296 17 1384 998 12;
 #X obj 100 100 cnv 15 125 21 empty empty >>>_.txt_>>> 22 9 1 13 -1
 -162280 0;
 #X obj 101 102 bng 18 250 50 0 \$0-saveB.s \$0-saveB.r empty 20 9 1
@@ -7,7 +7,7 @@
 1 14 -162280 -260097 -162280;
 #X obj -9 50 cnv 15 400 20 \$0-preset.name.s \$0-preset.name.r PRESET_FILE:no_preset_loaded
 5 10 0 10 -86853 -261682 0;
-#N canvas 1756 39 1531 1028 presets 0;
+#N canvas 149 0 1531 1028 presets 1;
 #N canvas 407 351 666 385 read.write 0;
 #X msg 92 80 clear;
 #X obj 51 24 savepanel;
@@ -185,7 +185,6 @@ W.reposetoinoffAB;
 #X obj 2590 586 save.param \$0 B<<B;
 #X obj 2744 585 save.param \$0 BøB;
 #X obj 2892 586 save.param \$0 B<<B;
-#X obj 4333 586 save.param \$0 save_trggBB;
 #X obj 4150 586 save.param \$0 save_trgBB;
 #X obj 3771 586 save.param \$0 save_BngBA;
 #X obj 3953 586 save.param \$0 save_BngBB;
@@ -309,6 +308,7 @@ W.reposetoinoffAB;
 #X obj -1114 803 save.param \$0 +_XT_B;
 #X obj -1567 713 save.param \$0 TB=TA;
 #X obj -1739 715 save.param \$0 ITB%ITB;
+#X obj 4333 586 save.param \$0 save_trgBB;
 #X restore 13 102 pd presets;
 #X floatatom 167 303 5 0 0 3 S.stp1B S.stp1B #0-stp1B.s;
 #X floatatom 257 303 5 0 0 3 S.stp2B S.stp2B #0-stp2B.s;

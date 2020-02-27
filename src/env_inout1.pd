@@ -1,4 +1,4 @@
-#N canvas 195 247 1322 866 10;
+#N canvas 34 221 1322 866 10;
 #X floatatom 796 -625 5 0 0 0 - - -;
 #X obj 628 -675 inlet;
 #X obj 798 -691 inlet;
@@ -22,12 +22,12 @@
 #X obj 812 -186 pack f f;
 #X obj 643 -628 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 875 -435 *;
-#X floatatom 873 -412 5 0 0 0 - - -;
-#X obj 922 -461 - 1;
-#X obj 921 -436 * -1;
-#X floatatom 919 -412 5 0 0 0 - - -;
-#X obj 875 -461 t b f;
+#X obj 833 -863 *;
+#X floatatom 831 -840 5 0 0 0 - - -;
+#X obj 880 -889 - 1;
+#X obj 879 -864 * -1;
+#X floatatom 877 -840 5 0 0 0 - - -;
+#X obj 833 -889 t b f;
 #X msg 863 -494 0;
 #X obj 1085 -274 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -82,9 +82,9 @@
 #X obj 1196 -238 r ø@S1;
 #X obj 1202 -210 sel;
 #X msg 1200 -172 0;
-#X obj 441 -586 r øSbangB;
+#X obj 605 -648 r øSbangB;
 #X obj 905 45 hsl 128 15 -2 2 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 9525 1;
+-1 -1 6350 1;
 #X obj 1402 -461 inlet;
 #X obj 931 -346 inlet;
 #X floatatom 1389 -502 12 0 0 0 - - -;

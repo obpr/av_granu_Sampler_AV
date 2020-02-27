@@ -1,4 +1,4 @@
-#N canvas 1894 68 1040 990 12;
+#N canvas 441 38 1040 990 12;
 #X obj 246 450 f;
 #X obj 304 452 f;
 #X obj 247 686 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -68,7 +68,7 @@
 #X obj 147 741 t b b b b;
 #X obj 193 780 delay 100;
 #X floatatom 479 101 8 0 0 0 IN - -;
-#X floatatom 565 101 7 0 0 0 OUT - -;
+#X floatatom 568 101 6 0 0 0 OUT - -;
 #X floatatom 481 843 8 0 0 1 free_lenght - -;
 #X obj 194 101 bng 15 250 50 0 empty empty resum 18 6 1 11 -260097
 -262144 -191407;
@@ -110,16 +110,16 @@
 #X obj -165 51 * 25;
 #X obj 442 100 cnv 15 36 16 empty empty IN 25 10 1 9 -66577 -262144
 0;
-#X obj 528 100 cnv 15 36 16 empty empty OUT 14 10 1 9 -66577 -262144
+#X obj 531 100 cnv 15 36 16 empty empty OUT 14 10 1 9 -66577 -262144
 0;
 #X obj 258 101 cnv 13 33 16 empty empty pause 1 8 1 11 -66577 -262144
 0;
 #X obj 209 101 cnv 15 33 15 empty empty resum 1 8 1 11 -66577 -262144
 0;
-#X obj 104 117 hsl 510 8 0 1000 0 0 empty empty empty 1 5 1 11 -66577
+#X obj 104 117 hsl 506 8 0 1000 0 0 empty empty empty 1 5 1 11 -66577
 -260097 -262144 0 1;
-#X obj 104 126 hsl 510 8 0 1000 0 0 empty empty empty 1 5 1 11 -66577
--260097 -262144 50900 1;
+#X obj 104 126 hsl 506 8 0 1000 0 0 empty empty empty 1 5 1 11 -66577
+-260097 -262144 50500 1;
 #X obj 100 101 cnv 15 93 16 empty empty ->-TIME_STRECH->- 1 7 1 9 -66577
 -262144 0;
 #X obj 761 694 r looplenghtB;
@@ -262,4 +262,4 @@
 #X connect 102 0 72 0;
 #X connect 103 0 87 0;
 #X connect 103 1 86 0;
-#X coords 0 -1 1 1 516 35 1 100 100;
+#X coords 0 -1 1 1 513 35 1 100 100;

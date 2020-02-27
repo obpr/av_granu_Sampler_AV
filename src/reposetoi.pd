@@ -14,7 +14,7 @@
 #X obj 690 -9 loadbang;
 #X msg 508 720 1000;
 #X obj 246 571 hsl 512 8 0 1000 0 0 empty empty empty -2 -8 0 10 -1
--258113 -1 22598 1;
+-258113 -1 0 1;
 #X obj 242 588 select 1000;
 #X obj 241 621 delay 10;
 #X obj 245 653 delay 10;
@@ -68,23 +68,23 @@
 #X obj 120 -176 r lo;
 #X obj 147 741 t b b b b;
 #X obj 193 780 delay 100;
-#X floatatom 479 101 8 0 0 0 IN - -;
-#X floatatom 565 101 8 0 0 0 OUT - -;
+#X floatatom 482 101 8 0 0 0 IN - -;
+#X floatatom 570 101 7 0 0 0 OUT - -;
 #X floatatom 481 843 8 0 0 1 free_lenght - -;
 #X obj 194 101 bng 15 250 50 0 empty empty resum 18 6 1 11 -260097
 -262144 -191407;
 #X floatatom 290 101 8 0 0 1 - - -;
-#X obj 353 101 tgl 15 0 empty empty B 5 8 0 11 -66577 -260097 -260097
+#X obj 354 101 tgl 15 0 empty empty B 5 8 0 11 -66577 -260097 -260097
 0 1;
-#X floatatom 369 101 12 0 0 1 - - -;
+#X floatatom 370 101 12 0 0 1 - - -;
 #X obj 243 101 bng 15 250 50 0 empty empty * 80 16 1 33 -260097 -262144
 -1;
 #X floatatom 326 155 8 0 0 0 - - -;
 #X obj 602 841 tgl 15 0 empty empty << 2 7 0 10 -262144 -1 -1 1 1;
-#X obj 337 101 tgl 15 0 empty empty A 5 8 0 11 -66577 -260097 -260097
+#X obj 338 101 tgl 15 0 empty empty A 5 8 0 11 -66577 -260097 -260097
 0 1;
 #X obj 800 732 r lo;
-#X obj 103 -4 inlet;
+#X obj 109 -9 inlet;
 #X obj 108 21 sel;
 #X obj 368 445 outlet;
 #X msg 119 -155 1000;
@@ -94,7 +94,7 @@
 #X obj 94 -51 r send_reposetoinoffA;
 #X obj 190 428 spigot-toggle_violet;
 #X obj 245 427 spigot-toggle_violet;
-#X obj -25 411 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj -25 411 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 215 380 r lo;
 #X floatatom 665 578 12 0 0 0 - - -;
@@ -112,20 +112,21 @@
 #X msg 210 231 0;
 #X obj -165 51 * 25;
 #X obj 761 694 r looplenghtA;
-#X obj 442 100 cnv 15 36 16 empty empty IN 25 10 1 9 -66577 -262144
+#X obj 443 100 cnv 15 38 16 empty empty IN 25 10 1 9 -66577 -262144
 0;
-#X obj 528 100 cnv 15 36 16 empty empty OUT 14 10 1 9 -66577 -262144
+#X obj 533 100 cnv 15 36 16 empty empty OUT 14 10 1 9 -66577 -262144
 0;
 #X obj 258 101 cnv 13 33 16 empty empty pause 1 8 1 11 -66577 -262144
 0;
 #X obj 209 101 cnv 15 33 15 empty empty resum 1 8 1 11 -66577 -262144
 0;
-#X obj 104 117 hsl 510 8 0 1000 0 0 empty empty empty 1 5 1 11 -66577
--260097 -262144 21100 1;
-#X obj 104 126 hsl 510 8 0 1000 0 0 empty empty empty 1 5 1 11 -66577
--260097 -262144 22800 1;
+#X obj 104 117 hsl 508 8 0 1000 0 0 empty empty empty 1 5 1 11 -66577
+-260097 -262144 0 1;
+#X obj 104 126 hsl 508 8 0 1000 0 0 empty empty empty 1 5 1 11 -66577
+-260097 -262144 50700 1;
 #X obj 100 101 cnv 15 93 16 empty empty ->-TIME_STRECH->- 1 7 1 9 -66577
 -262144 0;
+#X obj 396 -122 r tmstrchXmidiin;
 #X connect 0 0 36 0;
 #X connect 1 0 36 1;
 #X connect 2 0 3 0;
@@ -262,4 +263,5 @@
 #X connect 97 0 87 0;
 #X connect 102 0 60 0;
 #X connect 103 0 61 0;
+#X connect 105 0 64 0;
 #X coords 0 -1 1 1 516 35 1 100 100;

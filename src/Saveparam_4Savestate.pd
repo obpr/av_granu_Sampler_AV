@@ -1,4 +1,4 @@
-#N canvas 280 30 1384 998 12;
+#N canvas -478 341 1384 998 12;
 #X floatatom -65 320 5 0 0 2 W.IT=T #0-IT=T.r W.IT=T;
 #X floatatom -65 342 5 0 0 3 S.IT=T S.IT=T #0-IT=T.s;
 #X obj 101 100 cnv 15 123 21 empty empty >>>_.txt_>>> 22 10 1 13 -1
@@ -309,9 +309,9 @@ W.reposetoinoffAB;
 #X obj 3771 586 save.param \$0 save_BngAA;
 #X obj 3953 586 save.param \$0 save_BngAB;
 #X obj 4150 586 save.param \$0 save_trgAA;
-#X obj 4333 586 save.param \$0 save_trggAB;
 #X obj -828 650 save.param \$0 reposetoinoffA;
 #X obj -614 651 save.param \$0 repostoi$A;
+#X obj 4333 586 save.param \$0 save_trgAB;
 #X restore 6 102 pd presets;
 #X floatatom 160 342 5 0 0 3 S.stp1 S.stp1 #0-stp1.s;
 #X floatatom 250 342 5 0 0 3 S.stp2 S.stp2 #0-stp2.s;

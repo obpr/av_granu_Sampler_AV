@@ -126,10 +126,10 @@
 0 1;
 #X obj 190 148 tgl 25 1 empty empty empty 17 7 0 10 -1 -262144 -260097
 0 1;
-#X obj 326 131 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 238 130 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 326 131 bng 17 250 50 0 empty empty empty 17 7 0 10 -66577 -262144
+-1;
+#X obj 238 130 bng 17 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+-1;
 #X floatatom 256 131 6 0 0 0 - - -;
 #X floatatom 343 132 6 0 0 0 - - -;
 #X obj 250 174 tgl 25 0 empty empty B 8 14 0 16 -1 -262144 -260097
@@ -169,17 +169,17 @@
 #X obj 190 175 tgl 25 0 empty empty empty 17 7 0 10 -1 -262144 -1 0
 1;
 #X obj 163 202 tgl 25 0 empty empty ''a 8 14 1 16 -1 -262144 -260097
-1 1;
+0 1;
 #X obj 190 202 tgl 25 0 empty empty empty 17 7 0 10 -1 -262144 -1 0
 1;
 #X obj 163 229 tgl 25 0 empty empty ''b 8 14 1 16 -1 -262144 -260097
 0 1;
 #X obj 190 229 tgl 25 0 empty empty empty 17 7 0 10 -1 -262144 -1 0
 1;
-#X obj 295 130 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 382 131 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 295 130 bng 17 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+-1;
+#X obj 382 131 bng 17 250 50 0 empty empty empty 17 7 0 10 -99865 -260097
+-1;
 #X obj 380 110 tgl 20 0 empty empty pad 3 9 0 9 -1 -260097 -260097
 0 1;
 #X obj 294 109 tgl 20 0 empty empty pad 3 10 0 9 -1 -260097 -260097
@@ -193,10 +193,10 @@
 #X obj 206 110 tgl 20 0 empty empty 88 4 10 0 10 -1 -260097 -260097
 1 1;
 #X floatatom 170 132 6 0 0 0 - - -;
-#X obj 152 131 bng 17 250 50 0 empty empty empty 3 7 0 8 -262144 -1
+#X obj 152 131 bng 17 250 50 0 empty empty empty 3 7 0 8 -66577 -260097
 -1;
-#X obj 208 131 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 208 131 bng 17 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+-1;
 #X floatatom 114 762 5 0 0 0 - - -;
 #X obj 670 61 inlet;
 #X obj 771 100 spigot-toggle_orange;
@@ -353,8 +353,8 @@
 #X floatatom -486 286 5 0 0 0 - - -;
 #X obj 110 111 tgl 20 0 empty empty REC 1 10 0 10 -258113 -1 -1 0 1
 ;
-#X obj 131 111 bng 20 250 50 0 empty empty S 6 10 1 11 -262144 -1 -1
-;
+#X obj 131 111 bng 20 250 50 0 empty empty S 6 10 1 11 -99865 -262144
+-262144;
 #X obj 110 167 tgl 20 0 empty empty LOOP 1 10 1 6 -66577 -262144 -262144
 1 1;
 #X obj 131 132 bng 20 250 50 0 empty empty PLAY 2 10 0 7 -66577 -262144
@@ -432,7 +432,7 @@
 #X obj -201 -261 * 100;
 #X obj -201 -285 r B;
 #X obj 111 208 tgl 20 0 empty empty empty 3 10 1 12 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 102 113 vsl 8 139 0 300 0 0 empty empty GLIDE 2 129 1 8 -66577
 -262144 -262144 0 1;
 #X obj 250 889 sel;
