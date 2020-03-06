@@ -1,4 +1,4 @@
-#N canvas -478 341 1384 998 12;
+#N canvas -233 709 1384 998 12;
 #X floatatom -65 320 5 0 0 2 W.IT=T #0-IT=T.r W.IT=T;
 #X floatatom -65 342 5 0 0 3 S.IT=T S.IT=T #0-IT=T.s;
 #X obj 101 100 cnv 15 123 21 empty empty >>>_.txt_>>> 22 10 1 13 -1
@@ -663,13 +663,13 @@ W.reposetoinoffAB;
 ;
 #X floatatom 5020 180 5 0 0 2 W.save_BngAB #0-save_BngAB.r W.save_BngAB
 ;
-#X floatatom 5190 200 5 0 0 3 S.save_trgAA S.save_trgAA #0-save_trgAA.s
+#X floatatom 5142 199 5 0 0 3 S.save_trgAA S.save_trgAA #0-save_trgAA.s
 ;
-#X floatatom 5190 180 5 0 0 2 W.save_trgAA #0-save_trgAA.r W.save_trgAA
+#X floatatom 5142 179 5 0 0 2 W.save_trgAA #0-save_trgAA.r W.save_trgAA
 ;
-#X floatatom 5340 200 5 0 0 3 S.save_trgAB S.save_trgAB #0-save_trgAB.s
+#X floatatom 5292 199 5 0 0 3 S.save_trgAB S.save_trgAB #0-save_trgAB.s
 ;
-#X floatatom 5340 180 5 0 0 2 W.save_trgAB #0-save_trgAB.r W.save_trgAB
+#X floatatom 5292 179 5 0 0 2 W.save_trgAB #0-save_trgAB.r W.save_trgAB
 ;
 #X text -820 203 save;
 #X text -821 183 load;
@@ -682,5 +682,29 @@ W.reposetoinoffA;
 #X floatatom -220 315 5 0 0 2 W.reposetoi#A #0-reposetoi#A.r W.reposetoi#A
 ;
 #X floatatom -220 337 5 0 0 3 S.reposetoi#A S.reposetoi#A #0-reposetoi#A.s
+;
+#X floatatom 5404 198 5 0 0 3 S.save_ø@S S.save_trgAB #0-save_trgAB.s
+;
+#X floatatom 5404 178 5 0 0 2 W.save_ø@S #0-save_trgAB.r W.save_trgAB
+;
+#X floatatom 5508 199 5 0 0 3 S.save_sNd_A S.save_sNd_A #0-save_sNd_A
+;
+#X floatatom 5508 179 5 0 0 2 W.save_sNd_A #0-save_sNd_A W.save_sNd_A
+;
+#X floatatom 5630 198 5 0 0 3 S.save_sNd_B S.save_sNd_B #0-save_sNd_B
+;
+#X floatatom 5630 178 5 0 0 2 W.save_sNd_B #0-save_sNd_B W.save_sNd_B
+;
+#X floatatom 5780 198 5 0 0 3 S.save_sNd_BB S.save_sNd_BB #0-save_sNd_BB
+;
+#X floatatom 5780 178 5 0 0 2 W.save_sNd_BB #0-save_sNd_BB W.save_sNd_BB
+;
+#X floatatom 5892 197 5 0 0 3 S.save_sNd_BB1 S.save_sNd_BB1 #0-save_sNd_BB1
+;
+#X floatatom 5892 177 5 0 0 2 W.save_sNd_BB1 #0-save_sNd_BB1 W.save_sNd_BB1
+;
+#X floatatom 6012 194 5 0 0 3 S.save_every S.save_every #0-save_every
+;
+#X floatatom 6012 174 5 0 0 2 W.save_every #0-save_every W.save_every
 ;
 #X coords 0 -1 1 1 125 22 1 100 100;

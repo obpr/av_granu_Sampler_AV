@@ -1,4 +1,4 @@
-#N canvas 250 94 1430 934 10;
+#N canvas 157 55 1430 934 10;
 #X obj 100 -151 r lo;
 #X obj -46 717 s env0;
 #X obj -42 643 env~;
@@ -24,13 +24,13 @@
 #X obj 612 155 r~ C;
 #X msg 103 -127 1;
 #X obj 546 316 r lo;
-#X floatatom 101 316 4 0 0 2 - - -;
+#X floatatom 100 316 4 0 0 2 - - -;
 #X obj 898 437 * 0.01;
 #X msg 550 361 1;
-#X floatatom 101 331 4 0 0 2 - - -;
-#X floatatom 101 346 4 0 0 3 - - -;
-#X floatatom 101 362 4 0 0 1 - - -;
-#X floatatom 101 376 4 0 0 1 - - -;
+#X floatatom 100 331 4 0 0 2 - - -;
+#X floatatom 100 346 4 0 0 3 - - -;
+#X floatatom 100 362 4 0 0 1 - - -;
+#X floatatom 100 376 4 0 0 1 - - -;
 #X floatatom 232 643 3 0 0 0 - - -;
 #X obj 692 449 *~;
 #X obj 820 374 sel;
@@ -61,10 +61,10 @@
 #X floatatom 101 136 4 0 0 1 - - -;
 #X floatatom 101 151 4 0 0 1 - - -;
 #X floatatom 101 166 4 0 0 1 - - -;
-#X floatatom 101 392 4 0 0 1 - - -;
-#X floatatom 101 407 4 0 0 1 - - -;
-#X floatatom 101 424 4 0 0 1 - - -;
-#X floatatom 101 439 4 0 0 1 - - -;
+#X floatatom 100 392 4 0 0 1 - - -;
+#X floatatom 100 407 4 0 0 1 - - -;
+#X floatatom 100 424 4 0 0 1 - - -;
+#X floatatom 100 439 4 0 0 1 - - -;
 #X obj 852 312 fiddlebonkKKKKKKK;
 #X obj 229 772 fiddlebonkKKKKKKK;
 #X obj 197 296 tgl 20 0 empty empty BCK 2 11 1 8 -1 -262144 -262144
@@ -92,7 +92,7 @@
 #X floatatom 198 508 3 0 0 0 nmbr/stps - -;
 #X obj 198 455 tgl 20 0 empty empty stp 3 9 1 12 -260097 -1 -1 0 1
 ;
-#X obj 137 455 tgl 20 0 empty empty >< 2 9 1 14 -260097 -1 -1 1 1;
+#X obj 137 455 tgl 20 0 empty empty >< 2 9 1 14 -260097 -1 -1 0 1;
 #X obj 176 296 tgl 20 0 empty empty empty 6 8 1 15 -260097 -1 -262144
 0 1;
 #X obj 101 453 cnv 10 35 70 empty empty << 10 60 1 14 -1 -260097 0
@@ -101,7 +101,7 @@
 ;
 #X obj 101 22 cnv 15 75 22 empty empty enveloppe__>B 23 11 1 9 -1 -262144
 0;
-#X obj 101 522 cnv 6 117 13 empty empty empty 20 16 1 12 -1 -258113
+#X obj 101 522 cnv 6 117 17 empty empty empty 20 16 1 12 -1 -258113
 0;
 #X obj 131 60 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1 -260097
 -1 0 0;
@@ -121,8 +121,8 @@
 -260097 -1 0 0;
 #X obj 103 184 cnv 15 28 33 empty empty a'= 2 8 1 14 -260097 -1 0;
 #X floatatom 103 203 5 0 0 3 - - -;
-#X obj 101 252 cnv 15 116 44 empty empty <<<<<<<--AUDIO_ANALYSE 6 35
-1 8 -1 -228856 0;
+#X obj 101 252 cnv 15 116 44 empty empty <<<<--Attack-detection 6 35
+1 10 -1 -228856 0;
 #X obj 104 458 cnv 15 28 33 empty empty b'= 2 8 1 14 -260097 -1 0;
 #X floatatom 103 476 5 0 0 3 - - -;
 #X obj 157 182 cnv 15 40 20 empty empty empty 20 12 0 14 -1 -66577
@@ -155,10 +155,12 @@
 0 1;
 #X obj 158 182 tgl 20 0 empty empty A 6 11 1 12 -1 -262144 -262144
 0 1;
-#X obj 101 3 cnv 15 116 22 empty empty AUDIO_ANALYSE--->>>>>>> 6 12
-1 8 -1 -228856 0;
+#X obj 101 3 cnv 15 116 22 empty empty Attack-detection-->>>> 6 11
+1 10 -1 -228856 0;
 #X obj 101 294 cnv 15 75 22 empty empty enveloppe__>A 23 11 1 9 -1
 -262144 0;
+#X obj 100 2 cnv 15 2 538 empty empty empty 20 12 0 14 -1 -66577 0
+;
 #X connect 0 0 6 0;
 #X connect 0 0 21 0;
 #X connect 0 0 8 0;
@@ -280,4 +282,4 @@
 #X connect 115 0 31 1;
 #X connect 116 0 19 1;
 #X connect 117 0 13 1;
-#X coords 0 -1 1 1 118 534 1 100 2;
+#X coords 0 -1 1 1 118 538 1 100 2;
