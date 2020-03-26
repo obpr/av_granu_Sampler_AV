@@ -1,16 +1,16 @@
 #N canvas 40 156 438 333 10;
 #X obj 85 13 hsl 70 15 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -262144
--260097 -1 6339 0;
+-260097 -1 0 0;
 #X obj 100 56 hsl 70 15 0 2 0 1 empty empty damp 3 8 0 10 -262144 -260097
--1 0 0;
-#X floatatom 91 34 5 0 0 0 - - -, f 5;
-#X floatatom 106 76 5 0 0 0 - - -, f 5;
+-1 1629 0;
+#X floatatom 91 34 5 0 0 0 - - -;
+#X floatatom 106 76 5 0 0 0 - - -;
 #X obj 130 149 hsl 70 15 0 1 0 1 empty empty wet 3 8 0 10 -262144 -260097
--1 4900 0;
-#X obj 115 99 hsl 70 15 0 1 0 1 empty empty dry 3 8 0 10 -262144 -260097
 -1 0 0;
-#X floatatom 141 172 5 0 0 0 - - -, f 5;
-#X floatatom 120 123 5 0 0 0 - - -, f 5;
+#X obj 115 99 hsl 70 15 0 1 0 1 empty empty dry 3 8 0 10 -262144 -260097
+-1 3450 0;
+#X floatatom 141 172 5 0 0 0 - - -;
+#X floatatom 120 123 5 0 0 0 - - -;
 #N canvas 92 310 634 321 vfreeverb~ 0;
 #N canvas 261 41 778 367 combfilters-left1 0;
 #X obj 46 244 +~;
@@ -43,10 +43,10 @@
 #X obj 661 167 r \$0-frequency;
 #X obj 46 28 inlet~;
 #X obj 338 326 outlet~;
-#X floatatom 70 119 5 0 0 0 - - -, f 5;
-#X floatatom 255 121 5 0 0 0 - - -, f 5;
-#X floatatom 439 119 5 0 0 0 - - -, f 5;
-#X floatatom 622 121 5 0 0 0 - - -, f 5;
+#X floatatom 70 119 5 0 0 0 - - -;
+#X floatatom 255 121 5 0 0 0 - - -;
+#X floatatom 439 119 5 0 0 0 - - -;
+#X floatatom 622 121 5 0 0 0 - - -;
 #X obj 279 58 clip 0 0.99;
 #X obj 279 29 r \$0-room;
 #X connect 0 0 16 0;
@@ -108,10 +108,10 @@
 #X obj 156 605 outlet~;
 #X text 95 28 freeverb's diffusor;
 #X obj 156 576 hip~ 5;
-#X floatatom 214 70 5 0 0 0 - - -, f 5;
-#X floatatom 246 203 5 0 0 0 - - -, f 5;
-#X floatatom 280 334 5 0 0 0 - - -, f 5;
-#X floatatom 304 464 5 0 0 0 - - -, f 5;
+#X floatatom 214 70 5 0 0 0 - - -;
+#X floatatom 246 203 5 0 0 0 - - -;
+#X floatatom 280 334 5 0 0 0 - - -;
+#X floatatom 304 464 5 0 0 0 - - -;
 #X obj 51 53 r \$0-allpass1left;
 #X obj 51 80 delread~ \$0-allpass1left;
 #X obj 36 158 delwrite~ \$0-allpass1left 40;
@@ -190,10 +190,10 @@
 #X obj 610 89 r \$0-comb8left;
 #X obj 610 141 delread~ \$0-comb8left;
 #X obj 595 267 delwrite~ \$0-comb8left 100;
-#X floatatom 70 116 5 0 0 0 - - -, f 5;
-#X floatatom 261 118 5 0 0 0 - - -, f 5;
-#X floatatom 440 117 5 0 0 0 - - -, f 5;
-#X floatatom 620 116 5 0 0 0 - - -, f 5;
+#X floatatom 70 116 5 0 0 0 - - -;
+#X floatatom 261 118 5 0 0 0 - - -;
+#X floatatom 440 117 5 0 0 0 - - -;
+#X floatatom 620 116 5 0 0 0 - - -;
 #X obj 279 58 clip 0 0.99;
 #X obj 279 28 r \$0-room;
 #X connect 0 0 20 0;
@@ -257,10 +257,10 @@
 #X obj 661 167 r \$0-frequency;
 #X obj 46 28 inlet~;
 #X obj 338 326 outlet~;
-#X floatatom 70 119 5 0 0 0 - - -, f 5;
-#X floatatom 255 121 5 0 0 0 - - -, f 5;
-#X floatatom 439 119 5 0 0 0 - - -, f 5;
-#X floatatom 622 121 5 0 0 0 - - -, f 5;
+#X floatatom 70 119 5 0 0 0 - - -;
+#X floatatom 255 121 5 0 0 0 - - -;
+#X floatatom 439 119 5 0 0 0 - - -;
+#X floatatom 622 121 5 0 0 0 - - -;
 #X obj 61 141 delread~ \$0-comb1right;
 #X obj 246 142 delread~ \$0-comb2right;
 #X obj 429 141 delread~ \$0-comb3right;
@@ -336,10 +336,10 @@
 #X obj 661 167 r \$0-frequency;
 #X obj 46 28 inlet~;
 #X obj 338 326 outlet~;
-#X floatatom 70 116 5 0 0 0 - - -, f 5;
-#X floatatom 261 118 5 0 0 0 - - -, f 5;
-#X floatatom 440 117 5 0 0 0 - - -, f 5;
-#X floatatom 620 116 5 0 0 0 - - -, f 5;
+#X floatatom 70 116 5 0 0 0 - - -;
+#X floatatom 261 118 5 0 0 0 - - -;
+#X floatatom 440 117 5 0 0 0 - - -;
+#X floatatom 620 116 5 0 0 0 - - -;
 #X obj 279 58 clip 0 0.99;
 #X obj 61 90 r \$0-comb5right;
 #X obj 246 90 r \$0-comb6right;
@@ -413,10 +413,10 @@
 #X obj 156 605 outlet~;
 #X text 95 28 freeverb's diffusor;
 #X obj 156 576 hip~ 5;
-#X floatatom 214 70 5 0 0 0 - - -, f 5;
-#X floatatom 244 203 5 0 0 0 - - -, f 5;
-#X floatatom 280 334 5 0 0 0 - - -, f 5;
-#X floatatom 304 464 5 0 0 0 - - -, f 5;
+#X floatatom 214 70 5 0 0 0 - - -;
+#X floatatom 244 203 5 0 0 0 - - -;
+#X floatatom 280 334 5 0 0 0 - - -;
+#X floatatom 304 464 5 0 0 0 - - -;
 #X obj 51 53 r \$0-allpass1right;
 #X obj 51 80 delread~ \$0-allpass1right;
 #X obj 36 158 delwrite~ \$0-allpass1right 40;
@@ -544,10 +544,10 @@
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X restore 462 45 pd scaledry;
-#X floatatom 312 70 5 0 0 0 - - -, f 5;
-#X floatatom 374 70 10 0 0 0 - - -, f 10;
-#X floatatom 462 69 5 0 0 0 - - -, f 5;
-#X floatatom 544 69 5 0 0 0 - - -, f 5;
+#X floatatom 312 70 5 0 0 0 - - -;
+#X floatatom 374 70 10 0 0 0 - - -;
+#X floatatom 462 69 5 0 0 0 - - -;
+#X floatatom 544 69 5 0 0 0 - - -;
 #N canvas 405 27 635 684 tuning 0;
 #X msg 332 81 1139 \, 1211 \, 1300 \, 1379 \, 1445 \, 1514 \, 1580
 \, 1640;
