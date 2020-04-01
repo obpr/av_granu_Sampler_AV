@@ -71,13 +71,13 @@
 #X floatatom 482 100 8 0 0 0 IN - -;
 #X floatatom 570 100 7 0 0 0 OUT - -;
 #X floatatom 481 842 8 0 0 1 free_lenght - -;
-#X obj 194 100 bng 15 250 50 0 empty empty resum 18 6 1 11 -260097
--262144 -191407;
+#X obj 194 100 bng 15 250 50 0 empty empty resum 18 6 1 11 -128992
+-260097 -191407;
 #X floatatom 290 100 8 0 0 1 - - -;
 #X obj 354 100 tgl 15 0 empty empty B 5 8 0 11 -66577 -260097 -260097
 0 1;
 #X floatatom 370 100 12 0 0 1 - - -;
-#X obj 243 100 bng 15 250 50 0 empty empty * 80 16 1 33 -260097 -262144
+#X obj 243 100 bng 15 250 50 0 empty empty * 80 16 1 33 -128992 -260097
 -1;
 #X floatatom 326 154 8 0 0 0 - - -;
 #X obj 602 840 tgl 15 0 empty empty << 2 7 0 10 -262144 -1 -1 1 1;

@@ -1,4 +1,4 @@
-#N canvas 170 14 1510 891 12;
+#N canvas 2090 251 1510 891 12;
 #N canvas 67 224 450 432 :: 0;
 #X text 24 16 the format [pix_film] is able to decode depends on the
 system you are running Gem.;
@@ -104,20 +104,20 @@ that under linux i could play most formats...;
 #X obj 112 333 tgl 20 0 empty empty A 6 11 1 12 -260097 -1 -1 0 1;
 #X obj 130 333 tgl 20 0 empty empty B 6 11 1 12 -260097 -1 -1 0 1;
 #X floatatom 113 315 5 0 0 2 - - -;
-#X obj 248 334 tgl 20 0 empty empty BB 3 11 1 12 -260097 -1 -1 0 1
+#X obj 249 334 tgl 20 0 empty empty BB 3 11 1 12 -260097 -1 -1 0 1
 ;
-#X obj 113 492 cnv 17 156 18 empty sendV1=A1 °_____________% 31 13
-0 14 -260818 -1 0;
-#X obj 230 508 tgl 20 0 empty sendV1=A1 BA 3 10 0 12 -260818 -261689
--1 0 1;
-#X floatatom 231 490 5 0 0 1 - - -;
-#X obj 115 508 tgl 20 0 empty sendV1=A1 A 6 11 0 12 -260818 -261689
--1 0 1;
-#X obj 136 508 tgl 20 0 empty sendV1=A1 B 6 11 0 12 -260818 -261689
--1 0 1;
-#X floatatom 116 492 5 0 0 2 - - -;
-#X obj 250 508 tgl 20 0 empty sendV1=A1 BB 3 10 0 12 -260818 -261689
--1 0 1;
+#X obj 112 488 cnv 17 156 18 empty sendV1=A1 °_____________% 31 13
+0 14 -1 -1 0;
+#X obj 232 507 tgl 20 0 empty sendV1=A1 BA 3 10 0 12 -1 -261689 -1
+0 1;
+#X floatatom 233 490 5 0 0 1 - - -;
+#X obj 114 507 tgl 20 0 empty sendV1=A1 A 6 11 0 12 -1 -261689 -1 0
+1;
+#X obj 135 507 tgl 20 0 empty sendV1=A1 B 6 11 0 12 -1 -261689 -1 0
+1;
+#X floatatom 115 490 5 0 0 2 - - -;
+#X obj 250 507 tgl 20 0 empty sendV1=A1 BB 3 10 0 12 -1 -261689 -1
+0 1;
 #X obj 562 262 spigot-toggle_red;
 #X obj 695 226 spigot-toggle_vert;
 #X obj 486 263 spigot-toggle_red;
@@ -149,7 +149,7 @@ that under linux i could play most formats...;
 0;
 #X obj 255 301 bng 15 500 500 0 empty empty clear_bank -56 6 1 10 -260097
 -1 -260097;
-#X obj 112 301 bng 15 500 500 0 empty empty open 18 6 1 12 -260097
+#X obj 112 301 bng 15 500 500 0 empty empty load 18 6 1 12 -260097
 -1 -260097;
 #X msg -374 728 label \$1;
 #X obj -373 699 symbol;
@@ -158,14 +158,12 @@ that under linux i could play most formats...;
 0;
 #X obj 252 475 bng 15 500 500 0 empty empty clear_bank -63 6 1 12 -260097
 -1 -260097;
-#X obj 114 475 bng 15 500 500 0 empty empty open 18 6 1 12 -260097
+#X obj 114 475 bng 15 500 500 0 empty empty load 18 6 1 12 -260097
 -1 -260097;
 #X obj -368 669 r folder1;
 #X obj -375 752 s folder1_cnv;
 #X obj 14 423 s folder1;
 #X obj -423 1512 s folder3;
-#X obj 100 529 cnv 4 180 105 empty empty empty 20 12 0 14 -1 -66577
-0;
 #X obj 101 102 cnv 3 3 530 empty empty empty 20 12 0 14 -1 -66577 0
 ;
 #X obj 279 100 cnv 3 3 530 empty empty empty 20 12 0 14 -1 -66577 0
@@ -181,10 +179,10 @@ that under linux i could play most formats...;
 #X obj 102 246 cnv 12 180 30 empty empty INTEMS: 1 24 1 8 -1 -260097
 0;
 #X obj 149 317 tgl 37 0 empty empty V 9 20 1 33 -1 -260097 -260097
-0 1;
+1 1;
 #X obj 207 334 bng 20 250 50 0 empty empty random -16 -9 1 10 -260097
 -1 -1;
-#X obj 103 319 cnv 10 10 35 empty empty empty 60 22 1 10 -1 -262144
+#X obj 103 318 cnv 10 10 35 empty empty empty 60 22 1 10 -1 -262144
 0;
 #X obj 269 318 cnv 10 10 37 empty empty empty 60 22 1 10 -1 -262144
 0;
@@ -216,17 +214,17 @@ that under linux i could play most formats...;
 #X obj 100 401 cnv 3 180 20 empty empty empty 0 14 1 14 -260097 -1
 0;
 #X symbolatom 103 402 25 0 0 0 - - -;
-#X obj 102 354 cnv 15 180 33 empty empty ---Open_audio 0 22 1 10 -1
+#X obj 102 353 cnv 15 180 33 empty empty ---Open_audio 0 22 1 10 -1
 -260097 0;
 #X obj 102 386 cnv 12 180 15 empty empty FOLDER: 1 9 1 8 -1 -260097
 0;
-#X obj 209 509 bng 20 250 50 0 empty sendV1=A1 random -16 -9 1 10 -260818
+#X obj 211 507 bng 20 250 50 0 empty sendV1=A1 random -16 -9 1 10 -1
 -261689 -1;
-#X obj 154 493 cnv 10 37 35 empty empty empty 60 22 1 10 -1 -262144
+#X obj 153 492 cnv 10 37 35 empty empty empty 60 22 1 10 -1 -262144
 0;
-#X obj 188 508 tgl 20 0 empty empty BB 3 9 1 9 -1 -1 -1 0 1;
+#X obj 191 507 tgl 20 0 empty empty BB 3 9 1 9 -1 -1 -1 0 1;
 #X msg -64 79 22;
-#X obj 104 493 cnv 10 10 35 empty empty empty 60 22 1 10 -1 -262144
+#X obj 104 492 cnv 10 10 35 empty empty empty 60 22 1 10 -1 -262144
 0;
 #X obj 269 492 cnv 10 10 37 empty empty empty 60 22 1 10 -1 -262144
 0;
@@ -234,6 +232,8 @@ that under linux i could play most formats...;
 0;
 #X obj 100 228 cnv 3 3 408 empty empty empty 20 12 0 14 -1 -66577 0
 ;
+#X obj 100 526 cnv 33 181 130 empty empty empty 6 12 1 14 -1 -66577
+0;
 #X connect 1 0 89 0;
 #X connect 2 0 18 1;
 #X connect 4 0 88 0;
@@ -267,7 +267,7 @@ that under linux i could play most formats...;
 #X connect 19 0 73 0;
 #X connect 20 0 22 0;
 #X connect 20 0 23 0;
-#X connect 21 0 132 0;
+#X connect 21 0 131 0;
 #X connect 22 0 21 0;
 #X connect 23 0 20 1;
 #X connect 24 0 25 1;
@@ -276,14 +276,14 @@ that under linux i could play most formats...;
 #X connect 27 0 31 0;
 #X connect 28 0 30 0;
 #X connect 28 0 34 0;
-#X connect 29 0 164 0;
+#X connect 29 0 163 0;
 #X connect 30 0 28 1;
 #X connect 31 0 20 0;
 #X connect 32 0 28 0;
 #X connect 33 0 40 0;
 #X connect 34 0 29 0;
 #X connect 35 0 92 0;
-#X connect 36 0 93 0;
+#X connect 36 0 93 1;
 #X connect 37 0 77 0;
 #X connect 37 0 70 0;
 #X connect 38 0 40 0;
@@ -345,7 +345,7 @@ that under linux i could play most formats...;
 #X connect 84 0 67 0;
 #X connect 85 0 6 0;
 #X connect 85 0 67 0;
-#X connect 92 0 125 0;
+#X connect 92 0 124 0;
 #X connect 92 1 64 0;
 #X connect 92 1 66 0;
 #X connect 92 2 2 0;
@@ -373,18 +373,18 @@ that under linux i could play most formats...;
 #X connect 116 0 93 2;
 #X connect 117 0 36 0;
 #X connect 118 0 113 0;
-#X connect 125 0 73 0;
-#X connect 127 0 106 0;
-#X connect 131 0 61 1;
-#X connect 131 0 138 0;
-#X connect 132 0 18 0;
-#X connect 136 0 137 0;
-#X connect 137 0 141 0;
-#X connect 138 0 139 0;
-#X connect 138 1 167 0;
-#X connect 139 0 136 0;
-#X connect 140 0 139 0;
-#X connect 161 0 120 0;
-#X connect 164 0 25 0;
-#X connect 167 0 136 0;
-#X coords 0 -1 1 1 182 534 1 100 100;
+#X connect 124 0 73 0;
+#X connect 126 0 106 0;
+#X connect 130 0 61 1;
+#X connect 130 0 137 0;
+#X connect 131 0 18 0;
+#X connect 135 0 136 0;
+#X connect 136 0 140 0;
+#X connect 137 0 138 0;
+#X connect 137 1 166 0;
+#X connect 138 0 135 0;
+#X connect 139 0 138 0;
+#X connect 160 0 120 0;
+#X connect 163 0 25 0;
+#X connect 166 0 135 0;
+#X coords 0 -1 1 1 182 556 1 100 100;

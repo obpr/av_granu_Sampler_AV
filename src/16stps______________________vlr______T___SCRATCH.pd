@@ -1,4 +1,4 @@
-#N canvas -317 606 1678 676 12;
+#N canvas 0 352 1678 676 12;
 #X obj 251 653 line;
 #X floatatom 297 706 5 0 0 0 - - -;
 #X obj 312 940 outlet;
@@ -25,22 +25,22 @@
 #X obj 149 577 * 1;
 #X obj 725 57 f;
 #X obj 714 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 4 256;
+-262144 -1 -1 0 256;
 #X obj 783 57 f;
 #X obj 785 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 8.25 256;
+-262144 -1 -1 0 256;
 #X obj 840 57 f;
 #X obj 842 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 16.5 256;
+-262144 -1 -1 -1 256;
 #X obj 898 57 f;
 #X obj 901 155 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 22.75 256;
+-262144 -1 -1 18.75 256;
 #X obj 994 57 f;
 #X obj 996 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 29 256;
+-262144 -1 -1 0 256;
 #X obj 1042 57 f;
 #X obj 1044 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 31.25 256;
 #X obj 1099 57 f;
 #X obj 1101 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
@@ -364,7 +364,7 @@
 #X obj 789 386 * 1;
 #X obj 734 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 786 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 786 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 831 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
@@ -659,7 +659,7 @@
 #X obj 76 719 r modLok;
 #X obj 101 -174 r IT≠T;
 #X obj 730 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 2 256;
+-262144 -1 -1 0 256;
 #X obj 362 -402;
 #X obj 1048 390 * 1;
 #X floatatom 1093 480 5 0 0 0 - - -;
@@ -684,9 +684,8 @@
 #X obj 324 107 r nbrSTPA;
 #X obj 153 120 - 1;
 #X obj 151 143 * -1;
-#X obj 247 51 r BB;
 #X obj -76 -26 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 8859 256;
+-262144 -1 -1 5599 256;
 #X obj -1 39 r lo;
 #X obj 100 -137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 1 1;
@@ -694,11 +693,12 @@
 #X obj 97 -78 * -1;
 #X obj -47 44 spigot-toggle_red;
 #X obj -73 44 spigot-toggle_red;
-#X obj 90 4 f;
-#X obj 86 -21 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 63 16 f;
+#X obj 59 -9 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 89 -52 r BB;
+#X obj 62 -40 r BB;
 #X obj -68 90 spigot-toggle_red;
+#X obj 249 48 r ITAng;
 #X connect 0 0 174 0;
 #X connect 1 0 471 0;
 #X connect 3 0 5 1;
@@ -1325,7 +1325,7 @@
 #X connect 443 0 548 0;
 #X connect 444 0 23 0;
 #X connect 446 0 4 0;
-#X connect 447 0 585 0;
+#X connect 447 0 584 0;
 #X connect 448 0 551 1;
 #X connect 449 0 448 0;
 #X connect 450 0 235 0;
@@ -1423,7 +1423,7 @@
 #X connect 513 0 514 0;
 #X connect 514 0 516 0;
 #X connect 515 0 553 0;
-#X connect 516 0 585 0;
+#X connect 516 0 584 0;
 #X connect 517 0 553 0;
 #X connect 518 0 27 0;
 #X connect 519 0 25 0;
@@ -1476,13 +1476,13 @@
 #X connect 548 0 550 0;
 #X connect 550 0 549 0;
 #X connect 551 0 451 0;
-#X connect 552 0 595 0;
+#X connect 552 0 594 0;
 #X connect 554 0 550 1;
 #X connect 555 0 340 0;
 #X connect 556 0 557 0;
 #X connect 557 0 438 0;
 #X connect 558 0 556 0;
-#X connect 559 0 587 0;
+#X connect 559 0 586 0;
 #X connect 560 0 24 1;
 #X connect 562 0 537 0;
 #X connect 562 0 563 0;
@@ -1501,18 +1501,18 @@
 #X connect 580 0 574 0;
 #X connect 581 0 577 0;
 #X connect 582 0 583 0;
-#X connect 583 0 595 1;
-#X connect 584 0 580 0;
-#X connect 585 0 591 0;
-#X connect 585 0 592 1;
-#X connect 586 0 591 1;
+#X connect 583 0 594 1;
+#X connect 584 0 590 0;
+#X connect 584 0 591 1;
+#X connect 585 0 590 1;
+#X connect 586 0 587 0;
+#X connect 586 0 590 1;
 #X connect 587 0 588 0;
-#X connect 587 0 591 1;
-#X connect 588 0 589 0;
-#X connect 589 0 590 1;
+#X connect 588 0 589 1;
+#X connect 589 0 552 0;
 #X connect 590 0 552 0;
-#X connect 591 0 552 0;
-#X connect 592 0 590 0;
+#X connect 591 0 589 0;
+#X connect 592 0 591 0;
 #X connect 593 0 592 0;
-#X connect 594 0 593 0;
-#X connect 595 0 551 0;
+#X connect 594 0 551 0;
+#X connect 595 0 580 0;

@@ -17,11 +17,11 @@
 #X obj -16717 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 0 256;
 #X obj -16659 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 -6.5 256;
+0 10 -262144 -1 -1 178 256;
 #X obj -16602 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 0 256;
 #X obj -16544 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 -12.5 256;
+0 10 -262144 -1 -1 63 256;
 #X obj -16486 -1352 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 0 256;
 #X obj -16308 -1352 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -58,12 +58,12 @@
 #X obj -15994 -1387 inlet;
 #X obj -16708 -1393 inlet;
 #X floatatom -17152 -1403 5 0 0 0 - - -;
-#X obj -17262 -1131 mod;
+#X obj -17261 -1125 mod;
 #X obj -17256 -1419 mod;
 #X floatatom -17209 -1427 5 0 0 0 - - -;
-#X obj -17263 -1233 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -17259 -1233 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj -17260 -1206 f;
+#X obj -17261 -1204 f;
 #X floatatom -17262 -1177 5 0 0 0 - - -;
 #X obj -17261 -1477 inlet;
 #X obj -15732 -1020 outlet;
@@ -93,13 +93,13 @@
 #X obj -15783 -1259 * 0;
 #X obj -17260 -1154 - 0;
 #X obj -17224 -1204 + 1;
-#X obj -16984 -977 t b f;
-#X obj -16996 -943 * 1;
+#X obj -16982 -985 t b f;
+#X obj -16995 -943 * 1;
 #X floatatom -16996 -918 5 0 0 0 - - -;
 #X obj -17079 -1165 notein;
 #X obj -17058 -1128 / 64;
 #X obj -17113 -1079 spigot-toggle_red;
-#X obj -17010 -1065 r LNR+TUCH;
+#X obj -17017 -1064 r LNR+TUCH;
 #X obj -16989 -1035 - 1;
 #X obj -16991 -1006 * -1;
 #X floatatom -17106 -1104 5 0 0 0 - - -;
@@ -110,10 +110,10 @@
 #X obj -17025 -893 r lo;
 #X obj -15852 -1042 spigot-toggle_red;
 #X obj -15812 -1073 spigot-toggle_red;
-#X obj -16886 -927 - 1;
-#X obj -16888 -898 * -1;
+#X obj -16949 -905 - 1;
+#X obj -16950 -883 * -1;
 #X obj -15755 -1060 r lo;
-#X obj -17260 -1398 sel;
+#X obj -17256 -1396 sel;
 #X obj -17254 -1454 f;
 #X obj -17218 -1453 + 1;
 #X obj -17061 -990 - 1;
