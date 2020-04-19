@@ -170,7 +170,7 @@
 #X obj 447 -269 - 1;
 #X obj -1134 -231 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 75 -119 s gateinA;
+#X obj 41 -104 s gateinA;
 #X obj 156 -121 s gateoutA;
 #X obj 156 -65 s trigA;
 #X obj -196 -466 r øSbangA;
@@ -290,6 +290,7 @@
 #X connect 74 0 70 0;
 #X connect 75 0 71 0;
 #X connect 75 0 74 0;
+#X connect 75 0 160 0;
 #X connect 76 0 79 0;
 #X connect 77 0 129 0;
 #X connect 78 0 72 0;
@@ -299,7 +300,6 @@
 #X connect 81 0 146 0;
 #X connect 81 0 161 0;
 #X connect 82 0 129 0;
-#X connect 82 0 160 0;
 #X connect 82 0 80 0;
 #X connect 84 0 88 0;
 #X connect 84 0 90 0;
@@ -329,6 +329,7 @@
 #X connect 102 1 103 0;
 #X connect 103 0 79 0;
 #X connect 104 0 102 0;
+#X connect 105 0 71 0;
 #X connect 106 0 112 0;
 #X connect 106 1 112 1;
 #X connect 107 0 131 0;

@@ -1,8 +1,8 @@
-#N canvas 240 48 1440 922 12;
+#N canvas 0 0 1280 778 12;
 #X obj 47 341 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 46 138 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 295 256;
 #X obj 44 101 inlet;
 #X obj 281 683 line;
 #X obj 320 887 outlet;
@@ -32,10 +32,10 @@
 -262144 -1 -1 0 256;
 #X obj 863 87 f;
 #X obj 845 216 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 6.25 256;
 #X obj 920 87 f;
 #X obj 902 216 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 12.5 256;
 #X obj 978 87 f;
 #X obj 961 215 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
@@ -369,9 +369,11 @@
 #X obj 382 287 random 15;
 #X obj 446 233 r nbrSTPB;
 #X obj 393 205 r ctnlstepBonoof;
-#X obj 345 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 331 237 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 341 208 r ITBng;
+#X obj 327 202 r ITBng;
+#X obj 240 374 f;
+#X obj 236 344 spigot-toggle_red;
 #X connect 0 0 293 0;
 #X connect 0 0 300 0;
 #X connect 0 0 292 0;
@@ -809,6 +811,7 @@
 #X connect 304 0 295 0;
 #X connect 305 0 298 0;
 #X connect 306 0 305 0;
+#X connect 306 0 321 0;
 #X connect 307 0 306 0;
 #X connect 308 0 0 0;
 #X connect 309 0 310 0;
@@ -817,8 +820,11 @@
 #X connect 311 0 313 0;
 #X connect 313 0 315 0;
 #X connect 314 0 315 1;
-#X connect 315 0 0 0;
+#X connect 315 0 320 1;
 #X connect 316 0 314 0;
 #X connect 317 0 313 1;
+#X connect 317 0 321 1;
 #X connect 318 0 313 0;
 #X connect 319 0 318 0;
+#X connect 320 0 0 0;
+#X connect 321 0 320 0;
