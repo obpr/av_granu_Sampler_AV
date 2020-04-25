@@ -1,29 +1,29 @@
-#N canvas 30 183 906 777 10;
+#N canvas 68 457 906 777 10;
 #X obj 208 161 hsl 100 15 0 1 0 0 empty empty cut_out 60 8 1 10 -1
--260097 -260097 9900 1;
+-260097 -260097 6000 1;
 #X obj 103 161 hsl 100 15 0 1 0 0 empty empty cut_in 4 8 1 10 -1 -260097
--260097 0 1;
+-260097 900 1;
 #X obj 363 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--260097 -1 0 1;
+-260097 -1 4605 1;
 #X obj 405 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--260097 -1 0 1;
+-260097 -1 4831 1;
 #X obj 384 103 vsl 20 70 0.02 2 1 0 empty empty empty 12 12 0 10 -1
--260097 -1 0 1;
+-260097 -1 4089 1;
 #X obj 103 144 hsl 100 18 0 1 0 0 empty empty fade_in 4 10 1 12 -260097
--1 -1 0 1;
+-1 -1 1802 1;
 #X obj 208 144 hsl 100 18 1 0 0 0 empty empty fade_out 50 10 1 12 -260097
--1 -1 9900 1;
+-1 -1 8353 1;
 #X obj 426 103 vsl 30 70 0 2 0 0 empty empty gain 6 6 0 7 -1 -260097
--260097 0 1;
+-260097 1436 1;
 #X obj -5 431 vfreeverb~;
 #X obj 467 142 hsl 145 17 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -1
--260097 -260097 0 0;
+-260097 -260097 13000 0;
 #X obj 467 159 hsl 145 17 0 2 0 1 empty empty damp 3 8 0 10 -1 -260097
 -260097 1200 0;
 #X obj 467 122 hsl 145 19 0 1 0 1 empty empty wet_reverb 3 8 0 10 -1
--260097 -260097 0 0;
+-260097 -260097 600 0;
 #X obj 467 102 hsl 145 19 0 1 0 1 empty empty dry 3 8 0 10 -1 -260097
--260097 7200 0;
+-260097 6300 0;
 #X obj -13 57 inlet;
 #X obj 27 57 inlet;
 #X obj 78 56 inlet;
@@ -121,7 +121,7 @@
 #X floatatom 254 -1251 12 0 0 0 - - -;
 #X floatatom 255 -1189 12 0 0 0 - - -;
 #X obj 292 -1324 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X floatatom -422 -1147 12 0 0 0 - - -;
 #X obj 256 -1160 /;
 #X text -385 -555 <-- pitch & speed \, norm= 1;
@@ -197,7 +197,7 @@
 #X obj -182 308 s envfadreducout;
 #X msg -165 78 0.2;
 #X obj 443 233 s envRNGmidiloop;
-#X obj 349 15 spigot-toggle_red;
+#X obj 398 19 spigot-toggle_red;
 #X obj 167 8 r lo;
 #X obj 569 568 spigot-toggle_orange;
 #X obj 569 545 spigot-toggle_vert;
@@ -297,10 +297,10 @@
 #X obj 200 -141 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 200 -108 44;
-#X obj 211 101 nbx 4 18 -1e+37 1e+37 0 0 empty empty empty 0 20 0 10
--260818 -1 -262144 0 256;
-#X obj 349 -28 r T$mod;
-#X obj 192 101 tgl 18 0 empty empty < 6 8 2 15 -260486 -1 -1 1 1;
+#X obj 207 100 nbx 4 18 -1e+37 1e+37 0 0 empty empty empty 0 20 0 10
+-260818 -1 -262144 150 256;
+#X obj 494 -145 r T$mod;
+#X obj 193 100 tgl 18 0 empty empty < 6 8 2 15 -260486 -1 -1 0 1;
 #X obj 100 100 cnv 13 92 18 empty empty ENVLOP_TIME_RCV 12 10 1 8 -1
 -260097 0;
 #X obj 361 -82 r Tø@SA;
@@ -326,6 +326,10 @@
 #X obj 473 56 f;
 #X obj 254 101 cnv 13 56 18 empty empty empty 50 9 1 8 -1 -260097 0
 ;
+#X obj 497 -121 - 1;
+#X obj 496 -100 * -1;
+#X obj 496 -74 spigot-toggle_red;
+#X obj 583 -103 r lo;
 #X connect 0 0 134 0;
 #X connect 1 0 133 0;
 #X connect 2 0 17 1;
@@ -605,15 +609,16 @@
 #X connect 254 0 234 0;
 #X connect 254 0 243 0;
 #X connect 256 0 182 1;
+#X connect 256 0 283 0;
 #X connect 257 0 237 0;
 #X connect 258 0 262 0;
 #X connect 259 0 258 0;
 #X connect 260 0 261 0;
 #X connect 261 0 259 0;
 #X connect 262 0 181 0;
-#X connect 263 0 262 0;
+#X connect 263 0 285 0;
 #X connect 264 0 182 1;
-#X connect 266 0 182 0;
+#X connect 264 0 285 1;
 #X connect 266 0 267 0;
 #X connect 267 1 268 0;
 #X connect 268 0 262 0;
@@ -637,4 +642,8 @@
 #X connect 279 0 278 0;
 #X connect 280 0 12 0;
 #X connect 281 0 11 0;
+#X connect 283 0 284 0;
+#X connect 284 0 285 1;
+#X connect 285 0 262 0;
+#X connect 286 0 285 1;
 #X coords 0 -1 1 1 514 76 2 100 100;

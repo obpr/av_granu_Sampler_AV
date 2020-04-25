@@ -26,8 +26,8 @@
 #X obj 147 -127 - 1;
 #X obj 151 -98 * -1;
 #X obj 150 -172 ctlin 48;
-#X obj 104 130 hsl 509 9 0 1 0 0 empty empty OUT 480 5 1 9 -1 -260097
--260097 101600 1;
+#X obj 104 139 hsl 509 9 0 1 0 0 empty empty OUT 480 5 1 9 -1 -260097
+-260097 50800 1;
 #X obj 100 100 cnv 15 56 20 empty empty empty 20 12 0 11 -1 -1 0;
 #X obj 138 101 tgl 18 0 empty empty ->- 2 9 1 12 -260097 -1 -1 0 1
 ;
@@ -45,8 +45,8 @@
 #X obj 355 -83 * 20;
 #X obj 752 472 * 1;
 #X obj 1023 436 - 0;
-#X obj -94 785 hsl 509 9 0 1 0 0 empty empty IN 12 5 1 9 -1 -260097
--260097 0 1;
+#X obj 104 130 hsl 509 8 0 1 0 0 empty empty empty 3 -22 1 84 -260097
+-1 -1 0 1;
 #X obj -82 552 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -105 555 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -86,6 +86,7 @@
 #X obj -104 486 == 1;
 #X obj -34 811 s stretchA;
 #X obj 152 -75 * 40;
+#X obj 5 -20 r reposetoi>0A;
 #X connect 0 0 41 0;
 #X connect 1 0 36 0;
 #X connect 2 0 6 0;
@@ -174,4 +175,5 @@
 #X connect 69 0 63 0;
 #X connect 70 0 55 0;
 #X connect 72 0 32 0;
-#X coords 0 -1 1 1 516 40 2 100 100;
+#X connect 73 0 24 0;
+#X coords 0 -1 1 1 516 49 2 100 100;
