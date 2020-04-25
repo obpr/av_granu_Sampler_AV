@@ -1,5 +1,9 @@
 # AV_GRANU
 
+Double tracks AV sampler
+In real time, Sample, Scratch, Pitch and change the playback speed
+and module your parameters with 2 complex step-sequencers and an audio analyzer.
+
 ![Alt text](/doc/img/avgra_tout.jpeg)
 
 
