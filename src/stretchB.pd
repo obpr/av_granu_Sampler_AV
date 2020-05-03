@@ -1,16 +1,16 @@
-#N canvas 126 47 1680 1028 12;
+#N canvas 1920 30 1680 1028 12;
 #X floatatom 754 503 12 0 0 0 - - -;
-#X floatatom 176 101 5 0 0 0 - - -;
-#X obj 157 101 bng 18 250 50 0 empty empty ø 3 7 1 20 -260097 -1 -1
+#X floatatom 276 101 5 0 0 0 - - -;
+#X obj 175 286 bng 18 250 50 0 empty empty ø 3 7 1 20 -260097 -1 -1
 ;
-#X obj 247 101 hsl 367 18 1 40 0 0 empty empty TimeStretch 5 9 1 10
--1 -260097 -260097 0 1;
+#X obj 331 101 hsl 281 18 1 40 0 0 empty empty TimeStretch 5 11 1 10
+-16662 -260097 -260097 0 1;
 #X obj 192 -12 r lo;
 #X obj 240 208 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 208 101 tgl 18 0 empty empty A 6 9 1 10 -1 -260097 -260097 0
+#X obj 240 101 tgl 18 0 empty empty A 6 9 1 10 -1 -260097 -260097 0
 1;
-#X obj 225 101 tgl 18 0 empty empty B 6 9 1 10 -1 -260097 -260097 0
+#X obj 257 101 tgl 18 0 empty empty B 6 9 1 10 -1 -260097 -260097 0
 1;
 #X obj 359 -125 r B;
 #X obj 353 -56 spigot-toggle_violet;
@@ -23,10 +23,10 @@
 #X floatatom 148 -15 12 0 0 2 - - -;
 #X obj 147 -127 - 1;
 #X obj 151 -98 * -1;
-#X obj 104 139 hsl 509 9 0 1 0 0 empty empty OUT 480 5 1 9 -1 -260097
--260097 9900 1;
-#X obj 100 100 cnv 15 56 20 empty empty empty 20 12 0 11 -1 -1 0;
-#X obj 138 101 tgl 18 0 empty empty ->- 2 9 1 12 -260097 -1 -1 1 1
+#X obj 104 139 hsl 508 9 0 1 0 0 empty empty OUT 480 5 1 9 -1 -260097
+-260097 50600 1;
+#X obj 100 100 cnv 15 139 20 empty empty empty 20 12 0 11 -1 -1 0;
+#X obj 309 101 tgl 18 0 empty empty ☞ 2 9 0 25 -260097 -1 -1 0 1
 ;
 #X floatatom 985 377 5 0 0 0 - - -;
 #X floatatom 956 441 5 0 0 0 - - -;
@@ -36,14 +36,14 @@
 #X floatatom 749 590 12 0 0 0 - - -;
 #X floatatom 1018 508 5 0 0 0 - - -;
 #X obj 150 -41 + 1;
-#X obj 104 120 hsl 509 9 0 1 0 0 empty empty IN 12 5 1 9 -1 -260097
--260097 7000 1;
+#X obj 104 120 hsl 508 9 0 1 0 0 empty empty IN 12 5 1 9 -1 -260097
+-260097 0 1;
 #X obj 303 -83 * 20;
 #X obj 355 -83 * 20;
 #X obj 752 472 * 1;
 #X obj 1023 436 - 0;
-#X obj 104 130 hsl 509 9 0 1 0 0 empty empty empty 12 5 1 9 -260097
--1 -1 7985 1;
+#X obj 104 130 hsl 508 9 0 1 0 0 empty empty empty 12 5 1 9 -260097
+-1 -1 0 1;
 #X obj -82 552 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -105 555 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -176,4 +176,4 @@
 #X connect 71 1 14 0;
 #X connect 72 0 21 0;
 #X connect 73 0 21 0;
-#X coords 0 -1 1 1 516 49 2 100 100;
+#X coords 0 -1 1 1 514 48 2 100 100;

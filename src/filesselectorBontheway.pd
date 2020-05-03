@@ -28,7 +28,7 @@ that under linux i could play most formats...;
 #X obj 491 134 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 427 255 outlet;
-#X obj 519 317 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 519 317 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 522 214 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -112,7 +112,7 @@ that under linux i could play most formats...;
 -1 0 1;
 #X floatatom 233 490 5 0 0 1 - - -;
 #X obj 114 507 tgl 20 0 empty sendV1=A1 A 6 11 0 12 -260818 -261689
--1 1 1;
+-1 0 1;
 #X obj 135 507 tgl 20 0 empty sendV1=A1 B 6 11 0 12 -260818 -261689
 -1 0 1;
 #X floatatom 115 490 5 0 0 2 - - -;
@@ -232,7 +232,7 @@ that under linux i could play most formats...;
 0;
 #X obj 100 228 cnv 3 3 408 empty empty empty 20 12 0 14 -1 -66577 0
 ;
-#X obj 100 526 cnv 33 181 130 empty empty empty 6 12 1 14 -1 -66577
+#X obj 100 526 cnv 33 181 131 empty empty empty 6 12 1 14 -1 -66577
 0;
 #X obj 675 463 s Tø@SB;
 #X msg -105 292 starter1/*.mov;
@@ -400,4 +400,4 @@ that under linux i could play most formats...;
 #X connect 166 0 135 0;
 #X connect 173 0 106 0;
 #X connect 174 0 120 0;
-#X coords 0 -1 1 1 182 556 1 100 100;
+#X coords 0 -1 1 1 182 558 1 100 100;
