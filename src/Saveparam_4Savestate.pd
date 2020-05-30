@@ -1,12 +1,12 @@
 #N canvas 296 30 1384 998 12;
 #X floatatom -64 320 5 0 0 2 W.IT=T #0-IT=T.r W.IT=T;
 #X floatatom -64 342 5 0 0 3 S.IT=T S.IT=T #0-IT=T.s;
-#X obj 102 100 cnv 15 120 21 empty empty >>>_.txt_>>> 22 10 1 13 -1
--162280 0;
-#X obj 103 102 bng 18 250 50 0 \$0-save.s \$0-save.r empty 20 9 1 14
--162280 -260097 -162280;
-#X obj 203 102 bng 18 250 50 0 \$0-load.s \$0-load.r empty -28 9 1
-14 -162280 -260097 -162280;
+#X obj 102 100 cnv 15 120 21 empty empty ∿∿∿to.txt∿∿∿∿
+22 10 1 13 -1 -162280 0;
+#X obj 104 102 bng 18 250 50 0 \$0-save.s \$0-save.r S 4 10 1 14 -162280
+-260097 -1;
+#X obj 203 102 bng 18 250 50 0 \$0-load.s \$0-load.r L 5 10 1 14 -162280
+-260097 -1;
 #X obj -15 50 cnv 15 400 20 \$0-preset.name.s \$0-preset.name.r PRESET_FILE:no_preset_loaded
 5 10 0 10 -86853 -261682 0;
 #N canvas -446 1028 1531 1028 presets 0;

@@ -1,4 +1,4 @@
-#N canvas 493 649 734 566 10;
+#N canvas 493 462 734 566 10;
 #X obj 172 263 list;
 #X obj 217 263 list;
 #X obj 292 229 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
@@ -127,8 +127,8 @@
 #X text 313 228 <-reset;
 #X floatatom 2 403 5 0 0 0 - - -;
 #X obj 3 438 outlet;
-#X obj 50 50 cnv 9 180 20 empty \$1-cnv Select... 6 9 1 15 -260097
--1 0;
+#X obj 50 50 cnv 9 180 18 empty \$1-cnv Select... 6 9 1 12 -4034 -1
+0;
 #X obj 401 173 r \$1-bang;
 #X obj 597 257 s \$1-cnv;
 #X obj 639 84 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -214,4 +214,4 @@
 #X connect 51 1 24 0;
 #X connect 54 0 55 0;
 #X connect 57 0 38 0;
-#X coords 0 -1 1 1 180 20 1 50 50;
+#X coords 0 -1 1 1 180 18 1 50 50;
