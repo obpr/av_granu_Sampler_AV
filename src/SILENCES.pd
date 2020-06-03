@@ -1,4 +1,4 @@
-#N canvas 250 94 1430 934 10;
+#N canvas 431 620 1430 934 10;
 #X obj 99 -151 r lo;
 #X obj -47 717 s env0;
 #X obj -43 643 env~;
@@ -52,8 +52,8 @@
 #X obj 861 63 r~ A0;
 #X msg 189 -79 2;
 #X floatatom 68 120 4 0 0 1 - - -;
-#X obj 117 44 hsl 85 15 0 100 0 0 empty empty empty -2 -8 0 10 -1 -260097
--1 0 0;
+#X obj 117 44 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1 -260097
+-1 3400 0;
 #X floatatom 68 136 4 0 0 1 - - -;
 #X floatatom 68 151 4 0 0 1 - - -;
 #X floatatom 68 166 4 0 0 1 - - -;
@@ -74,7 +74,7 @@
 #X floatatom 135 219 3 0 0 1 glide - -;
 #X floatatom 197 219 3 0 0 1 - - -;
 #X floatatom 197 235 3 0 0 0 nmbr/stps - -;
-#X obj 197 181 tgl 20 0 empty empty stp 4 9 1 12 -260097 -1 -1 0 1
+#X obj 197 181 tgl 20 0 empty empty stp 4 9 1 12 -260097 -1 -1 1 1
 ;
 #X obj 135 182 tgl 20 0 empty empty >< 2 9 1 14 -260097 -1 -1 0 1;
 #X obj 132 454 cnv 15 85 68 empty empty empty 20 12 0 14 -99865 -66577
@@ -98,21 +98,21 @@
 #X obj 100 522 cnv 6 118 37 empty empty empty 20 16 1 12 -1 -258113
 0;
 #X obj 117 60 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1 -260097
--1 0 0;
+-1 3800 0;
 #X obj 117 74 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1 -260097
--1 0 0;
+-1 3400 0;
 #X obj 117 90 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1 -260097
--1 4800 0;
+-1 3300 0;
 #X obj 117 104 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 4800 0;
+-260097 -1 3300 0;
 #X obj 117 120 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 6000 0;
+-260097 -1 3300 0;
 #X obj 117 134 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 0 0;
+-260097 -1 3400 0;
 #X obj 117 150 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 6100 0;
+-260097 -1 3500 0;
 #X obj 117 166 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 0 0;
+-260097 -1 3600 0;
 #X obj 102 184 cnv 15 28 33 empty empty a'= 2 8 1 14 -260097 -1 0;
 #X floatatom 102 203 5 0 0 3 - - -;
 #X obj 100 251 cnv 15 118 44 empty empty empty 6 35 1 10 -1 -228856
@@ -124,7 +124,7 @@
 #X obj 157 455 cnv 15 40 20 empty empty empty 20 12 0 14 -1 -66577
 0;
 #X obj 117 317 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 0 0;
+-260097 -1 2100 0;
 #X obj 117 333 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
 -260097 -1 0 0;
 #X obj 117 347 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
@@ -136,7 +136,7 @@
 #X obj 117 393 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
 -260097 -1 0 0;
 #X obj 117 407 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 4000 0;
+-260097 -1 0 0;
 #X obj 117 423 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
 -260097 -1 0 0;
 #X obj 117 439 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
@@ -148,7 +148,7 @@
 #X obj 178 182 tgl 20 0 empty empty C 6 11 1 12 -1 -262144 -262144
 0 1;
 #X obj 157 182 tgl 20 0 empty empty A 6 11 1 12 -1 -262144 -262144
-0 1;
+1 1;
 #X obj 100 3 cnv 15 117 22 empty empty Attack-detection 18 11 1 12
 -1 -262144 0;
 #X obj 100 294 cnv 15 75 22 empty empty envlp_>_A 35 14 1 12 -1 -262144

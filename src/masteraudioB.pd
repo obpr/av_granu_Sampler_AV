@@ -1,4 +1,4 @@
-#N canvas 0 0 1636 1028 10;
+#N canvas 44 0 1636 1028 10;
 #X floatatom -547 -875 4 0 100 0 - - -;
 #X floatatom -549 -952 0 0 200 0 - - -;
 #X obj -847 -498 +~;
@@ -68,7 +68,7 @@
 #X floatatom 131 -1618 12 0 0 0 - - -;
 #X floatatom 132 -1572 12 0 0 0 - - -;
 #X obj 169 -1691 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj 145 -1672 metro 44;
 #X floatatom -545 -1514 12 0 0 0 - - -;
 #X obj 133 -1527 /;
@@ -145,30 +145,30 @@
 #X obj -52 -1478 r gateinB;
 #X obj 244 -1745 r øAtiTS2>ø;
 #X obj 209 160 hsl 100 15 0 1 0 0 empty empty crop_out 55 8 1 10 -260097
--1 -1 9900 1;
+-1 -1 6900 1;
 #X obj 104 160 hsl 100 15 0 1 0 0 empty empty crop_in 5 8 1 10 -260097
--1 -1 0 1;
+-1 -1 1700 1;
 #X obj 319 102 vsl 20 70 0.02 2 1 0 empty empty L 8 6 0 7 -16662 -260097
--260097 0 1;
+-260097 3301 1;
 #X obj 359 103 vsl 20 70 0.02 2 1 0 empty empty H 9 6 0 7 -16662 -260097
--260097 0 1;
+-260097 3930 1;
 #X obj 339 103 vsl 20 70 0.02 2 1 0 empty empty M 8 6 0 7 -16662 -260097
--260097 0 1;
+-260097 3649 1;
 #X obj 104 118 hsl 100 19 0 1 0 0 empty empty fade_in 4 12 1 12 -1
--260097 -260097 0 1;
+-260097 -260097 2806 1;
 #X obj 209 118 hsl 100 19 1 0 0 0 empty empty fade_out 50 12 1 12 -1
--260097 -260097 9900 1;
+-260097 -260097 6782 1;
 #X obj 378 103 vsl 22 70 0 2 0 0 empty empty gain 3 6 0 7 -16662 -260097
--260097 0 1;
+-260097 2581 1;
 #X obj -103 431 vfreeverb~;
 #X obj 413 141 hsl 103 17 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -16662
--260097 -260097 0 0;
+-260097 -260097 7700 0;
 #X obj 413 159 hsl 103 17 0 2 0 1 empty empty damp 3 8 0 10 -16662
--260097 -260097 2400 0;
+-260097 -260097 5800 0;
 #X obj 413 121 hsl 103 19 0 1 0 1 empty empty wet_reverb 3 8 0 10 -16662
--260097 -260097 0 0;
+-260097 -260097 5800 0;
 #X obj 413 101 hsl 103 19 0 1 0 1 empty empty dry 3 8 0 10 -16662 -260097
--260097 5100 0;
+-260097 5800 0;
 #X obj -20 56 inlet;
 #X obj -145 542 dj-eq;
 #X obj -148 505 *~;
@@ -264,7 +264,7 @@
 -1;
 #X msg 54 -27 44;
 #X obj 250 101 nbx 4 17 -1e+37 1e+37 0 0 empty empty empty 0 20 0 10
--260818 -1 -262144 0 256;
+-260818 -1 -262144 152 256;
 #X obj 294 101 tgl 17 0 empty empty < 2 8 2 23 -260097 -1 -1 1 1;
 #X obj 101 100 cnv 13 148 18 empty empty ENVLOP_TIME________RCV 22
 10 1 8 -1 -260097 0;
@@ -291,15 +291,15 @@
 -1;
 #X floatatom -733 333 12 0 0 0 - - -;
 #X obj 104 138 hsl 182 11 1 4 0 0 empty empty expon_in 4 6 1 10 -260097
--1 -1 0 1;
+-1 -1 0 0;
 #X obj 311 100 cnv 3 7 75 empty empty empty 12 12 0 14 -1 -66577 0
 ;
 #X obj 289 138 bng 22 250 50 0 empty empty 1 8 11 1 13 -260097 -16662
 -1;
-#X obj 101 101 tgl 15 0 empty empty empty 1 6 0 23 -260097 -1 -1 0
+#X obj 101 101 tgl 15 0 empty empty empty 1 6 0 23 -260097 -1 -1 1
 1;
 #X obj 103 150 hsl 185 11 0.05 1 0 0 empty empty expon_in_>_1 4 6 1
-10 -260097 -1 -1 0 1;
+10 -260097 -1 -1 5368 0;
 #X msg -72 147 1;
 #X obj -673 259 env_inoutOZ1;
 #X obj -746 299 r øAtiTS2;
