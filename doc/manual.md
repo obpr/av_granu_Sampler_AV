@@ -38,12 +38,12 @@ Choose sounds and vidéos and find interactions among them:
     - [Gate](#gate)
     - [`[raw]`](#raw)
     - [`[@]`](#a-1)
-    - [`[⤷@]`](#re)
+    - [`[⤷@]`](#⤷@)
     - [`[@]`] orange on black(#-3)
-    - [`[loc]`](#loc)
-    - [ `[Trg]` and `[Bng]`](#-trg-and-bng)
-    - [`[Trg]`](#trg)
-    - [`[Bng]`](#bng)
+    - [`[⇪]`](#⇪)
+    - [ `[◐]` and `[•]`](#-◐-and-•)
+    - [`[◐]`](#◐)
+    - [`[•]`](#•)
     - [`[๏]`](#-4)
     - [`[ø]`](#-5)
   - [Audio modulations](#audio-modulations)
@@ -226,7 +226,7 @@ Choose between `44100`/`88200` hz
 ##### `[A]`, `[B]`, `[a']` or `[b']`
 
 
-## Time stretching until drone  
+## Time stretch  `[☞]`
 
 (2)  
 
