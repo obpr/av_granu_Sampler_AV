@@ -53,14 +53,14 @@ Choose sounds and vidéos and find interactions among them:
         - [[O]](#o-1)
         - [slider](#slider)
       - [Choose data source](#choose-data-source)
-        - [`[A]`, `[B]`, `[‘’a]` or `[‘’b]`](#a-b-a-or-b)
+        - [`[A]`, `[B]`, `[a']` or `[b']`](#a-b-a-or-b)
     - [Right’s 2 columns](#rights-2-columns)
       - [Module data from the left ’s 2 columns](#module-data-from-the-left-s-2-columns)
         - [`[44]`](#44)
         - [`[O]`](#o-2)
       - [Choose data source](#choose-data-source-1)
-        - [`[A]`, `[B]`, `[‘’a]` or `[‘’b]`](#a-b-a-or-b-1)  
-     - [Time stretching until drone](#time-stretching-until-drone)
+        - [`[A]`, `[B]`, `[a]` or `[b']`](#a-b-a-or-b-1)  
+     - [Time stretching unti'l drone](#time-stretching-until-drone)
   - [Audio analysis](#audio-analysis)  
     - [Select a source](#select-a-source)
       - [`[A]`](#a-2)
@@ -115,16 +115,16 @@ Receive the time of Step sequencer B
 ### `[A]`
 On/off
 
-### `[next]`
+### `[nxt]`
 Step forward
 
 ### `[ø]`
 Reverse steps off and steps on
 
-### `[><]`
+### `[⇋]`
 Send a step on two opposite values
 
-### `[>>]`
+### `[⇗]`
 Move linearly on the sequence.
 - One step all 6.25`$` (100%16 = 6.25)
 - if the tempo = loop length of the sequence%10
@@ -155,46 +155,42 @@ Set the position of the playhead where to start the playback loop
 ### `[raw]`
 Raw data  A or B
 
-### `[A@]`
+### `[@]`
 Make a loop on the fly and change position with Step sequencers
 
-### `[@re]`
-Call back the loop made in `[A@]`. When released, read what is after the loop chronologically or with the `[@A]` mode go back where you were at your last `[@re]`
+### `[⤷@]`
+Call back the loop made in `[@]`. When released, read what is after the loop chronologically or with the `[@]` orange on black mode go back where you were at your last `[⤷@]`
 
-### `[>ø]`
-Press on, press off (*midi mod*)
+### `[>๏]`
+Press on, press off (silence) (*midi mod*)
 
-### `[loc]`
+### `[⇪]`
 Lock selected source (*midi mod*)
 
 If you choose to send files triggered by A or B or randomly with `[BB](A)` or `[_BB1](B)` the sample sent will be played at its beginning
 
-###  `[Trg]` and `[Bng]`
+###  `[◐]` and `[•]`
 Auto-receive On/off step and send enveloppe to
 the sound selected.
 
-### `[Trg]`
+### `[◐]`
 On/off step
 
-### `[Bng]`
+### `[•]`
 Send enveloppe to the sound selected (16)
 
-### `[<<<]`
+### `[๏]`
 Send on/off step and set enveloppe from sources selected in
-s&p, speed, or pitch
-
-### `[ø]`
-Trigger the Step sequencer `[A]` or `[B]` as selected in
 s&p, speed, or pitch
 
 
 ## Audio modulations  
-
+ Control both Speed and Pitch or separately. 
 ![Alt text](/doc/img/avgra_audiomods.jpeg)
 
-- (10) Speed and pitch 50 = 0= stop, 75= go forward , 25= go back
-- (11) Speed only 50 = 0= stop, 75= go forward , 25= go back
-- (12) Pitch only 0 = default
+- (10) ω&♪-Speed and pitch 50 = 0= stop, 75= go forward , 25= go back
+- (11) ω-Speed only 50 = 0= stop, 75= go forward , 25= go back
+- (12) ♪-Pitch only 0 = default
 
 ### Left’s 2 columns:
 
@@ -211,7 +207,7 @@ set value
 
 #### Choose data source
 
-##### `[A]`, `[B]`, `[‘’a]` or `[‘’b]`
+##### `[A]`, `[B]`, `[a']` or `[b']`
 
 ### Right’s 2 columns
 
@@ -227,7 +223,7 @@ Choose between `44100`/`88200` hz
 - Slider: set  modulation value
 
 #### Choose data source
-##### `[A]`, `[B]`, `[‘’a]` or `[‘’b]`
+##### `[A]`, `[B]`, `[a']` or `[b']`
 
 
 ## Time stretching until drone  
@@ -249,7 +245,7 @@ Make the pattern you are making with Stepseq `A` or `B` sliding along the loop l
 
 ![Alt text](/doc/img/avgra_audioanlalyse.jpeg)
 
-Analyze silences and attacks in the audio signal of sampler or synthesizer. Send the values as `[‘’a]` or `[‘’b]`
+Analyze silences and attacks in the audio signal of sampler or synthesizer. Send the values as `[a']` or `[b']`
 
 ### Select a source
 #### `[A]`
@@ -343,4 +339,3 @@ Set video specifications. Dimension, frame rate, incrustations and image modulat
 # audio specs:  
 - .wav, lenght under 30 seconds at 88200 Hz 1 minute at 44100 Hz  
 - Change from  88200 Hz to 44100 Hz with the [44] button in Pitch and speed module(10)
-
