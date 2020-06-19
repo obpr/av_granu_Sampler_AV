@@ -145,6 +145,7 @@
 #X msg -1036 -154 25;
 #X msg -988 -155 75;
 #X obj -791 -274 s bonkAA;
+#X obj -741 -716 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 31 0;
@@ -179,6 +180,7 @@
 #X connect 28 0 0 0;
 #X connect 29 0 89 0;
 #X connect 29 0 94 0;
+#X connect 29 0 132 0;
 #X connect 30 0 86 1;
 #X connect 31 0 4 0;
 #X connect 32 0 0 0;

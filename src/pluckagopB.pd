@@ -1,4 +1,4 @@
-#N canvas 2120 194 1680 778 12;
+#N canvas 1680 0 1280 698 12;
 #X text -1266 869 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X obj 1619 152 r trgrA;
 #X obj 1561 145 r BB;
@@ -11,7 +11,7 @@
 #X obj 1525 243 spigot-toggle_red;
 #X obj 1526 221 spigot-toggle_vert;
 #X floatatom 1524 276 5 0 0 0 - - -;
-#X floatatom 1625 277 2 0 0 0 - - -;
+#X floatatom 1639 260 2 0 0 0 - - -;
 #X obj 1561 372 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1651 308 outlet;
@@ -119,11 +119,11 @@ push : off;
 0 1;
 #X obj 122 121 vsl 28 84 0 1 0 0 empty empty mod 4 70 0 11 -16662 -260097
 -260097 0 1;
-#X obj 157 233 tgl 25 0 empty empty • 0 13 1 70 -1 -260097 -260097
+#X obj 136 233 tgl 25 0 empty empty • 0 13 1 70 -1 -260097 -260097
 0 1;
-#X obj 131 206 tgl 25 0 empty empty ◐ 3 13 1 20 -1 -260097 -260097
+#X obj 110 206 tgl 25 0 empty empty ◐ 3 13 1 20 -1 -260097 -260097
 0 1;
-#X obj 131 232 tgl 25 0 empty empty ◐ 3 13 1 20 -1 -260097 -260097
+#X obj 110 232 tgl 25 0 empty empty ◐ 3 13 1 20 -1 -260097 -260097
 0 1;
 #X obj 180 120 tgl 28 0 empty empty ☞ 8 13 0 32 -1 -262144 -262144
 0 1;
@@ -141,7 +141,7 @@ push : off;
 #X obj 180 178 tgl 28 0 empty empty •@S 3 14 0 14 -1 -260097 -260097
 0 1;
 #X floatatom 150 104 8 0 0 0 - - -;
-#X obj 94 178 tgl 28 0 empty empty @ 5 14 1 18 -1 -260097 -260097 1
+#X obj 94 178 tgl 28 0 empty empty @ 5 14 1 18 -1 -260097 -260097 0
 1;
 #X obj 183 206 tgl 25 0 empty empty ๏ 2 10 0 32 -1 -260097 -260097
 0 1;
@@ -221,7 +221,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 299 -89 == 64;
 #X obj 278 -62 select 57;
 #X floatatom 1308 377 5 0 0 0 - - -;
-#X obj 157 207 tgl 25 0 empty empty • 0 13 1 70 -1 -260097 -260097
+#X obj 136 207 tgl 25 0 empty empty • 0 13 1 70 -1 -260097 -260097
 0 1;
 #X obj 1144 109 * 1;
 #X obj 83 -637 r send_BA;
@@ -442,45 +442,44 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj -309 719 s Aonoff;
 #X obj -324 661 sel;
 #X msg -307 691 1;
-#X obj 65 217 tgl 30 0 empty empty empty 5 13 1 37 -1 -1 -260097 0
-1;
-#X obj 1613 630 spigot-toggle_vert;
+#X obj 1596 652 spigot-toggle_vert;
 #X obj 1608 596 spigot-toggle_vert;
 #X obj 1648 597 spigot-toggle_red;
 #X obj 1633 689 sel;
 #X obj 1632 713 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 1630 733 1;
-#X obj 95 206 cnv 15 35 51 empty empty empty 20 12 0 14 -1 -66577 0
-;
-#X obj 64 247 cnv 10 31 11 empty empty empty 20 12 0 14 -1 -66577 0
-;
-#X obj 64 206 cnv 10 31 11 empty empty empty 20 12 0 14 -1 -66577 0
-;
 #X obj 1651 635 r lo;
-#X obj 1603 371 spigot-toggle_vert;
-#X obj 1603 352 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1589 372 spigot-toggle_vert;
+#X obj 1589 353 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1561 780 spigot-toggle_vert;
 #X obj 1587 779 spigot-toggle_red;
 #X obj 1635 176 r trgrB;
 #X obj 1232 725 spigot-toggle_red;
 #X obj 1724 734 spigot-toggle_vert;
-#X obj 1741 641 - 1;
-#X obj 1740 664 * -1;
+#X obj 1803 605 - 1;
+#X obj 1802 628 * -1;
 #X obj 108 361 s Bbutton;
 #X obj 1700 384 s BngtoenvB;
-#X obj 1726 781 s trgrtoenvB;
-#X obj 1742 693 s trgrtoenvonoffB;
+#X obj 1724 780 s trgrtoenvB;
+#X obj 1815 710 s trgrtoenvonoffB;
 #X msg 1684 674 0;
 #X obj -11 399 s ABselectB;
+#X obj 161 206 cnv 3 22 51 empty empty empty 20 12 0 14 -1 -66577 0
+;
+#X obj 64 206 cnv 3 45 52 empty empty empty 20 12 0 14 -1 -66577 0
+;
+#X obj 1693 528 s trgrmodBB;
+#X floatatom 1602 835 5 0 0 0 - - -;
+#X floatatom 1882 675 5 0 0 0 - - -;
 #X connect 1 0 21 0;
-#X connect 1 0 378 0;
+#X connect 1 0 377 0;
 #X connect 2 0 20 0;
 #X connect 3 0 22 0;
 #X connect 4 0 10 0;
 #X connect 5 0 9 0;
-#X connect 6 0 388 0;
+#X connect 6 0 384 0;
 #X connect 9 0 11 0;
 #X connect 10 0 11 0;
 #X connect 11 0 127 0;
@@ -606,10 +605,10 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 101 0 213 0;
 #X connect 101 0 334 0;
 #X connect 101 0 326 1;
-#X connect 101 0 378 1;
-#X connect 101 0 389 1;
-#X connect 101 0 396 0;
-#X connect 101 0 401 0;
+#X connect 101 0 377 1;
+#X connect 101 0 385 1;
+#X connect 101 0 392 0;
+#X connect 101 0 397 0;
 #X connect 101 0 361 0;
 #X connect 102 0 106 0;
 #X connect 102 0 100 0;
@@ -619,10 +618,10 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 102 0 155 0;
 #X connect 102 0 335 0;
 #X connect 102 0 330 1;
-#X connect 102 0 379 1;
-#X connect 102 0 390 1;
-#X connect 102 0 396 0;
-#X connect 102 0 401 0;
+#X connect 102 0 378 1;
+#X connect 102 0 386 1;
+#X connect 102 0 392 0;
+#X connect 102 0 397 0;
 #X connect 103 0 56 1;
 #X connect 103 0 198 0;
 #X connect 104 0 55 1;
@@ -637,13 +636,13 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 106 0 221 0;
 #X connect 107 0 21 1;
 #X connect 107 0 219 0;
-#X connect 107 0 380 0;
-#X connect 107 0 394 0;
+#X connect 107 0 379 0;
+#X connect 107 0 390 0;
 #X connect 108 0 23 1;
 #X connect 108 0 217 0;
 #X connect 108 0 307 0;
-#X connect 108 0 380 0;
-#X connect 108 0 394 0;
+#X connect 108 0 379 0;
+#X connect 108 0 390 0;
 #X connect 109 0 100 1;
 #X connect 109 0 60 1;
 #X connect 109 0 130 0;
@@ -681,7 +680,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 114 0 88 1;
 #X connect 114 0 90 0;
 #X connect 114 0 160 0;
-#X connect 114 0 392 1;
+#X connect 114 0 388 1;
 #X connect 115 0 87 0;
 #X connect 115 0 92 0;
 #X connect 115 0 102 0;
@@ -783,7 +782,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 210 0 102 0;
 #X connect 212 0 116 0;
 #X connect 213 0 66 1;
-#X connect 213 0 392 0;
+#X connect 213 0 388 0;
 #X connect 214 0 185 0;
 #X connect 216 0 108 0;
 #X connect 218 0 107 0;
@@ -961,31 +960,34 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 372 0 184 0;
 #X connect 374 1 375 0;
 #X connect 375 0 373 0;
-#X connect 377 0 66 1;
-#X connect 377 0 387 1;
-#X connect 377 0 390 0;
-#X connect 377 0 389 0;
-#X connect 377 0 393 0;
-#X connect 378 0 377 0;
-#X connect 379 0 377 0;
+#X connect 376 0 383 1;
+#X connect 376 0 386 0;
+#X connect 376 0 385 0;
+#X connect 376 0 389 0;
+#X connect 376 0 400 0;
+#X connect 376 0 66 1;
+#X connect 377 0 376 0;
+#X connect 378 0 376 0;
+#X connect 379 0 380 0;
 #X connect 380 0 381 0;
-#X connect 381 0 382 0;
-#X connect 382 0 12 0;
-#X connect 382 0 66 1;
-#X connect 386 0 377 1;
-#X connect 386 0 400 0;
-#X connect 387 0 13 0;
-#X connect 388 0 387 0;
-#X connect 388 0 397 0;
-#X connect 389 0 185 0;
-#X connect 390 0 106 0;
-#X connect 391 0 23 0;
-#X connect 391 0 379 0;
-#X connect 392 0 12 0;
-#X connect 393 0 398 0;
-#X connect 394 0 395 0;
-#X connect 395 0 393 1;
-#X connect 395 0 399 0;
-#X connect 400 0 380 0;
-#X connect 400 0 394 0;
+#X connect 381 0 12 0;
+#X connect 381 0 66 1;
+#X connect 382 0 376 1;
+#X connect 382 0 396 0;
+#X connect 383 0 13 0;
+#X connect 384 0 383 0;
+#X connect 384 0 393 0;
+#X connect 385 0 185 0;
+#X connect 386 0 106 0;
+#X connect 387 0 23 0;
+#X connect 387 0 378 0;
+#X connect 388 0 12 0;
+#X connect 389 0 394 0;
+#X connect 389 0 401 0;
+#X connect 390 0 391 0;
+#X connect 391 0 389 1;
+#X connect 391 0 395 0;
+#X connect 391 0 402 0;
+#X connect 396 0 379 0;
+#X connect 396 0 390 0;
 #X coords 0 -1 1 1 210 168 2 0 90;

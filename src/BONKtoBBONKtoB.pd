@@ -31,7 +31,7 @@
 -1 -1;
 #X obj -1036 -200 sel 0 1;
 #X floatatom -763 -49 5 0 0 0 - - -;
-#X obj -815 -723 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -805 -717 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom -590 -725 5 0 0 0 - - -;
 #X floatatom -756 146 5 0 0 0 - - -;
@@ -145,6 +145,7 @@
 #X msg -1036 -154 25;
 #X msg -988 -155 75;
 #X obj -791 -274 s bonkBB;
+#X obj -737 -707 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 31 0;
@@ -179,6 +180,7 @@
 #X connect 28 0 0 0;
 #X connect 29 0 89 0;
 #X connect 29 0 94 0;
+#X connect 29 0 132 0;
 #X connect 30 0 86 1;
 #X connect 31 0 4 0;
 #X connect 32 0 0 0;
