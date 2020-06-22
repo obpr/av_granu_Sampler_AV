@@ -92,7 +92,7 @@ that under linux i could play most formats...;
 #X msg 587 306 open \$1;
 #X obj 376 913 splitfilename;
 #X obj 585 846 splitfilename;
-#X obj 716 540 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 710 539 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 153 312 cnv 17 126 19 empty empty °_________% 31 13 1 14 -4034
 -1 0;
@@ -122,7 +122,7 @@ that under linux i could play most formats...;
 #X obj 586 336 s movieB;
 #X obj 464 971 s \$1-cnv;
 #X obj 656 933 s \$0-cnv;
-#X obj 793 566 s øSbangB;
+#X obj 719 655 s øSbangB;
 #X obj 623 567 s TRGnB_@s B1fromselndB;
 #X obj 100 286 folder;
 #X obj 102 457 folder1;
@@ -195,8 +195,8 @@ that under linux i could play most formats...;
 0;
 #X obj 100 101 cnv 15 181 148 empty empty OPEN_VIDEO__Write/select
 5 140 1 12 -1 -4034 0;
-#X obj 100 265 cnv 15 182 20 empty \$20-cnv starter/*.mov 4 10 0 12
--1 -4034 0;
+#X obj 100 265 cnv 15 182 20 empty \$20-cnv avBO1/*.mov 4 10 0 12 -1
+-4034 0;
 #X msg -114 53 label \$1;
 #X obj -114 1 symbol;
 #X obj 106 143 bng 15 500 500 0 empty empty avBO2 18 6 1 10 -260097
@@ -222,8 +222,8 @@ that under linux i could play most formats...;
 #X msg -269 152 axe_reboot/*.mov;
 #X obj 106 195 bng 15 500 500 0 empty empty starter_1 18 6 1 10 -260097
 -1 -260097;
-#X obj 100 434 cnv 15 182 22 empty \$21-cnv asmlp2/*.wav 7 12 0 12
--1 -4034 0;
+#X obj 100 434 cnv 15 182 22 empty \$21-cnv avBO1/*.wav 7 12 0 12 -1
+-4034 0;
 #X msg -91 703 label \$1;
 #X obj -94 676 symbol;
 #X obj 106 573 bng 15 500 500 0 empty empty kitchina 18 6 1 10 -260097
@@ -421,6 +421,7 @@ that under linux i could play most formats...;
 #X connect 104 0 199 0;
 #X connect 105 0 18 0;
 #X connect 105 0 210 0;
+#X connect 105 0 65 0;
 #X connect 107 0 108 0;
 #X connect 108 0 111 0;
 #X connect 109 0 138 0;
@@ -429,6 +430,7 @@ that under linux i could play most formats...;
 #X connect 131 0 200 0;
 #X connect 132 0 25 0;
 #X connect 132 0 210 0;
+#X connect 132 0 65 0;
 #X connect 133 0 107 0;
 #X connect 136 0 34 0;
 #X connect 137 0 90 2;
