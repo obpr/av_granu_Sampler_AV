@@ -4,9 +4,9 @@
 #X obj 175 286 bng 18 250 50 0 empty empty ø 3 7 1 20 -260097 -1 -1
 ;
 #X obj 194 101 hsl 417 18 1 40 0 0 empty empty TimeStretch 5 11 1 10
--16662 -260097 -260097 0 1;
+-16662 -260097 -260097 1600 1;
 #X obj 192 -12 r lo;
-#X obj 240 208 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 182 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 120 101 tgl 18 0 empty empty A 6 9 1 10 -1 -260097 -260097 0
 1;
@@ -23,7 +23,7 @@
 #X floatatom 148 -15 12 0 0 2 - - -;
 #X obj 104 139 hsl 508 9 0 1 0 0 empty empty OUT 480 5 1 9 -1 -260097
 -260097 50700 1;
-#X obj 101 101 tgl 18 0 empty empty ☞ 2 9 0 25 -260097 -1 -1 0 1
+#X obj 101 101 tgl 18 0 empty empty ☞ 2 9 0 25 -260097 -1 -1 1 1
 ;
 #X floatatom 985 377 5 0 0 0 - - -;
 #X floatatom 956 441 5 0 0 0 - - -;
@@ -40,27 +40,27 @@
 #X obj 752 472 * 1;
 #X obj 1023 436 - 0;
 #X obj 104 130 hsl 508 9 0 1 0 0 empty empty empty 12 5 1 9 -260097
--1 -1 0 1;
-#X obj -82 552 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1 14987 1;
+#X obj -70 574 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj -105 555 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -104 577 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 857 561 * 1;
 #X obj -65 403 pack \$1 \$2;
 #X obj -64 428 line;
 #X floatatom 643 758 12 0 0 0 - - -;
 #X floatatom -106 456 12 0 0 0 - - -;
-#X obj -56 347 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -48 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj -57 371 f;
+#X obj -49 209 f;
 #X obj 635 792 t b f;
 #X obj 633 834 * 1;
 #X floatatom 635 864 12 0 0 0 - - -;
 #X obj 1016 482 * 1;
 #X obj -36 600 delay 10;
-#X obj -102 342 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -86 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj -97 378 f;
+#X obj -89 209 f;
 #X obj -107 528 sel 0;
 #X obj 961 467 + 0.01;
 #X obj -16 562 spigot-toggle_red;

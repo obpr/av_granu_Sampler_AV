@@ -1,4 +1,4 @@
-#N canvas 1257 68 1680 891 12;
+#N canvas 1430 194 1280 698 12;
 #X text 613 831 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text 325 985 Here \, rather than ask you to push the read pointer
 back and forth in the sample \, we use a phasor~. This makes it possible
@@ -38,7 +38,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)
 #X obj 1203 264 spigot-toggle_red;
 #X obj 1278 276 spigot-toggle_red;
 #X obj 397 597 r A;
-#X obj 305 522 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 305 522 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 458 624 r posvisu;
 #X obj 397 680 - 0;
@@ -136,7 +136,7 @@ push : off;
 #X obj 165 1059 r TRGnB_@sB;
 #X obj 163 1039 r TRGnB_@sA;
 #X obj 140 332 spigot-toggle_orange;
-#X obj 93 128 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 0
+#X obj 93 128 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 1
 1;
 #X obj 93 157 tgl 28 0 empty empty B 6 15 1 26 -1 -262144 -262144 0
 1;
@@ -156,7 +156,7 @@ push : off;
 0 1;
 #X obj 177 128 tgl 28 0 empty empty ☞ 8 13 0 32 -1 -262144 -262144
 0 1;
-#X obj 64 157 tgl 28 0 empty empty @ 2 14 1 26 -260097 -1 -1 0 1;
+#X obj 64 157 tgl 28 0 empty empty @ 2 14 1 26 -260097 -1 -1 1 1;
 #X obj 64 186 tgl 28 0 empty empty ⤷@ -6 14 1 18 -260097 -1 -1 0
 1;
 #X obj 177 157 tgl 28 0 empty empty ☞ 8 13 0 32 -1 -262144 -262144
@@ -178,7 +178,7 @@ push : off;
 0 1;
 #X obj 180 241 tgl 25 0 empty empty ๏ 1 10 1 32 -1 -260097 -260097
 0 1;
-#X obj 64 99 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 0 1
+#X obj 64 99 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 1 1
 ;
 #X obj 45 767 * -1;
 #X obj 45 740 - 1;
@@ -214,7 +214,7 @@ push : off;
 #X floatatom 1030 547 5 0 0 0 - - -;
 #X obj 942 345 -;
 #X obj 135 214 tgl 25 0 empty empty • 0 13 1 70 -1 -260097 -260097
-0 1;
+1 1;
 #X obj 156 -96 s reposetoinoffAB;
 #X obj 156 -117 r send_reposetoinoffAB;
 #X obj 136 -526 s modAA;
@@ -494,6 +494,8 @@ motor off;
 #X obj 63 214 cnv 3 45 51 empty empty empty 20 12 0 14 -1 -66577 0
 ;
 #X obj 1339 726 s trgrmodAA;
+#X obj 89 498 s Abutton;
+#X floatatom 1618 572 2 0 0 0 - - -;
 #X connect 3 0 25 0;
 #X connect 3 0 366 0;
 #X connect 4 0 27 0;
@@ -644,6 +646,7 @@ motor off;
 #X connect 120 0 397 1;
 #X connect 120 0 407 0;
 #X connect 120 0 410 0;
+#X connect 120 0 414 0;
 #X connect 121 0 126 0;
 #X connect 121 0 119 0;
 #X connect 121 0 67 1;
@@ -657,6 +660,7 @@ motor off;
 #X connect 121 0 401 1;
 #X connect 121 0 406 0;
 #X connect 121 0 354 0;
+#X connect 121 0 414 0;
 #X connect 122 0 70 1;
 #X connect 122 0 177 0;
 #X connect 123 0 69 1;
@@ -996,6 +1000,7 @@ motor off;
 #X connect 394 0 395 0;
 #X connect 395 0 393 1;
 #X connect 395 0 396 0;
+#X connect 395 0 415 0;
 #X connect 397 0 400 0;
 #X connect 398 0 397 0;
 #X connect 399 0 398 0;
