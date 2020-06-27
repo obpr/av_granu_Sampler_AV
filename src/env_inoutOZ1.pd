@@ -1,4 +1,4 @@
-#N canvas -143 24 1280 1026 10;
+#N canvas 0 2 1280 1026 10;
 #X obj 942 227 inlet;
 #X obj 555 963 inlet;
 #X obj 352 211 inlet;
@@ -26,7 +26,7 @@
 #X obj 352 186 r BB1;
 #X obj 284 677 r Bbutton;
 #X floatatom 198 702 12 0 0 0 - - -;
-#X obj 198 677 r trgrtoenvB;
+#X obj 198 676 r trgrtoenvB;
 #X obj 225 832 sel;
 #X obj 512 752 f;
 #X floatatom 198 776 5 0 0 0 - - -;
