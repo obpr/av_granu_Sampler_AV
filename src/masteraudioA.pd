@@ -1,12 +1,12 @@
-#N canvas -177 536 1280 698 10;
+#N canvas -13 657 1280 698 10;
 #X obj 319 102 vsl 20 70 0.02 2 1 0 empty empty L 8 6 0 7 -16662 -260097
--260097 2500 1;
+-260097 3596 1;
 #X obj 359 103 vsl 20 70 0.02 2 1 0 empty empty H 9 6 0 7 -16662 -260097
--260097 2600 1;
+-260097 4947 1;
 #X obj 339 103 vsl 20 70 0.02 2 1 0 empty empty M 8 6 0 7 -16662 -260097
--260097 3300 1;
+-260097 5260 1;
 #X obj 378 103 vsl 22 70 0 2 0 0 empty empty gain 3 6 0 7 -16662 -260097
--260097 3300 1;
+-260097 712 1;
 #X obj -145 476 vfreeverb~;
 #X obj 407 141 hsl 103 17 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -16662
 -260097 -260097 0 0;
@@ -113,7 +113,7 @@
 #X floatatom 156 -1251 12 0 0 0 - - -;
 #X floatatom 157 -1189 12 0 0 0 - - -;
 #X obj 194 -1324 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X floatatom -520 -1147 12 0 0 0 - - -;
 #X obj 158 -1160 /;
 #X text -483 -555 <-- pitch & speed \, norm= 1;
@@ -262,7 +262,7 @@
 -1;
 #X msg 54 -27 44;
 #X obj 257 102 nbx 4 17 -1e+37 1e+37 0 0 empty empty empty 0 20 0 10
--260818 -1 -262144 200 256;
+-260818 -1 -262144 132 256;
 #X obj 396 -145 r T$mod;
 #X obj 294 101 tgl 17 0 empty empty < 2 8 2 23 -260097 -1 -1 1 1;
 #X obj 108 102 cnv 13 148 18 empty empty ENVLOP_TIME________RCV 22
@@ -304,13 +304,13 @@
 #X msg -39 137 0;
 #X msg -224 163 1;
 #X obj 225 160 hsl 84 16 0 6 0 0 empty empty shape_out 35 8 1 10 -16662
--260097 -260097 5983 1;
+-260097 -260097 3983 1;
 #X obj 104 159 hsl 84 16 0 6 0 0 empty empty shape_in 5 8 1 10 -16662
--260097 -260097 497 1;
+-260097 -260097 1883 1;
 #X obj 104 118 hsl 100 24 0 1 0 0 empty empty fade_in 4 12 1 12 -16662
--260097 -260097 790 1;
+-260097 -260097 0 1;
 #X obj 210 119 hsl 100 24 1 0 0 0 empty empty fade_out 50 12 1 12 -16662
--260097 -260097 8600 1;
+-260097 -260097 7000 1;
 #X floatatom -295 225 5 0 0 0 in - -;
 #X floatatom -233 225 5 0 0 0 out - -;
 #X floatatom -522 224 5 0 0 0 pow_in - -;
@@ -321,11 +321,13 @@
 -1;
 #X floatatom -356 228 5 0 0 0 - - -;
 #X obj 103 143 hsl 206 16 0.001 1 0 0 empty empty sustain 85 9 1 12
--16662 -260097 -260097 14140 1;
+-16662 -260097 -260097 20500 1;
 #X obj -357 406 env_inout0Z;
 #X msg -62 112 0.1;
 #X obj 1323 80 / 63;
 #X floatatom -603 221 5 0 0 0 - - -;
+#X obj -97 -65 - 1;
+#X obj -98 -44 * -1;
 #X connect 0 0 13 1;
 #X connect 1 0 13 3;
 #X connect 2 0 13 2;
@@ -454,17 +456,20 @@
 #X connect 131 0 18 0;
 #X connect 132 0 105 0;
 #X connect 133 0 134 0;
-#X connect 133 0 145 0;
 #X connect 133 0 219 0;
 #X connect 133 0 231 0;
 #X connect 133 0 235 0;
 #X connect 133 0 283 0;
+#X connect 133 0 145 0;
 #X connect 134 0 135 0;
 #X connect 137 0 79 0;
 #X connect 138 0 139 0;
+#X connect 139 0 286 0;
+#X connect 139 0 272 0;
 #X connect 140 0 141 0;
-#X connect 141 0 142 0;
+#X connect 141 0 281 0;
 #X connect 142 0 143 0;
+#X connect 143 0 281 0;
 #X connect 144 0 137 0;
 #X connect 145 0 5 0;
 #X connect 145 0 7 0;
@@ -624,4 +629,5 @@
 #X connect 283 0 272 0;
 #X connect 284 0 3 0;
 #X connect 285 0 282 0;
+#X connect 286 0 287 0;
 #X coords 0 -1 1 1 412 76 1 100 100;

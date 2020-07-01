@@ -1,4 +1,4 @@
-#N canvas 240 146 1440 690 16;
+#N canvas 198 158 1440 690 16;
 #X floatatom -344 -112 0 0 0 0 - - -;
 #X obj -344 -147 *;
 #X obj -351 -187 t b f;
@@ -87,7 +87,7 @@
 #X obj -14 843 spigot-toggle_red;
 #X obj -15 913 spigot-toggle_orange;
 #X obj 84 169 vsl 24 88 0 1 0 0 empty empty GAIN 2 6 1 8 -1 -260097
--260097 6525 1;
+-260097 925 1;
 #X obj 51 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
 -1 -1 5220 1;
 #X obj 73 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
@@ -107,7 +107,7 @@
 #X obj 54 117 hsl 80 15 0 1 0 1 empty empty wet 3 8 0 10 -1 -260097
 -260097 0 0;
 #X obj 54 133 hsl 80 15 0 1 0 1 empty empty dry 3 8 0 10 -1 -260097
--260097 5600 0;
+-260097 3500 0;
 #X msg 58 -38 0;
 #X obj 214 325 cnv 15 62 165 empty empty empty 20 12 1 12 -262144 -228856
 0;
@@ -160,9 +160,9 @@
 #X coords 0 1.2 99 -1.2 132 84 2 0 0;
 #X restore 153 85 graph;
 #X obj 133 262 vsl 22 108 0 15000 0 0 \$0-freq1 empty f1 5 10 1 17
--1 -260097 -260097 0 1;
+-1 -260097 -260097 79 1;
 #X obj 54 149 hsl 96 20 0 3500 0 0 glideC empty Glide 3 10 1 10 -260097
--1 -1 0 1;
+-1 -1 1600 1;
 #X obj 131 396 hsl 158 22 0 1 0 0 balanceC \$0-balance-recv Balance
 56 10 1 10 -1 -260097 -260097 7850 1;
 #X obj 276 325 bng 15 250 50 0 empty empty = 4 7 0 11 -1 -260097 -260097
@@ -247,7 +247,7 @@
 #X obj 57 30 hsl 115 15 0 1 0 0 empty empty cut 12 8 0 10 -260097 -1
 -1 0 1;
 #X obj 177 30 hsl 110 15 0 1 0 0 empty empty empty -2 8 0 10 -260097
--1 -1 10900 1;
+-1 -1 7600 1;
 #X obj 92 45 tgl 20 0 empty empty B 5 10 1 10 -1 -260097 -260097 0
 1;
 #X obj 66 46 tgl 20 0 empty empty A 5 10 1 10 -1 -260097 -260097 0
@@ -351,7 +351,7 @@
 #X obj 284 170 vsl 8 88 0 3 0 0 empty empty 2 0 80 1 13 -1 -260097
 -260097 0 1;
 #X obj -293 -408 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj -293 -438 loadbang;
 #X floatatom -461 204 0 0 0 0 - - -;
 #X msg 49 -70 1;
@@ -454,7 +454,7 @@
 #X obj 641 859 spigot-toggle_red;
 #X obj 640 929 spigot-toggle_orange;
 #X obj 329 169 vsl 24 88 0 1 0 0 empty empty GAIN 2 6 1 8 -1 -260097
--260097 0 1;
+-260097 900 1;
 #X obj 297 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
 -1 -1 5220 1;
 #X obj 318 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
@@ -473,7 +473,7 @@
 #X obj 437 117 hsl 81 15 0 1 0 1 empty empty wet 3 8 0 10 -1 -260097
 -260097 0 0;
 #X obj 437 133 hsl 81 15 0 1 0 1 empty empty dry 3 8 0 10 -1 -260097
--260097 0 0;
+-260097 3900 0;
 #X msg 344 -38 0;
 #X obj 459 325 cnv 15 62 165 empty empty empty 20 12 1 12 -262144 -228856
 0;
@@ -520,7 +520,7 @@
 #X coords 0 1.2 99 -1.2 136 84 2 0 0;
 #X restore 297 85 graph;
 #X obj 378 262 vsl 22 108 0 15000 0 0 \$0-freq1 empty f1 5 10 1 17
--1 -260097 -260097 0 1;
+-1 -260097 -260097 78 1;
 #X obj 437 149 hsl 97 20 0 3500 0 0 \$0-glide \$0-glide-recv Glide
 3 10 1 10 -260097 -1 -1 0 1;
 #X obj 376 396 hsl 158 22 0 1 0 0 balanceD \$0-balance-recv Balance
@@ -604,9 +604,9 @@
 #X obj 472 10 tgl 20 0 empty empty a' 5 9 0 10 -1 -260097 -260097 0
 1;
 #X obj 301 31 hsl 115 15 0 1 0 0 empty empty cut 12 8 0 10 -260097
--1 -1 0 1;
+-1 -1 1200 1;
 #X obj 421 31 hsl 110 15 0 1 0 0 empty empty empty -2 8 0 10 -260097
--1 -1 10900 1;
+-1 -1 7700 1;
 #X obj 337 45 tgl 20 0 empty empty B 5 10 1 10 -1 -260097 -260097 0
 1;
 #X obj 311 46 tgl 20 0 empty empty A 5 10 1 10 -1 -260097 -260097 0
@@ -626,7 +626,7 @@
 #X obj 421 64 hsl 110 15 0 1 0 0 empty empty empty 45 11 1 20 -260097
 -1 -1 10900 1;
 #X obj 301 64 hsl 115 15 0 1 0 0 empty empty fade 12 8 0 10 -260097
--1 -1 0 1;
+-1 -1 1400 1;
 #X obj 418 168 cnv 12 63 22 empty empty ___TIME__ 2 18 1 12 -1 -260097
 0;
 #X obj 482 260 tgl 22 0 empty empty ʌ 4 10 1 28 -260097 -1 -1 0 1
@@ -679,7 +679,7 @@
 #X obj 394 1012 + 1;
 #X obj 981 112 r lo;
 #X obj 297 261 hradio 16 1 0 5 wave-sendB empty empty 0 -8 0 10 -4034
--260097 -1 2;
+-260097 -1 0;
 #X text 298 256 ~, f 3;
 #X text 314 254 ▲;
 #X text 363 256 n;
