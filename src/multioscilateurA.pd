@@ -1,4 +1,4 @@
-#N canvas 198 158 1440 690 16;
+#N canvas 84 123 1440 690 16;
 #X floatatom -344 -112 0 0 0 0 - - -;
 #X obj -344 -147 *;
 #X obj -351 -187 t b f;
@@ -86,8 +86,8 @@
 #X obj -14 867 spigot-toggle_vert;
 #X obj -14 843 spigot-toggle_red;
 #X obj -15 913 spigot-toggle_orange;
-#X obj 84 169 vsl 24 88 0 1 0 0 empty empty GAIN 2 6 1 8 -1 -260097
--260097 925 1;
+#X obj 84 169 vsl 24 88 0 0.5 0 0 empty empty GAIN 2 6 1 8 -1 -260097
+-260097 825 1;
 #X obj 51 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
 -1 -1 5220 1;
 #X obj 73 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
@@ -95,7 +95,7 @@
 #X obj 62 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
 -1 -1 5220 1;
 #X obj 132 237 tgl 22 0 empty empty AUTO 1 10 1 8 -1 -260097 -260097
-0 1;
+1 1;
 #X obj -371 340 s~ C;
 #X msg -264 -18 0;
 #X obj -357 92 vline~;
@@ -151,18 +151,18 @@
 #X obj -263 52 s envoutC;
 #X obj -117 376 s timeC;
 #X obj -294 -258 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj -157 -294 s BBsynthC;
 #X obj 153 84 cnv 15 132 84 empty wavformod C 3 9 1 16 -260818 -262144
 0;
 #N canvas 0 50 450 250 (subpatch) 0;
-#X array waveformC 100 float 4;
-#X coords 0 1.2 99 -1.2 132 84 2 0 0;
+#X array waveformC 1200 float 4;
+#X coords 0 1.2 1199 -1.2 132 84 2 0 0;
 #X restore 153 85 graph;
 #X obj 133 262 vsl 22 108 0 15000 0 0 \$0-freq1 empty f1 5 10 1 17
--1 -260097 -260097 79 1;
+-1 -260097 -260097 59 1;
 #X obj 54 149 hsl 96 20 0 3500 0 0 glideC empty Glide 3 10 1 10 -260097
--1 -1 1600 1;
+-1 -1 0 1;
 #X obj 131 396 hsl 158 22 0 1 0 0 balanceC \$0-balance-recv Balance
 56 10 1 10 -1 -260097 -260097 7850 1;
 #X obj 276 325 bng 15 250 50 0 empty empty = 4 7 0 11 -1 -260097 -260097
@@ -245,9 +245,9 @@
 #X obj 227 10 tgl 20 0 empty empty a' 5 9 0 10 -1 -260097 -260097 0
 1;
 #X obj 57 30 hsl 115 15 0 1 0 0 empty empty cut 12 8 0 10 -260097 -1
--1 0 1;
+-1 4900 1;
 #X obj 177 30 hsl 110 15 0 1 0 0 empty empty empty -2 8 0 10 -260097
--1 -1 7600 1;
+-1 -1 5800 1;
 #X obj 92 45 tgl 20 0 empty empty B 5 10 1 10 -1 -260097 -260097 0
 1;
 #X obj 66 46 tgl 20 0 empty empty A 5 10 1 10 -1 -260097 -260097 0
@@ -265,9 +265,9 @@
 #X obj 227 45 tgl 20 0 empty empty a' 5 9 0 10 -1 -260097 -260097 0
 1;
 #X obj 176 64 hsl 110 15 0 1 0 0 empty empty empty 45 11 1 20 -260097
--1 -1 10900 1;
+-1 -1 5400 1;
 #X obj 56 64 hsl 115 15 0 1 0 0 empty empty fade 12 8 0 10 -260097
--1 -1 0 1;
+-1 -1 1500 1;
 #X obj 173 168 cnv 12 63 22 empty empty ___TIME__ 2 18 1 12 -1 -260097
 0;
 #X obj 237 260 tgl 22 0 empty empty ʌ 4 10 1 28 -260097 -1 -1 0 1
@@ -333,7 +333,7 @@
 0 1;
 #X obj -471 85 r lo;
 #X obj 52 261 hradio 16 1 0 5 wave-send empty empty 0 -8 0 10 -4034
--260097 -1 0;
+-260097 -1 1;
 #X text 53 256 ~, f 3;
 #X text 69 254 ▲;
 #X text 118 256 n;
@@ -351,10 +351,10 @@
 #X obj 284 170 vsl 8 88 0 3 0 0 empty empty 2 0 80 1 13 -1 -260097
 -260097 0 1;
 #X obj -293 -408 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj -293 -438 loadbang;
 #X floatatom -461 204 0 0 0 0 - - -;
-#X msg 49 -70 1;
+#X msg 68 -96 1;
 #X msg -18 369 0.5, f 2;
 #X obj 96 278 cnv 15 31 22 empty empty empty 20 12 0 14 -260097 -66577
 0;
@@ -453,8 +453,8 @@
 #X obj 641 883 spigot-toggle_vert;
 #X obj 641 859 spigot-toggle_red;
 #X obj 640 929 spigot-toggle_orange;
-#X obj 329 169 vsl 24 88 0 1 0 0 empty empty GAIN 2 6 1 8 -1 -260097
--260097 900 1;
+#X obj 329 169 vsl 24 88 0 0.5 0 0 empty empty GAIN 2 6 1 8 -1 -260097
+-260097 800 1;
 #X obj 297 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
 -1 -1 5220 1;
 #X obj 318 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
@@ -462,7 +462,7 @@
 #X obj 307 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
 -1 -1 5220 1;
 #X obj 377 237 tgl 22 0 empty empty AUTO 1 10 1 8 -1 -260097 -260097
-0 1;
+1 1;
 #X msg 1228 -28 0;
 #X obj 1135 82 vline~;
 #X obj 1112 253 vfreeverb~;
@@ -471,7 +471,7 @@
 #X obj 437 101 hsl 81 15 0 2 0 1 empty empty damp 3 8 0 10 -1 -260097
 -260097 3300 0;
 #X obj 437 117 hsl 81 15 0 1 0 1 empty empty wet 3 8 0 10 -1 -260097
--260097 0 0;
+-260097 1900 0;
 #X obj 437 133 hsl 81 15 0 1 0 1 empty empty dry 3 8 0 10 -1 -260097
 -260097 3900 0;
 #X msg 344 -38 0;
@@ -512,15 +512,15 @@
 #X obj 767 80 r bonkAouBtoenvA;
 #X msg 1463 155 20, f 2;
 #X obj 1198 -268 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj 297 84 cnv 15 136 84 empty $D-clr D 3 9 1 16 -24198 -262144
 0;
 #N canvas 0 50 450 250 (subpatch) 0;
-#X array waveformD 100 float 4;
-#X coords 0 1.2 99 -1.2 136 84 2 0 0;
+#X array waveformD 2200 float 4;
+#X coords 0 1.2 2199 -1.2 136 84 2 0 0;
 #X restore 297 85 graph;
 #X obj 378 262 vsl 22 108 0 15000 0 0 \$0-freq1 empty f1 5 10 1 17
--1 -260097 -260097 78 1;
+-1 -260097 -260097 86 1;
 #X obj 437 149 hsl 97 20 0 3500 0 0 \$0-glide \$0-glide-recv Glide
 3 10 1 10 -260097 -1 -1 0 1;
 #X obj 376 396 hsl 158 22 0 1 0 0 balanceD \$0-balance-recv Balance
@@ -604,9 +604,9 @@
 #X obj 472 10 tgl 20 0 empty empty a' 5 9 0 10 -1 -260097 -260097 0
 1;
 #X obj 301 31 hsl 115 15 0 1 0 0 empty empty cut 12 8 0 10 -260097
--1 -1 1200 1;
+-1 -1 4100 1;
 #X obj 421 31 hsl 110 15 0 1 0 0 empty empty empty -2 8 0 10 -260097
--1 -1 7700 1;
+-1 -1 10900 1;
 #X obj 337 45 tgl 20 0 empty empty B 5 10 1 10 -1 -260097 -260097 0
 1;
 #X obj 311 46 tgl 20 0 empty empty A 5 10 1 10 -1 -260097 -260097 0
@@ -626,12 +626,12 @@
 #X obj 421 64 hsl 110 15 0 1 0 0 empty empty empty 45 11 1 20 -260097
 -1 -1 10900 1;
 #X obj 301 64 hsl 115 15 0 1 0 0 empty empty fade 12 8 0 10 -260097
--1 -1 1400 1;
+-1 -1 0 1;
 #X obj 418 168 cnv 12 63 22 empty empty ___TIME__ 2 18 1 12 -1 -260097
 0;
 #X obj 482 260 tgl 22 0 empty empty ʌ 4 10 1 28 -260097 -1 -1 0 1
 ;
-#X obj 399 259 tgl 22 0 empty empty v 4 10 1 28 -260097 -1 -1 1 1;
+#X obj 399 259 tgl 22 0 empty empty v 4 10 1 28 -260097 -1 -1 0 1;
 #X obj 725 327 + 1;
 #X msg 703 149 0.75;
 #X obj 354 192 tgl 22 0 empty empty B 8 10 1 12 -260097 -1 -1 0 1;
@@ -679,7 +679,7 @@
 #X obj 394 1012 + 1;
 #X obj 981 112 r lo;
 #X obj 297 261 hradio 16 1 0 5 wave-sendB empty empty 0 -8 0 10 -4034
--260097 -1 0;
+-260097 -1 1;
 #X text 298 256 ~, f 3;
 #X text 314 254 ▲;
 #X text 363 256 n;
@@ -719,7 +719,7 @@
 #X obj 565 24 multiosciB;
 #X obj 1095 46 s envinD;
 #X obj 1229 42 s envoutD;
-#X obj -294 -348 tabwrite~ waveformC;
+#X obj -479 -298 tabwrite~ waveformC;
 #X obj 1112 -333 tabwrite~ waveformD;
 #X obj 672 405 s 2mfaddB;
 #X obj -135 53 cnv 15 3 411 empty empty empty 20 12 0 14 -4034 -66577
@@ -769,6 +769,24 @@
 #X obj 420 276 cnv 12 62 25 empty empty ___FREQ__ 1 18 1 12 -1 -260097
 0;
 #X obj 292 7 cnv 6 4 422 empty empty empty 20 12 0 14 -1 -66577 0;
+#X obj -33 -415 spigot-toggle_red;
+#X obj -33 -313 pack \$1 \$0;
+#X floatatom -33 -337 12 0 0 0 - - -;
+#X obj -33 -387 f;
+#X obj -33 -362 * 100;
+#X obj 260 86 tgl 17 0 empty empty empty 4 9 1 14 -260097 -1 -262144
+0 1;
+#X obj 33 -418 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 622 -427 spigot-toggle_red;
+#X obj 622 -325 pack \$1 \$0;
+#X floatatom 622 -349 12 0 0 0 - - -;
+#X obj 622 -399 f;
+#X obj 622 -374 * 100;
+#X obj 416 85 tgl 17 0 empty empty empty 4 9 1 14 -4034 -1 -262144
+0 1;
+#X msg 622 -300 \; waveformD resize \$1;
+#X msg -33 -288 \; waveformC resize \$1;
 #X connect 0 0 9 1;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
@@ -802,6 +820,7 @@
 #X connect 20 0 10 0;
 #X connect 20 0 1 0;
 #X connect 20 0 15 0;
+#X connect 20 0 594 1;
 #X connect 21 0 24 0;
 #X connect 22 0 23 0;
 #X connect 23 0 21 0;
@@ -814,7 +833,6 @@
 #X connect 28 0 17 0;
 #X connect 29 0 19 0;
 #X connect 30 0 6 0;
-#X connect 30 0 547 0;
 #X connect 31 0 34 0;
 #X connect 32 0 34 0;
 #X connect 33 0 34 0;
@@ -975,6 +993,7 @@
 #X connect 126 0 172 0;
 #X connect 126 0 223 0;
 #X connect 127 0 28 0;
+#X connect 127 0 591 0;
 #X connect 128 0 40 0;
 #X connect 129 0 128 0;
 #X connect 130 0 127 0;
@@ -1148,6 +1167,7 @@
 #X connect 300 0 290 0;
 #X connect 300 0 281 0;
 #X connect 300 0 295 0;
+#X connect 300 0 601 1;
 #X connect 301 0 304 0;
 #X connect 302 0 303 0;
 #X connect 303 0 301 0;
@@ -1317,6 +1337,7 @@
 #X connect 403 0 444 0;
 #X connect 403 0 495 0;
 #X connect 404 0 308 0;
+#X connect 404 0 598 0;
 #X connect 405 0 320 0;
 #X connect 406 0 405 0;
 #X connect 407 0 404 0;
@@ -1482,4 +1503,16 @@
 #X connect 585 1 302 1;
 #X connect 586 0 298 0;
 #X connect 586 1 298 1;
+#X connect 591 0 594 0;
+#X connect 592 0 605 0;
+#X connect 593 0 592 0;
+#X connect 594 0 595 0;
+#X connect 595 0 593 0;
+#X connect 596 0 591 1;
+#X connect 598 0 601 0;
+#X connect 599 0 604 0;
+#X connect 600 0 599 0;
+#X connect 601 0 602 0;
+#X connect 602 0 600 0;
+#X connect 603 0 598 1;
 #X coords 0 -1 1 1 487 430 1 50 5;

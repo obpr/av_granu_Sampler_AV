@@ -77,8 +77,8 @@
 -1;
 #X floatatom 369 101 12 0 0 0 - - -;
 #X obj 338 100 tgl 15 0 empty empty A 5 8 0 11 -66577 -260097 -260097
-0 1;
-#X obj 807 647 r lo;
+
+
 #X obj 31 -15 inlet;
 #X obj 108 20 sel;
 #X obj 88 277 outlet;

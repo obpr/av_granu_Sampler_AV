@@ -25,7 +25,7 @@
 #X obj 1620 221 spigot-toggle_vert;
 #X obj 1557 243 spigot-toggle_red;
 #X obj 1642 218 spigot-toggle_red;
-#X obj 763 572 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 763 572 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 854 765 - 0;
 #X obj 837 837 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -111,14 +111,14 @@ push : off;
 #X obj 177 300 spigot-toggle_orange;
 #X obj 94 120 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 0
 1;
-#X obj 93 149 tgl 28 0 empty empty B 6 15 1 28 -1 -262144 -262144 0
+#X obj 93 149 tgl 28 0 empty empty B 6 15 1 28 -1 -262144 -262144 1
 1;
 #X obj 151 120 tgl 28 0 empty empty A 6 15 0 26 -1 -262144 -262144
 0 1;
 #X obj 151 149 tgl 28 0 empty empty B 6 15 0 26 -1 -262144 -262144
 0 1;
 #X obj 122 120 vsl 28 84 0 1 0 0 empty empty mod 4 70 0 11 -16662 -260097
--260097 2400 1;
+-260097 0 1;
 #X obj 136 233 tgl 25 0 empty empty • 0 13 1 70 -1 -260097 -260097
 0 1;
 #X obj 110 206 tgl 25 0 empty empty ◐ 3 13 1 20 -1 -260097 -260097
@@ -127,7 +127,7 @@ push : off;
 0 1;
 #X obj 180 120 tgl 28 0 empty empty ☞ 8 13 0 32 -1 -262144 -262144
 0 1;
-#X obj 65 149 tgl 28 0 empty empty @ 2 14 1 26 -260097 -1 -1 0 1;
+#X obj 65 149 tgl 28 0 empty empty @ 2 14 1 26 -260097 -1 -1 1 1;
 #X obj 65 178 tgl 28 0 empty empty ⤷@ -6 14 1 18 -260097 -1 -1 0
 1;
 #X obj 180 149 tgl 28 0 empty empty ☞ 8 13 0 32 -1 -262144 -262144
@@ -472,13 +472,9 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 1693 528 s trgrmodBB;
 #X floatatom 1602 825 5 0 0 0 - - -;
 #X floatatom 1882 675 5 0 0 0 - - -;
-#X obj -245 99 vradio 15 1 0 3 empty empty ertare -22 12 0 22 -13330
--257985 -45076 0;
 #X obj -239 -108;
 #X msg -305 -96;
 #X obj -239 -83 * 1;
-#X obj -321 19 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
 #X obj 1770 372 spigot-toggle_orange;
 #X obj 1770 344 spigot-toggle_orange;
 #X obj 1794 390 s BngslcttoenvBaudiomods;
@@ -714,12 +710,12 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 118 0 196 0;
 #X connect 119 0 75 1;
 #X connect 119 0 208 0;
-#X connect 119 0 408 1;
+#X connect 119 0 406 1;
 #X connect 119 0 185 0;
 #X connect 119 0 107 0;
 #X connect 120 0 76 1;
 #X connect 120 0 206 0;
-#X connect 120 0 407 1;
+#X connect 120 0 405 1;
 #X connect 120 0 106 0;
 #X connect 120 0 108 0;
 #X connect 121 0 164 0;
@@ -994,7 +990,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 382 0 395 0;
 #X connect 383 0 13 0;
 #X connect 384 0 383 0;
-#X connect 384 0 410 0;
+#X connect 384 0 408 0;
 #X connect 385 0 185 0;
 #X connect 386 0 106 0;
 #X connect 387 0 23 0;
@@ -1008,10 +1004,9 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 391 0 401 0;
 #X connect 395 0 379 0;
 #X connect 395 0 390 0;
-#X connect 403 0 405 0;
-#X connect 406 0 402 0;
-#X connect 407 0 409 0;
-#X connect 408 0 409 0;
-#X connect 411 0 408 0;
-#X connect 412 0 407 0;
+#X connect 402 0 404 0;
+#X connect 405 0 407 0;
+#X connect 406 0 407 0;
+#X connect 409 0 406 0;
+#X connect 410 0 405 0;
 #X coords 0 -1 1 1 210 168 2 0 90;
