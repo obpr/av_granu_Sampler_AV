@@ -1,4 +1,4 @@
-#N canvas 773 26 888 891 12;
+#N canvas 403 12 888 891 12;
 #N canvas 67 224 450 432 :: 0;
 #X text 24 16 the format [pix_film] is able to decode depends on the
 system you are running Gem.;
@@ -222,8 +222,8 @@ that under linux i could play most formats...;
 #X msg -269 152 axe_reboot/*.mov;
 #X obj 106 195 bng 15 500 500 0 empty empty starter_1 18 6 1 10 -260097
 -1 -260097;
-#X obj 100 434 cnv 15 182 22 empty \$21-cnv avBO1/*.wav 7 12 0 12 -1
--4034 0;
+#X obj 100 434 cnv 15 182 22 empty \$21-cnv starter1/*.wav 7 12 0 12
+-1 -4034 0;
 #X msg -91 703 label \$1;
 #X obj -94 676 symbol;
 #X obj 106 573 bng 15 500 500 0 empty empty kitchina 18 6 1 10 -260097
@@ -337,6 +337,7 @@ that under linux i could play most formats...;
 #X connect 33 0 28 0;
 #X connect 34 0 90 0;
 #X connect 35 0 91 1;
+#X connect 35 0 91 0;
 #X connect 36 0 75 0;
 #X connect 36 0 68 0;
 #X connect 37 0 39 0;

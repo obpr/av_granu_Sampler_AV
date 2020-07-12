@@ -113,13 +113,13 @@
 #X obj -3 303 + 1;
 #X obj 40 281 - 1;
 #X obj 30 305 * -1;
-#X obj 60 62 tgl 25 0 empty empty A 8 14 0 16 -1 -262144 -262144 1
+#X obj 60 62 tgl 25 0 empty empty A 8 14 0 16 -1 -262144 -262144 0
 1;
 #X obj 85 62 tgl 25 1 empty empty A 8 14 1 16 -1 -262144 -262144 0
 1;
 #X floatatom 154 15 9 0 0 1 - - -;
 #X floatatom 240 15 7 0 0 0 - - -;
-#X obj 149 88 tgl 25 0 empty empty B 8 14 0 16 -1 -262144 -262144 0
+#X obj 149 88 tgl 25 0 empty empty B 8 14 0 16 -1 -262144 -262144 1
 1;
 #X obj 174 88 tgl 25 0 empty empty B 8 14 1 16 -1 -262144 -262144 0
 1;
@@ -140,7 +140,7 @@
 #X obj 262 88 tgl 25 0 empty empty B 8 14 0 16 -1 -262144 -262144 0
 1;
 #X obj 236 114 tgl 25 0 empty empty ''a 6 14 1 16 -1 -262144 -262144
-0 1;
+1 1;
 #X obj 262 114 tgl 25 0 empty empty "a 4 14 0 16 -1 -262144 -262144
 0 1;
 #X obj 236 140 tgl 25 0 empty empty ''b 6 14 1 16 -1 -262144 -262144
@@ -164,9 +164,9 @@
 #X obj 85 140 tgl 25 0 empty empty "b 5 14 0 16 -1 -262144 -262144
 0 1;
 #X obj 111 62 vsl 15 100 0 1 0 0 empty empty md 2 95 1 8 -16662 -260097
--260097 7425 1;
+-260097 1225 1;
 #X obj 44 62 vsl 15 100 0 1 0 0 empty empty raw 1 95 0 8 -16662 -262144
--262144 7425 1;
+-262144 6100 1;
 #X floatatom 62 15 7 0 0 0 - - -;
 #X floatatom 466 611 5 0 0 0 - - -;
 #X obj 600 -55 inlet;
@@ -381,9 +381,9 @@
 #X obj 133 62 vsl 15 100 0 1 0 0 empty empty raw 3 95 0 8 -16662 -262144
 -262144 7425 1;
 #X obj 286 62 vsl 15 100 -2 2 0 0 empty empty md 2 95 1 8 -16662 -260097
--260097 4950 1;
-#X obj 221 61 vsl 15 100 0 1 0 0 empty empty raw 1 95 0 8 -16662 -262144
--262144 0 1;
+-260097 7300 1;
+#X obj 221 63 vsl 15 100 0 1 0 0 empty empty raw 1 95 0 8 -16662 -262144
+-262144 4500 1;
 #X obj 7 79 tgl 17 0 empty empty bck 1 9 1 10 -1 -1 -1 0 1;
 #X obj 0 1 cnv 5 220 15 empty empty ––––––––ω&♪––––––––ω–––––
 0 8 0 15 -1 -262144 0;
@@ -460,7 +460,7 @@
 #X obj 1012 869 pack \$1 \$2;
 #X floatatom 1069 849 5 0 0 0 - - -;
 #X obj 242 30 hsl 37 30 0 400 0 0 empty empty glide 6 22 1 7 -16662
--262144 -262144 0 1;
+-262144 -262144 3600 1;
 #X obj 285 -50 s modpAb;
 #X obj 157 30 hsl 37 30 0 400 0 0 empty empty glide 6 22 1 7 -16662
 -262144 -262144 0 1;

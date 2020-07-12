@@ -66,7 +66,7 @@
 #X msg 579 340 8;
 #X obj 700 362 r~ D;
 #X obj 176 23 tgl 20 0 empty empty empty 6 8 1 15 -260097 -1 -262144
-1 1;
+0 1;
 #X obj 135 181 cnv 15 82 70 empty empty empty 20 12 0 14 -99865 -66577
 0;
 #X floatatom 135 203 3 0 0 1 snslbt - -;
@@ -76,7 +76,7 @@
 #X floatatom 197 235 3 0 0 0 nmbr/stps - -;
 #X obj 197 181 tgl 20 0 empty empty stp 4 9 1 12 -260097 -1 -1 0 1
 ;
-#X obj 135 182 tgl 20 0 empty empty >< 2 9 1 14 -260097 -1 -1 1 1;
+#X obj 135 182 tgl 20 0 empty empty >< 2 9 1 14 -260097 -1 -1 0 1;
 #X obj 132 454 cnv 15 85 68 empty empty empty 20 12 0 14 -99865 -66577
 0;
 #X floatatom 136 475 3 0 0 1 snslbt - -;
@@ -148,12 +148,12 @@
 #X obj 178 182 tgl 20 0 empty empty C 6 11 1 12 -1 -262144 -262144
 0 1;
 #X obj 157 182 tgl 20 0 empty empty A 6 11 1 12 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 100 3 cnv 15 117 22 empty empty Attack-detection 18 11 1 12
 -1 -262144 0;
 #X obj 100 294 cnv 15 75 22 empty empty envlp_>_A 35 14 1 12 -1 -262144
 0;
-#X obj 69 2 cnv 15 2 538 empty empty empty 20 12 0 14 -1 -66577 0;
+#X obj 36 2 cnv 15 2 538 empty empty empty 20 12 0 14 -1 -66577 0;
 #X obj 851 312 BONKtoBBonktoB;
 #X obj 228 772 BONKtoABonktoA;
 #X obj 100 316 cnv 10 13 138 empty empty empty -1 148 0 15 -1 -1 0
