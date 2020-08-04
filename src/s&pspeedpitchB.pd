@@ -157,7 +157,7 @@
 #X obj 654 219 * 1.3;
 #X obj 773 45 tgl 25 0 empty empty A=V 4 12 0 10 -1 -262144 -262144
 1 1;
-#X obj -405 863 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 1 1
+#X obj -405 863 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 0 1
 ;
 #X obj -444 772 * -1;
 #X obj -443 713 r freestepsouts1;
@@ -389,11 +389,11 @@
 #X obj 213 162 vsl 15 100 0 1 0 0 empty empty md 2 95 1 8 -16662 -260097
 -260097 7425 1;
 #X obj 146 162 vsl 15 100 0 1 0 0 empty empty raw 1 95 0 8 -16662 -262144
--262144 6314 1;
+-262144 7425 1;
 #X obj 301 162 vsl 15 100 0 1 0 0 empty empty md 2 95 1 8 -16662 -260097
 -260097 7425 1;
 #X obj 235 162 vsl 15 100 0 1 0 0 empty empty raw 1 95 0 8 -16662 -262144
--262144 9900 1;
+-262144 7425 1;
 #X obj 389 162 vsl 15 100 -2 2 0 0 empty empty md 2 95 1 8 -16662 -260097
 -260097 7425 1;
 #X obj 323 162 vsl 15 100 0 1 0 0 empty empty raw 1 95 0 8 -16662 -262144

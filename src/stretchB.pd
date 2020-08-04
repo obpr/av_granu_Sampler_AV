@@ -4,7 +4,7 @@
 #X obj 175 286 bng 18 250 50 0 empty empty ø 3 7 1 20 -260097 -1 -1
 ;
 #X obj 194 101 hsl 417 18 1 40 0 0 empty empty TimeStretch 5 11 1 10
--16662 -260097 -260097 1600 1;
+-16662 -260097 -260097 0 1;
 #X obj 192 -12 r lo;
 #X obj 182 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -23,7 +23,7 @@
 #X floatatom 148 -15 12 0 0 2 - - -;
 #X obj 104 139 hsl 508 9 0 1 0 0 empty empty OUT 480 5 1 9 -1 -260097
 -260097 50700 1;
-#X obj 101 101 tgl 18 0 empty empty ☞ 2 9 0 25 -260097 -1 -1 1 1
+#X obj 101 101 tgl 18 0 empty empty ☞ 2 9 0 25 -260097 -1 -1 0 1
 ;
 #X floatatom 985 377 5 0 0 0 - - -;
 #X floatatom 956 441 5 0 0 0 - - -;
@@ -40,7 +40,7 @@
 #X obj 752 472 * 1;
 #X obj 1023 436 - 0;
 #X obj 104 130 hsl 508 9 0 1 0 0 empty empty empty 12 5 1 9 -260097
--1 -1 14987 1;
+-1 -1 0 1;
 #X obj -70 574 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -104 577 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -82,7 +82,6 @@
 #X obj 743 429 r looplenghtB;
 #X obj -34 811 s stretchB;
 #X obj 3 4 r reposetoinoffBB;
-#X obj 23 -34 r reposetoi>0B;
 #X floatatom 1228 815 12 0 0 0 - - -;
 #X floatatom 608 -115 5 0 0 0 - - -;
 #X obj 563 -117 / 127;
@@ -173,10 +172,9 @@
 #X connect 65 0 26 0;
 #X connect 66 0 30 0;
 #X connect 68 0 18 0;
-#X connect 69 0 18 0;
-#X connect 74 0 72 0;
-#X connect 74 1 71 0;
-#X connect 74 1 73 0;
-#X connect 75 0 15 0;
-#X connect 75 1 14 0;
+#X connect 73 0 71 0;
+#X connect 73 1 70 0;
+#X connect 73 1 72 0;
+#X connect 74 0 15 0;
+#X connect 74 1 14 0;
 #X coords 0 -1 1 1 514 48 2 100 100;

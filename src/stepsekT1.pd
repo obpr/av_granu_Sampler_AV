@@ -1,4 +1,4 @@
-#N canvas -165 0 1234 837 12;
+#N canvas 0 0 1234 837 12;
 #X obj -16867 -1324 f;
 #X obj -16809 -1324 f;
 #X obj -16752 -1324 f;
@@ -16,11 +16,11 @@
 #X obj -16867 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj -16809 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 1000 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16752 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj -16694 -1349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 100 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16586 -1343 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj -16411 -1343 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -56,7 +56,7 @@
 #X obj -15642 -1384 inlet;
 #X obj -15870 -1477 inlet;
 #X floatatom -17055 -894 5 0 0 0 - - -;
-#X obj -15766 -981 outlet;
+#X obj -15766 -947 outlet;
 #X obj -16799 -846 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1
 -1 1 1;
 #X floatatom -16725 -857 5 0 0 0 - - -;
@@ -65,7 +65,7 @@
 0 10 -262144 -1 -1 200 256;
 #X obj -16485 -1474 inlet;
 #X obj -16525 -1343 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 300 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16567 -1474 inlet;
 #X obj -16862 -1003 inlet;
 #X obj -15771 -1030 line;
@@ -109,7 +109,7 @@
 #X obj -16850 -1389 * 1;
 #X obj -16790 -1415 t b f;
 #X obj -16789 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 1000 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16790 -1389 * 1;
 #X obj -16732 -1415 t b f;
 #X obj -16731 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -117,7 +117,7 @@
 #X obj -16732 -1389 * 1;
 #X obj -16672 -1415 t b f;
 #X obj -16671 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 100 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16672 -1389 * 1;
 #X obj -16580 -1415 t b f;
 #X obj -16579 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -125,7 +125,7 @@
 #X obj -16580 -1389 * 1;
 #X obj -16520 -1415 t b f;
 #X obj -16519 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 300 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16520 -1389 * 1;
 #X obj -16460 -1415 t b f;
 #X obj -16459 -1438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -172,14 +172,14 @@
 #X obj -15635 -1172 t b f;
 #X obj -16800 -825 metro 300;
 #X obj -16550 -1010 select 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
-#X obj -15732 -1261 outlet;
-#X floatatom -17027 -1004 5 0 0 0 - - -;
+#X obj -15769 -978 outlet;
+#X floatatom -16826 -1114 5 0 0 0 - - -;
 #X floatatom -16945 -1422 5 0 0 0 - - -;
 #X obj -17054 -921 spigot-toggle_jaunenoir;
 #X obj -16934 -969 - 1;
 #X obj -16933 -944 * -1;
 #X obj -16932 -1065 tgl 15 0 empty empty IT_control_chgnmt_de_step_de_stepseqT_ou_pas
-17 7 0 10 -262144 -1 -1 0 1;
+17 7 0 10 -262144 -1 -1 1 1;
 #X obj -15546 -1381 r ITB;
 #X obj -15510 -1258 / 1;
 #X obj -15533 -1296 t b f;
@@ -427,11 +427,9 @@ des valeurs de temps venant de stepseq T1;
 #X connect 148 0 152 0;
 #X connect 149 0 150 0;
 #X connect 150 0 60 0;
-#X connect 150 0 138 0;
 #X connect 151 0 153 0;
 #X connect 151 0 150 1;
 #X connect 152 0 60 0;
-#X connect 152 0 138 0;
 #X connect 153 0 154 0;
 #X connect 154 0 152 1;
 #X connect 155 0 151 0;
@@ -439,8 +437,8 @@ des valeurs de temps venant de stepseq T1;
 #X connect 157 0 158 0;
 #X connect 158 0 163 0;
 #X connect 160 0 157 0;
-#X connect 162 0 43 0;
 #X connect 162 0 170 0;
+#X connect 162 0 138 0;
 #X connect 163 1 164 0;
 #X connect 164 0 159 0;
 #X connect 165 0 160 0;
