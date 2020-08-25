@@ -1,4 +1,4 @@
-#N canvas 1952 104 1440 690 16;
+#N canvas 98 338 1440 690 16;
 #X floatatom -344 -112 0 0 0 0 - - -;
 #X obj -344 -147 *;
 #X obj -351 -187 t b f;
@@ -18,7 +18,7 @@
 #X msg -396 492 1, f 2;
 #X obj -453 538 /;
 #X floatatom -453 606 0 0 0 0 F - -;
-#X floatatom -12 -164 0 0 0 1 - - -;
+#X floatatom -2 -154 0 0 0 1 - - -;
 #X floatatom -363 608 0 0 0 0 T - -;
 #X obj -362 540 /;
 #X obj -363 572 * 1000;
@@ -82,7 +82,7 @@
 #X obj -14 843 spigot-toggle_red;
 #X obj -15 913 spigot-toggle_orange;
 #X obj 84 169 vsl 24 88 0 0.5 0 0 empty empty GAIN 2 6 1 8 -1 -260097
--260097 5400 1;
+-260097 8700 1;
 #X obj 51 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
 -1 -1 5220 1;
 #X obj 73 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
@@ -90,18 +90,18 @@
 #X obj 62 169 vsl 10 88 0 1.25 0 0 empty empty empty 12 12 0 10 -260097
 -1 -1 5220 1;
 #X obj 132 237 tgl 22 0 empty empty AUTO 1 10 1 8 -1 -260097 -260097
-1 1;
+0 1;
 #X obj -380 350 s~ C;
 #X obj -358 96 vline~;
 #X obj -378 260 vfreeverb~;
 #X obj 55 85 hsl 81 15 0 1 0 1 empty empty roomsize' 3 8 0 10 -260097
 -1 -1 0 0;
 #X obj 54 101 hsl 80 15 0 2 0 1 empty empty damp 3 8 0 10 -1 -260097
--260097 4400 0;
+-260097 3100 0;
 #X obj 54 117 hsl 80 15 0 1 0 1 empty empty wet 3 8 0 10 -1 -260097
 -260097 0 0;
 #X obj 54 133 hsl 80 15 0 1 0 1 empty empty dry 3 8 0 10 -1 -260097
--260097 5400 0;
+-260097 3600 0;
 #X msg 51 -35 0;
 #X obj 214 325 cnv 15 62 165 empty empty empty 20 12 1 12 -262144 -228856
 0;
@@ -145,7 +145,7 @@
 #X obj -262 39 s envoutC;
 #X obj -154 376 s timeC;
 #X obj 124 -213 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj -259 -78 s BBsynthC;
 #X obj 153 84 cnv 15 132 84 empty wavformod C 3 9 1 16 -260818 -262144
 0;
@@ -154,7 +154,7 @@
 #X coords 0 1.2 2199 -1.2 132 84 2 0 0;
 #X restore 153 85 graph;
 #X obj 133 262 vsl 22 108 0 15000 0 0 \$0-freq1 empty f1 5 10 1 17
--1 -260097 -260097 36 1;
+-1 -260097 -260097 1 1;
 #X obj 54 149 hsl 96 20 0 3500 0 0 glideC empty Glide 3 10 1 10 -260097
 -1 -1 0 1;
 #X obj 131 396 hsl 158 22 0 1 0 0 balanceC \$0-balance-recv Balance
@@ -257,7 +257,7 @@
 #X obj 227 45 tgl 20 0 empty empty a' 5 9 0 10 -1 -260097 -260097 0
 1;
 #X obj 176 64 hsl 110 15 0 1 0 0 empty empty empty 45 11 1 20 -260097
--1 -1 10900 1;
+-1 -1 0 1;
 #X obj 56 64 hsl 115 15 0 1 0 0 empty empty fade 12 8 0 10 -260097
 -1 -1 0 1;
 #X obj 173 168 cnv 12 63 22 empty empty ___TIME__ 2 18 1 12 -1 -260097
@@ -446,7 +446,7 @@
 #X obj 437 117 hsl 81 15 0 1 0 1 empty empty wet 3 8 0 10 -1 -260097
 -260097 0 0;
 #X obj 437 133 hsl 81 15 0 1 0 1 empty empty dry 3 8 0 10 -1 -260097
--260097 3900 0;
+-260097 2000 0;
 #X msg 344 -35 0;
 #X obj 459 325 cnv 15 62 165 empty empty empty 20 12 1 12 -262144 -228856
 0;
@@ -747,9 +747,28 @@
 #X obj -534 290 * 1;
 #X obj -620 191 sel;
 #X msg -580 193 1;
-#X obj -114 52 midiin;
 #X floatatom -79 110 0 0 0 0 - - -;
 #X floatatom -161 107 0 0 0 0 - - -;
+#X floatatom -551 430 0 0 0 0 - - -;
+#X floatatom -643 420 0 0 0 0 - - -;
+#X floatatom -506 424 0 0 0 0 - - -;
+#X floatatom -589 555 0 0 0 0 - - -;
+#X floatatom -671 552 0 0 0 0 - - -;
+#X floatatom -534 556 0 0 0 0 - - -;
+#X obj -114 52 ctlin 1;
+#X floatatom -590 680 0 0 0 0 - - -;
+#X floatatom -672 677 0 0 0 0 - - -;
+#X obj -625 622 ctlin 3;
+#X floatatom -583 800 0 0 0 0 - - -;
+#X floatatom -665 797 0 0 0 0 - - -;
+#X obj -618 742 ctlin 4;
+#X obj -666 842 / 127;
+#X obj -649 585 / 127;
+#X obj -596 365 notein;
+#X obj -556 458 / 127;
+#X obj -164 135 / 127;
+#X obj -201 169 + 1;
+#X obj -624 496 ctlin 2;
 #X connect 0 0 8 1;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
@@ -1023,6 +1042,7 @@
 #X connect 199 0 24 0;
 #X connect 200 0 2 0;
 #X connect 202 0 23 1;
+#X connect 202 0 16 0;
 #X connect 203 0 42 1;
 #X connect 204 0 145 0;
 #X connect 205 0 83 0;
@@ -1450,6 +1470,23 @@
 #X connect 574 0 567 1;
 #X connect 575 0 576 0;
 #X connect 576 0 570 0;
-#X connect 577 0 579 0;
-#X connect 577 1 578 0;
+#X connect 578 0 596 0;
+#X connect 579 0 595 0;
+#X connect 580 0 101 0;
+#X connect 583 0 593 0;
+#X connect 585 0 578 0;
+#X connect 585 1 577 0;
+#X connect 588 0 587 0;
+#X connect 588 1 586 0;
+#X connect 590 0 592 0;
+#X connect 591 0 590 0;
+#X connect 591 1 589 0;
+#X connect 592 0 199 0;
+#X connect 593 0 200 0;
+#X connect 594 0 580 0;
+#X connect 594 1 579 0;
+#X connect 596 0 597 0;
+#X connect 597 0 97 0;
+#X connect 598 0 583 0;
+#X connect 598 1 582 0;
 #X coords 0 -1 1 1 487 430 1 50 5;

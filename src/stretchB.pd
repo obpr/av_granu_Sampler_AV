@@ -1,10 +1,10 @@
-#N canvas 0 0 1680 1028 12;
+#N canvas 175 386 1680 1028 12;
 #X floatatom 754 503 12 0 0 0 - - -;
 #X floatatom 156 101 5 0 0 0 - - -;
 #X obj 175 286 bng 18 250 50 0 empty empty ø 3 7 1 20 -260097 -1 -1
 ;
 #X obj 194 101 hsl 417 18 1 40 0 0 empty empty TimeStretch 5 11 1 10
--16662 -260097 -260097 0 1;
+-16662 -260097 -260097 16126 1;
 #X obj 192 -12 r lo;
 #X obj 182 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -83,11 +83,7 @@
 #X obj -34 811 s stretchB;
 #X obj 3 4 r reposetoinoffBB;
 #X floatatom 1228 815 12 0 0 0 - - -;
-#X floatatom 608 -115 5 0 0 0 - - -;
-#X obj 563 -117 / 127;
-#X floatatom 479 -37 5 0 0 0 - - -;
-#X obj 568 -138 ctlin;
-#X obj 150 -172 ctlin 22;
+#X obj 150 -172 ctlin 55;
 #X connect 0 0 35 0;
 #X connect 1 0 5 0;
 #X connect 2 0 5 0;
@@ -172,9 +168,6 @@
 #X connect 65 0 26 0;
 #X connect 66 0 30 0;
 #X connect 68 0 18 0;
-#X connect 73 0 71 0;
-#X connect 73 1 70 0;
-#X connect 73 1 72 0;
-#X connect 74 0 15 0;
-#X connect 74 1 14 0;
+#X connect 70 0 15 0;
+#X connect 70 1 14 0;
 #X coords 0 -1 1 1 514 48 2 100 100;
