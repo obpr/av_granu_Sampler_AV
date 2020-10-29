@@ -1,4 +1,4 @@
-#N canvas 230 94 1430 934 10;
+#N canvas 1692 252 1430 934 10;
 #X obj 99 -151 r lo;
 #X obj -47 717 s env0;
 #X obj -43 643 env~;
@@ -18,7 +18,7 @@
 #X msg 525 176 75;
 #X floatatom -46 665 5 0 0 0 - - -;
 #X obj -46 684 spigot-toggle_jaune;
-#X obj 616 185 *~;
+#X obj 790 237 *~;
 #X obj 611 155 r~ C;
 #X msg 102 -127 1;
 #X obj 545 316 r lo;
@@ -66,7 +66,7 @@
 #X msg 579 340 8;
 #X obj 700 362 r~ D;
 #X obj 176 23 tgl 20 0 empty empty empty 6 8 1 15 -260097 -1 -262144
-0 1;
+1 1;
 #X obj 135 181 cnv 15 82 70 empty empty empty 20 12 0 14 -99865 -66577
 0;
 #X floatatom 135 203 3 0 0 1 snslbt - -;
@@ -74,7 +74,7 @@
 #X floatatom 135 219 3 0 0 1 glide - -;
 #X floatatom 197 219 3 0 0 1 - - -;
 #X floatatom 197 235 3 0 0 0 nmbr/stps - -;
-#X obj 197 181 tgl 20 0 empty empty stp 4 9 1 12 -260097 -1 -1 0 1
+#X obj 197 181 tgl 20 0 empty empty stp 4 9 1 12 -260097 -1 -1 1 1
 ;
 #X obj 135 182 tgl 20 0 empty empty >< 2 9 1 14 -260097 -1 -1 0 1;
 #X obj 132 454 cnv 15 85 68 empty empty empty 20 12 0 14 -99865 -66577
@@ -100,19 +100,19 @@
 #X obj 117 60 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1 -260097
 -1 0 0;
 #X obj 117 74 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1 -260097
--1 0 0;
+-1 3200 0;
 #X obj 117 90 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1 -260097
--1 0 0;
+-1 4900 0;
 #X obj 117 104 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 0 0;
+-260097 -1 4100 0;
 #X obj 117 120 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 0 0;
+-260097 -1 4600 0;
 #X obj 117 134 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 0 0;
+-260097 -1 7900 0;
 #X obj 117 150 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 0 0;
+-260097 -1 5100 0;
 #X obj 117 166 hsl 85 15 0 300 0 0 empty empty empty -2 -8 0 10 -1
--260097 -1 0 0;
+-260097 -1 4700 0;
 #X obj 102 184 cnv 15 28 33 empty empty a'= 2 8 1 14 -260097 -1 0;
 #X floatatom 102 203 5 0 0 3 - - -;
 #X obj 100 251 cnv 15 118 44 empty empty empty 6 35 1 10 -1 -228856
@@ -146,7 +146,7 @@
 #X obj 158 454 tgl 20 0 empty empty B 6 11 1 12 -1 -262144 -262144
 0 1;
 #X obj 178 182 tgl 20 0 empty empty C 6 11 1 12 -1 -262144 -262144
-0 1;
+1 1;
 #X obj 157 182 tgl 20 0 empty empty A 6 11 1 12 -1 -262144 -262144
 0 1;
 #X obj 100 3 cnv 15 117 22 empty empty Attack-detection 18 11 1 12
