@@ -1,259 +1,69 @@
-#N canvas 568 869 970 852 10;
+#N canvas 671 151 970 852 10;
 #X declare -lib timbreID/timbreIDLib;
-#X obj -755 4 pack 0 0;
-#X obj -755 25 line;
-#X floatatom -756 46 5 0 0 0 - - -;
-#X floatatom -522 -432 5 0 0 0 - - -;
-#X obj -760 175 outlet;
-#X obj -1129 -762 inlet~;
-#X obj -531 -606 inlet;
-#X obj -596 -753 inlet;
-#X obj -1037 -269 f;
-#X obj -1005 -271 + 1;
-#X floatatom -1036 -227 0 0 0 0 - - -;
-#X floatatom -905 -610 0 0 0 0 >_<_back_n_forth - -;
-#X obj -901 -637 inlet;
-#X obj -476 -690 inlet;
-#X floatatom -483 -533 0 0 0 0 tout_les_combien_ça_change_le_variant/note_A/R
-- -;
-#X floatatom -529 -352 5 0 0 0 25_norm - -;
-#X obj -532 -401 r lo;
-#X floatatom -1037 -112 5 0 0 0 - - -;
-#X obj -1037 -177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -162 1073 pack 0 0;
+#X obj -162 1094 line;
+#X floatatom -163 1115 5 0 0 0 - - -;
+#X floatatom 71 637 5 0 0 0 - - -;
+#X obj -167 1244 outlet;
+#X obj -536 307 inlet~;
+#X obj -3 316 inlet;
+#X obj -444 814 f;
+#X obj -412 812 + 1;
+#X floatatom -443 856 0 0 0 0 - - -;
+#X floatatom -493 488 0 0 0 0 >_<_back_n_forth - -;
+#X obj -308 432 inlet;
+#X obj 170 469 inlet;
+#X floatatom 64 717 5 0 0 0 25_norm - -;
+#X obj 61 668 r lo;
+#X floatatom -444 957 5 0 0 0 - - -;
+#X obj -444 892 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj -624 -240 f;
-#X obj -626 -209 pack 0 0;
-#X obj -626 -188 line;
-#X floatatom -530 -154 5 0 0 0 - - -;
-#X obj -621 -442 f;
-#X obj -588 -442 + 1;
-#X obj -621 -442 f;
-#X obj -628 -269 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -443 869 sel 0 1;
+#X floatatom 3 344 5 0 0 0 - - -;
+#X floatatom -163 1215 5 0 0 0 - - -;
+#X floatatom -445 1041 5 0 0 0 - - -;
+#X floatatom -395 957 5 0 0 0 - - -;
+#X obj -395 892 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj -1036 -200 sel 0 1;
-#X floatatom -763 -49 5 0 0 0 - - -;
-#X obj -805 -717 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X floatatom -396 1041 5 0 0 0 - - -;
+#X msg 65 689 25;
+#X floatatom 162 716 5 0 0 0 25_norm - -;
+#X obj 159 667 r lo;
+#X msg 163 688 25;
+#X obj -102 978 inlet;
+#X obj -444 814 f;
+#X obj -412 812 + 1;
+#X obj -443 835 mod 2;
+#X obj -442 712 f;
+#X obj -410 710 + 1;
+#X floatatom -443 755 0 0 0 0 - - -;
+#X obj -441 733 mod 2;
+#X obj -445 778 sel;
+#X floatatom 179 633 5 0 0 0 - - -;
+#X floatatom -282 660 5 0 0 0 - - -;
+#X floatatom -103 998 5 0 0 0 - - -;
+#X obj -145 454 spigot-toggle_jaune;
+#X obj -136 417 inlet;
+#X obj -443 835 mod 2;
+#X obj -474 796 spigot-toggle_jaune;
+#X obj -227 771 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom -590 -725 5 0 0 0 - - -;
-#X floatatom -756 146 5 0 0 0 - - -;
-#X floatatom -1038 -28 5 0 0 0 - - -;
-#X floatatom -988 -112 5 0 0 0 - - -;
-#X obj -988 -177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X floatatom -989 -28 5 0 0 0 - - -;
-#X msg -528 -380 25;
-#X floatatom -431 -353 5 0 0 0 25_norm - -;
-#X obj -434 -402 r lo;
-#X msg -430 -381 25;
-#X obj -585 -241 f;
-#X obj -589 -270 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj -695 -91 inlet;
-#X obj -621 -512 f;
-#X obj -588 -512 + 1;
-#X obj -621 -512 f;
-#X obj -1037 -269 f;
-#X obj -1005 -271 + 1;
-#X obj -1036 -248 mod 2;
-#X obj -1035 -357 f;
-#X obj -1003 -359 + 1;
-#X floatatom -1036 -314 0 0 0 0 - - -;
-#X obj -1034 -336 mod 2;
-#X obj -1038 -291 sel;
-#X obj -619 -463 sel;
-#X obj -412 -471 * 1;
-#X obj -402 -497 inlet;
-#X floatatom -414 -436 5 0 0 0 - - -;
-#X obj -528 -192 inlet;
-#X floatatom -351 -353 5 0 0 0 25_norm - -;
-#X obj -354 -402 r lo;
-#X msg -350 -381 25;
-#X obj -332 -471 * 1;
-#X obj -322 -497 inlet;
-#X floatatom -334 -436 5 0 0 0 - - -;
-#X floatatom -241 -353 5 0 0 0 25_norm - -;
-#X obj -244 -402 r lo;
-#X msg -240 -381 25;
-#X obj -222 -471 * 1;
-#X obj -212 -497 inlet;
-#X floatatom -224 -436 5 0 0 0 - - -;
-#X obj -542 -240 f;
-#X obj -546 -269 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj -508 -241 f;
-#X obj -512 -270 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X floatatom -131 -353 5 0 0 0 25_norm - -;
-#X obj -134 -402 r lo;
-#X msg -130 -381 25;
-#X obj -112 -471 * 1;
-#X obj -102 -497 inlet;
-#X floatatom -114 -436 5 0 0 0 - - -;
-#X obj -467 -240 f;
-#X obj -471 -269 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X floatatom -975 -318 5 0 0 0 - - -;
-#X floatatom -696 -71 5 0 0 0 - - -;
-#X obj -620 -420 mod 1;
-#X obj -988 -51 + 0;
-#X obj -1037 -51 - 0;
-#X obj -738 -615 spigot-toggle_jaune;
-#X obj -508 -462 inlet;
-#X obj -620 -490 mod 1;
-#X obj -729 -652 inlet;
-#X obj -1036 -248 mod 2;
-#X obj -913 -467 spigot-toggle_jaune;
-#X floatatom -54 -343 5 0 0 0 25_norm - -;
-#X obj -57 -392 r lo;
-#X msg -53 -371 25;
-#X obj -35 -461 * 1;
-#X obj -25 -487 inlet;
-#X floatatom -37 -426 5 0 0 0 - - -;
-#X obj -428 -241 f;
-#X obj -432 -270 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X floatatom 47 -346 5 0 0 0 25_norm - -;
-#X obj 44 -395 r lo;
-#X msg 48 -374 25;
-#X obj 66 -464 * 1;
-#X obj 76 -490 inlet;
-#X floatatom 64 -429 5 0 0 0 - - -;
-#X floatatom 157 -346 5 0 0 0 25_norm - -;
-#X obj 154 -395 r lo;
-#X msg 158 -374 25;
-#X obj 176 -464 * 1;
-#X obj 186 -490 inlet;
-#X floatatom 174 -429 5 0 0 0 - - -;
-#X floatatom 234 -336 5 0 0 0 25_norm - -;
-#X obj 231 -385 r lo;
-#X msg 235 -364 25;
-#X obj 253 -454 * 1;
-#X obj 263 -480 inlet;
-#X floatatom 251 -419 5 0 0 0 - - -;
-#X obj -389 -243 f;
-#X obj -393 -272 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj -348 -242 f;
-#X obj -352 -271 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj -309 -243 f;
-#X obj -313 -272 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj -698 -371 sel 0 1 2 4 5 6 7 8;
-#X obj -820 -298 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg -1036 -154 25;
-#X msg -988 -155 75;
-#X obj -791 -274 s bonkBB;
-#X obj -737 -707 outlet;
-#X floatatom 288 483 10 0 0 1 ms - -;
-#N canvas 556 323 1062 539 other-settings 0;
-#X obj 54 465 outlet;
-#X msg 325 337 print;
-#X msg 54 38 overlap 2;
-#X text 135 26 Inside a subpatch with re-blocking involving overlap
-(e.g. \, [block~ 4096 2]) \, you'll need to change the overlap for
-things to behave properly;
-#X msg 125 107 window 2000;
-#X msg 175 156 max_search_range 1000;
-#X text 457 220 Specify the sample magnitude threshold that the signal
-must fall below to locate the initial onset. (default: 0.005);
-#X msg 275 276 onset_num_samps_thresh 20;
-#X text 396 337 Print the internal settings to the post window;
-#X obj 363 374 loadbang;
-#X msg 363 394 onset_samp_mag_thresh 0;
-#X msg 373 414 onset_samp_mag_thresh 0.005;
-#X text 486 264 Specify the number of consecutive samples for which
-the signal must stay below the magnitude threshold in order to find
-the initial onset. (default: 10);
-#X text 583 384 Here \, the mag thresh is set to zero since the default
-input is a synthesized noise burst. If you use the mic input \, set
-the mag thresh to around 0.005 \, or whatever suits your microphone.
-;
-#X text 343 138 Specify the maximum time in milliseconds before the
-peak sample of an attack to search for the initial onset. This determines
-the size of the internal buffer and is separate from the analysis window
-size (default: 2000ms);
-#X text 236 106 Change analysis window size.;
-#X msg 225 226 onset_samp_mag_thresh 0.0025;
-#X connect 1 0 0 0;
-#X connect 2 0 0 0;
-#X connect 4 0 0 0;
-#X connect 5 0 0 0;
-#X connect 7 0 0 0;
-#X connect 9 0 10 0;
-#X connect 10 0 0 0;
-#X connect 11 0 0 0;
-#X connect 16 0 0 0;
-#X restore -706 -1073 pd other-settings;
-#X text 787 596 Updated for timbreID version 0.7;
-#X obj 763 538 timbreID;
-#X text 596 480 This feature can be sent to the timbreID external in
-order to identify timbres in real time. For more on using audio features
-for classification \, see the timbreID helpfile:;
-#X text 787 616 July 2017;
-#X text 324 163 When an onset is found \, bang to output attack time
+#X msg -443 915 25;
+#X msg -395 914 75;
+#X obj -198 795 s bonkBB;
+#X obj -241 811 outlet;
+#X floatatom 881 1552 10 0 0 1 ms - -;
+#X text 1380 1665 Updated for timbreID version 0.7;
+#X obj 1356 1607 timbreID;
+#X text 1189 1549 This feature can be sent to the timbreID external
+in order to identify timbres in real time. For more on using audio
+features for classification \, see the timbreID helpfile:;
+#X text 1380 1685 July 2017;
+#X text 917 1232 When an onset is found \, bang to output attack time
 in milliseconds, f 18;
-#X floatatom -726 -972 10 0 0 0 - - -;
-#X floatatom -647 -975 10 0 0 0 - - -;
-#X text 180 349 Outlet 1: attack time in milliseconds;
-#X text 180 369 Outlet 2: attack onset starting sample index;
-#X text 180 389 Outlet 3: attack onset peak sample index;
-#N canvas 713 346 570 417 onsets 0;
-#X obj 56 53 inlet~;
-#X obj 176 347 outlet;
-#X obj 3 4 cnv 10 400 10 empty empty empty 20 12 0 14 -233017 -66577
-0;
-#X obj 3 4 cnv 10 10 400 empty empty empty 20 12 0 14 -233017 -66577
-0;
-#X obj 208 193 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 259 96 loadbang;
-#X obj 56 335 outlet~;
-#X obj 176 155 bark~ 4096 1024 0.5;
-#X msg 259 119 minvel 50 \, debounce 200 \, thresh -1 20;
-#X connect 0 0 6 0;
-#X connect 0 0 7 0;
-#X connect 5 0 8 0;
-#X connect 7 0 4 0;
-#X connect 7 0 1 0;
-#X connect 8 0 7 0;
-#X restore -724 -1184 pd onsets;
-#N canvas 579 85 606 431 sample-buffer 0;
-#X obj 78 38 inlet~;
-#X obj 78 230 outlet~;
-#X obj 298 38 inlet;
-#N canvas 0 50 450 300 (subpatch) 0;
-#X array \$0-sampleBuffer-graph 88264 float 0;
-#X coords 0 1 88263 -1 200 140 1 0 0;
-#X restore 319 116 graph;
-#N canvas 205 170 462 302 do-plotting 0;
-#X obj 79 37 inlet;
-#X obj 79 203 list prepend 0;
-#X obj 203 116 list length;
-#X obj 203 138 change;
-#X obj 203 160 pack f \$0;
-#X obj 79 59 t l l;
-#X obj 79 224 s \$0-sampleBuffer-graph;
-#X msg 203 181 \; \$2-sampleBuffer-graph resize \$1 \;;
-#X connect 0 0 5 0;
-#X connect 1 0 6 0;
-#X connect 2 0 3 0;
-#X connect 3 0 4 0;
-#X connect 4 0 7 0;
-#X connect 5 0 1 0;
-#X connect 5 1 2 0;
-#X restore 146 169 pd do-plotting;
-#X obj 146 125 sampleBuffer~ 88264;
-#X text 110 298 This uses [sampleBuffer~] to grab the same audio contained
-by [attackTime~]'s internal buffer \, based on max_search_range. max_search_range
-is 2000ms by default \, so the buffer is two full seconds of samples
-\, plus a block of samples = 88264;
-#X connect 0 0 1 0;
-#X connect 0 0 5 0;
-#X connect 2 0 5 0;
-#X connect 5 0 4 0;
-#X restore -694 -1135 pd sample-buffer;
+#X text 773 1418 Outlet 1: attack time in milliseconds;
+#X text 773 1438 Outlet 2: attack onset starting sample index;
+#X text 773 1458 Outlet 3: attack onset peak sample index;
 #N canvas 760 58 610 575 synth-burst 0;
 #X obj 119 -14 inlet;
 #X obj 106 249 outlet~;
@@ -313,25 +123,25 @@ is 2000ms by default \, so the buffer is two full seconds of samples
 #X connect 25 0 27 0;
 #X connect 28 0 8 0;
 #X connect 30 0 29 0;
-#X restore 71 87 pd synth-burst;
-#X msg 71 27 5;
-#X msg 110 26 20;
-#X msg 151 27 37;
-#X floatatom 71 69 5 0 0 1 ms - -;
-#X msg 37 27 2;
-#X text 596 370 Look inside [pd other-settings] for more information
+#X restore 664 1156 pd synth-burst;
+#X msg 664 1096 5;
+#X msg 703 1095 20;
+#X msg 744 1096 37;
+#X floatatom 664 1138 5 0 0 1 ms - -;
+#X msg 630 1096 2;
+#X text 1189 1439 Look inside [pd other-settings] for more information
 regarding analysis parameters.;
-#X msg 191 27 70;
-#X text 595 24 When [attackTime~] receives a bang \, it locates the
-peak sample in the current analysis window \, and searches back through
-its internal buffer to find the point where sample magnitude remains
-near zero for several consecutive samples. The number of samples between
-the attack onset and attack peak is used to calculate the attack time
-in milliseconds. Attack time is an important timbre feature.;
-#X text 458 346 Creation argument sets analysis window size in samples
+#X msg 784 1096 70;
+#X text 1188 1093 When [attackTime~] receives a bang \, it locates
+the peak sample in the current analysis window \, and searches back
+through its internal buffer to find the point where sample magnitude
+remains near zero for several consecutive samples. The number of samples
+between the attack onset and attack peak is used to calculate the attack
+time in milliseconds. Attack time is an important timbre feature.;
+#X text 1051 1415 Creation argument sets analysis window size in samples
 ;
-#X text 596 124 [attackTime~] does not contain an onset detector \,
-so you must use either [bonk~] \, [bark~] \, or even [maxSampleDelta~]
+#X text 1189 1193 [attackTime~] does not contain an onset detector
+\, so you must use either [bonk~] \, [bark~] \, or even [maxSampleDelta~]
 to identify onsets. Use onset identification to determine the precise
 moment to analyze for attack time. It makes sense to keep the window
 size of your onset detection object the same as that of [attackTime~].
@@ -346,15 +156,13 @@ finds enough consecutive samples below the magnitude threshold) \,
 it returns an attack time of -1 to signal failure. This method is only
 appropriate for measuring sound events that are separated by near silence.
 ;
-#X text 596 410 Audio buffering is taken care of by the external \,
-so there is no need for [block~]. You can set the window size with
+#X text 1189 1479 Audio buffering is taken care of by the external
+\, so there is no need for [block~]. You can set the window size with
 a creation argument \, or change it with the "window" message. Window
 size is not required to be a power of two.;
-#X obj 344 569 declare -lib timbreID/timbreIDLib;
-#X obj 239 26 r A;
-#X obj 238 49 * 100;
-#X obj -744 -945 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 937 1638 declare -lib timbreID/timbreIDLib;
+#X obj 832 1095 r A;
+#X obj 831 1118 * 100;
 #N canvas 0 81 378 323 synth-burst 0;
 #X obj 176 19 inlet;
 #X obj 106 249 outlet~;
@@ -375,171 +183,120 @@ size is not required to be a power of two.;
 #X connect 6 0 7 0;
 #X connect 6 0 7 1;
 #X connect 8 0 2 1;
-#X restore 291 532 pd synth-burst;
-#X floatatom 290 505 5 0 0 1 ms - -;
-#X obj -724 -1008 attackTime~ 40960;
-#X obj 336 635 s fll0;
+#X restore 884 1601 pd synth-burst;
+#X floatatom 883 1574 5 0 0 1 ms - -;
+#X obj 929 1704 s fll0;
+#X floatatom 60 343 5 0 0 0 - - -;
+#X floatatom -170 996 5 0 0 0 - - -;
+#X obj 60 368 tabread array3;
+#X obj 58 281 f;
+#X obj 90 279 + 1;
+#X floatatom 57 324 0 0 0 0 - - -;
+#X obj 59 302 mod 2;
+#X floatatom 103 300 5 0 0 0 - - -;
+#X obj 62 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 104 103 cnv 15 98 116 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array array3 10 float 3;
+#A 0 0.0769231 0.58974 0.162393 -0.692304 0.555555 0.623924 0.931615
+1.2393 1.90597 1.95725;
+#X coords 0 1 10 -1 100 117 1 0 0;
+#X restore 102 102 graph;
+#X floatatom 172 546 5 0 0 0 - - -;
+#X obj 170 500 * 1;
+#X obj 176 576 - 50;
+#X obj -197 604 inlet;
+#X floatatom -191 632 5 0 0 0 - - -;
+#X floatatom -142 1175 0 0 0 0 - - -;
+#X obj -141 1151 * 100;
+#X obj -445 1017 * 0.01;
+#X obj -395 1018 * 0.01;
+#X obj -510 340 bonk~;
+#X obj -454 382 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
-#X connect 2 0 31 0;
-#X connect 3 0 15 0;
-#X connect 5 0 144 0;
-#X connect 6 0 83 0;
-#X connect 7 0 30 0;
-#X connect 8 0 9 0;
-#X connect 8 0 92 0;
-#X connect 9 0 8 1;
-#X connect 10 0 27 0;
-#X connect 11 0 93 1;
-#X connect 12 0 11 0;
-#X connect 13 0 14 0;
-#X connect 14 0 90 1;
-#X connect 15 0 19 1;
-#X connect 15 0 17 0;
-#X connect 16 0 36 0;
-#X connect 17 0 87 0;
-#X connect 18 0 128 0;
-#X connect 19 0 20 0;
-#X connect 20 0 21 0;
-#X connect 21 0 28 0;
-#X connect 22 0 20 1;
-#X connect 23 0 24 0;
-#X connect 23 0 85 0;
-#X connect 23 0 127 0;
-#X connect 24 0 23 1;
-#X connect 26 0 19 0;
-#X connect 27 0 18 0;
-#X connect 27 1 34 0;
-#X connect 28 0 0 0;
-#X connect 29 0 88 0;
-#X connect 29 0 93 0;
-#X connect 29 0 131 0;
-#X connect 30 0 85 1;
-#X connect 31 0 4 0;
-#X connect 32 0 0 0;
-#X connect 33 0 86 0;
-#X connect 34 0 129 0;
-#X connect 35 0 0 0;
-#X connect 36 0 15 0;
-#X connect 37 0 40 1;
-#X connect 37 0 33 0;
-#X connect 38 0 39 0;
-#X connect 39 0 37 0;
-#X connect 40 0 20 0;
-#X connect 41 0 40 0;
-#X connect 42 0 84 0;
-#X connect 43 0 44 0;
-#X connect 43 0 90 0;
-#X connect 44 0 43 1;
-#X connect 46 0 47 0;
-#X connect 46 0 48 0;
-#X connect 47 0 46 1;
-#X connect 49 0 50 0;
-#X connect 49 0 52 0;
-#X connect 50 0 49 1;
-#X connect 51 0 53 0;
-#X connect 52 0 51 0;
-#X connect 53 0 8 0;
-#X connect 53 0 127 0;
-#X connect 54 0 23 0;
-#X connect 55 0 57 0;
-#X connect 56 0 55 0;
-#X connect 57 0 37 0;
-#X connect 58 0 22 0;
-#X connect 59 0 71 1;
-#X connect 60 0 61 0;
-#X connect 61 0 59 0;
-#X connect 62 0 64 0;
+#X connect 2 0 93 0;
+#X connect 3 0 13 0;
+#X connect 5 0 96 0;
+#X connect 6 0 18 0;
+#X connect 7 0 8 0;
+#X connect 7 0 42 0;
+#X connect 8 0 7 1;
+#X connect 9 0 17 0;
+#X connect 10 0 43 1;
+#X connect 11 0 10 0;
+#X connect 12 0 88 0;
+#X connect 13 0 15 0;
+#X connect 14 0 24 0;
+#X connect 15 0 94 0;
+#X connect 16 0 45 0;
+#X connect 17 0 16 0;
+#X connect 17 1 22 0;
+#X connect 18 0 83 0;
+#X connect 19 0 4 0;
+#X connect 20 0 0 0;
+#X connect 21 0 95 0;
+#X connect 22 0 46 0;
+#X connect 23 0 0 0;
+#X connect 24 0 13 0;
+#X connect 25 0 21 0;
+#X connect 26 0 27 0;
+#X connect 27 0 25 0;
+#X connect 28 0 39 0;
+#X connect 29 0 30 0;
+#X connect 29 0 31 0;
+#X connect 30 0 29 1;
+#X connect 32 0 33 0;
+#X connect 32 0 35 0;
+#X connect 33 0 32 1;
+#X connect 34 0 36 0;
+#X connect 35 0 34 0;
+#X connect 36 0 44 0;
+#X connect 36 0 43 0;
+#X connect 36 0 40 0;
+#X connect 37 0 25 0;
+#X connect 38 0 35 1;
+#X connect 39 0 0 1;
+#X connect 40 0 79 0;
+#X connect 41 0 40 1;
+#X connect 42 0 9 0;
+#X connect 43 0 7 0;
+#X connect 44 0 47 0;
+#X connect 44 0 48 0;
+#X connect 45 0 15 0;
+#X connect 46 0 21 0;
+#X connect 49 0 74 0;
+#X connect 59 0 62 0;
+#X connect 60 0 62 0;
+#X connect 61 0 62 0;
+#X connect 62 0 58 0;
 #X connect 63 0 62 0;
-#X connect 64 0 59 0;
-#X connect 65 0 73 1;
-#X connect 66 0 67 0;
-#X connect 67 0 65 0;
-#X connect 68 0 70 0;
-#X connect 69 0 68 0;
-#X connect 70 0 65 0;
-#X connect 71 0 20 0;
-#X connect 72 0 71 0;
-#X connect 73 0 20 0;
+#X connect 65 0 62 0;
+#X connect 71 0 72 0;
 #X connect 74 0 73 0;
-#X connect 75 0 81 1;
-#X connect 76 0 77 0;
-#X connect 77 0 75 0;
-#X connect 78 0 80 0;
-#X connect 79 0 78 0;
-#X connect 80 0 75 0;
-#X connect 81 0 20 0;
+#X connect 76 0 78 0;
+#X connect 77 0 0 0;
+#X connect 78 0 77 0;
+#X connect 79 0 80 0;
+#X connect 79 0 82 0;
+#X connect 80 0 79 1;
+#X connect 81 0 76 0;
 #X connect 82 0 81 0;
-#X connect 83 0 52 1;
-#X connect 84 0 0 1;
-#X connect 85 0 126 0;
-#X connect 86 0 35 0;
-#X connect 87 0 32 0;
-#X connect 88 0 43 0;
-#X connect 89 0 3 0;
-#X connect 90 0 54 0;
-#X connect 91 0 88 1;
-#X connect 92 0 10 0;
-#X connect 93 0 49 0;
-#X connect 94 0 100 1;
-#X connect 95 0 96 0;
-#X connect 96 0 94 0;
-#X connect 97 0 99 0;
-#X connect 98 0 97 0;
-#X connect 99 0 94 0;
-#X connect 100 0 20 0;
-#X connect 101 0 100 0;
-#X connect 102 0 120 1;
-#X connect 103 0 104 0;
-#X connect 104 0 102 0;
-#X connect 105 0 107 0;
-#X connect 106 0 105 0;
-#X connect 107 0 102 0;
-#X connect 108 0 122 1;
-#X connect 109 0 110 0;
-#X connect 110 0 108 0;
-#X connect 111 0 113 0;
-#X connect 112 0 111 0;
-#X connect 113 0 108 0;
-#X connect 114 0 124 1;
-#X connect 115 0 116 0;
-#X connect 116 0 114 0;
-#X connect 117 0 119 0;
-#X connect 118 0 117 0;
-#X connect 119 0 114 0;
-#X connect 120 0 20 0;
-#X connect 121 0 120 0;
-#X connect 122 0 20 0;
-#X connect 123 0 122 0;
-#X connect 124 0 20 0;
-#X connect 125 0 124 0;
-#X connect 126 0 26 0;
-#X connect 126 1 41 0;
-#X connect 126 2 72 0;
-#X connect 126 3 74 0;
-#X connect 126 4 82 0;
-#X connect 126 5 101 0;
-#X connect 126 6 121 0;
-#X connect 126 7 123 0;
-#X connect 126 8 125 0;
-#X connect 127 0 130 0;
-#X connect 128 0 17 0;
-#X connect 129 0 33 0;
-#X connect 132 0 163 0;
-#X connect 133 0 164 0;
-#X connect 144 0 145 0;
-#X connect 144 0 164 0;
-#X connect 144 1 145 1;
-#X connect 144 1 164 0;
-#X connect 147 0 150 0;
-#X connect 148 0 150 0;
-#X connect 149 0 150 0;
-#X connect 150 0 146 0;
-#X connect 151 0 150 0;
-#X connect 153 0 150 0;
-#X connect 159 0 160 0;
-#X connect 161 0 29 0;
-#X connect 163 0 162 0;
-#X connect 164 0 161 0;
-#X connect 164 1 139 0;
-#X connect 164 2 140 0;
+#X connect 83 0 82 1;
+#X connect 84 0 79 0;
+#X connect 87 0 3 0;
+#X connect 87 0 89 0;
+#X connect 88 0 87 0;
+#X connect 89 0 37 0;
+#X connect 90 0 91 0;
+#X connect 91 0 38 0;
+#X connect 92 0 19 0;
+#X connect 93 0 92 0;
+#X connect 94 0 20 0;
+#X connect 95 0 23 0;
+#X connect 96 1 97 0;
+#X connect 97 0 32 0;
+#X coords 0 -1 1 1 104 121 1 100 100;

@@ -1,561 +1,2331 @@
-#N canvas 2 366 1280 918 10;
-#X obj 319 102 vsl 20 70 0 1 0 0 empty empty L 8 6 0 7 -16662 -260097
--260097 4292 0;
-#X obj 357 102 vsl 20 70 0 1 0 0 empty empty H 5 6 0 7 -16662 -260097
--260097 4564 0;
-#X obj 336 102 vsl 20 70 0 1 0 0 empty empty M 8 6 0 7 -16662 -260097
--260097 3586 0;
-#X obj 25 464 vfreeverb~;
-#X obj 415 141 hsl 100 17 0 1 0 1 empty empty 'roomsize' 3 8 0 10 -16662
--260097 -260097 0 0;
-#X obj 415 159 hsl 100 17 0 2 0 1 empty empty damp 3 8 0 10 -16662
--260097 -260097 2000 0;
-#X obj 415 121 hsl 100 19 0 1 0 1 empty empty wet_reverb 3 8 0 10 -16662
--260097 -260097 0 0;
-#X obj 415 101 hsl 100 19 0 1 0 1 empty empty dry 3 8 0 10 -16662 -260097
--260097 4950 0;
-#X obj -111 57 inlet;
-#X obj -71 57 inlet;
-#X obj -20 56 inlet;
-#X obj -151 57 inlet;
-#X obj 25 495 dj-eq;
-#X obj 13 597 dac~;
-#X obj 369 205 s V1A;
-#X floatatom -226 -564 4 0 100 0 - - -;
-#X floatatom -228 -641 0 0 200 0 - - -;
-#X obj -478 -249 +~;
-#X obj -479 -317 samphold~;
-#X obj -478 -283 *~;
-#X obj -268 -220 r~ phase;
-#X obj -548 -784 s~ phase;
-#X obj -383 -320 r~ phase;
-#X obj -443 -282 r~ phase;
-#X obj -234 -448 s chunk-size;
-#X floatatom -228 -674 0 0 0 0 - - -;
-#X text -582 -980 chunk size;
-#X text -585 -966 in seconds;
-#X obj -531 -931 r chunk-size;
-#X obj -531 -906 t b f;
-#X obj -268 -186 -~ 0.5;
-#X obj -268 -152 *~ 0.5;
-#X obj -268 -119 cos~;
-#X obj -543 -826 phasor~;
-#X obj -500 -461 s~ read-pt;
-#X obj -440 -250 r~ read-pt;
-#X obj -461 -791 +~ 0.5;
-#X obj -460 -766 wrap~;
-#X obj -460 -741 s~ phase2;
-#X obj -441 -63 +~;
-#X obj -231 -473 * 0.001;
-#X obj -478 -215 *~ 44100;
-#X obj -478 -145 tabread4~ table23;
-#X obj -479 -179 +~ 1;
-#X floatatom -461 -842 5 0 0 0 - - -;
-#X obj -400 -658 s precession;
-#X obj -418 -907 t b f;
-#X obj -418 -932 r precession;
-#X obj -507 -679 * 0.01;
-#X obj -172 -211 +~;
-#X obj -163 -269 samphold~;
-#X obj -172 -245 *~;
-#X obj 6 -125 -~ 0.5;
-#X obj 6 -91 *~ 0.5;
-#X obj 6 -59 cos~;
-#X obj -124 -211 r~ read-pt;
-#X obj -162 -167 *~ 44100;
-#X obj -172 -97 tabread4~ table23;
-#X obj -163 -294 r chunk-size;
-#X obj -173 -131 +~ 1;
-#X obj -75 -268 r~ phase2;
-#X obj -127 -244 r~ phase2;
-#X obj -24 -159 r~ phase2;
-#X msg -226 -706 25;
-#X floatatom -227 -902 12 0 900 0 - - -;
-#X obj -227 -872 * 0.001;
-#X text -186 -566 <-- chunk size (msec);
-#X obj -543 -874 expr (pow(2 \, $f1/120)-$f3)/$f2;
-#X obj -227 -822 t b f;
-#X text -129 -999 (msec);
-#X obj -504 -595 /;
-#X floatatom -227 -1066 12 0 0 0 - - -;
-#X floatatom -227 -1136 12 0 0 0 - - -;
-#X msg -227 -934 900;
-#X obj -114 -954 loadbang;
-#X floatatom -226 -1008 12 0 0 0 - - -;
-#X obj -226 -1033 * 1000;
-#X floatatom -225 -533 4 0 900 0 - - -;
-#X text -148 -1013 <-- loop length;
-#X text -192 -642 <-- speed \, percent;
-#X obj -528 -428 s~ sample.pos1;
-#X text -186 -534 <-- position \, 0-1;
-#X obj -503 -531 *~ 1;
-#X floatatom -225 -598 0 0 0 0 - - -;
-#X obj -505 -647 t b f;
-#X obj -505 -620 * 1;
-#X text -188 -679 <-- pitch \, 0= norm \, >0= aigues;
-#X floatatom -110 -333 0 0 0 0 - - -;
-#X floatatom -61 -402 0 0 0 0 - - -;
-#X obj -62 -448 loadbang;
-#X obj -188 -767 loadbang;
-#X msg -227 -742 0.5;
-#X msg -226 -766 100;
-#X obj -479 -352 r chunk-size;
-#X text -189 -507 <-- trgr on/off;
-#X obj 190 -1054 soundfiler;
-#X msg 191 -1093 read -resize \$1 table23;
-#X obj 327 -901 snapshot~;
-#X obj 328 -974 receive~ sample.pos1;
-#X floatatom 328 -878 12 0 0 0 - - -;
-#X floatatom 329 -816 12 0 0 0 - - -;
-#X obj 366 -950 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X floatatom 191 -1027 12 0 0 0 - - -;
-#X obj 330 -787 /;
-#X text -187 -611 <-- pitch & speed \, norm= 1;
-#X obj 367 -1010 loadbang;
-#X obj 364 -739 outlet;
-#X obj -441 -95 *~;
-#X obj -172 -63 *~;
-#X obj 364 -718 s posvisu;
-#X msg -62 -421 44100;
-#X floatatom 306 -717 5 0 0 2 pos - -;
-#X msg -187 -934 47191;
-#X msg -117 -934 0;
-#X obj -500 -500 *~ 1;
-#X floatatom 464 -935 4 0 0 0 f.r - -;
-#X obj 530 -984 r frA;
-#X obj 190 -1131 r soundfileA;
-#X obj 163 -633 r pitchA;
-#X obj 163 -603 r speedA;
-#X obj 163 -573 r pitchNspeedA;
-#X obj 164 -543 r posA;
-#X obj 32 426 *~;
-#X obj 135 57 inlet;
-#X obj 102 48 inlet;
-#X obj 441 -1005 r øAtiTS1;
-#X obj -7 -997 s looplenghtA;
-#X obj 28 -626 * 100;
-#X obj 521 -1005 r øAtiTS1>ø;
-#X obj -52 18 r lo;
-#X obj -46 544 s~ A0;
-#X obj 162 -481 * 0.01;
-#X obj 141 -93 * 1;
-#X floatatom 142 -63 5 0 0 0 - - -;
-#X obj 193 -75 * 1;
-#X floatatom 194 -45 5 0 0 0 - - -;
-#X obj 160 -511 r directinA;
-#X msg 391 58 0;
-#X obj -506 -560 phasor~;
-#X msg -62 -381 0;
-#X obj 366 -651 t b f;
-#X obj 641 568 spigot-toggle_orange;
-#X obj 641 545 spigot-toggle_vert;
-#X obj 641 521 spigot-toggle_red;
-#X obj 641 624 * 1;
-#X obj 607 569 spigot-toggle_orange;
-#X obj 607 545 spigot-toggle_vert;
-#X obj 606 521 spigot-toggle_red;
-#X obj 607 622 * 1;
-#X obj 641 592 spigot-toggle_orange;
-#X obj 608 591 spigot-toggle_orange;
-#X obj 669 612 - 1;
-#X obj 670 643 * -1;
-#X obj 661 333 tgl 12 0 empty empty A 3 6 0 10 -1 -262144 -260097 0
+#N canvas 0 305 1680 308 10;
+#X obj 430 110 vsl 20 70 0 1 0 0 empty empty L 8 6 0 7 -16662 -260097
+-260097 5600 0;
+#X obj 469 110 vsl 20 70 0 1 0 0 empty empty H 5 6 0 7 -16662 -260097
+-260097 5500 0;
+#X obj 451 110 vsl 20 70 0 1 0 0 empty empty M 8 6 0 7 -16662 -260097
+-260097 5700 0;
+#X obj -112 63 inlet;
+#X obj -72 63 inlet;
+#X obj -21 62 inlet;
+#X obj -152 63 inlet;
+#X obj 319 494 dj-eq;
+#X obj 620 176 s V1A;
+#X obj 134 63 inlet;
+#X obj 101 54 inlet;
+#X obj -53 24 r lo;
+#X obj 758 169 s~ A0;
+#X floatatom 135 1 5 0 0 0 - - -;
+#X floatatom 191 1 5 0 0 0 - - -;
+#X msg 403 42 0;
+#X obj 640 574 spigot-toggle_orange;
+#X obj 640 551 spigot-toggle_vert;
+#X obj 640 527 spigot-toggle_red;
+#X obj 640 630 * 1;
+#X obj 606 575 spigot-toggle_orange;
+#X obj 606 551 spigot-toggle_vert;
+#X obj 605 527 spigot-toggle_red;
+#X obj 606 628 * 1;
+#X obj 640 598 spigot-toggle_orange;
+#X obj 607 597 spigot-toggle_orange;
+#X obj 668 618 - 1;
+#X obj 669 649 * -1;
+#X obj 660 339 tgl 12 0 empty empty A 3 6 0 10 -1 -262144 -260097 0
 1;
-#X obj 674 333 tgl 12 0 empty empty B 3 6 0 10 -1 -262144 -260097 0
+#X obj 673 339 tgl 12 0 empty empty B 3 6 0 10 -1 -262144 -260097 0
 1;
-#X obj 687 333 tgl 12 0 empty empty a' 2 6 0 10 -1 -262144 -260097
+#X obj 686 339 tgl 12 0 empty empty a' 2 6 0 10 -1 -262144 -260097
 0 1;
-#X obj 700 333 tgl 12 0 empty empty b' 2 6 0 10 -1 -262144 -260097
+#X obj 699 339 tgl 12 0 empty empty b' 2 6 0 10 -1 -262144 -260097
 0 1;
-#X obj 769 333 tgl 12 0 empty empty A 3 6 0 10 -1 -262144 -260097 0
+#X obj 768 339 tgl 12 0 empty empty A 3 6 0 10 -1 -262144 -260097 0
 1;
-#X obj 780 333 tgl 12 0 empty empty B 3 6 0 10 -1 -262144 -260097 0
+#X obj 779 339 tgl 12 0 empty empty B 3 6 0 10 -1 -262144 -260097 0
 1;
-#X obj 793 333 tgl 12 0 empty empty a' 2 6 0 10 -1 -262144 -260097
+#X obj 792 339 tgl 12 0 empty empty a' 2 6 0 10 -1 -262144 -260097
 0 1;
-#X obj 806 333 tgl 12 0 empty empty b' 2 6 0 10 -1 -262144 -260097
+#X obj 805 339 tgl 12 0 empty empty b' 2 6 0 10 -1 -262144 -260097
 0 1;
-#X obj 631 390 spigot-toggle_orange;
-#X obj 631 367 spigot-toggle_vert;
-#X obj 631 343 spigot-toggle_red;
-#X obj 628 444 * 1;
-#X obj 597 391 spigot-toggle_orange;
-#X obj 597 367 spigot-toggle_vert;
-#X obj 596 343 spigot-toggle_red;
-#X obj 597 444 * 1;
-#X obj 632 293 r fll1;
-#X obj 630 267 r fll0;
-#X obj 631 414 spigot-toggle_orange;
-#X obj 598 413 spigot-toggle_orange;
-#X obj 631 224 r A;
-#X obj 631 248 r B;
-#X obj 668 434 - 1;
-#X obj 670 458 * -1;
-#X obj 713 333 tgl 12 0 empty empty A 3 6 0 10 -1 -262144 -191407 0
+#X obj 630 396 spigot-toggle_orange;
+#X obj 630 373 spigot-toggle_vert;
+#X obj 630 349 spigot-toggle_red;
+#X obj 627 450 * 1;
+#X obj 596 397 spigot-toggle_orange;
+#X obj 596 373 spigot-toggle_vert;
+#X obj 595 349 spigot-toggle_red;
+#X obj 596 450 * 1;
+#X obj 631 299 r fll1;
+#X obj 629 273 r fll0;
+#X obj 630 420 spigot-toggle_orange;
+#X obj 597 419 spigot-toggle_orange;
+#X obj 630 230 r A;
+#X obj 630 254 r B;
+#X obj 667 440 - 1;
+#X obj 669 464 * -1;
+#X obj 712 339 tgl 12 0 empty empty A 3 6 0 10 -1 -262144 -191407 0
 1;
-#X obj 725 333 tgl 12 0 empty empty B 3 6 0 10 -1 -262144 -191407 0
+#X obj 724 339 tgl 12 0 empty empty B 3 6 0 10 -1 -262144 -191407 0
 1;
-#X obj 738 333 tgl 12 0 empty empty a' 2 6 0 10 -1 -262144 -191407
+#X obj 737 339 tgl 12 0 empty empty a' 2 6 0 10 -1 -262144 -191407
 0 1;
-#X obj 751 333 tgl 12 0 empty empty b' 2 6 0 10 -1 -262144 -191407
+#X obj 750 339 tgl 12 0 empty empty b' 2 6 0 10 -1 -262144 -191407
 0 1;
-#X obj 819 333 tgl 12 0 empty empty A 3 6 0 10 -1 -262144 -191407 0
+#X obj 818 339 tgl 12 0 empty empty A 3 6 0 10 -1 -262144 -191407 0
 1;
-#X obj 832 333 tgl 12 0 empty empty B 3 6 0 10 -1 -262144 -191407 0
+#X obj 831 339 tgl 12 0 empty empty B 3 6 0 10 -1 -262144 -191407 0
 1;
-#X obj 845 333 tgl 12 0 empty empty a' 2 6 0 10 -1 -262144 -191407
+#X obj 844 339 tgl 12 0 empty empty a' 2 6 0 10 -1 -262144 -191407
 0 1;
-#X obj 858 333 tgl 12 0 empty empty b' 2 6 0 10 -1 -262144 -191407
+#X obj 857 339 tgl 12 0 empty empty b' 2 6 0 10 -1 -262144 -191407
 0 1;
-#X floatatom -419 -969 12 0 900 0 - - -;
-#X floatatom 670 664 5 0 0 0 - - -;
-#X floatatom 426 -858 12 0 0 0 f.r - -;
-#X obj 368 -598 * 1;
-#X obj -445 -560 + 0;
-#X obj -226 -1103 / 44103;
-#X floatatom 466 -890 4 0 0 0 f.r - -;
-#X obj 462 -913 / 0.6;
-#X obj 411 -951 + 2;
-#X obj 364 -929 metro 44;
-#X obj 763 333 cnv 7 7 13 empty empty empty 2 10 1 10 -1 -260097 0
+#X floatatom 669 670 5 0 0 0 - - -;
+#X obj 762 339 cnv 7 7 13 empty empty empty 2 10 1 10 -1 -260097 0
 ;
-#X msg 50 23 color \$1;
-#X floatatom 52 -3 5 0 0 0 - - -;
-#X obj 54 -52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X msg 49 29 color \$1;
+#X floatatom 51 3 5 0 0 0 - - -;
+#X obj 53 -46 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 54 -27 44;
-#X obj 259 75 nbx 6 17 -1e+37 1e+37 0 0 empty empty empty 0 20 0 10
--260818 -1 -262144 40 256;
-#X obj 114 101 cnv 13 198 18 empty empty empty 22 10 1 8 -1 -260097
-0;
-#X obj 403 100 cnv 3 8 75 empty empty empty 12 12 0 14 -1 -66577 0
+#X msg 53 -21 44;
+#X obj 134 -44 / 127;
+#X obj 190 -44 / 127;
+#X obj 135 -65 ctlin 3;
+#X obj 193 -65 ctlin 7;
+#X obj 424 107 cnv 3 10 75 empty empty empty 12 12 0 14 -1 -66577 0
 ;
-#X floatatom 711 -92 5 0 0 0 - - -;
-#X obj 711 -135 ctlin;
-#X floatatom 754 -99 5 0 0 0 - - -;
-#X obj 142 -127 / 127;
-#X obj 194 -109 / 127;
-#X obj 143 -165 ctlin 3;
-#X obj 197 -136 ctlin 7;
-#X obj 311 100 cnv 3 10 75 empty empty empty 12 12 0 14 -1 -66577 0
-;
-#X obj 100 102 tgl 15 0 empty empty empty 1 6 0 23 -260097 -1 -1 0
-1;
-#X obj 1098 39 ctlin 8;
-#X obj 1239 39 ctlin 12;
-#X obj 958 38 ctlin 4;
-#X obj 1323 42 ctlin 16;
-#X obj 1239 79 / 127;
-#X obj 1090 79 / 127;
-#X obj 939 79 / 127;
-#X obj -11 26 r lo;
-#X msg -16 166 1;
-#X msg -17 137 0;
-#X obj 225 159 hsl 84 16 0 6 0 0 empty empty shape_out 35 8 1 10 -16662
+#X obj 1097 45 ctlin 8;
+#X obj 1238 45 ctlin 12;
+#X obj 957 44 ctlin 4;
+#X obj 1322 48 ctlin 16;
+#X obj 1238 85 / 127;
+#X obj 1089 85 / 127;
+#X obj 938 85 / 127;
+#X obj -12 32 r lo;
+#X msg -17 172 1;
+#X msg -18 143 0;
+#X obj 339 151 hsl 84 16 0 6 0 0 empty empty shape_out 35 8 1 10 -16662
 -260097 -260097 1383 1;
-#X obj 104 159 hsl 84 16 0 6 0 0 empty empty shape_in 5 8 1 10 -16662
--260097 -260097 1383 1;
-#X obj 104 117 hsl 100 24 0 1 0 0 empty empty fade_in 4 12 1 12 -16662
--260097 -260097 2183 1;
-#X obj 210 117 hsl 100 24 1 0 0 0 empty empty fade_out 50 12 1 12 -16662
--260097 -260097 8341 1;
-#X floatatom 332 280 5 0 0 0 in - -;
-#X floatatom 391 283 5 0 0 0 out - -;
-#X floatatom 105 279 5 0 0 0 pow_in - -;
-#X floatatom 205 281 5 0 0 0 pow_out - -;
-#X obj 191 159 bng 16 250 50 0 empty empty empty 4 8 1 13 -12306 -260097
+#X obj 217 151 hsl 84 16 0 6 0 0 empty empty shape_in 5 8 1 10 -16662
+-260097 -260097 2783 1;
+#X obj 217 107 hsl 100 22 0 0.2 0 0 empty empty fade_in 4 12 1 12 -16662
+-260097 -260097 2572 1;
+#X obj 323 107 hsl 100 22 0.2 0 0 0 empty empty fade_out 50 12 1 12
+-16662 -260097 -260097 6743 1;
+#X floatatom 248 287 5 0 0 0 in - -;
+#X floatatom 283 305 5 0 0 0 out - -;
+#X floatatom 104 285 5 0 0 0 pow_in - -;
+#X floatatom 177 286 5 0 0 0 pow_out - -;
+#X obj 304 151 bng 16 250 50 0 empty empty empty 4 8 1 13 -12306 -260097
 -1;
-#X obj 207 159 bng 16 250 50 0 empty empty empty 4 8 1 13 -12306 -260097
+#X obj 320 151 bng 16 250 50 0 empty empty empty 4 8 1 13 -12306 -260097
 -1;
-#X obj 103 142 hsl 206 16 0.001 1 0 0 empty empty sustain 85 9 1 12
--16662 -260097 -260097 14522 1;
-#X obj 72 391 env_inout0Z;
-#X msg -62 112 0.1;
-#X floatatom 24 276 5 0 0 0 - - -;
-#X obj 517 100 cnv 3 5 75 empty empty empty 12 12 0 14 -1 -66577 0
+#X obj 217 130 hsl 206 20 0.001 1.5 0 0 empty empty sustain 85 9 1
+12 -16662 -260097 -260097 12155 1;
+#X obj 71 397 env_inout0Z;
+#X msg -63 118 0.1;
+#X floatatom 23 282 5 0 0 0 - - -;
+#X obj 518 108 cnv 3 87 75 empty empty empty 12 12 0 14 -1 -66577 0
 ;
-#X obj 270 -72 * 1;
-#X floatatom 271 -42 5 0 0 0 - - -;
-#X obj 271 -106 / 127;
-#X obj 274 -133 ctlin 11;
-#X obj 269 -18 - 1;
-#X obj 268 3 * -1;
-#X msg -14 85 0.1;
-#X floatatom 388 333 5 0 0 0 out - -;
-#X obj 1323 80 / 127;
-#X obj 385 253 s opa1;
-#X obj 35 527 *~;
-#X obj 383 102 vsl 20 70 0 1 0 0 empty empty db 2 9 0 13 -16662 -260097
--260097 4509 0;
-#X msg -60 83 0.7;
-#X msg 435 58 0.5;
-#X obj 374 100 cnv 3 8 75 empty empty empty 12 12 0 14 -1 -66577 0
+#X obj 267 -22 * 1;
+#X floatatom 268 1 5 0 0 0 - - -;
+#X obj 267 -44 / 127;
+#X obj 270 -65 ctlin 11;
+#X obj 266 20 - 1;
+#X obj 265 43 * -1;
+#X msg -15 91 0.1;
+#X obj 1322 86 / 127;
+#X obj 329 526 *~;
+#X obj 498 110 vsl 20 70 0 1 0 0 empty empty db 2 9 0 13 -16662 -260097
+-260097 4238 0;
+#X msg -61 89 0.7;
+#X msg 434 64 0.5;
+#X obj 489 108 cnv 3 8 75 empty empty empty 12 12 0 14 -1 -66577 0
 ;
-#X obj 330 -856 * 44100;
-#X msg 171 189 1;
-#X msg 235 190 1;
-#X connect 0 0 12 1;
-#X connect 1 0 12 3;
-#X connect 2 0 12 2;
-#X connect 3 0 12 0;
-#X connect 4 0 3 1;
-#X connect 5 0 3 2;
-#X connect 6 0 3 4;
-#X connect 6 0 246 0;
-#X connect 7 0 3 3;
-#X connect 7 0 246 0;
-#X connect 8 0 2 0;
-#X connect 9 0 1 0;
-#X connect 10 0 7 0;
-#X connect 11 0 0 0;
-#X connect 12 0 247 0;
-#X connect 15 0 40 0;
-#X connect 16 0 48 0;
-#X connect 17 0 41 0;
-#X connect 18 0 19 0;
-#X connect 19 0 17 0;
-#X connect 20 0 30 0;
-#X connect 22 0 18 1;
-#X connect 23 0 19 1;
-#X connect 25 0 67 0;
+#X msg -183 162 1;
+#X msg -119 163 1;
+#X obj -265 -73 r pitchA;
+#N canvas 275 50 823 699 hanning 0;
+#X obj 36 24 r \$0-window-size;
+#N canvas 0 50 450 300 (subpatch) 0;
+#X array \$0-hann 1024 float 1;
+#A 0 0 9.41753e-06 3.76701e-05 8.4728e-05 0.000150621 0.000235319 0.000338852
+0.000461191 0.000602335 0.000762284 0.000941008 0.00113854 0.00135487
+0.00158995 0.00184381 0.00211641 0.00240776 0.00271782 0.00304663 0.00339416
+0.00376037 0.00414526 0.00454885 0.00497106 0.00541192 0.00587142 0.0063495
+0.00684613 0.00736138 0.00789517 0.00844747 0.0090183 0.00960758 0.0102154
+0.0108416 0.0114862 0.0121492 0.0128306 0.0135303 0.0142483 0.0149846
+0.0157392 0.0165121 0.0173031 0.0181123 0.0189396 0.0197851 0.0206486
+0.0215302 0.0224297 0.0233473 0.0242828 0.0252362 0.0262076 0.0271967
+0.0282037 0.0292284 0.0302708 0.0313309 0.0324086 0.033504 0.0346169
+0.0357474 0.0368953 0.0380607 0.0392434 0.0404435 0.0416609 0.0428956
+0.0441475 0.0454164 0.0467026 0.0480058 0.049326 0.0506632 0.0520174
+0.0533883 0.0547761 0.0561807 0.057602 0.0590398 0.0604944 0.0619654
+0.063453 0.064957 0.0664774 0.0680141 0.0695671 0.0711362 0.0727216
+0.074323 0.0759403 0.0775737 0.0792231 0.0808882 0.0825691 0.0842658
+0.0859781 0.0877059 0.0894493 0.0912082 0.0929825 0.094772 0.0965768
+0.0983968 0.100232 0.102082 0.103947 0.105827 0.107722 0.109632 0.111556
+0.113495 0.115449 0.117417 0.119399 0.121396 0.123407 0.125432 0.127472
+0.129525 0.131592 0.133674 0.135768 0.137877 0.139999 0.142135 0.144285
+0.146447 0.148623 0.150813 0.153015 0.15523 0.157459 0.1597 0.161954
+0.164221 0.166501 0.168793 0.171097 0.173414 0.175744 0.178085 0.180439
+0.182804 0.185182 0.187571 0.189972 0.192385 0.194809 0.197245 0.199692
+0.202151 0.204621 0.207102 0.209594 0.212097 0.21461 0.217135 0.21967
+0.222216 0.224772 0.227338 0.229915 0.232502 0.235099 0.237706 0.240323
+0.242949 0.245586 0.248232 0.250887 0.253552 0.256226 0.258909 0.261601
+0.264302 0.267012 0.269731 0.272459 0.275195 0.27794 0.280693 0.283454
+0.286223 0.289001 0.291786 0.294579 0.29738 0.300189 0.303005 0.305828
+0.308659 0.311497 0.314342 0.317194 0.320053 0.322919 0.325791 0.32867
+0.331556 0.334448 0.337346 0.34025 0.34316 0.346076 0.348998 0.351925
+0.354858 0.357797 0.360741 0.36369 0.366644 0.369604 0.372568 0.375537
+0.378511 0.381489 0.384472 0.387459 0.39045 0.393446 0.396445 0.399448
+0.402456 0.405466 0.408481 0.411499 0.41452 0.417544 0.420572 0.423602
+0.426635 0.429672 0.43271 0.435752 0.438795 0.441841 0.44489 0.44794
+0.450992 0.454046 0.457102 0.460159 0.463218 0.466279 0.46934 0.472403
+0.475467 0.478532 0.481597 0.484663 0.48773 0.490797 0.493865 0.496933
+0.500001 0.503069 0.506136 0.509204 0.512271 0.515338 0.518404 0.52147
+0.524534 0.527598 0.530661 0.533723 0.536783 0.539842 0.542899 0.545955
+0.549009 0.552061 0.555112 0.55816 0.561206 0.56425 0.567291 0.57033
+0.573366 0.576399 0.57943 0.582457 0.585482 0.588503 0.59152 0.594535
+0.597546 0.600553 0.603556 0.606556 0.609551 0.612543 0.61553 0.618512
+0.621491 0.624464 0.627433 0.630398 0.633357 0.636311 0.63926 0.642204
+0.645143 0.648076 0.651003 0.653925 0.656841 0.659751 0.662656 0.665554
+0.668445 0.671331 0.67421 0.677082 0.679948 0.682807 0.685659 0.688504
+0.691342 0.694173 0.696996 0.699813 0.702621 0.705422 0.708215 0.711001
+0.713778 0.716547 0.719308 0.722061 0.724806 0.727542 0.73027 0.732989
+0.735699 0.7384 0.741092 0.743775 0.746449 0.749114 0.75177 0.754415
+0.757052 0.759678 0.762295 0.764902 0.767499 0.770086 0.772663 0.775229
+0.777785 0.780331 0.782866 0.785391 0.787904 0.790407 0.792899 0.79538
+0.79785 0.800309 0.802756 0.805192 0.807616 0.810029 0.81243 0.814819
+0.817197 0.819562 0.821916 0.824257 0.826587 0.828904 0.831208 0.8335
+0.83578 0.838047 0.840301 0.842542 0.844771 0.846986 0.849188 0.851378
+0.853554 0.855716 0.857866 0.860001 0.862124 0.864232 0.866327 0.868408
+0.870476 0.872529 0.874568 0.876594 0.878605 0.880601 0.882584 0.884552
+0.886505 0.888444 0.890369 0.892278 0.894173 0.896053 0.897919 0.899769
+0.901604 0.903424 0.905229 0.907018 0.908793 0.910551 0.912295 0.914023
+0.915735 0.917432 0.919112 0.920778 0.922427 0.92406 0.925678 0.927279
+0.928864 0.930434 0.931987 0.933523 0.935044 0.936548 0.938035 0.939506
+0.940961 0.942399 0.94382 0.945224 0.946612 0.947983 0.949337 0.950675
+0.951995 0.953298 0.954584 0.955853 0.957105 0.95834 0.959557 0.960757
+0.96194 0.963105 0.964253 0.965384 0.966496 0.967592 0.96867 0.96973
+0.970772 0.971797 0.972804 0.973793 0.974764 0.975718 0.976653 0.977571
+0.97847 0.979352 0.980215 0.981061 0.981888 0.982697 0.983488 0.984261
+0.985016 0.985752 0.98647 0.98717 0.987851 0.988514 0.989159 0.989785
+0.990393 0.990982 0.991553 0.992105 0.992639 0.993154 0.993651 0.994129
+0.994588 0.995029 0.995451 0.995855 0.99624 0.996606 0.996953 0.997282
+0.997592 0.997884 0.998156 0.99841 0.998645 0.998862 0.999059 0.999238
+0.999398 0.999539 0.999661 0.999765 0.999849 0.999915 0.999962 0.999991
+1 0.999991 0.999962 0.999915 0.999849 0.999765 0.999661 0.999539 0.999398
+0.999238 0.999059 0.998862 0.998645 0.99841 0.998156 0.997884 0.997592
+0.997282 0.996953 0.996606 0.99624 0.995855 0.995451 0.995029 0.994588
+0.994129 0.993651 0.993154 0.992639 0.992105 0.991553 0.990982 0.990393
+0.989785 0.989159 0.988514 0.987851 0.98717 0.98647 0.985752 0.985016
+0.984261 0.983488 0.982697 0.981888 0.981061 0.980215 0.979352 0.97847
+0.977571 0.976653 0.975718 0.974764 0.973793 0.972804 0.971797 0.970772
+0.96973 0.96867 0.967592 0.966496 0.965384 0.964253 0.963105 0.96194
+0.960757 0.959557 0.95834 0.957105 0.955853 0.954584 0.953298 0.951995
+0.950675 0.949337 0.947983 0.946612 0.945224 0.94382 0.942399 0.940961
+0.939506 0.938035 0.936548 0.935044 0.933523 0.931987 0.930434 0.928864
+0.927279 0.925678 0.92406 0.922427 0.920778 0.919112 0.917432 0.915735
+0.914023 0.912295 0.910551 0.908793 0.907018 0.905229 0.903424 0.901604
+0.899769 0.897919 0.896053 0.894173 0.892278 0.890369 0.888444 0.886505
+0.884552 0.882584 0.880601 0.878605 0.876594 0.874568 0.872529 0.870476
+0.868408 0.866327 0.864232 0.862124 0.860001 0.857866 0.855716 0.853554
+0.851378 0.849188 0.846986 0.844771 0.842542 0.840301 0.838047 0.83578
+0.8335 0.831208 0.828904 0.826587 0.824257 0.821916 0.819562 0.817197
+0.814819 0.81243 0.810029 0.807616 0.805192 0.802756 0.800309 0.79785
+0.79538 0.792899 0.790407 0.787904 0.785391 0.782866 0.780331 0.777785
+0.775229 0.772663 0.770086 0.767499 0.764902 0.762295 0.759678 0.757052
+0.754415 0.75177 0.749114 0.746449 0.743775 0.741092 0.7384 0.735699
+0.732989 0.73027 0.727542 0.724806 0.722061 0.719308 0.716547 0.713778
+0.711001 0.708215 0.705422 0.702621 0.699813 0.696996 0.694173 0.691342
+0.688504 0.685659 0.682807 0.679948 0.677082 0.67421 0.671331 0.668445
+0.665554 0.662656 0.659751 0.656841 0.653925 0.651003 0.648076 0.645143
+0.642204 0.63926 0.636311 0.633357 0.630398 0.627433 0.624464 0.621491
+0.618512 0.61553 0.612543 0.609551 0.606556 0.603556 0.600553 0.597546
+0.594535 0.59152 0.588503 0.585482 0.582457 0.57943 0.576399 0.573366
+0.57033 0.567291 0.56425 0.561206 0.55816 0.555112 0.552061 0.549009
+0.545955 0.542899 0.539842 0.536783 0.533723 0.530661 0.527598 0.524534
+0.52147 0.518404 0.515338 0.512271 0.509204 0.506136 0.503069 0.500001
+0.496933 0.493865 0.490797 0.48773 0.484663 0.481597 0.478532 0.475467
+0.472403 0.46934 0.466279 0.463218 0.460159 0.457102 0.454046 0.450992
+0.44794 0.44489 0.441841 0.438795 0.435752 0.43271 0.429672 0.426635
+0.423602 0.420572 0.417544 0.41452 0.411499 0.408481 0.405466 0.402456
+0.399448 0.396445 0.393446 0.39045 0.387459 0.384472 0.381489 0.378511
+0.375537 0.372568 0.369604 0.366644 0.36369 0.360741 0.357797 0.354858
+0.351925 0.348998 0.346076 0.34316 0.34025 0.337346 0.334448 0.331556
+0.32867 0.325791 0.322919 0.320053 0.317194 0.314342 0.311497 0.308659
+0.305828 0.303005 0.300189 0.29738 0.294579 0.291786 0.289001 0.286223
+0.283454 0.280693 0.27794 0.275195 0.272459 0.269731 0.267012 0.264302
+0.261601 0.258909 0.256226 0.253552 0.250887 0.248232 0.245586 0.242949
+0.240323 0.237706 0.235099 0.232502 0.229915 0.227338 0.224772 0.222216
+0.21967 0.217135 0.21461 0.212097 0.209594 0.207102 0.204621 0.202151
+0.199692 0.197245 0.194809 0.192385 0.189972 0.187571 0.185182 0.182804
+0.180439 0.178085 0.175744 0.173414 0.171097 0.168793 0.166501 0.164221
+0.161954 0.1597 0.157459 0.15523 0.153015 0.150813 0.148623 0.146447
+0.144285 0.142135 0.139999 0.137877 0.135768 0.133674 0.131592 0.129525
+0.127472 0.125432 0.123407 0.121396 0.119399 0.117417 0.115449 0.113495
+0.111556 0.109632 0.107722 0.105827 0.103947 0.102082 0.100232 0.0983968
+0.0965768 0.094772 0.0929825 0.0912082 0.0894493 0.0877059 0.0859781
+0.0842658 0.0825691 0.0808882 0.0792231 0.0775737 0.0759403 0.074323
+0.0727216 0.0711362 0.0695671 0.0680141 0.0664774 0.064957 0.063453
+0.0619654 0.0604944 0.0590398 0.057602 0.0561807 0.0547761 0.0533883
+0.0520174 0.0506632 0.049326 0.0480058 0.0467026 0.0454164 0.0441475
+0.0428956 0.0416609 0.0404435 0.0392434 0.0380607 0.0368953 0.0357474
+0.0346169 0.033504 0.0324086 0.0313309 0.0302708 0.0292284 0.0282037
+0.0271967 0.0262076 0.0252362 0.0242828 0.0233473 0.0224297 0.0215302
+0.0206486 0.0197851 0.0189396 0.0181123 0.0173031 0.0165121 0.0157392
+0.0149846 0.0142483 0.0135303 0.0128306 0.0121492 0.0114862 0.0108416
+0.0102154 0.00960758 0.0090183 0.00844747 0.00789517 0.00736138 0.00684613
+0.0063495 0.00587142;
+#A 1000 0.00541192 0.00497106 0.00454885 0.00414526 0.00376037 0.00339416
+0.00304663 0.00271782 0.00240776 0.00211641 0.00184381 0.00158995 0.00135487
+0.00113854 0.000941008 0.000762284 0.000602335 0.000461191 0.000338852
+0.000235319 0.000150621 8.4728e-05 3.76701e-05 9.41753e-06;
+#X coords 0 1 1023 0 300 100 1 0 0;
+#X restore 39 219 graph;
+#X obj 35 110 tabwrite \$0-hann;
+#N canvas 774 181 450 300 make-hann 0;
+#X obj 59 330 outlet;
+#X obj 112 329 outlet;
+#X obj 65 31 inlet;
+#X obj 64 195 t f f;
+#X obj 59 301 expr 0.5+0.5*cos($f1);
+#X obj 64 251 - 1;
+#X obj 64 120 until;
+#X obj 64 173 f;
+#X obj 93 174 + 1;
+#X msg 82 148 0;
+#X obj 138 214 / 2;
+#X obj 64 231 /;
+#X obj 64 64 t f b f;
+#X obj 59 281 * 3.14159;
+#X connect 2 0 12 0;
+#X connect 3 0 11 0;
+#X connect 3 1 1 0;
+#X connect 4 0 0 0;
+#X connect 5 0 13 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 0 3 0;
+#X connect 8 0 7 1;
+#X connect 9 0 7 1;
+#X connect 10 0 11 1;
+#X connect 11 0 5 0;
+#X connect 12 0 6 0;
+#X connect 12 1 9 0;
+#X connect 12 2 10 0;
+#X connect 13 0 4 0;
+#X restore 35 82 pd make-hann;
+#X obj 158 93 s \$0-hann;
+#X msg 158 70 resize \$1;
+#X obj 35 53 t f f;
+#X connect 0 0 6 0;
+#X connect 3 0 2 0;
+#X connect 3 1 2 1;
+#X connect 5 0 4 0;
+#X connect 6 0 3 0;
+#X connect 6 1 5 0;
+#X restore -388 72 pd hanning;
+#X obj 27 -154 inlet~ transpo;
+#N canvas 550 66 717 699 fft 0;
+#X obj 63 538 *~;
+#X obj 18 532 *~;
+#X obj 18 554 -~;
+#X obj 231 535 *~;
+#X obj 177 536 *~;
+#X obj 197 561 +~;
+#X obj 121 194 *~;
+#X obj 89 197 *~;
+#X obj 50 193 *~;
+#X obj 19 193 *~;
+#X obj 19 218 +~;
+#X obj 64 386 *~;
+#X obj 20 649 *~;
+#X obj 246 468 rfft~;
+#X obj 108 161 rfft~;
+#X obj 19 591 rifft~;
+#X obj 21 673 outlet~;
+#X obj 34 386 *~;
+#X obj 34 408 +~;
+#X obj 124 218 -~;
+#X obj 19 480 *~;
+#X obj 63 476 *~;
+#X obj 519 150 block~;
+#X obj 19 349 +~ 1e-15;
+#X obj 19 625 *~;
+#X obj 52 625 tabreceive~ \$0-hann;
+#X obj 149 60 *~;
+#X obj 117 60 *~;
+#X obj 117 80 +~;
+#X obj 117 99 +~ 1e-20;
+#X obj 78 148 *~;
+#X obj 19 147 *~;
+#X obj 48 242 lrshift~ 1;
+#X obj 34 261 lrshift~ -1;
+#X obj 157 241 lrshift~ 1;
+#X obj 142 260 lrshift~ -1;
+#X obj 19 312 +~;
+#X obj 125 318 +~;
+#N canvas 723 71 577 694 read-windows 0;
+#X obj 20 542 outlet~;
+#X obj 129 547 outlet~;
+#X obj 128 443 vd~ \$0-input;
+#X obj 168 484 tabreceive~ \$0-hann;
+#X obj 20 511 *~;
+#X obj 128 519 *~;
+#X obj 247 91 bang~;
+#X obj 247 127 snapshot~;
+#X obj 310 91 inlet~ transpo;
+#N canvas 779 315 280 168 cents 0;
+#X obj 52 57 inlet;
+#X obj 52 168 outlet;
+#X obj 52 115 / 100;
+#X obj 52 88 i;
+#X obj 52 142 expr pow(2 \, $f1/12);
+#X connect 0 0 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X restore 247 171 pd cents;
+#X obj 276 149 r \$0-transpo;
+#X obj 247 148 +;
+#N canvas 698 347 525 300 del 0;
+#X obj 181 70 inlet~;
+#X obj 182 140 outlet~;
+#X obj 288 28 r \$0-window-size;
+#X msg 328 167 set \$1;
+#X obj 328 187 block~ 256;
+#X obj 328 115 / 4;
+#X obj 182 119 delread~ \$0-back;
+#X obj 381 71 t b f;
+#X floatatom 343 138 5 0 0 0 - - -;
+#X obj 381 50 r \$0-overlap;
+#X obj 181 91 delwrite~ \$0-back 500;
+#X connect 0 0 10 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 5 0 3 0;
+#X connect 5 0 8 0;
+#X connect 6 0 1 0;
+#X connect 7 0 5 0;
+#X connect 7 1 5 1;
+#X connect 9 0 7 0;
+#X restore 21 474 pd del;
+#X obj 174 351 bang~;
+#X obj 126 371 phasor~;
+#X msg 174 370 0;
+#X obj 128 400 *~;
+#X obj 291 288 samplerate~;
+#X obj 262 269 t f b;
+#X obj 262 248 r \$0-window-size;
+#X obj 66 271 samplerate~;
+#X obj 66 292 /;
+#X obj 66 229 r \$0-window-size;
+#X obj 66 250 t b f;
+#X obj 247 358 *;
+#X obj 291 309 / 1000;
+#X obj 262 331 / 44.1;
+#X obj 247 379 / 4;
+#X obj 66 314 * 4;
+#X obj 247 401 abs;
+#X obj 126 346 * 1;
+#X obj 186 248 sel 0;
+#X obj 185 227 < 0;
+#X obj 196 274 f -1;
+#X obj 196 295 t b f;
+#X obj 318 348 t b f;
+#X obj 318 327 r \$0-overlap;
+#X obj 107 310 t b f;
+#X obj 107 289 r \$0-overlap;
+#X obj 247 191 - 1;
+#X connect 2 0 12 0;
+#X connect 2 0 5 0;
+#X connect 3 0 5 1;
+#X connect 3 0 4 1;
+#X connect 4 0 0 0;
+#X connect 5 0 1 0;
+#X connect 6 0 7 0;
+#X connect 7 0 11 0;
+#X connect 8 0 7 0;
+#X connect 9 0 39 0;
+#X connect 10 0 11 1;
+#X connect 11 0 9 0;
+#X connect 11 0 32 0;
+#X connect 12 0 4 0;
+#X connect 13 0 15 0;
+#X connect 14 0 16 0;
+#X connect 15 0 14 1;
+#X connect 16 0 2 0;
+#X connect 17 0 25 0;
+#X connect 18 0 26 0;
+#X connect 18 1 17 0;
+#X connect 19 0 18 0;
+#X connect 20 0 21 0;
+#X connect 21 0 28 0;
+#X connect 22 0 23 0;
+#X connect 23 0 20 0;
+#X connect 23 1 21 1;
+#X connect 24 0 27 0;
+#X connect 25 0 26 1;
+#X connect 26 0 24 1;
+#X connect 27 0 29 0;
+#X connect 28 0 30 0;
+#X connect 29 0 16 1;
+#X connect 30 0 14 0;
+#X connect 31 0 33 0;
+#X connect 31 1 34 0;
+#X connect 32 0 31 0;
+#X connect 33 0 34 0;
+#X connect 34 0 30 0;
+#X connect 34 1 30 1;
+#X connect 35 0 27 0;
+#X connect 35 1 27 1;
+#X connect 36 0 35 0;
+#X connect 37 0 28 0;
+#X connect 37 1 28 1;
+#X connect 38 0 37 0;
+#X connect 39 0 24 0;
+#X restore 330 76 pd read-windows;
+#X obj 198 607 tabsend~ \$0-prev-imag;
+#X obj 197 631 tabsend~ \$0-prev-real;
+#X obj 98 18 tabreceive~ \$0-prev-imag;
+#X obj 19 -2 tabreceive~ \$0-prev-real;
+#X obj 519 27 r \$0-window-size;
+#X obj 330 12 inlet~ transpo;
+#N canvas 0 50 511 389 normalize 0;
+#X obj 173 313 outlet;
+#X obj 159 208 / 4;
+#X msg 157 148 1;
+#X obj 173 230 *;
+#X obj 159 175 t f f;
+#X obj 157 123 t b f;
+#X obj 280 117 t b f;
+#X obj 173 282 / 1;
+#X obj 191 207 / 0.375;
+#X obj 280 96 r \$0-window-size;
+#X obj 157 100 r \$0-overlap;
+#X text 258 208 Hanning mean of squares;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 7 0;
+#X connect 4 0 1 0;
+#X connect 4 1 8 0;
+#X connect 5 0 2 0;
+#X connect 5 1 1 1;
+#X connect 6 0 2 0;
+#X connect 6 1 7 1;
+#X connect 7 0 0 0;
+#X connect 8 0 3 1;
+#X connect 9 0 6 0;
+#X connect 10 0 5 0;
+#X restore 53 649 pd normalize;
+#X obj 542 51 r \$0-overlap;
+#X obj 542 72 t b f;
+#X msg 519 125 set \$1 \$2;
+#X obj 519 99 pack 2048 4;
+#X obj 117 119 rsqrt~;
+#X obj 34 432 rsqrt~;
+#X obj 519 308 table \$0-prev-real 1024;
+#X obj 519 332 table \$0-prev-imag 1024;
+#X obj 525 187 r \$0-window-size;
+#X obj 525 208 / 2;
+#X msg 525 229 resize \$1;
+#X obj 558 250 s \$0-prev-real;
+#X obj 559 270 s \$0-prev-imag;
+#X obj 284 12 inlet~;
+#X connect 0 0 2 1;
+#X connect 1 0 2 0;
+#X connect 2 0 15 0;
+#X connect 2 0 40 0;
+#X connect 3 0 5 1;
+#X connect 4 0 5 0;
+#X connect 5 0 15 1;
+#X connect 5 0 39 0;
+#X connect 6 0 19 1;
+#X connect 7 0 19 0;
+#X connect 8 0 10 1;
+#X connect 9 0 10 0;
+#X connect 10 0 33 0;
+#X connect 10 0 32 0;
+#X connect 10 0 36 0;
+#X connect 11 0 18 1;
+#X connect 12 0 16 0;
+#X connect 13 0 1 1;
+#X connect 13 0 3 1;
+#X connect 13 1 0 1;
+#X connect 13 1 4 1;
+#X connect 14 0 9 1;
+#X connect 14 0 7 1;
+#X connect 14 1 6 1;
+#X connect 14 1 8 1;
+#X connect 15 0 24 0;
+#X connect 17 0 18 0;
+#X connect 18 0 51 0;
+#X connect 19 0 34 0;
+#X connect 19 0 35 0;
+#X connect 19 0 37 0;
+#X connect 20 0 1 0;
+#X connect 20 0 4 0;
+#X connect 21 0 0 0;
+#X connect 21 0 3 0;
+#X connect 23 0 17 1;
+#X connect 23 0 17 0;
+#X connect 23 0 20 0;
+#X connect 24 0 12 0;
+#X connect 25 0 24 1;
+#X connect 26 0 28 1;
+#X connect 27 0 28 0;
 #X connect 28 0 29 0;
-#X connect 29 0 67 0;
-#X connect 29 1 67 1;
-#X connect 30 0 31 0;
-#X connect 31 0 32 0;
-#X connect 32 0 107 1;
-#X connect 33 0 21 0;
-#X connect 33 0 36 0;
-#X connect 35 0 17 1;
-#X connect 36 0 37 0;
-#X connect 37 0 38 0;
-#X connect 39 0 122 0;
-#X connect 40 0 24 0;
+#X connect 29 0 50 0;
+#X connect 30 0 8 0;
+#X connect 30 0 7 0;
+#X connect 31 0 9 0;
+#X connect 31 0 6 0;
+#X connect 32 0 36 1;
+#X connect 33 0 36 1;
+#X connect 34 0 37 1;
+#X connect 35 0 37 1;
+#X connect 36 0 23 0;
+#X connect 37 0 11 0;
+#X connect 37 0 11 1;
+#X connect 37 0 21 0;
+#X connect 38 0 14 0;
+#X connect 38 1 13 0;
+#X connect 41 0 26 1;
+#X connect 41 0 26 0;
+#X connect 41 0 30 0;
+#X connect 42 0 27 1;
+#X connect 42 0 27 0;
+#X connect 42 0 31 0;
+#X connect 43 0 49 0;
+#X connect 44 0 38 0;
+#X connect 45 0 12 1;
+#X connect 46 0 47 0;
+#X connect 47 0 49 0;
+#X connect 47 1 49 1;
+#X connect 48 0 22 0;
+#X connect 49 0 48 0;
+#X connect 50 0 30 1;
+#X connect 50 0 31 1;
+#X connect 51 0 20 1;
+#X connect 51 0 21 1;
+#X connect 54 0 55 0;
+#X connect 55 0 56 0;
+#X connect 56 0 57 0;
+#X connect 56 0 58 0;
+#X restore -20 -154 pd fft;
+#X obj -375 -127 hsl 130 15 -1200 1200 0 0 \$0-gui \$0-guir Transposition(cents)
+3 8 2 10 -233017 -1 -1 1075 1;
+#X obj -202 -127 hsl 2 8 0 1 0 0 \$0-gui \$0-guir empty 3 8 2 10 -233017
+-228856 -1 0 1;
+#X obj -243 -127 nbx 5 15 -1e+09 1e+12 0 0 \$0-transpo \$0-transpor
+empty 0 -8 2 10 -228856 -1 -1 -1000 256;
+#X msg -382 -61 set \$1;
+#X msg -427 -122 0;
+#X obj -382 -86 i;
+#X obj -427 -143 loadbang;
+#N canvas 3 57 450 300 stuff 0;
+#X obj 135 55 loadbang;
+#X obj 136 195 pack \$0 1024 4;
+#X obj 135 77 t b b b;
+#X obj 178 107 f \$1;
+#X obj 221 107 f \$2;
+#X obj 178 129 sel 0;
+#X obj 229 131 sel 0;
+#X msg 136 218 \; \$1-overlap \$3 \; \$1-window-size \$2 \;;
+#N canvas 3 57 617 375 blocksize 0;
+#X obj 184 76 t f f;
+#X obj 184 212 spigot;
+#X text 249 141 prevent setting blocksizes that are not a power of
+2;
+#X msg 244 244 blocksize is not a power of 2;
+#X obj 184 294 outlet;
+#X obj 244 222 sel 0;
+#X obj 184 54 inlet;
+#X obj 217 122 expr (($f1-1) & $f1) == 0;
+#X obj 244 265 print pp.fft-pitchshift-st~;
+#X connect 0 0 1 0;
+#X connect 0 1 7 0;
+#X connect 1 0 4 0;
+#X connect 3 0 8 0;
+#X connect 5 0 3 0;
+#X connect 6 0 0 0;
+#X connect 7 0 1 1;
+#X connect 7 0 5 0;
+#X restore 175 156 pd blocksize;
+#X connect 0 0 2 0;
+#X connect 1 0 7 0;
+#X connect 2 0 1 0;
+#X connect 2 1 3 0;
+#X connect 2 2 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 1 8 0;
+#X connect 6 1 1 2;
+#X connect 8 0 1 1;
+#X restore -388 51 pd stuff;
+#X obj -382 -36 s \$0-transpo;
+#X msg -243 -104 set \$1;
+#N canvas 144 395 450 300 delwrite 0;
+#X obj 170 41 inlet~;
+#X obj 170 183 outlet~;
+#X obj 169 143 delwrite~ \$0-input 3000;
+#X connect 0 0 2 0;
+#X restore -20 -180 pd delwrite;
+#N canvas 3 54 450 460 outlet-message 0;
+#X obj 165 332 list trim;
+#X msg 85 330 addcomma;
+#X msg 64 176 set;
+#X obj 165 309 list prepend add2;
+#X obj 165 417 outlet;
+#X obj 96 119 pack f f f;
+#X obj 158 32 t b f;
+#X obj 262 28 t b f;
+#X obj 158 4 r \$0-window-size;
+#X obj 264 5 r \$0-overlap;
+#X obj 79 4 r \$0-transpo;
+#X msg 115 186 transposition \$1 \, blocksize \$2 \, overlap \$3;
+#X obj 96 146 t b a b;
+#X obj 96 96 f;
+#X obj 79 26 t b f;
+#X obj 96 72 del 0;
+#X obj 115 218 t b a a;
+#N canvas 497 319 297 264 save 0;
+#X obj 48 16 inlet;
+#N canvas 690 259 481 384 collect 0;
+#X obj 47 60 inlet;
+#X obj 47 274 outlet;
+#X obj 98 180 list;
+#X obj 166 181 t l;
+#X obj 47 225 list;
+#X obj 98 139 list append |;
+#X obj 47 126 del 0;
+#X obj 47 82 t b a;
+#X text 119 75 hacky thing... replaycing " \, " with "|";
+#X connect 0 0 7 0;
+#X connect 2 0 3 0;
+#X connect 2 0 4 1;
+#X connect 3 0 2 1;
+#X connect 4 0 1 0;
+#X connect 5 0 2 0;
+#X connect 6 0 2 1;
+#X connect 6 0 4 0;
+#X connect 7 0 6 0;
+#X connect 7 1 5 0;
+#X restore 48 38 pd collect;
+#X obj 117 16 r \$0-save;
+#X obj 27 130 text set \$0-savestates;
+#X obj 27 104 list;
+#X obj 117 62 t b f;
+#X obj 117 39 clip 0 20;
+#X connect 0 0 1 0;
+#X connect 1 0 4 1;
+#X connect 2 0 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
+#X connect 5 1 3 1;
+#X connect 6 0 5 0;
+#X restore 158 245 pd save;
+#X connect 0 0 4 0;
+#X connect 1 0 4 0;
+#X connect 2 0 4 0;
+#X connect 3 0 0 0;
+#X connect 5 0 12 0;
+#X connect 6 0 15 0;
+#X connect 6 1 5 1;
+#X connect 7 0 15 0;
+#X connect 7 1 5 2;
+#X connect 8 0 6 0;
+#X connect 9 0 7 0;
+#X connect 10 0 14 0;
+#X connect 11 0 16 0;
+#X connect 12 0 4 0;
+#X connect 12 1 11 0;
+#X connect 12 2 2 0;
+#X connect 13 0 5 0;
+#X connect 14 0 15 0;
+#X connect 14 1 13 1;
+#X connect 15 0 13 0;
+#X connect 16 0 1 0;
+#X connect 16 1 3 0;
+#X connect 16 2 17 0;
+#X restore -388 93 pd outlet-message;
+#X obj -388 114 outlet;
+#X obj -382 -11 inlet;
+#N canvas 3 57 472 553 in 0;
+#X obj 153 57 inlet;
+#X obj 153 234 s \$0-window-size;
+#X obj 226 258 s \$0-overlap;
+#X obj 153 151 route blocksize overlap transposition;
+#X obj 299 174 s \$0-transpor;
+#X obj 153 194 change;
+#X obj 226 201 change;
+#N canvas 3 57 617 375 blocksize 0;
+#X obj 184 76 t f f;
+#X obj 184 212 spigot;
+#X text 249 141 prevent setting blocksizes that are not a power of
+2;
+#X msg 244 244 blocksize is not a power of 2;
+#X obj 184 294 outlet;
+#X obj 244 222 sel 0;
+#X obj 184 54 inlet;
+#X obj 217 122 expr (($f1-1) & $f1) == 0;
+#X obj 244 265 print pp.fft-pitchshift-st~;
+#X connect 0 0 1 0;
+#X connect 0 1 7 0;
+#X connect 1 0 4 0;
+#X connect 3 0 8 0;
+#X connect 5 0 3 0;
+#X connect 6 0 0 0;
+#X connect 7 0 1 1;
+#X connect 7 0 5 0;
+#X restore 154 215 pd blocksize;
+#N canvas 698 546 200 251 route 0;
+#X obj 20 20 inlet;
+#X obj 30 60 route save recall;
+#X obj 30 85 route float;
+#X obj 97 111 route float;
+#X obj 30 136 s \$0-save;
+#X obj 30 108 i;
+#X obj 98 133 i;
+#X obj 98 161 s \$0-recall;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 3 0;
+#X connect 2 0 5 0;
+#X connect 3 0 6 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X restore 174 92 pd route save-recall;
+#N canvas 362 125 450 479 recall 0;
+#X obj 49 145 outlet;
+#N canvas 3 54 450 600 listsplit 0;
+#X obj 158 23 inlet;
+#X obj 220 87 list length;
+#X obj 220 113 until;
+#X obj 182 150 f;
+#X obj 278 150 + 1;
+#X msg 265 111 0;
+#X obj 182 226 list store;
+#X msg 182 202 get \$1 1;
+#X obj 154 367 list split;
+#X obj 222 342 f;
+#X obj 154 334 list;
+#X obj 98 124 list;
+#X obj 182 389 list split 1;
+#X obj 154 274 t bang bang bang;
+#X obj 182 179 t f f;
+#X obj 158 48 t l l l b;
+#X obj 154 473 outlet;
+#X obj 154 440 list trim;
+#X obj 163 248 sel |;
+#X text 275 197 hacky split list at "|";
+#X connect 0 0 15 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 14 0;
+#X connect 4 0 3 1;
+#X connect 5 0 3 1;
+#X connect 6 0 18 0;
+#X connect 7 0 6 0;
+#X connect 8 0 17 0;
+#X connect 8 1 12 0;
+#X connect 9 0 8 1;
+#X connect 10 0 8 0;
+#X connect 11 0 15 0;
+#X connect 12 1 11 0;
+#X connect 13 0 10 0;
+#X connect 13 1 9 0;
+#X connect 13 2 2 1;
+#X connect 14 0 7 0;
+#X connect 14 1 9 1;
+#X connect 15 0 1 0;
+#X connect 15 1 10 1;
+#X connect 15 2 6 1;
+#X connect 15 3 5 0;
+#X connect 17 0 16 0;
+#X connect 18 0 13 0;
+#X restore 49 117 pd listsplit;
+#X obj 49 24 r \$0-recall;
+#X obj 49 54 pipe 1;
+#X obj 221 409 text fromlist \$0-savestates;
+#X obj 49 77 text get \$0-savestates;
+#X msg 253 246 21;
+#X obj 253 269 until;
+#X obj 253 292 f;
+#X obj 300 295 + 1;
+#X obj 253 315 t b f;
+#X obj 253 367 text set \$0-savestates;
+#X obj 221 114 text tolist \$0-savestates;
+#X msg 253 342 list empty_slot;
+#X obj 221 160 t a b;
+#X obj 151 166 loadbang;
+#X obj 221 137 savestate;
+#X obj 221 33 text define \$0-savestates;
+#X obj 151 189 del 0;
+#X msg 298 199 0;
+#X obj 253 220 spigot 1;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 5 0 1 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 8 0 10 0;
+#X connect 9 0 8 1;
+#X connect 10 0 13 0;
+#X connect 10 1 11 1;
+#X connect 12 0 16 0;
+#X connect 13 0 11 0;
+#X connect 14 0 4 0;
+#X connect 14 1 19 0;
+#X connect 15 0 18 0;
+#X connect 16 0 14 0;
+#X connect 16 1 12 0;
+#X connect 18 0 20 0;
+#X connect 19 0 20 1;
+#X connect 20 0 6 0;
+#X restore 239 115 pd recall;
+#X connect 0 0 3 0;
+#X connect 0 0 8 0;
+#X connect 3 0 5 0;
+#X connect 3 1 6 0;
+#X connect 3 2 4 0;
+#X connect 5 0 7 0;
+#X connect 6 0 2 0;
+#X connect 7 0 1 0;
+#X connect 9 0 3 0;
+#X restore -382 14 pd in;
+#X obj 421 581 dac~;
+#X obj 537 108 pp.rev;
+#A saved empty_slot \; empty_slot \; empty_slot \; empty_slot \; empty_slot
+\; empty_slot \; empty_slot \; empty_slot \; empty_slot \; empty_slot
+\; empty_slot \; empty_slot \; empty_slot \; empty_slot \; empty_slot
+\; empty_slot \; empty_slot \; empty_slot \; empty_slot \; empty_slot
+\; empty_slot \;;
+#X obj -6 432 *~;
+#X obj 104 183 hsl 499 61 0 1 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 17734 1;
+#X obj 124 564 tabwrite~ array1;
+#X obj 139 538 metro 100;
+#X msg 265 83 250;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array table23 7.41437e+06 float 2;
+#X coords 0 1 7.41437e+06 -1 503 61 2 0 0;
+#X restore 101 182 graph;
+#X obj 100 128 cnv 15 32 16 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 100 108 tgl 23 0 empty empty empty 17 7 0 10 -1 -260097 -260097
+1 1;
+#X floatatom 100 129 5 0 0 0 - - -;
+#X obj 214 166 cnv 3 220 15 empty empty empty 12 12 0 14 -1 -66577
+0;
+#X obj 207 107 cnv 3 10 75 empty empty empty 12 12 0 14 -1 -66577 0
+;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array array1 8888 float 3;
+#A 0 0.215168 0.221014 0.226869 0.232733 0.238607 0.24449 0.250382
+0.256284 0.262195 0.268115 0.274045 0.279983 0.285932 0.291889 0.297856
+0.303832 0.309817 0.315811 0.321815 0.327827 0.33385 0.339881 0.345921
+0.351971 0.35803 0.364098 0.370175 0.376261 0.382357 0.388461 0.394575
+0.400698 0.40683 0.412971 0.419121 0.42528 0.431449 0.437626 0.443813
+0.450009 0.456214 0.462427 0.46865 0.474882 0.481123 0.487374 0.493633
+0.499901 0.506178 0.512464 0.51876 0.525064 0.531377 0.5377 0.544031
+0.550371 0.55672 0.563079 0.569446 0.575822 0.582208 0.588602 0.595005
+0.601417 0.607838 0.614268 0.620707 0.627155 0.633612 0.640078 0.646553
+0.653037 0.659529 0.666031 0.672541 0.679061 0.685589 0.692126 0.698673
+0.705228 0.711792 0.718364 0.724946 0.731537 0.738136 0.744745 0.751362
+0.757988 0.764623 0.771267 0.777919 0.784581 0.791251 0.797931 0.804619
+0.811316 0.818022 0.824736 0.83146 0.838192 0.844933 0.851683 0.858442
+0.86521 0.871986 0.878771 0.885565 0.892368 0.89918 0.906 0.91283 0.919668
+0.926515 0.93337 0.940235 0.947108 0.95399 0.960881 0.96778 0.974689
+0.981606 0.988532 0.995466 1.00241 1.00936 1.01632 1.02329 1.03027
+1.03726 1.04425 1.05126 1.05827 1.06529 1.07233 1.07937 1.08641 1.09347
+1.10054 1.10761 1.11469 1.12179 1.12889 1.136 1.14311 1.15024 1.15738
+1.16452 1.17167 1.17884 1.18601 1.19319 1.20037 1.20757 1.21477 1.22199
+1.22921 1.23644 1.24368 1.25093 1.25819 1.26545 1.27273 1.28001 1.2873
+1.2946 1.30191 1.30923 1.31656 1.32389 1.33124 1.33859 1.34595 1.35332
+1.3607 1.36809 1.37548 1.38289 1.3903 1.39772 1.40515 1.41259 1.42004
+1.4275 1.43496 1.44243 1.44992 1.45741 1.46491 1.47242 1.47993 1.48746
+1.49499 1.50253 1.51008 1.51764 1.52521 1.53279 1.54038 1.54797 1.55557
+1.56318 1.5708 1.57843 1.58607 1.59372 1.60137 1.60903 1.6167 1.62438
+1.63207 1.63977 1.64748 1.65519 1.66291 1.67065 1.67839 1.68613 1.69389
+1.70166 1.70943 1.71721 1.72501 1.73281 1.74062 1.74843 1.75626 1.76409
+1.77194 1.77979 1.78765 1.79552 1.80339 1.81128 1.81917 1.82708 1.83499
+1.84291 1.85083 1.85877 1.86672 1.87467 1.88263 1.8906 1.89858 1.90657
+1.91457 1.92257 1.93059 1.93861 1.94664 1.95468 1.96273 1.97078 1.97885
+1.98692 1.995 2.00309 2.01119 2.0193 2.02742 2.03554 2.04367 2.05182
+2.05997 2.06812 2.07629 2.08447 2.09265 2.10084 2.10904 2.11725 2.12547
+2.1337 2.14193 2.15018 2.15843 2.16669 2.17496 2.18323 2.19152 2.19981
+2.20812 2.21643 2.22475 2.23308 2.24141 2.24976 2.25811 2.26647 2.27484
+2.28322 2.29161 2.30001 2.30841 2.31682 2.32524 2.33367 2.34211 2.35056
+2.35901 2.36748 2.37595 2.38443 2.39292 2.40142 2.40992 2.41844 2.42696
+2.43549 2.44403 2.45258 2.46113 2.4697 2.47827 2.48685 2.49544 2.50404
+2.51265 2.52127 2.52989 2.53852 2.54716 2.55581 2.56447 2.57314 2.58181
+2.59049 2.59918 2.60788 2.61659 2.62531 2.63404 2.64277 2.65151 2.66026
+2.66902 2.67779 2.68656 2.69535 2.70414 2.71294 2.72175 2.73057 2.73939
+2.74823 2.75707 2.76592 2.77478 2.78365 2.79252 2.80141 2.8103 2.8192
+2.82811 2.83703 2.84596 2.8549 2.86384 2.87279 2.88175 2.89072 2.8997
+2.90868 2.91768 2.92668 2.93569 2.94471 2.95374 2.96277 2.97182 2.98087
+2.98993 2.999 3.00808 3.01716 3.02626 3.03536 3.04447 3.05359 3.06272
+3.07186 3.081 3.09015 3.09931 3.10848 3.11766 3.12685 3.13604 3.14525
+3.15446 3.16368 3.17291 3.18214 3.19139 3.20064 3.2099 3.21917 3.22845
+3.23774 3.24703 3.25634 3.26565 3.27497 3.2843 3.29363 3.30298 3.31233
+3.3217 3.33107 3.34044 3.34983 3.35923 3.36863 3.37804 3.38746 3.39689
+3.40633 3.41577 3.42523 3.43469 3.44416 3.45364 3.46312 3.47262 3.48212
+3.49164 3.50116 3.51068 3.52022 3.52977 3.53932 3.54888 3.55845 3.56803
+3.57762 3.58721 3.59682 3.60643 3.61605 3.62568 3.63531 3.64496 3.65461
+3.66427 3.67394 3.68362 3.69331 3.703 3.71271 3.72242 3.73214 3.74187
+3.7516 3.76135 3.7711 3.78086 3.79063 3.80041 3.8102 3.81999 3.82979
+3.8396 3.84942 3.85925 3.86909 3.87893 3.88878 3.89865 3.90851 3.91839
+3.92828 3.93817 3.94807 3.95798 3.9679 3.97783 3.98777 3.99771 4.00766
+4.01762 4.02759 4.03757 4.04755 4.05755 4.06755 4.07756 4.08758 4.0976
+4.10764 4.11768 4.12773 4.13779 4.14786 4.15794 4.16802 4.17811 4.18822
+4.19832 4.20844 4.21857 4.2287 4.23884 4.24899 4.25915 4.26932 4.2795
+4.28968 4.29987 4.31007 4.32028 4.3305 4.34072 4.35096 4.3612 4.37145
+4.38171 4.39197 4.40225 4.41253 4.42282 4.43312 4.44343 4.45374 4.46407
+4.4744 4.48474 4.49509 4.50545 4.51581 4.52619 4.53657 4.54696 4.55735
+4.56776 4.57818 4.5886 4.59903 4.60947 4.61992 4.63037 4.64084 4.65131
+4.66179 4.67228 4.68278 4.69328 4.7038 4.71432 4.72485 4.73539 4.74593
+4.75649 4.76705 4.77762 4.7882 4.79879 4.80938 4.81999 4.8306 4.84122
+4.85185 4.86249 4.87313 4.88379 4.89445 4.90512 4.9158 4.92648 4.93718
+4.94788 4.95859 4.96931 4.98004 4.99077 5.00152 5.01227 5.02303 5.0338
+5.04458 5.05536 5.06615 5.07696 5.08777 5.09858 5.10941 5.12024 5.13109
+5.14194 5.1528 5.16366 5.17454 5.18542 5.19631 5.20721 5.21812 5.22904
+5.23996 5.25089 5.26184 5.27278 5.28374 5.29471 5.30568 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945;
+#A 1000 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945;
+#A 2000 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945;
+#A 3000 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945;
+#A 4000 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945;
+#A 5000 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945;
+#A 6000 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945;
+#A 7000 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945;
+#A 8000 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945 5.30945
+5.30945 5.30945 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+7 7 6.99509 6.98618 6.97727 6.96837 6.95946 6.95055 6.94164 6.93274
+6.92383 6.91492 6.90602 6.89711 6.8882 6.8793 6.87039 6.86148 6.85258
+6.84367 6.83476 6.82586 6.81695 6.80804 6.79914 6.79023 6.78132 6.77241
+6.76351 6.7546 6.74569 6.73679 6.72788 6.71897 6.71007 6.70116 6.69225
+6.68335 6.67444 6.66553 6.65663 6.64772 6.63881 6.6299 6.621 6.61209
+6.60318 6.59428 6.58537 6.57646 6.56756 6.55865 6.54974 6.54084 6.53193
+6.52302 6.51412 6.50521 6.4963 6.4874 6.47849 6.46958 6.46067 6.45177
+6.44286 6.43395 6.42505 6.41614 6.40723 6.39833 6.38942 6.38051 6.37161
+6.3627 6.35379 6.34489 6.33598 6.32707 6.31817 6.30926 6.30035 6.29144
+6.28254 6.27363 6.26472 6.25582 6.24691 6.238 6.2291 6.22019 6.21128
+6.20238 6.19347 6.18456 6.17566 6.16675 6.15784 6.14894 6.14003 6.13112
+6.12221 6.11331 6.1044 6.09549 6.08659 6.07768 6.06877 6.05987 6.05096
+6.04205 6.03315 6.02424 6.01533 6.00643 5.99752 5.98861 5.97971 5.9708
+5.96189 5.95298 5.94408 5.93517 5.92626 5.91736 5.90845 5.89954 5.89064
+5.88173 5.87282 5.86392 5.85501 5.8461 5.8372 5.82829 5.81938 5.81048
+5.80157 5.79266 5.78375 5.77485 5.76594 5.75703 5.74813 5.73922 5.73031
+5.72141 5.7125 5.70359 5.69469 5.68578 5.67687 5.66797 5.65906 5.65015
+5.64125 5.63234 5.62343 5.61452 5.60562 5.59671 5.5878 5.5789 5.56999
+5.56108 5.55218 5.54327 5.53436 5.52546 5.51655 5.50764 5.49874 5.48983
+5.48092 5.47202 5.46311 5.4542 5.44529 5.43639 5.42748 5.41857 5.40967
+5.40076 5.39185 5.38295 5.37404 5.36513 5.35623 5.34732 5.33841 5.32951
+5.3206 5.31169 5.30278 5.29388 5.28497 5.27606 5.26716 5.25825 5.24934
+5.24044 5.23153 5.22262 5.21372 5.20481 5.1959 5.187 5.17809 5.16918
+5.16028 5.15137 5.14246 5.13355 5.12465 5.11574 5.10683 5.09793 5.08902
+5.08011 5.07121 5.0623 5.05339 5.04449 5.03558 5.02667 5.01777 5.00886
+4.99995 4.99105 4.98214 4.97323 4.96432 4.95542 4.94651 4.9376 4.9287
+4.91979 4.91088 4.90198 4.89307 4.88416 4.87526 4.86635 4.85744 4.84854
+4.83963 4.83072 4.82182 4.81291 4.804 4.79509 4.78619 4.77728 4.76837
+4.75947 4.75056 4.74165 4.73275 4.72384 4.71493 4.70603 4.69712 4.68821
+4.67931 4.6704 4.66149 4.65259 4.64368 4.63477 4.62586 4.61696 4.60805
+4.59914 4.59024 4.58133 4.57242 4.56352 4.55461 4.5457 4.5368 4.52789
+4.51898 4.51008 4.50117 4.49226 4.48336 4.47445 4.46554 4.45663 4.44773
+4.43882 4.42991 4.42101 4.4121 4.40319 4.39429 4.38538 4.37647 4.36757
+4.35866 4.34975 4.34085 4.33194 4.32303 4.31413 4.30522 4.29631 4.28741
+4.2785 4.26959 4.26068 4.25178 4.24287 4.23396 4.22506 4.21615 4.20724
+4.19834 4.18943 4.18052 4.17162 4.16271 4.1538 4.1449 4.13599 4.12708
+4.11817 4.10927 4.10036 4.09145 4.08255 4.07364 4.06473 4.05583 4.04692
+4.03801 4.02911 4.0202 4.01129 4.00239 3.99348 3.98457 3.97567 3.96676
+3.95785 3.94894 3.94004 3.93113 3.92222 3.91332 3.90441 3.8955 3.8866
+3.87769 3.86878 3.85988 3.85097 3.84206 3.83316 3.82425 3.81534 3.80644
+3.79753 3.78862 3.77971 3.77081 3.7619 3.75299 3.74409 3.73518 3.72627
+3.71737 3.70846 3.69955 3.69065 3.68174 3.67283 3.66393 3.65502 3.64611
+3.63721 3.6283 3.61939 3.61048 3.60158 3.59267 3.58376 3.57486 3.56595
+3.55704 3.54814 3.53923 3.53032 3.52142 3.51251 3.5036 3.4947 3.48579
+3.47688 3.46798 3.45907 3.45016 3.44125 3.43235 3.42344 3.41453 3.40563
+3.39672 3.38781 3.37891 3.37 3.36109 3.35219 3.34328 3.33437 3.32547
+3.31656 3.30765 3.29874 3.28984 3.28093 3.27202 3.26312 3.25421 3.2453
+;
+#X coords 0 10 8888 1 83 52 2 100 200;
+#X restore 124 107 graph;
+#X obj 124 107 cnv 13 82 74 empty empty empty 22 10 1 8 -260097 -260097
+0;
+#X obj 100 142 cnv 3 24 40 empty empty empty 12 12 0 14 -1 -66577 0
+;
+#X obj 124 165 cnv 12 82 18 empty empty empty 22 10 1 8 -1 -260097
+0;
+#X obj 101 101 cnv 18 504 7 empty empty empty 22 10 1 8 -1 -260097
+0;
+#X floatatom 241 -833 4 0 100 0 - - -;
+#X floatatom 274 -907 0 0 200 0 - - -;
+#X obj 24 -515 +~;
+#X obj 23 -583 samphold~;
+#X obj 24 -549 *~;
+#X obj 234 -486 r~ phase;
+#X obj -374 -1158 s~ phase;
+#X obj 119 -586 r~ phase;
+#X obj 59 -548 r~ phase;
+#X obj 268 -714 s chunk-size;
+#X floatatom 274 -940 0 0 0 0 - - -;
+#X text -408 -1354 chunk size;
+#X text -411 -1340 in seconds;
+#X obj -357 -1305 r chunk-size;
+#X obj -357 -1280 t b f;
+#X obj 234 -452 -~ 0.5;
+#X obj 234 -418 *~ 0.5;
+#X obj 234 -385 cos~;
+#X obj -369 -1200 phasor~;
+#X obj 2 -727 s~ read-pt;
+#X obj 62 -516 r~ read-pt;
+#X obj -287 -1165 +~ 0.5;
+#X obj -286 -1140 wrap~;
+#X obj -286 -1115 s~ phase2;
+#X obj 21 -328 +~;
+#X obj 278 -747 * 0.001;
+#X obj 24 -481 *~ 44100;
+#X obj 24 -411 tabread4~ table23;
+#X obj 23 -445 +~ 1;
+#X floatatom -287 -1216 5 0 0 0 - - -;
+#X obj -238 -946 s precession;
+#X obj -244 -1281 t b f;
+#X obj -209 -1314 r precession;
+#X obj -5 -945 * 0.01;
+#X obj 330 -477 +~;
+#X obj 339 -535 samphold~;
+#X obj 330 -511 *~;
+#X obj 480 -398 -~ 0.5;
+#X obj 481 -373 *~ 0.5;
+#X obj 483 -351 cos~;
+#X obj 378 -477 r~ read-pt;
+#X obj 340 -433 *~ 44100;
+#X obj 330 -363 tabread4~ table23;
+#X obj 339 -560 r chunk-size;
+#X obj 329 -397 +~ 1;
+#X obj 427 -534 r~ phase2;
+#X obj 375 -510 r~ phase2;
+#X obj 478 -425 r~ phase2;
+#X msg 276 -972 25;
+#X obj 36 -1146 * 0.001;
+#X text 316 -832 <-- chunk size (msec);
+#X obj -369 -1248 expr (pow(2 \, $f1/120)-$f3)/$f2;
+#X obj -7 -1100 t b f;
+#X text 91 -1277 (msec);
+#X obj -2 -861 /;
+#X floatatom -8 -1280 12 0 0 0 - - -;
+#X floatatom -7 -1329 12 0 0 0 - - -;
+#X floatatom -8 -1191 12 0 0 0 - - -;
+#X obj -8 -1262 * 1000;
+#X floatatom 277 -799 4 0 900 0 - - -;
+#X text 72 -1291 <-- loop length;
+#X text 310 -908 <-- speed \, percent;
+#X obj 3 -686 s~ sample.pos1;
+#X text 316 -800 <-- position \, 0-1;
+#X obj -1 -797 *~ 1;
+#X floatatom 277 -864 0 0 0 0 - - -;
+#X obj -3 -913 t b f;
+#X obj -3 -886 * 1;
+#X text 314 -945 <-- pitch \, 0= norm \, >0= aigues;
+#X floatatom 392 -599 0 0 0 0 - - -;
+#X floatatom 441 -668 0 0 0 0 - - -;
+#X obj 440 -714 loadbang;
+#X obj 314 -1033 loadbang;
+#X msg 275 -1008 0.5;
+#X msg 276 -1032 100;
+#X obj 23 -618 r chunk-size;
+#X text 313 -773 <-- trgr on/off;
+#X obj 692 -1320 soundfiler;
+#X msg 693 -1359 read -resize \$1 table23;
+#X obj 829 -1167 snapshot~;
+#X obj 830 -1240 receive~ sample.pos1;
+#X floatatom 830 -1144 12 0 0 0 - - -;
+#X floatatom 831 -1082 12 0 0 0 - - -;
+#X obj 868 -1216 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X floatatom 693 -1293 12 0 0 0 - - -;
+#X obj 832 -1053 /;
+#X text 315 -877 <-- pitch & speed \, norm= 1;
+#X obj 869 -1276 loadbang;
+#X obj 866 -1005 outlet;
+#X obj 21 -360 *~;
+#X obj 330 -329 *~;
+#X obj 866 -984 s posvisu;
+#X msg 440 -687 44100;
+#X floatatom 808 -983 5 0 0 2 pos - -;
+#X obj 2 -766 *~ 1;
+#X floatatom 966 -1201 4 0 0 0 f.r - -;
+#X obj 1032 -1250 r frA;
+#X obj 692 -1397 r soundfileA;
+#X obj -288 7 r pitchA;
+#X obj 665 -869 r speedA;
+#X obj 665 -839 r pitchNspeedA;
+#X obj 666 -809 r posA;
+#X obj 943 -1271 r øAtiTS1;
+#X obj 110 -1162 s looplenghtA;
+#X obj 530 -892 * 100;
+#X obj 1023 -1271 r øAtiTS1>ø;
+#X obj 664 -747 * 0.01;
+#X obj 662 -777 r directinA;
+#X obj -4 -826 phasor~;
+#X msg 440 -647 0;
+#X obj 868 -917 t b f;
+#X floatatom -245 -1343 12 0 900 0 - - -;
+#X floatatom 928 -1124 12 0 0 0 f.r - -;
+#X obj 869 -890 * 1;
+#X obj 57 -826 + 0;
+#X obj -7 -1301 / 44103;
+#X floatatom 968 -1156 4 0 0 0 f.r - -;
+#X obj 964 -1179 / 0.6;
+#X obj 913 -1217 + 2;
+#X obj 866 -1195 metro 44;
+#X obj 832 -1122 * 44100;
+#X obj -110 -744 tabread4~ table23;
+#X obj 991 -201 dac~;
+#X obj 991 -240 *~ 1;
+#X obj 1025 -242 nbx 5 15 -1e+09 1e+12 0 0 \$0-transpo \$0-transpor
+empty 0 -8 2 10 -228856 -1 -1 0 256;
+#X obj 1102 -195 dac~;
+#X obj 1102 -234 *~ 1;
+#X obj 1137 -239 nbx 5 15 -1e+09 1e+12 0 0 \$0-transpo \$0-transpor
+empty 0 -8 2 10 -228856 -1 -1 0 256;
+#X obj 1052 -201 - 1;
+#X obj 1051 -178 * -1;
+#X obj 1057 -150 nbx 5 15 -1e+09 1e+12 0 0 \$0-transpo \$0-transpor
+empty 0 -8 2 10 -228856 -1 -1 0 256;
+#X obj 26 229 r T$mod;
+#X floatatom 18 255 5 0 0 0 - - -;
+#X obj -51 261 * 0.5;
+#X obj -241 -29 * 10;
+#X obj 815 -928 s playbackA;
+#X obj 43 528 *~ 7;
+#X msg -247 355 resize \$1;
+#X obj -247 378 s env5;
+#X obj 134 -22 * 0.3;
+#X obj 190 -22 * 1;
+#X obj 358 22 * 0.3;
+#X obj 650 175 s opa;
+#X connect 0 0 7 1;
+#X connect 1 0 7 3;
+#X connect 2 0 7 2;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 6 0 0 0;
+#X connect 7 0 104 0;
+#X connect 11 0 106 0;
+#X connect 11 0 64 0;
+#X connect 11 0 93 0;
+#X connect 11 0 15 0;
+#X connect 13 0 83 0;
+#X connect 14 0 91 0;
+#X connect 15 0 1 0;
+#X connect 15 0 2 0;
+#X connect 15 0 0 0;
+#X connect 15 0 107 0;
+#X connect 16 0 19 0;
+#X connect 17 0 19 0;
+#X connect 18 0 19 0;
+#X connect 19 0 26 0;
+#X connect 20 0 23 0;
+#X connect 21 0 23 0;
+#X connect 22 0 23 0;
+#X connect 24 0 19 0;
+#X connect 25 0 23 0;
+#X connect 26 0 27 0;
+#X connect 27 0 60 0;
+#X connect 28 0 22 1;
+#X connect 29 0 21 1;
+#X connect 30 0 20 1;
+#X connect 31 0 25 1;
+#X connect 32 0 18 1;
+#X connect 33 0 17 1;
+#X connect 34 0 16 1;
+#X connect 35 0 24 1;
+#X connect 36 0 39 0;
+#X connect 37 0 39 0;
+#X connect 38 0 39 0;
+#X connect 39 0 50 0;
+#X connect 40 0 43 0;
 #X connect 41 0 43 0;
-#X connect 42 0 107 0;
-#X connect 43 0 42 0;
-#X connect 46 0 67 0;
-#X connect 46 1 67 2;
-#X connect 47 0 46 0;
-#X connect 48 0 45 0;
-#X connect 48 0 85 0;
-#X connect 49 0 56 0;
+#X connect 42 0 43 0;
+#X connect 44 0 47 0;
+#X connect 44 0 46 0;
+#X connect 44 0 25 0;
+#X connect 44 0 24 0;
+#X connect 45 0 40 0;
+#X connect 45 0 36 0;
+#X connect 45 0 20 0;
+#X connect 45 0 16 0;
+#X connect 46 0 39 0;
+#X connect 47 0 43 0;
+#X connect 48 0 42 0;
+#X connect 48 0 38 0;
+#X connect 48 0 22 0;
+#X connect 48 0 18 0;
+#X connect 49 0 41 0;
+#X connect 49 0 37 0;
+#X connect 49 0 21 0;
+#X connect 49 0 17 0;
 #X connect 50 0 51 0;
-#X connect 51 0 49 0;
-#X connect 52 0 53 0;
-#X connect 53 0 54 0;
-#X connect 54 0 108 1;
-#X connect 55 0 49 1;
-#X connect 56 0 59 0;
-#X connect 57 0 108 0;
-#X connect 58 0 50 0;
-#X connect 59 0 57 0;
-#X connect 60 0 50 1;
-#X connect 61 0 51 1;
-#X connect 62 0 52 0;
-#X connect 63 0 15 0;
+#X connect 52 0 42 1;
+#X connect 53 0 41 1;
+#X connect 54 0 40 1;
+#X connect 55 0 47 1;
+#X connect 56 0 38 1;
+#X connect 57 0 37 1;
+#X connect 58 0 36 1;
+#X connect 59 0 46 1;
+#X connect 63 0 62 0;
 #X connect 64 0 65 0;
-#X connect 65 0 68 0;
-#X connect 65 0 82 1;
-#X connect 67 0 33 0;
-#X connect 67 0 44 0;
-#X connect 68 0 70 0;
-#X connect 68 1 70 1;
-#X connect 70 0 138 0;
+#X connect 65 0 63 0;
+#X connect 66 0 287 0;
+#X connect 67 0 288 0;
+#X connect 68 0 66 0;
+#X connect 69 0 67 0;
 #X connect 71 0 76 0;
-#X connect 72 0 190 0;
-#X connect 74 0 73 0;
-#X connect 75 0 64 0;
-#X connect 75 0 126 0;
-#X connect 76 0 75 0;
-#X connect 77 0 189 0;
-#X connect 82 0 114 0;
-#X connect 83 0 84 0;
-#X connect 84 0 85 0;
-#X connect 84 1 85 1;
-#X connect 85 0 70 0;
-#X connect 87 0 56 1;
-#X connect 88 0 41 1;
-#X connect 89 0 110 0;
-#X connect 90 0 91 0;
-#X connect 90 0 92 0;
-#X connect 90 0 63 0;
-#X connect 91 0 83 0;
-#X connect 92 0 16 0;
-#X connect 93 0 18 0;
-#X connect 95 0 102 0;
-#X connect 96 0 95 0;
-#X connect 97 0 99 0;
-#X connect 98 0 97 0;
-#X connect 99 0 252 0;
-#X connect 100 0 103 0;
-#X connect 101 0 140 0;
-#X connect 101 0 194 0;
-#X connect 102 0 103 1;
-#X connect 102 0 72 0;
-#X connect 103 0 106 0;
-#X connect 103 0 111 0;
-#X connect 103 0 109 0;
-#X connect 105 0 101 0;
-#X connect 107 0 39 0;
-#X connect 108 0 39 1;
-#X connect 110 0 87 0;
-#X connect 110 0 88 0;
-#X connect 112 0 64 0;
-#X connect 113 0 64 0;
-#X connect 114 0 34 0;
-#X connect 114 0 80 0;
-#X connect 115 0 192 0;
-#X connect 116 0 115 0;
-#X connect 117 0 96 0;
-#X connect 118 0 25 0;
-#X connect 119 0 127 0;
-#X connect 120 0 188 0;
-#X connect 121 0 77 0;
-#X connect 122 0 3 0;
-#X connect 125 0 101 0;
-#X connect 127 0 16 0;
-#X connect 128 0 101 0;
-#X connect 129 0 249 0;
-#X connect 129 0 198 0;
-#X connect 129 0 234 0;
-#X connect 129 0 137 0;
-#X connect 131 0 77 0;
-#X connect 132 0 133 0;
-#X connect 133 0 224 0;
-#X connect 134 0 135 0;
-#X connect 135 0 232 0;
-#X connect 136 0 131 0;
-#X connect 137 0 4 0;
-#X connect 137 0 6 0;
-#X connect 137 0 1 0;
-#X connect 137 0 2 0;
-#X connect 137 0 0 0;
-#X connect 137 0 250 0;
-#X connect 138 0 82 0;
-#X connect 139 0 88 0;
-#X connect 139 0 87 0;
-#X connect 140 0 188 0;
-#X connect 140 1 188 1;
-#X connect 141 0 144 0;
-#X connect 142 0 144 0;
-#X connect 143 0 144 0;
-#X connect 144 0 151 0;
-#X connect 145 0 148 0;
-#X connect 146 0 148 0;
-#X connect 147 0 148 0;
-#X connect 149 0 144 0;
-#X connect 150 0 148 0;
+#X connect 72 0 75 0;
+#X connect 73 0 77 0;
+#X connect 74 0 103 0;
+#X connect 75 0 1 0;
+#X connect 76 0 2 0;
+#X connect 77 0 0 0;
+#X connect 78 0 102 0;
+#X connect 78 0 80 0;
+#X connect 78 0 79 0;
+#X connect 78 0 136 0;
+#X connect 78 0 139 0;
+#X connect 79 0 82 0;
+#X connect 79 0 81 0;
+#X connect 81 0 88 0;
+#X connect 82 0 87 0;
+#X connect 83 0 85 0;
+#X connect 84 0 86 0;
+#X connect 85 0 92 0;
+#X connect 86 0 92 3;
+#X connect 87 0 92 1;
+#X connect 88 0 92 4;
+#X connect 89 0 109 0;
+#X connect 90 0 110 0;
+#X connect 91 0 92 2;
+#X connect 92 0 132 1;
+#X connect 92 0 284 0;
+#X connect 93 0 83 0;
+#X connect 94 0 92 3;
+#X connect 96 0 97 0;
+#X connect 97 0 100 0;
+#X connect 98 0 96 0;
+#X connect 99 0 98 0;
+#X connect 100 0 101 0;
+#X connect 101 0 289 0;
+#X connect 102 0 84 0;
+#X connect 103 0 105 0;
+#X connect 104 0 131 1;
+#X connect 104 0 131 0;
+#X connect 105 0 104 1;
+#X connect 105 0 8 0;
+#X connect 105 0 290 0;
+#X connect 106 0 91 0;
+#X connect 109 0 82 0;
+#X connect 110 0 81 0;
+#X connect 111 0 282 0;
+#X connect 113 0 114 1;
+#X connect 114 0 132 0;
+#X connect 115 0 120 0;
+#X connect 117 0 124 0;
+#X connect 118 0 117 0;
+#X connect 119 0 115 0;
+#X connect 120 0 118 0;
+#X connect 120 0 123 0;
+#X connect 121 0 119 0;
+#X connect 124 0 115 0;
+#X connect 125 0 114 0;
+#X connect 126 0 127 0;
+#X connect 128 0 129 0;
+#X connect 131 0 12 0;
+#X connect 131 0 130 1;
+#X connect 131 0 130 0;
+#X connect 132 0 7 0;
+#X connect 135 0 134 0;
+#X connect 136 0 140 0;
+#X connect 139 0 135 0;
+#X connect 140 0 135 1;
+#X connect 148 0 173 0;
+#X connect 149 0 181 0;
+#X connect 150 0 174 0;
 #X connect 151 0 152 0;
-#X connect 152 0 186 0;
-#X connect 153 0 147 1;
-#X connect 154 0 146 1;
-#X connect 155 0 145 1;
-#X connect 156 0 150 1;
-#X connect 157 0 143 1;
-#X connect 158 0 142 1;
-#X connect 159 0 141 1;
-#X connect 160 0 149 1;
-#X connect 161 0 164 0;
-#X connect 162 0 164 0;
+#X connect 152 0 150 0;
+#X connect 153 0 163 0;
+#X connect 155 0 151 1;
+#X connect 156 0 152 1;
+#X connect 158 0 199 0;
+#X connect 161 0 162 0;
+#X connect 162 0 199 0;
+#X connect 162 1 199 1;
 #X connect 163 0 164 0;
-#X connect 164 0 175 0;
-#X connect 165 0 168 0;
-#X connect 166 0 168 0;
-#X connect 167 0 168 0;
-#X connect 169 0 172 0;
-#X connect 169 0 171 0;
-#X connect 169 0 150 0;
-#X connect 169 0 149 0;
-#X connect 170 0 165 0;
-#X connect 170 0 161 0;
-#X connect 170 0 145 0;
-#X connect 170 0 141 0;
-#X connect 171 0 164 0;
-#X connect 172 0 168 0;
-#X connect 173 0 167 0;
-#X connect 173 0 163 0;
-#X connect 173 0 147 0;
-#X connect 173 0 143 0;
-#X connect 174 0 166 0;
-#X connect 174 0 162 0;
-#X connect 174 0 146 0;
-#X connect 174 0 142 0;
-#X connect 175 0 176 0;
-#X connect 177 0 167 1;
-#X connect 178 0 166 1;
-#X connect 179 0 165 1;
-#X connect 180 0 172 1;
-#X connect 181 0 163 1;
-#X connect 182 0 162 1;
-#X connect 183 0 161 1;
-#X connect 184 0 171 1;
-#X connect 185 0 46 0;
-#X connect 187 0 252 1;
-#X connect 188 0 83 0;
-#X connect 189 0 138 1;
-#X connect 190 0 71 0;
-#X connect 191 0 193 0;
-#X connect 192 0 191 0;
-#X connect 193 0 194 1;
-#X connect 194 0 97 0;
-#X connect 196 0 200 0;
-#X connect 197 0 196 0;
-#X connect 198 0 199 0;
-#X connect 199 0 197 0;
-#X connect 204 0 203 0;
-#X connect 204 1 205 0;
-#X connect 206 0 132 0;
-#X connect 207 0 134 0;
-#X connect 208 0 206 0;
-#X connect 209 0 207 0;
-#X connect 211 0 235 0;
-#X connect 212 0 217 0;
-#X connect 213 0 216 0;
-#X connect 214 0 218 0;
-#X connect 215 0 245 0;
-#X connect 216 0 1 0;
-#X connect 217 0 2 0;
-#X connect 218 0 0 0;
-#X connect 219 0 243 0;
-#X connect 219 0 221 0;
-#X connect 219 0 220 0;
-#X connect 220 0 211 0;
-#X connect 220 0 223 0;
+#X connect 164 0 165 0;
+#X connect 165 0 237 1;
+#X connect 166 0 154 0;
+#X connect 166 0 169 0;
+#X connect 168 0 150 1;
+#X connect 169 0 170 0;
+#X connect 170 0 171 0;
+#X connect 172 0 125 0;
+#X connect 173 0 157 0;
+#X connect 174 0 176 0;
+#X connect 175 0 237 0;
+#X connect 176 0 175 0;
+#X connect 179 0 199 0;
+#X connect 179 1 199 2;
+#X connect 180 0 179 0;
+#X connect 181 0 178 0;
+#X connect 181 0 215 0;
+#X connect 182 0 189 0;
+#X connect 183 0 184 0;
+#X connect 184 0 182 0;
+#X connect 185 0 186 0;
+#X connect 186 0 187 0;
+#X connect 187 0 238 1;
+#X connect 188 0 182 1;
+#X connect 189 0 192 0;
+#X connect 190 0 238 0;
+#X connect 191 0 183 0;
+#X connect 192 0 190 0;
+#X connect 193 0 183 1;
+#X connect 194 0 184 1;
+#X connect 195 0 185 0;
+#X connect 196 0 148 0;
+#X connect 197 0 200 0;
+#X connect 197 0 212 1;
+#X connect 199 0 166 0;
+#X connect 199 0 177 0;
+#X connect 200 0 202 0;
+#X connect 200 1 202 1;
+#X connect 202 0 256 0;
+#X connect 203 0 206 0;
+#X connect 204 0 263 0;
+#X connect 205 0 251 0;
+#X connect 205 0 197 0;
+#X connect 206 0 205 0;
+#X connect 207 0 262 0;
+#X connect 212 0 242 0;
+#X connect 213 0 214 0;
+#X connect 214 0 215 0;
+#X connect 214 1 215 1;
+#X connect 215 0 202 0;
+#X connect 217 0 189 1;
+#X connect 218 0 174 1;
+#X connect 219 0 240 0;
+#X connect 220 0 221 0;
 #X connect 220 0 222 0;
-#X connect 222 0 229 0;
-#X connect 223 0 228 0;
-#X connect 224 0 226 0;
-#X connect 225 0 227 0;
-#X connect 226 0 233 1;
-#X connect 227 0 233 5;
-#X connect 228 0 233 0;
-#X connect 229 0 233 4;
-#X connect 230 0 253 0;
-#X connect 231 0 254 0;
-#X connect 232 0 233 2;
-#X connect 233 0 122 1;
-#X connect 233 1 200 0;
-#X connect 234 0 224 0;
-#X connect 235 0 233 3;
-#X connect 237 0 238 0;
-#X connect 238 0 241 0;
-#X connect 239 0 237 0;
-#X connect 240 0 239 0;
-#X connect 241 0 242 0;
-#X connect 242 0 225 0;
-#X connect 243 0 225 0;
-#X connect 244 0 233 6;
-#X connect 245 0 248 0;
-#X connect 247 0 13 1;
-#X connect 247 0 13 0;
-#X connect 247 0 130 0;
-#X connect 248 0 247 1;
-#X connect 248 0 14 0;
-#X connect 249 0 232 0;
-#X connect 250 0 7 0;
-#X connect 252 0 100 0;
-#X connect 253 0 223 0;
-#X connect 254 0 222 0;
-#X coords 0 -1 1 1 423 76 1 100 100;
+#X connect 220 0 196 0;
+#X connect 221 0 213 0;
+#X connect 222 0 149 0;
+#X connect 223 0 151 0;
+#X connect 225 0 232 0;
+#X connect 226 0 225 0;
+#X connect 227 0 229 0;
+#X connect 228 0 227 0;
+#X connect 229 0 268 0;
+#X connect 230 0 233 0;
+#X connect 231 0 258 0;
+#X connect 231 0 267 0;
+#X connect 232 0 233 1;
+#X connect 232 0 204 0;
+#X connect 233 0 236 0;
+#X connect 233 0 241 0;
+#X connect 233 0 239 0;
+#X connect 235 0 231 0;
+#X connect 237 0 172 0;
+#X connect 238 0 172 1;
+#X connect 240 0 217 0;
+#X connect 240 0 218 0;
+#X connect 241 0 133 0;
+#X connect 241 0 283 0;
+#X connect 242 0 167 0;
+#X connect 242 0 210 0;
+#X connect 243 0 265 0;
+#X connect 244 0 243 0;
+#X connect 245 0 226 0;
+#X connect 247 0 252 0;
+#X connect 248 0 261 0;
+#X connect 249 0 207 0;
+#X connect 250 0 231 0;
+#X connect 252 0 149 0;
+#X connect 253 0 231 0;
+#X connect 254 0 207 0;
+#X connect 255 0 254 0;
+#X connect 256 0 212 0;
+#X connect 257 0 218 0;
+#X connect 257 0 217 0;
+#X connect 258 0 261 0;
+#X connect 258 1 261 1;
+#X connect 259 0 179 0;
+#X connect 260 0 268 1;
+#X connect 261 0 213 0;
+#X connect 262 0 256 1;
+#X connect 263 0 203 0;
+#X connect 264 0 266 0;
+#X connect 265 0 264 0;
+#X connect 266 0 267 1;
+#X connect 267 0 227 0;
+#X connect 268 0 230 0;
+#X connect 271 0 270 1;
+#X connect 271 0 270 0;
+#X connect 272 0 271 1;
+#X connect 274 0 273 1;
+#X connect 274 0 273 0;
+#X connect 275 0 274 1;
+#X connect 276 0 277 0;
+#X connect 277 0 272 0;
+#X connect 278 0 276 0;
+#X connect 278 0 275 0;
+#X connect 279 0 280 0;
+#X connect 280 0 281 0;
+#X connect 282 0 115 0;
+#X connect 284 0 134 0;
+#X connect 285 0 286 0;
+#X connect 287 0 13 0;
+#X connect 288 0 14 0;
+#X connect 289 0 84 0;
+#X coords 0 -1 1 1 506 145 1 100 100;

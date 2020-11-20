@@ -1,0 +1,18 @@
+#N struct 1004-rectangle float x float c;
+#N struct 1004-draw float x0 float y0 float c;
+#N struct 1004-point float x0 float y0;
+#N struct 1004-pixel float x0 float y0 float x1 float y1;
+#N canvas 550 342 478 501 10;
+#X floatatom 79 474 5 0 0 0 y - -, f 5;
+#X floatatom 12 475 5 0 0 0 x - -, f 5;
+#X obj 12 453 unpack f f;
+#X obj 12 23 bng 15 250 50 0 empty empty clear 17 7 0 10 -262144 -1
+-1;
+#X obj 405 28 nbx 5 14 -1e+037 1e+037 0 1 empty empty color 0 -8 0
+10 -262144 -1 -1 732 256;
+#X obj 12 47 xy-paint 400 400 0;
+#X connect 2 0 1 0;
+#X connect 2 1 0 0;
+#X connect 3 0 5 0;
+#X connect 4 0 5 2;
+#X connect 5 0 2 0;

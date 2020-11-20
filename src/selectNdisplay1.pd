@@ -97,17 +97,17 @@ that under linux i could play most formats...;
 #X floatatom 152 313 6 0 0 2 - - -;
 #X obj 258 332 tgl 20 0 empty empty BB 3 11 1 12 -4034 -1 -1 0 1;
 #X obj 154 483 cnv 17 124 18 empty sendV1=A1 °_________% 31 13 0 14
--1 -1 0;
-#X obj 237 502 tgl 20 0 empty sendV1=A1 BA 3 10 0 12 -1 -261689 -1
-0 1;
+-24198 -1 0;
+#X obj 237 502 tgl 20 0 empty sendV1=A1 BA 3 10 0 12 -24198 -261689
+-1 0 1;
 #X floatatom 236 482 6 0 0 1 - - -;
-#X obj 154 502 tgl 20 0 empty sendV1=A1 A 6 11 0 12 -1 -261689 -1 0
-1;
-#X obj 175 502 tgl 20 0 empty sendV1=A1 B 6 11 0 12 -1 -261689 -1 0
-1;
+#X obj 154 502 tgl 20 0 empty sendV1=A1 A 6 11 0 12 -24198 -261689
+-1 0 1;
+#X obj 175 502 tgl 20 0 empty sendV1=A1 B 6 11 0 12 -24198 -261689
+-1 0 1;
 #X floatatom 154 483 6 0 0 2 - - -;
-#X obj 258 502 tgl 20 0 empty sendV1=A1 BB 3 10 0 12 -1 -261689 -1
-0 1;
+#X obj 258 502 tgl 20 0 empty sendV1=A1 BB 3 10 0 12 -24198 -261689
+-1 0 1;
 #X obj 799 361 spigot-toggle_red;
 #X obj 939 534 spigot-toggle_vert;
 #X obj 723 362 spigot-toggle_red;
@@ -161,8 +161,8 @@ that under linux i could play most formats...;
 #X obj 100 416 cnv 10 180 18 empty empty empty 0 14 1 14 -4034 -1 0
 ;
 #X symbolatom 103 416 25 0 0 0 - - -;
-#X obj 196 482 bng 40 250 50 0 empty sendV1=A1 RDM 8 20 1 10 -1 -261689
--1;
+#X obj 196 482 bng 40 250 50 0 empty sendV1=A1 RDM 8 20 1 10 -24198
+-261689 -1;
 #X msg -7 -247 22;
 #X obj 103 482 cnv 10 50 40 empty empty empty 60 22 1 10 -1 -262144
 0;
@@ -173,7 +173,7 @@ that under linux i could play most formats...;
 #X msg -48 -246 76;
 #X obj 102 350 cnv 12 180 45 empty empty empty 1 24 1 8 -1 -260097
 0;
-#X obj 179 361 tgl 25 0 empty empty V 3 14 1 28 -1 -4034 -4034 1 1
+#X obj 179 361 tgl 25 0 empty empty V 3 14 1 28 -1 -4034 -4034 0 1
 ;
 #X obj 102 367 cnv 12 75 12 empty empty empty 60 22 1 10 -4034 -262144
 0;

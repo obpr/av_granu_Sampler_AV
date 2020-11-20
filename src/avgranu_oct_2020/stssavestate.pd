@@ -1,0 +1,3 @@
+#N canvas 2858 122 450 300 12;
+#X floatatom 76 90 5 0 0 3 ITDET - #0-ITDET.s;
+#X floatatom 73 17 5 0 0 2 ITDET #0-ITDET.r -;
