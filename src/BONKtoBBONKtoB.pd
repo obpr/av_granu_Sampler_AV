@@ -1,4 +1,4 @@
-#N canvas 671 151 970 852 10;
+#N canvas 230 587 970 852 10;
 #X declare -lib timbreID/timbreIDLib;
 #X obj -162 1073 pack 0 0;
 #X obj -162 1094 line;
@@ -196,14 +196,14 @@ size is not required to be a power of two.;
 #X floatatom 103 300 5 0 0 0 - - -;
 #X obj 62 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 104 103 cnv 15 98 116 empty empty empty 20 12 0 14 -260097 -66577
+#X obj 102 102 cnv 15 88 114 empty empty empty 20 12 0 14 -260097 -66577
 0;
 #N canvas 0 0 450 300 (subpatch) 0;
-#X array array3 10 float 3;
-#A 0 0.0769231 0.58974 0.162393 -0.692304 0.555555 0.623924 0.931615
-1.2393 1.90597 1.95725;
-#X coords 0 1 10 -1 100 117 1 0 0;
-#X restore 102 102 graph;
+#X array array3 20 float 3;
+#A 0 0.808696 0.913043 0.162393 -0.692304 0.555555 0.623924 0.931615
+1.2393 1.90597 1.95725 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 20 -1 90 115 1 0 0;
+#X restore 101 102 graph;
 #X floatatom 172 546 5 0 0 0 - - -;
 #X obj 170 500 * 1;
 #X obj 176 576 - 50;
@@ -299,4 +299,4 @@ size is not required to be a power of two.;
 #X connect 95 0 23 0;
 #X connect 96 1 97 0;
 #X connect 97 0 32 0;
-#X coords 0 -1 1 1 104 121 1 100 100;
+#X coords 0 -1 1 1 92 118 1 100 100;

@@ -1,4 +1,4 @@
-#N canvas 782 150 898 878 12;
+#N canvas 458 74 898 878 12;
 #N canvas 67 224 450 432 :: 0;
 #X text 24 16 the format [pix_film] is able to decode depends on the
 system you are running Gem.;
@@ -116,16 +116,14 @@ that under linux i could play most formats...;
 #X floatatom 58 213 5 0 0 2 - - -;
 #X obj 158 231 tgl 20 0 empty empty BB 3 10 1 12 -4034 -258113 -1 0
 1;
-#X obj 58 385 cnv 15 120 20 empty sendV=A °________% 33 13 1 14 -24198
+#X obj 58 385 cnv 15 120 20 empty sendV=A °________% 33 13 1 14 -1
 -1 0;
-#X obj 138 404 tgl 20 0 empty sendV=A BA 3 9 1 12 -24198 -1 -1 0 1
-;
+#X obj 138 404 tgl 20 0 empty sendV=A BA 3 9 1 12 -1 -1 -1 0 1;
 #X floatatom 138 387 6 0 0 1 - - -;
-#X obj 61 404 tgl 20 0 empty sendV=A A 5 9 0 12 -24198 -1 -1 0 1;
-#X obj 79 404 tgl 20 0 empty sendV=A B 5 9 1 12 -24198 -1 -1 0 1;
+#X obj 61 404 tgl 20 0 empty sendV=A A 5 9 0 12 -1 -1 -1 0 1;
+#X obj 79 404 tgl 20 0 empty sendV=A B 5 9 1 12 -1 -1 -1 0 1;
 #X floatatom 61 387 5 0 0 2 - - -;
-#X obj 158 404 tgl 20 0 empty sendV=A BB 2 9 1 12 -24198 -1 -1 0 1
-;
+#X obj 158 404 tgl 20 0 empty sendV=A BB 2 9 1 12 -1 -1 -1 0 1;
 #X obj 468 243 spigot-toggle_red;
 #X obj 596 215 spigot-toggle_vert;
 #X obj 392 242 spigot-toggle_red;
@@ -164,8 +162,8 @@ that under linux i could play most formats...;
 #X obj -617 3 r folder2;
 #X obj -206 165 s folder2;
 #X msg -370 116 nada_here;
-#X msg -196 366 nada_here;
-#X obj -196 322 s folder3;
+#X msg -195 370 nada_here;
+#X obj -321 583 s folder3;
 #X obj 2 381 cnv 15 180 6 empty empty empty 10 9 1 10 -1 -260097 0
 ;
 #X obj 0 424 cnv 33 181 133 empty empty empty 6 12 1 14 -1 -66577 0
@@ -178,8 +176,8 @@ that under linux i could play most formats...;
 #X obj -99 -191 sel;
 #X obj 96 213 bng 40 250 50 0 empty empty RDM 6 20 1 12 -4034 -1 -1
 ;
-#X obj 99 387 bng 38 250 50 0 empty sendV=A RDM 6 20 1 12 -24198 -1
--1;
+#X obj 99 387 bng 38 250 50 0 empty sendV=A RDM 6 20 1 12 -1 -1 -1
+;
 #X msg -64 -160 22;
 #X obj -253 231 r lo;
 #X msg -215 114 starter/*.mov;
@@ -187,10 +185,10 @@ that under linux i could play most formats...;
 #X obj -103 -246 r lo;
 #X symbolatom 2 151 25 0 0 0 - - -;
 #X msg -368 30 starter/*.mov;
-#X obj 0 168 cnv 15 182 20 empty \$10-cnv starter/*.mov 4 10 0 12 -1
+#X obj 0 168 cnv 15 182 20 empty \$10-cnv avBO4/*.mov 4 10 0 12 -1
 -4034 0;
-#X obj -214 -73 s \$10-cnv;
-#X msg -214 -47 label \$1;
+#X obj -204 -33 s \$10-cnv;
+#X msg -204 -60 label \$1;
 #X obj -214 -99 symbol;
 #X obj 6 43 bng 15 500 500 0 empty empty avBO2 18 6 1 10 -260097 -1
 -260097;
@@ -214,7 +212,7 @@ that under linux i could play most formats...;
 #X msg -369 52 axe_reboot/*.mov;
 #X obj 6 95 bng 15 500 500 0 empty empty starter 18 6 1 10 -260097
 -1 -260097;
-#X obj 0 341 cnv 15 182 22 empty \$11-cnv starter/*.wav 7 12 0 12 -1
+#X obj 0 341 cnv 15 182 22 empty \$11-cnv avBO4/*.wav 7 12 0 12 -1
 -4034 0;
 #X symbolatom 4 322 25 0 0 0 - - -;
 #X msg -191 603 label \$1;
@@ -268,7 +266,7 @@ that under linux i could play most formats...;
 #X obj 0 146 cnv 3 3 408 empty empty empty 20 12 0 14 -1 -66577 0;
 #X obj 39 233 bng 18 500 500 0 empty empty load -28 9 1 12 -4034 -1
 -4034;
-#X obj 39 214 bng 18 500 500 0 empty empty clear -28 9 1 12 -4034 -1
+#X obj 39 215 bng 18 500 500 0 empty empty clear -28 9 1 12 -4034 -1
 -4034;
 #X obj 1 251 cnv 15 180 45 empty empty empty 10 9 1 10 -1 -260097 0
 ;
@@ -276,7 +274,7 @@ that under linux i could play most formats...;
 -4034;
 #X obj 42 406 bng 18 500 500 0 empty empty load -28 9 1 12 -4034 -1
 -4034;
-#X obj 79 265 tgl 25 0 empty empty V 3 14 1 28 -1 -4034 -4034 0 1;
+#X obj 79 265 tgl 25 0 empty empty V 3 14 1 28 -1 -4034 -4034 1 1;
 #X obj -2 425 cnv 15 180 6 empty empty empty 10 9 1 10 -1 -260097 0
 ;
 #X msg -101 -161 76;

@@ -7,9 +7,9 @@
 -260097 -1;
 #X obj 203 102 bng 18 250 50 0 \$0-load.s \$0-load.r L 5 10 1 14 -162280
 -260097 -1;
-#X obj -15 50 cnv 15 400 20 \$0-preset.name.s \$0-preset.name.r PRESET_FILE:no_preset_loaded
+#X obj -15 50 cnv 15 400 20 \$0-preset.name.s \$0-preset.name.r PRESET_FILE:jb2
 5 10 0 10 -86853 -261682 0;
-#N canvas -446 1028 1531 1028 presets 0;
+#N canvas 0 0 1531 1028 presets 0;
 #N canvas 27 528 666 385 read.write 0;
 #X obj 51 41 r \$0-save.s;
 #X msg 90 101 clear;

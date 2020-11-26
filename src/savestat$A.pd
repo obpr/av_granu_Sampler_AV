@@ -1,4 +1,4 @@
-#N canvas 659 472 1440 878 10;
+#N canvas 240 150 1440 878 10;
 #X obj 289 64 sel 0 1 2;
 #X obj 289 134 sel 0 1 2;
 #X obj 100 38 inlet;
@@ -100,7 +100,7 @@
 #X floatatom 1957 623 5 0 0 0 send_#6 - send_#6;
 #X floatatom 2037 578 5 0 0 0 - - -;
 #X obj 2037 558 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 2024 601 f;
 #X obj 2008 666 f;
 #X obj 2006 648 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
@@ -117,7 +117,7 @@
 #X floatatom 2167 623 5 0 0 0 send_#7 - send_#7;
 #X floatatom 2247 578 5 0 0 0 - - -;
 #X obj 2247 558 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 2234 601 f;
 #X obj 2218 666 f;
 #X obj 2216 648 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
@@ -416,7 +416,7 @@
 #X floatatom 1957 983 5 0 0 0 send_#6 - send_#6;
 #X floatatom 2037 938 5 0 0 0 - - -;
 #X obj 2037 918 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 2024 961 f;
 #X obj 2008 1026 f;
 #X obj 2006 1008 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
@@ -433,7 +433,7 @@
 #X floatatom 2167 983 5 0 0 0 send_#7 - send_#7;
 #X floatatom 2247 938 5 0 0 0 - - -;
 #X obj 2247 918 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 2234 961 f;
 #X obj 2218 1026 f;
 #X obj 2216 1008 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
@@ -618,22 +618,22 @@
 #X floatatom 789 986 5 0 0 0 send_stpA - send_stpA;
 #X obj 1419 846 onoff18;
 #X obj 2253 844 onoff22;
-#X obj 859 1049 s of16;
-#X obj 1069 1049 s of17;
-#X obj 1279 1049 s of18;
-#X obj 1489 1049 s of19;
-#X obj 1689 1049 s of20;
-#X obj 1899 1049 s of21;
-#X obj 2109 1049 s of22;
-#X obj 3792 1050 s of30;
-#X obj 3582 1050 s of29;
-#X obj 3372 1050 s of28;
-#X obj 3162 1050 s of27;
-#X obj 2962 1049 s of26;
-#X obj 2752 1050 s of25;
-#X obj 2542 1050 s of24;
-#X obj 2332 1050 s of23;
-#X obj 3992 1050 s of31;
+#X obj 962 1051 s of16;
+#X obj 1172 1051 s of17;
+#X obj 1382 1051 s of18;
+#X obj 1592 1051 s of19;
+#X obj 1792 1051 s of20;
+#X obj 2002 1051 s of21;
+#X obj 2212 1051 s of22;
+#X obj 3895 1052 s of30;
+#X obj 3685 1052 s of29;
+#X obj 3475 1052 s of28;
+#X obj 3265 1052 s of27;
+#X obj 3065 1051 s of26;
+#X obj 2855 1052 s of25;
+#X obj 2645 1052 s of24;
+#X obj 2435 1052 s of23;
+#X obj 4095 1052 s of31;
 #X obj 3572 903 r lo;
 #X floatatom 331 463 5 0 0 0 receive_reposetoiX#A reposetoiX#A -;
 #X obj 354 515 f;
@@ -777,7 +777,7 @@
 #X obj 1743 -376 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
 #X floatatom 1762 -401 5 0 0 0 - - -;
-#X floatatom 1927 -545 5 0 0 0 receive_#6-out #6-out -;
+#X floatatom 1936 -543 5 0 0 0 receive_#6-out #6-out -;
 #X obj 1921 -493 f;
 #X obj 1898 -514 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
@@ -788,7 +788,7 @@
 #X floatatom 1904 -401 5 0 0 0 send_#6 - send_#6;
 #X floatatom 1984 -446 5 0 0 0 - - -;
 #X obj 1984 -465 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1971 -423 f;
 #X obj 1955 -358 f;
 #X obj 1953 -376 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
@@ -805,21 +805,21 @@
 #X floatatom 2114 -401 5 0 0 0 send_#7 - send_#7;
 #X floatatom 2194 -446 5 0 0 0 - - -;
 #X obj 2194 -465 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 2181 -423 f;
 #X obj 2165 -358 f;
 #X obj 2163 -376 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
 #X floatatom 2182 -401 5 0 0 0 - - -;
-#X floatatom 2360 -544 5 0 0 0 receive_#8-out #8-out -;
+#X floatatom 2368 -543 5 0 0 0 receive_#8-out #8-out -;
 #X obj 2354 -492 f;
-#X obj 2331 -513 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
+#X obj 2333 -511 bng 15 250 50 0 empty empty write -35 7 0 10 -262144
 -1 -1;
 #X obj 2337 -423 f;
 #X obj 2336 -445 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
 -1 -1;
 #X floatatom 2355 -465 5 0 0 0 - - -;
-#X floatatom 2341 -401 5 0 0 0 send_#8 - send_#8;
+#X floatatom 2338 -402 5 0 0 0 send_#8 - send_#8;
 #X floatatom 2417 -445 5 0 0 0 - - -;
 #X obj 2417 -465 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 1 1;
@@ -1104,7 +1104,7 @@
 #X floatatom 1904 -41 5 0 0 0 send_#6 - send_#6;
 #X floatatom 1984 -86 5 0 0 0 - - -;
 #X obj 1984 -106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1971 -63 f;
 #X obj 1955 2 f;
 #X obj 1953 -16 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
@@ -1121,7 +1121,7 @@
 #X floatatom 2114 -41 5 0 0 0 send_#7 - send_#7;
 #X floatatom 2194 -86 5 0 0 0 - - -;
 #X obj 2194 -106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 2181 -63 f;
 #X obj 2165 2 f;
 #X obj 2163 -16 bng 15 250 50 0 empty empty send -30 7 0 10 -262144
@@ -1310,18 +1310,18 @@
 #X obj 1119 36 s of17;
 #X obj 1334 37 s of18;
 #X obj 1541 35 s of19;
-#X obj 1636 25 s of20;
-#X obj 1846 25 s of21;
-#X obj 2056 25 s of22;
-#X obj 3739 26 s of30;
-#X obj 3529 26 s of29;
-#X obj 3319 26 s of28;
-#X obj 3109 26 s of27;
-#X obj 2909 25 s of26;
-#X obj 2699 26 s of25;
-#X obj 2489 26 s of24;
-#X obj 2279 26 s of23;
-#X obj 3939 26 s of31;
+#X obj 1733 31 s of20;
+#X obj 1943 31 s of21;
+#X obj 2153 31 s of22;
+#X obj 3836 32 s of30;
+#X obj 3626 32 s of29;
+#X obj 3416 32 s of28;
+#X obj 3206 32 s of27;
+#X obj 3006 31 s of26;
+#X obj 2796 32 s of25;
+#X obj 2586 32 s of24;
+#X obj 2376 32 s of23;
+#X obj 4036 32 s of31;
 #X obj 3519 -121 r lo;
 #X floatatom 313 -544 5 0 0 0 receive_reposetoiX#A reposetoiX#A -;
 #X obj 301 -509 f;
@@ -1437,7 +1437,7 @@
 #X obj 102 102 hradio 15 1 0 4 empty empty empty 8 -10 0 10 -99865
 -262144 -262144 0;
 #X obj 163 102 hradio 15 1 0 4 empty empty empty 1 -10 0 10 -128992
--1 -262144 2;
+-1 -262144 0;
 #X floatatom 2024 -436 5 0 0 0 - - -;
 #X floatatom 841 -213 5 0 0 2 stp1_2 #0-stp1_2.r -;
 #X floatatom 827 20 5 0 0 3 stp1_2 - #0-stp1_2.s;
@@ -1459,7 +1459,7 @@
 #X floatatom 1926 -317 5 0 0 0 S.stp6 - S.stp6;
 #X floatatom 2135 -583 5 0 0 0 R.stp7 R.stp7 -;
 #X floatatom 2134 -317 5 0 0 0 S.stp7 - S.stp7;
-#X floatatom 2374 -583 5 0 0 0 R.stp8 R.stp8 -;
+#X floatatom 2354 -583 5 0 0 0 R.stp8 R.stp8 -;
 #X floatatom 2362 -317 5 0 0 0 S.stp8 - R.stp8;
 #X floatatom 2572 -583 5 0 0 0 R.stp9 R.stp9 -;
 #X floatatom 2570 -317 5 0 0 0 S.stp9 - R.stp9;
@@ -1509,10 +1509,11 @@
 #X floatatom 3649 -673 5 0 0 2 R.stp14ø R.stp14ø -;
 #X floatatom 3848 -673 5 0 0 2 R.stp15ø R.stp15ø -;
 #X floatatom 4086 -673 5 0 0 2 R.stp16ø R.stp16ø -;
-#X floatatom 276 -607 5 0 0 2 W.reposetoinoffA W.reposetoinoffA -;
+#X floatatom 299 -610 5 0 0 2 W.reposetoinoffA W.reposetoinoffA -;
 #X floatatom 298 -285 5 0 0 3 S.reposetoinoffA - S.reposetoinoffA;
 #X floatatom 426 -607 5 0 0 2 W.reposetoi#A W.reposetoi#A -;
-#X floatatom 448 -285 5 0 0 3 S.reposetoi#A - S.reposetoi#A;
+#X floatatom 351 -350 5 0 0 3 S.reposetoi#A - S.reposetoi#A;
+#X text 505 -322 vvv save to txt ( à ajouter .. partout :);
 #X connect 0 0 1048 0;
 #X connect 0 1 1062 0;
 #X connect 0 2 506 0;
