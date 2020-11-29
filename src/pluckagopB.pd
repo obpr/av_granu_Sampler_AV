@@ -1,4 +1,4 @@
-#N canvas 2114 231 1184 944 12;
+#N canvas 2114 114 1184 944 12;
 #X text -1271 870 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X obj 1071 19 r trgrA;
 #X obj 1000 19 r BB;
@@ -86,7 +86,7 @@ push : off;
 #X obj 662 112 r B;
 #X obj 89 144 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 0
 1;
-#X obj 88 173 tgl 28 0 empty empty B 6 15 1 28 -1 -262144 -262144 0
+#X obj 88 173 tgl 28 0 empty empty B 6 15 1 28 -1 -262144 -262144 1
 1;
 #X obj 175 131 tgl 28 0 empty empty A 6 12 1 22 -1 -262144 -262144
 0 1;
@@ -95,7 +95,7 @@ push : off;
 #X obj 117 146 vsl 28 108 0 33 0 0 empty empty ÷ 8 44 0 22 -16662
 -260097 -260097 0 1;
 #X obj 88 229 tgl 28 0 empty empty • 6 15 1 50 -1 -260097 -260097
-0 1;
+1 1;
 #X obj 146 131 tgl 28 0 empty empty ☞ 8 12 0 27 -1 -262144 -262144
 0 1;
 #X obj 60 144 tgl 28 0 empty empty @ 2 14 1 26 -260097 -1 -1 0 1;
@@ -103,10 +103,10 @@ push : off;
 1;
 #X obj 146 157 tgl 28 0 empty empty ☞ 8 12 0 27 -1 -262144 -262144
 0 1;
-#X obj 60 115 tgl 28 0 empty empty raw 2 12 1 16 -260097 -1 -45076
-0 1;
+#X obj 59 115 tgl 28 0 empty empty raw 2 12 1 16 -260097 -1 -45076
+1 1;
 #X floatatom 146 115 8 0 0 0 - - -;
-#X obj 88 115 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 0 1
+#X obj 88 115 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 1 1
 ;
 #X msg 665 -13 0;
 #X obj 101 867 onoff12x;
