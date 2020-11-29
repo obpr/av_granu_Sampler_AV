@@ -10,7 +10,7 @@
 #X floatatom 134 -350 5 0 0 0 - - -;
 #X obj 97 -313 / 127;
 #X obj -164 -17 tgl 20 0 empty empty ☞ 2 9 0 45 -1 -260097 -260097
-0 1;
+1 1;
 #X obj 247 -284 * 20;
 #X obj 299 -284 * 20;
 #X floatatom 220 56 22 0 0 0 - - -;
@@ -39,10 +39,10 @@
 0 1;
 #X obj 164 128 bng 20 250 50 0 empty empty o 4 8 0 20 -1 -260097 -260097
 ;
-#X obj 187 113 mknob 28 1000 -1 1 0 0 empty empty empty -2 -6 0 8 -260097
--33289 -1 58900 1;
+#X obj 187 113 mknob 28 1000 -1.5 1.5 0 0 empty empty empty -2 -6 0
+8 -260097 -33289 -1 49950 1;
 #X obj 164 107 mknob 20 1000 0 2 0 0 empty empty empty -2 -6 0 8 -1
--260097 -260097 0 1;
+-260097 -260097 49950 1;
 #X obj 413 118 t b f;
 #X obj 417 145 * 1;
 #X floatatom 596 -145 22 0 0 0 - - -;
@@ -99,10 +99,12 @@ lie between output boundaries;
 #X obj 199 -68 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 219 102 vsl 28 48 0 1 0 0 empty empty empty 8 44 0 22 -16662
--260097 -260097 0 1;
+-260097 -260097 4417 1;
 #X msg 187 184 0;
 #X obj 109 113 bng 30 250 50 0 empty empty ☞ 5 15 0 35 -1 -260097
 -1;
+#X obj 97 215 r lo;
+#X msg 82 251 1;
 #X connect 1 0 11 0;
 #X connect 2 0 6 0;
 #X connect 3 0 5 0;
@@ -165,4 +167,7 @@ lie between output boundaries;
 #X connect 71 0 69 0;
 #X connect 72 0 27 0;
 #X connect 74 0 33 0;
+#X connect 76 0 77 0;
+#X connect 76 0 74 0;
+#X connect 77 0 34 0;
 #X coords 0 -1 1 1 236 55 2 100 100;

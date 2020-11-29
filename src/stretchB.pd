@@ -1,4 +1,4 @@
-#N canvas 1920 19 1680 1028 12;
+#N canvas 2365 335 1680 1028 12;
 #X obj 101 101 cnv 15 235 53 empty empty empty 20 12 0 14 -1 -66577
 0;
 #X obj 303 -326 r B;
@@ -10,7 +10,7 @@
 #X floatatom 134 -350 5 0 0 0 - - -;
 #X obj 97 -313 / 127;
 #X obj -164 -17 tgl 20 0 empty empty ☞ 2 9 0 45 -1 -260097 -260097
-0 1;
+1 1;
 #X obj 247 -284 * 20;
 #X obj 299 -284 * 20;
 #X floatatom 220 56 22 0 0 0 - - -;
@@ -28,16 +28,16 @@
 #X msg 153 -127 0;
 #X obj 147 -153 r 0+;
 #X floatatom 483 -106 10 0 0 2 - - -;
-#X obj 139 106 tgl 20 0 empty empty A 7 10 1 10 -1 -260097 -262144
+#X obj 137 106 tgl 20 0 empty empty A 7 10 1 10 -1 -260097 -262144
 0 1;
-#X obj 139 129 tgl 20 0 empty empty B 7 10 1 10 -1 -260097 -262144
+#X obj 137 129 tgl 20 0 empty empty B 7 10 1 10 -1 -260097 -262144
 0 1;
-#X obj 165 129 bng 20 250 50 0 empty empty o 4 8 0 20 -1 -260097 -260097
+#X obj 163 129 bng 20 250 50 0 empty empty o 4 8 0 20 -1 -260097 -260097
 ;
-#X obj 188 114 mknob 28 1000 -1 1 0 0 empty empty empty -2 -6 0 8 -260097
--33289 -1 0 1;
-#X obj 165 108 mknob 20 1000 0 2 0 0 empty empty empty -2 -6 0 8 -1
--260097 -260097 0 1;
+#X obj 186 114 mknob 28 1000 -1.5 1.5 0 0 empty empty empty -2 -6 0
+8 -260097 -33289 -1 49950 1;
+#X obj 163 108 mknob 20 1000 0 2 0 0 empty empty empty -2 -6 0 8 -1
+-260097 -260097 49950 1;
 #X obj 413 118 t b f;
 #X obj 417 145 * 1;
 #X floatatom 596 -145 22 0 0 0 - - -;
@@ -92,17 +92,20 @@ lie between output boundaries;
 #X obj 110 -34 sig~ 1;
 #X obj 199 -68 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 220 104 vsl 28 48 0 1 0 0 empty empty empty 8 44 0 22 -16662
--260097 -260097 0 1;
+#X obj 217 102 vsl 28 48 0 1 0 0 empty empty empty 8 44 0 22 -16662
+-260097 -260097 3068 1;
 #X msg 187 184 0;
-#X obj 109 113 bng 30 250 50 0 empty empty ☞ 5 15 0 35 -1 -260097
+#X obj 107 113 bng 30 250 50 0 empty empty ☞ 5 15 0 35 -1 -260097
 -1;
 #X obj -162 -47 r TStrchonoffB;
 #X obj 94 -373 ctlin 55;
 #X obj 596 -169 r looplenghtB;
 #X obj 190 -161 r Bbutton;
 #X obj -61 52 s stretchB;
-#X obj 33 -40 r BB1mod;
+#X obj 33 -40 r BBBmod;
+#X obj 97 215 r lo;
+#X msg 82 251 1;
+#X msg 148 258 1;
 #X connect 1 0 11 0;
 #X connect 2 0 6 0;
 #X connect 3 0 5 0;
@@ -165,4 +168,7 @@ lie between output boundaries;
 #X connect 72 0 32 0;
 #X connect 73 0 16 0;
 #X connect 75 0 15 0;
+#X connect 76 0 77 0;
+#X connect 76 0 68 0;
+#X connect 77 0 29 0;
 #X coords 0 -1 1 1 235 55 2 100 100;
