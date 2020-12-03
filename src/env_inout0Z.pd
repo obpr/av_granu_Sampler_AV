@@ -1,4 +1,4 @@
-#N canvas 415 0 925 1028 10;
+#N canvas 1757 30 925 1028 10;
 #X obj 1066 396 inlet;
 #X obj 1256 750 inlet;
 #X obj 1322 391 inlet;
@@ -7,7 +7,7 @@
 #X obj 1128 396 inlet;
 #X obj 1179 396 inlet;
 #X obj 1316 444 outlet;
-#X obj 1257 273 bng 20 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+#X obj 1302 214 bng 20 250 50 0 empty empty empty 17 7 0 10 -4034 -1
 -1;
 #X obj 1032 817 vline~;
 #X floatatom 1279 446 5 0 0 0 - - -;
@@ -47,7 +47,7 @@
 -1 -1;
 #X msg 1350 754 0 \$1;
 #X obj 1280 370 r T$mod;
-#X obj 1257 252 r BBmod;
+#X obj 1302 193 r BBmod;
 #X obj 1689 461 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1688 506 f;
@@ -78,7 +78,7 @@
 #X msg 1033 711 1 \$1 \, 1 0 \$3 \, 0 0 \$4;
 #X obj 1303 298 spigot-toggle_red;
 #X obj 916 235 delay 11;
-#X obj 951 193 r T$mod;
+#X obj 956 188 r T$mod;
 #X obj 910 169 sel;
 #X obj 894 200 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -155,27 +155,29 @@
 #X obj 873 705 * 1;
 #X obj 1461 492 t b f;
 #X floatatom 1463 536 5 0 0 0 - - -;
-#X obj 1318 214 r envfromaudiomodAtoA;
-#X obj 1318 188 r envfromaudiomodBtoA;
-#X obj 1299 160 bng 20 250 50 0 empty empty empty 17 7 0 10 -4034 -1
--1;
-#X obj 1298 185 spigot-toggle_red;
-#X obj 1299 138 r BBBmod;
+#X obj 1302 263 spigot-toggle_red;
 #X obj 1464 515 -;
 #X obj 1153 71 r trgrafterAmod;
+#X obj 1316 -30 sel;
+#X obj 1408 220 - 1;
+#X obj 1416 248 * -1;
+#X obj 1261 249 r lo;
+#X obj 1365 235 spigot-toggle_red;
+#X obj 1351 193 r envfromaudiomodA;
 #X connect 0 0 31 0;
 #X connect 1 0 15 0;
 #X connect 2 0 36 0;
 #X connect 3 0 14 0;
 #X connect 5 0 32 0;
 #X connect 6 0 33 0;
-#X connect 8 0 68 0;
+#X connect 8 0 135 0;
+#X connect 8 0 142 0;
 #X connect 9 0 23 0;
 #X connect 10 0 24 0;
 #X connect 10 0 7 0;
 #X connect 10 0 29 0;
 #X connect 10 0 130 0;
-#X connect 10 0 140 0;
+#X connect 10 0 136 0;
 #X connect 11 0 13 1;
 #X connect 11 0 38 1;
 #X connect 11 0 109 1;
@@ -337,14 +339,18 @@
 #X connect 131 0 9 0;
 #X connect 131 0 16 0;
 #X connect 132 0 65 1;
-#X connect 133 0 140 0;
-#X connect 133 1 140 1;
+#X connect 133 0 136 0;
+#X connect 133 1 136 1;
 #X connect 134 0 54 1;
-#X connect 135 0 68 1;
-#X connect 136 0 138 1;
-#X connect 136 0 68 1;
-#X connect 137 0 138 0;
-#X connect 138 0 68 0;
-#X connect 139 0 137 0;
-#X connect 140 0 134 0;
-#X connect 141 0 85 0;
+#X connect 135 0 68 0;
+#X connect 136 0 134 0;
+#X connect 137 0 85 0;
+#X connect 138 0 72 0;
+#X connect 139 0 140 0;
+#X connect 140 0 135 1;
+#X connect 141 0 135 1;
+#X connect 142 0 68 0;
+#X connect 143 0 68 1;
+#X connect 143 0 138 0;
+#X connect 143 0 139 0;
+#X connect 143 0 142 1;

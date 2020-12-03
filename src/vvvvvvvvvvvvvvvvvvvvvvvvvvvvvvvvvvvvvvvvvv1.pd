@@ -91,7 +91,7 @@ threshold \, then the pixel alpha is set to the other value.;
 #X text -1211 884 Inlet 4: <list>: low-threshold (RGB);
 #X obj -1129 1028 pix_invert;
 #X obj -1028 1258 * 5;
-#X obj -1134 1300 pix_contrast;
+#X obj -1128 1300 pix_contrast;
 #X obj -1133 1331 pix_motionblur;
 #X obj -1024 1331 * 0.99;
 #X obj -1000 979 loadbang;
