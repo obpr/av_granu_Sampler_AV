@@ -139,8 +139,8 @@
 #X floatatom 23 149 5 0 0 0 - - -;
 #X floatatom 614 94 5 0 0 0 - - -;
 #X obj 603 262 s \$2-cnv;
-#X obj 50 50 cnv 15 181 18 empty \$2-cnv Select... 9 10 1 12 -4034
--1 0;
+#X obj 50 50 cnv 15 181 18 empty \$2-cnv trianglebleu_1_1.mov 9 10
+1 12 -4034 -1 0;
 #X msg 313 208 0;
 #X obj 216 15 r folder2;
 #X connect 0 0 1 0;

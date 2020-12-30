@@ -1,4 +1,4 @@
-#N canvas 230 587 970 852 10;
+#N canvas 0 176 970 852 10;
 #X declare -lib timbreID/timbreIDLib;
 #X obj -162 1073 pack 0 0;
 #X obj -162 1094 line;
@@ -19,8 +19,8 @@
 #X obj -444 892 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -443 869 sel 0 1;
-#X floatatom 3 344 5 0 0 0 - - -;
-#X floatatom -163 1215 5 0 0 0 - - -;
+#X floatatom -1 340 5 0 0 0 - - -;
+#X floatatom -158 1207 5 0 0 0 - - -;
 #X floatatom -445 1041 5 0 0 0 - - -;
 #X floatatom -395 957 5 0 0 0 - - -;
 #X obj -395 892 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -196,31 +196,46 @@ size is not required to be a power of two.;
 #X floatatom 103 300 5 0 0 0 - - -;
 #X obj 62 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 102 102 cnv 15 88 114 empty empty empty 20 12 0 14 -260097 -66577
-0;
+#X obj 102 102 cnv 15 88 114 empty empty a' 3 82 0 32 -260097 -1 0
+;
 #N canvas 0 0 450 300 (subpatch) 0;
-#X array array3 20 float 3;
-#A 0 0.808696 0.913043 0.162393 -0.692304 0.555555 0.623924 0.931615
-1.2393 1.90597 1.95725 0 0 0 0 0 0 0 0 0 0;
-#X coords 0 1 20 -1 90 115 1 0 0;
-#X restore 101 102 graph;
+#X array array3 8 float 3;
+#A 0 0.773913 0.234783 0.321739 0.252174 0.00869757 0 0 0;
+#X coords 0 1 8 -1 90 115 1 0 0;
+#X restore 102 101 graph;
 #X floatatom 172 546 5 0 0 0 - - -;
 #X obj 170 500 * 1;
 #X obj 176 576 - 50;
 #X obj -197 604 inlet;
 #X floatatom -191 632 5 0 0 0 - - -;
-#X floatatom -142 1175 0 0 0 0 - - -;
 #X obj -141 1151 * 100;
 #X obj -445 1017 * 0.01;
 #X obj -395 1018 * 0.01;
 #X obj -510 340 bonk~;
 #X obj -454 382 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X obj 321 154 pack f f;
+#X text 409 146 Uses creation arguments to simplify creating parameters
+for sliders.;
+#X floatatom 322 107 5 0 0 0 - - -;
+#X floatatom 314 359 5 0 0 0 - - -;
+#X msg 314 381 \; array3 resize \$1;
+#X obj -14 256 metro 200;
+#X obj -14 234 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 199 hsl 85 16 0 5 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 0 1;
+#X msg 321 189 range \$2 \$1;
+#X obj 321 129 init \$2 \$1;
+#X obj 104 101 hsl 85 8 0 5 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 0 1;
+#X obj 102 158 cnv 1 88 1 empty empty empty 2 12 0 14 -1 -66577 0;
+#X floatatom 100 200 15 0 0 0 - - -;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
-#X connect 2 0 93 0;
+#X connect 2 0 92 0;
 #X connect 3 0 13 0;
-#X connect 5 0 96 0;
+#X connect 5 0 95 0;
 #X connect 6 0 18 0;
 #X connect 7 0 8 0;
 #X connect 7 0 42 0;
@@ -231,14 +246,15 @@ size is not required to be a power of two.;
 #X connect 12 0 88 0;
 #X connect 13 0 15 0;
 #X connect 14 0 24 0;
-#X connect 15 0 94 0;
+#X connect 15 0 93 0;
 #X connect 16 0 45 0;
 #X connect 17 0 16 0;
 #X connect 17 1 22 0;
 #X connect 18 0 83 0;
+#X connect 18 0 100 0;
 #X connect 19 0 4 0;
 #X connect 20 0 0 0;
-#X connect 21 0 95 0;
+#X connect 21 0 94 0;
 #X connect 22 0 46 0;
 #X connect 23 0 0 0;
 #X connect 24 0 13 0;
@@ -278,6 +294,8 @@ size is not required to be a power of two.;
 #X connect 71 0 72 0;
 #X connect 74 0 73 0;
 #X connect 76 0 78 0;
+#X connect 76 0 104 0;
+#X connect 76 0 107 0;
 #X connect 77 0 0 0;
 #X connect 78 0 77 0;
 #X connect 79 0 80 0;
@@ -294,9 +312,18 @@ size is not required to be a power of two.;
 #X connect 90 0 91 0;
 #X connect 91 0 38 0;
 #X connect 92 0 19 0;
-#X connect 93 0 92 0;
-#X connect 94 0 20 0;
-#X connect 95 0 23 0;
-#X connect 96 1 97 0;
-#X connect 97 0 32 0;
+#X connect 92 0 109 0;
+#X connect 93 0 20 0;
+#X connect 94 0 23 0;
+#X connect 95 1 96 0;
+#X connect 96 0 32 0;
+#X connect 97 0 105 0;
+#X connect 99 0 106 0;
+#X connect 100 0 101 0;
+#X connect 100 0 99 0;
+#X connect 102 0 79 0;
+#X connect 103 0 102 0;
+#X connect 105 0 104 0;
+#X connect 105 0 107 0;
+#X connect 106 0 97 0;
 #X coords 0 -1 1 1 92 118 1 100 100;

@@ -1,4 +1,4 @@
-#N canvas 2353 513 1247 517 10;
+#N canvas 3032 734 1247 517 10;
 #X obj -928 49 translateXYZ;
 #X obj -883 -119 pix_separator;
 #X obj -886 -162 pix_separator;
@@ -137,8 +137,8 @@ threshold \, then the pixel alpha is set to the other value.;
 #X obj 954 1107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 770 1175 r lo;
-#X msg 985 1207 0.161017 0.161017 0.161017;
-#X msg 825 1207 0.432203 0.432203 0.432203;
+#X msg 985 1207 0 0 0;
+#X msg 825 1207 0.194915 0.194915 0.194915;
 #X obj 850 1178 loadbang;
 #X obj 724 1172 sel;
 #X text 917 1020 select;

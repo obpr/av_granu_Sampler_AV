@@ -1,4 +1,4 @@
-#N canvas 307 310 734 568 10;
+#N canvas 586 221 734 568 10;
 #X obj 172 263 list;
 #X obj 217 263 list;
 #X obj 292 229 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
@@ -133,7 +133,7 @@
 #X obj 224 350 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 56 51 hradio 17 1 0 9 \$3-bang empty empty 0 -3 0 10 -260097
--1 -1 0;
+-1 -1 4;
 #X obj 338 395 splitfilename;
 #X obj 513 318 splitfilename;
 #X floatatom 21 504 5 0 0 0 - - -;
@@ -145,8 +145,8 @@
 #X floatatom 33 104 5 0 0 0 - - -;
 #X floatatom 614 94 5 0 0 0 - - -;
 #X obj 610 261 s \$3-cnv;
-#X obj 50 50 cnv 15 179 20 empty \$3-cnv Select... 6 10 1 14 -4034
--1 0;
+#X obj 50 50 cnv 15 179 20 empty \$3-cnv y2mate.com\ -\ La\ tradition\ du\ chant\ védique_480p_1_1.wav
+6 10 1 14 -4034 -1 0;
 #X msg 288 191 0;
 #X obj 159 111 r folder3;
 #X obj 109 534 s soundfileA;
