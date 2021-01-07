@@ -22,22 +22,22 @@
 #X obj 838 -12 inlet;
 #X obj 725 57 f;
 #X obj 714 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 31 256;
+-262144 -1 -1 31.2 256;
 #X obj 783 57 f;
 #X obj 785 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 20.6945 256;
+-262144 -1 -1 6.25 256;
 #X obj 840 57 f;
 #X obj 842 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 104.389 256;
+-262144 -1 -1 12.5 256;
 #X obj 898 57 f;
 #X obj 901 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 18.75 256;
 #X obj 994 57 f;
 #X obj 996 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 45 256;
+-262144 -1 -1 25 256;
 #X obj 1042 57 f;
 #X obj 1044 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 31.25 256;
 #X obj 1099 57 f;
 #X obj 1101 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
@@ -70,35 +70,35 @@
 10 -262144 -1 -1 0 256;
 #X obj 644 170 * 1;
 #X obj 790 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 20.6945 256;
+-262144 -1 -1 6.25 256;
 #X obj 847 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 104.389 256;
+-262144 -1 -1 12.5 256;
 #X obj 905 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 14.0836 256;
+-262144 -1 -1 18.75 256;
 #X obj 991 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 18.7781 256;
+-262144 -1 -1 25 256;
 #X obj 1061 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 23.4727 256;
+-262144 -1 -1 31.25 256;
 #X obj 1119 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 28.1672 256;
+-262144 -1 -1 37.5 256;
 #X obj 1176 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 32.8617 256;
+-262144 -1 -1 43.75 256;
 #X obj 1244 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 37.5563 256;
+-262144 -1 -1 50 256;
 #X obj 1300 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 42.2508 256;
+-262144 -1 -1 56.25 256;
 #X obj 1359 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 46.9453 256;
+-262144 -1 -1 62.5 256;
 #X obj 1415 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 51.6399 256;
+-262144 -1 -1 68.75 256;
 #X obj 1522 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 56.3344 256;
+-262144 -1 -1 75 256;
 #X obj 1580 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 61.029 256;
+-262144 -1 -1 81.25 256;
 #X obj 1636 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 65.7235 256;
+-262144 -1 -1 87.5 256;
 #X obj 1692 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 70.418 256;
+-262144 -1 -1 93.75 256;
 #X floatatom 840 97 5 0 0 0 - - -;
 #X floatatom 898 97 5 0 0 0 - - -;
 #X floatatom 997 97 5 0 0 0 - - -;
@@ -181,9 +181,9 @@
 #X obj 1653 386 * 1;
 #X obj 846 386 * 1;
 #X obj 789 386 * 1;
-#X obj 734 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 734 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 786 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 786 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 831 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
@@ -324,7 +324,7 @@
 #X obj 1581 188 t b f;
 #X obj 428 -308 t b f;
 #X obj 730 29 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 31 256;
+-262144 -1 -1 31.2 256;
 #X obj 1048 390 * 1;
 #X obj 1037 433 f;
 #X obj 120 135 spigot-toggle_red;
@@ -444,7 +444,7 @@
 #X obj 452 42 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 324 10 select 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
-#X obj 20 -22 r ITfloat;
+#X obj 20 -20 r ITfloat;
 #X obj 655 418 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 611 418 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -484,7 +484,7 @@
 -1;
 #X obj 677 418 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj -160 -136 inlet;
+#X obj -161 2 inlet;
 #X obj -18 2 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X floatatom 21 12 5 0 0 0 - - -;

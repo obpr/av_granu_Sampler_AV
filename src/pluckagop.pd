@@ -1,50 +1,50 @@
-#N canvas 96 101 1655 941 12;
+#N canvas 714 35 1655 941 12;
 #X text -663 938 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text -1745 958 We've changed the control for "chunk size" to milliseconds
 for added convenience \, and delayed multiplying sample location by
 the sample rate (44100) until the last moment \, so that calculations
 using "read-pt" and "chunk size" can be in the same units (seconds.)
 ;
-#X floatatom 406 116 12 0 0 0 - - -;
+#X floatatom 405 133 12 0 0 0 - - -;
 #X obj 199 20 r lo;
 #X msg 195 50 0;
-#X obj 406 139 outlet;
-#X obj 292 394 r A;
-#X obj 231 467 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 405 156 outlet;
+#X obj 369 387 r A;
+#X obj 308 460 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 292 523 - 0;
-#X obj 264 606 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 369 516 - 0;
+#X obj 341 599 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 263 630 f;
-#X floatatom 292 548 8 0 3 0 - - -;
-#X floatatom 230 658 8 0 3 0 - - -;
-#X floatatom 229 489 5 0 0 0 - - -;
-#X obj 231 517 sel 0;
-#X floatatom 352 389 8 0 3 0 - - -;
-#X obj 174 797 s trgrvolee;
-#X obj 292 470 spigot-toggle_vert;
-#X obj 231 545 t b b;
-#X obj 230 603 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 340 623 f;
+#X floatatom 369 541 8 0 3 0 - - -;
+#X floatatom 307 651 8 0 3 0 - - -;
+#X floatatom 306 482 5 0 0 0 - - -;
+#X obj 308 510 sel 0;
+#X floatatom 429 382 8 0 3 0 - - -;
+#X obj 172 523 s trgrvolee;
+#X obj 369 463 spigot-toggle_vert;
+#X obj 308 538 t b b;
+#X obj 307 596 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 229 631 f;
-#X floatatom 248 585 8 0 3 0 - - -;
-#X obj 48 918 spigot-toggle_orange;
-#X obj 47 942 spigot-toggle_orange;
-#X obj 47 966 spigot-toggle_orange;
-#X obj 56 871 r lo;
-#X obj 47 988 spigot-toggle_orange;
-#X obj 18 954 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 1 1;
-#X obj 72 914 onoff0x;
-#X obj 71 962 onoff2x;
-#X obj 70 987 onoff3x;
+#X obj 306 624 f;
+#X floatatom 325 578 8 0 3 0 - - -;
+#X obj 73 764 spigot-toggle_orange;
+#X obj 72 788 spigot-toggle_orange;
+#X obj 72 812 spigot-toggle_orange;
+#X obj 81 717 r lo;
+#X obj 72 834 spigot-toggle_orange;
+#X obj 43 800 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 91 760 onoff0x;
+#X obj 90 808 onoff2x;
+#X obj 89 833 onoff3x;
 #X text -1168 908 >ø = stop at release;
 #X text -652 1033 when one of above is select it can be played as;
 #X text -651 960 ø = ON/OFF \, 1 push: on second push : off;
 #X text -1168 928 loc = reminds what you were doing \; 1st push: scd
 push : off;
-#X obj 71 938 onoff1x;
+#X obj 90 784 onoff1x;
 #X obj 622 83 r A;
-#X obj 622 188 spigot-toggle_red;
+#X obj 624 189 spigot-toggle_red;
 #X obj 622 161 spigot-toggle_vert;
 #X obj 643 188 spigot-toggle_red;
 #X obj 644 161 spigot-toggle_vert;
@@ -53,29 +53,29 @@ push : off;
 #X obj 765 162 spigot-toggle_jaunenoir;
 #X obj 764 189 spigot-toggle_jaunenoir;
 #X floatatom 766 232 12 0 0 0 - - -;
-#X obj 147 799 spigot-toggle_orange;
-#X obj 148 827 spigot-toggle_orange;
-#X obj 291 496 t b f;
+#X obj 145 525 spigot-toggle_orange;
+#X obj 146 553 spigot-toggle_orange;
+#X obj 368 489 t b f;
 #X obj 624 316 + 0;
 #X obj 621 455 spigot-toggle_red;
-#X obj 406 652 f;
-#X floatatom 403 681 8 0 3 0 - - -;
-#X obj 404 710 spigot-toggle_vert;
-#X floatatom 339 680 8 0 3 0 - - -;
-#X obj 351 652 f;
-#X obj 418 510 sel;
-#X obj 408 630 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 483 645 f;
+#X floatatom 480 674 8 0 3 0 - - -;
+#X obj 481 703 spigot-toggle_vert;
+#X floatatom 416 673 8 0 3 0 - - -;
+#X obj 428 645 f;
+#X obj 495 503 sel;
+#X obj 485 623 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 349 629 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 426 622 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 622 250 + 0;
-#X obj 169 827 s trgrvolee1;
-#X obj 350 513 spigot-toggle_red;
-#X obj 360 450 - 1;
-#X obj 359 473 * -1;
-#X obj 427 709 r @A;
-#X obj 370 513 r lo;
-#X obj 208 327 s TmstrchBTR;
+#X obj 167 553 s trgrvolee1;
+#X obj 427 506 spigot-toggle_red;
+#X obj 437 443 - 1;
+#X obj 436 466 * -1;
+#X obj 504 702 r @A;
+#X obj 447 506 r lo;
+#X obj 148 344 s TmstrchBTR;
 #X obj 90 128 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 0
 1;
 #X obj 90 157 tgl 28 0 empty empty B 6 15 1 26 -1 -262144 -262144 0
@@ -100,7 +100,7 @@ push : off;
 #X obj 148 157 tgl 28 0 empty empty ☞ 8 12 0 27 -1 -262144 -262144
 0 1;
 #X obj 32 128 tgl 28 0 empty empty ∞ 6 15 2 25 -1 -260097 -260097
-1 1;
+0 1;
 #X obj 32 99 tgl 28 0 empty empty >๏ 5 13 1 15 -1 -260097 -260097
 0 1;
 #X obj 61 99 tgl 28 0 empty empty raw 2 12 1 16 -260097 -1 -1 0 1;
@@ -113,24 +113,24 @@ push : off;
 0 1;
 #X obj 148 215 tgl 28 0 empty empty ∗ 8 12 1 24 -1 -260097 -260097
 0 1;
-#X obj 90 99 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 1 1
+#X obj 90 99 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 0 1
 ;
-#X obj 45 1121 * -1;
-#X obj 51 1092 - 1;
+#X obj 80 939 * -1;
+#X obj 82 910 - 1;
 #X obj 157 -427 s reposetoinoffA;
 #X obj 160 -467 r send_reposetoinoffA;
 #X msg 641 217 0;
 #X obj 119 99 bng 28 250 50 0 empty empty +0 9 14 2 10 -1 -260097 -260097
 ;
-#X obj 455 139 s posA;
-#X obj -53 946 r locA;
+#X obj 454 156 s posA;
+#X obj -28 792 r locA;
 #X obj -299 155 s locA;
-#X obj 151 852 r s&pAa;
-#X obj 151 874 r s&pBa;
-#X obj 151 896 r speedAa;
-#X obj 151 918 r speedBa;
-#X obj 151 940 r pitchAa;
-#X obj 150 958 r pitchBa;
+#X obj 149 578 r s&pAa;
+#X obj 150 651 r s&pBa;
+#X obj 149 602 r speedAa;
+#X obj 150 675 r speedBa;
+#X obj 149 626 r pitchAa;
+#X obj 149 698 r pitchBa;
 #X obj 623 506 s Amod;
 #X floatatom 622 479 12 0 0 0 - - -;
 #X obj 90 186 tgl 28 0 empty empty • 6 15 1 50 -1 -260097 -260097
@@ -166,9 +166,9 @@ push : off;
 #X obj 90 -261 s lyrAposB;
 #X obj -183 103 r lo;
 #X msg 227 50 0;
-#X obj 56 1060 r freestepsouts;
-#X obj 375 115 * 1;
-#X obj 623 105 r B;
+#X obj 82 886 r freestepsouts;
+#X obj 374 132 * 1;
+#X obj 652 111 r B;
 #X obj 125 -906 r send_A<<A;
 #X obj 125 -884 s A<<A;
 #X obj 124 -860 r send_AøA;
@@ -193,7 +193,7 @@ push : off;
 #X obj 653 20 sel;
 #X obj 670 47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 72 1010 onoff7x;
+#X obj 91 856 onoff7x;
 #X obj -384 153 s Abutton;
 #X obj -113 212 s sl_trgA;
 #X obj -113 239 s sl_trgB;
@@ -202,11 +202,11 @@ push : off;
 #X obj 758 301 r ø@S;
 #X obj 623 -34 r AAonoff;
 #X obj 624 -11 r BAonoff;
-#X obj 418 434 r AAonoff;
-#X obj 420 461 r BAonoff;
+#X obj 495 427 r AAonoff;
+#X obj 497 454 r BAonoff;
 #X obj -114 156 s AAonoff;
 #X obj -113 185 s BAonoff;
-#X obj 263 826 r BAonoff;
+#X obj 192 404 r BAonoff;
 #X obj 623 273 + 0;
 #X obj 128 39 spigot-toggle_orange;
 #X text -657 980 raw = A without modulation;
@@ -214,8 +214,8 @@ push : off;
 on;
 #X text -652 1019 @ = reminds the last starting point and not hangs
 on;
-#X obj 302 419 r A@;
-#X obj 178 763 r AAonoff;
+#X obj 379 412 r A@;
+#X obj 197 429 r AAonoff;
 #X obj 182 -161 notein;
 #X floatatom 229 -134 5 0 0 0 - - -;
 #X floatatom 183 -133 5 0 0 0 - - -;
@@ -236,11 +236,11 @@ on;
 #X obj -94 125 s rawA;
 #X obj -95 80 r trgrmodA;
 #X msg 671 69 0;
-#X obj 79 478 spigot-toggle_orange;
-#X obj 79 505 delay;
-#X obj 112 480 r t$mod;
-#X obj 83 454 sel;
-#X msg 78 527 1;
+#X obj 59 384 spigot-toggle_orange;
+#X obj 59 411 delay;
+#X obj 92 386 r t$mod;
+#X obj 63 360 sel;
+#X msg 58 433 1;
 #X obj 83 -123 s øAtiTS1;
 #X obj 154 -347 s TStrchonoffA;
 #X obj -138 125 s 0+;
@@ -252,7 +252,7 @@ on;
 0 1;
 #X obj 177 186 tgl 28 0 empty empty • 5 15 1 50 -1 -260097 -260097
 0 1;
-#X obj 351 366 r playbackA;
+#X obj 428 359 r playbackA;
 #X obj 803 300 r SmplbangA;
 #X obj 802 377 f;
 #X obj -485 354 s BAtch;
@@ -266,7 +266,7 @@ on;
 #X obj -464 143 r sl_bngA;
 #X obj -467 224 r sl_bngB;
 #X msg -473 279 0;
-#X obj 357 425 r @reA;
+#X obj 434 418 r @reA;
 #X obj -299 183 s @reA;
 #X obj 664 194 r 0+;
 #X obj 286 216 s envAAM;
@@ -331,7 +331,7 @@ on;
 #X obj 1482 427 r trgrB;
 #X obj 1484 349 spigot-toggle_vert;
 #X obj 1484 370 spigot-toggle_red;
-#X obj 164 202 cnv 15 1 2 empty empty ω+♪ 1 12 0 14 -1 -260097 0
+#X obj 178 203 cnv 15 1 2 empty empty ω+♪ 1 12 0 14 -1 -260097 0
 ;
 #X obj 147 98 cnv 15 58 17 empty empty ↬ 3 8 0 40 -1 -260097 0;
 #X obj 92 274 r envFRMsmplsendA;
@@ -437,6 +437,7 @@ on;
 #X connect 68 0 157 0;
 #X connect 68 0 174 0;
 #X connect 68 0 177 0;
+#X connect 68 0 163 0;
 #X connect 69 0 40 1;
 #X connect 69 0 108 0;
 #X connect 70 0 39 1;
@@ -550,6 +551,7 @@ on;
 #X connect 177 0 90 0;
 #X connect 181 0 17 1;
 #X connect 181 0 7 0;
+#X connect 182 0 46 0;
 #X connect 182 0 16 0;
 #X connect 183 0 185 0;
 #X connect 183 1 184 0;

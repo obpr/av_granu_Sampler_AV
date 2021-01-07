@@ -1,4 +1,4 @@
-#N canvas 941 67 1280 1006 10;
+#N canvas 435 255 1280 1006 10;
 #X obj 250 73 r lo;
 #X obj 156 1046 spigot-toggle_orange;
 #X obj 156 1069 spigot-toggle_orange;
@@ -212,7 +212,7 @@
 #X obj 339 168 vsl 15 91 -4 4 0 0 empty empty empty 2 95 1 8 -16662
 -262144 -262144 5625 1;
 #X obj 276 168 vsl 15 91 -2 2 0 0 empty empty empty 1 95 0 8 -16662
--262144 -262144 4500 1;
+-262144 -262144 6697 1;
 #X msg 681 153 0.75;
 #X msg 433 151 0.75;
 #X obj 619 770 spigot-toggle_jaunenoir;
@@ -338,6 +338,7 @@
 #X msg 386 891 2;
 #X floatatom 209 886 5 0 0 0 - - -;
 #X msg 498 151 0;
+#X obj -3 275 s Bbutton;
 #X connect 0 0 124 0;
 #X connect 0 0 125 0;
 #X connect 1 0 22 0;
@@ -373,6 +374,7 @@
 #X connect 22 0 65 0;
 #X connect 22 0 135 1;
 #X connect 22 0 268 0;
+#X connect 22 0 282 0;
 #X connect 23 0 73 0;
 #X connect 23 0 141 1;
 #X connect 24 0 100 0;
@@ -408,6 +410,7 @@
 #X connect 33 0 67 0;
 #X connect 33 0 134 1;
 #X connect 33 0 267 0;
+#X connect 33 0 282 0;
 #X connect 34 0 75 0;
 #X connect 34 0 140 1;
 #X connect 35 0 14 0;

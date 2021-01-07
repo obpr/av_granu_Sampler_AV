@@ -1,4 +1,4 @@
-#N canvas 287 273 1680 1028 16;
+#N canvas 2184 174 1680 1028 16;
 #X floatatom 2590 358 5 0 0 0 - - -;
 #X floatatom -1530 335 5 0 0 0 - - -;
 #X floatatom 3067 311 5 0 0 0 - - -;
@@ -208,7 +208,7 @@
 #X msg 337 1215 0;
 #X obj 336 1185 delay 100;
 #X obj 333 513 hradio 43 1 0 16 empty empty __1___2___3___4___5___6___7___8___9___10__11__12__13__14__15__16
--5 35 1 19 -228856 -1 -1 14;
+-5 35 1 19 -228856 -1 -1 1;
 #X obj 350 514 spigot-toggle_red;
 #X obj 391 515 spigot-toggle_red;
 #X obj 433 515 spigot-toggle_red;
@@ -765,7 +765,7 @@
 #X obj 213 1702 s IT1;
 #X obj 210 1552 s IT;
 #X obj 1528 -187 vradio 17 1 0 3 empty empty full_screen 22 8 1 10
--260097 -1 -260097 0;
+-260097 -1 -260097 1;
 #X floatatom 1732 -107 5 0 0 0 - - -;
 #X obj 1732 -139 + 1;
 #X obj -121 31 spigot-toggle_red;
@@ -827,7 +827,7 @@
 #X obj 13 367 cnv 16 1005 89 empty empty empty 18 12 0 14 -128992 -260097
 0;
 #X obj 331 293 hradio 43 1 0 16 empty empty __1___2___3___4___5___6___7___8___9___10__11__12__13__14__15__16
--5 35 1 19 -228856 -1 -1 0;
+-5 35 1 19 -228856 -1 -1 4;
 #X obj 344 294 spigot-toggle_red;
 #X obj 387 294 spigot-toggle_red;
 #X obj 429 294 spigot-toggle_red;
@@ -1424,7 +1424,7 @@
 ;
 #X obj 35 -106 r posvisu;
 #X obj 190 122 vsl 20 80 0 1 0 0 empty empty OPA 3 13 0 8 -1 -260097
--260097 6905 1;
+-260097 6068 1;
 #X obj 148 100 tgl 20 0 empty empty ENV -1 12 0 12 -1 -260097 -260097
 0 1;
 #X obj 169 122 vsl 20 100 0 2 0 0 empty empty FADE 0 13 0 8 -1 -260097
@@ -1814,7 +1814,7 @@
 #X obj 84 120 cnv 5 26 26 empty empty empty 20 12 0 14 -1 -66577 0
 ;
 #X obj 188 122 vsl 20 80 0 1 0 0 empty empty OPA 3 13 0 8 -1 -260097
--260097 0 1;
+-260097 4236 1;
 #X obj 146 100 tgl 20 0 empty empty ENV -1 12 0 12 -1 -260097 -260097
 0 1;
 #X obj 167 122 vsl 20 100 0 1 0 0 empty empty FADE 0 13 0 8 -1 -260097
@@ -2183,7 +2183,7 @@
 #X obj 819 -302 cnv 12 507 56 empty empty empty 20 12 0 14 -1 -66577
 0;
 #X obj 193 23 hsl 501 8 0 100 0 1 empty empty ⌖ 4 3 1 20 -16662 -260097
--260097 43200 0;
+-260097 15600 0;
 #X obj -60 272 r lo;
 #X floatatom 5877 495 5 0 0 0 - - -;
 #X obj 9 573 cnv 12 140 16 empty empty TIME_________RAMPE 54 12 1 8
@@ -2195,10 +2195,10 @@
 #X obj 224 264 incremNcoA;
 #X obj 5947 224 r incremA;
 #X obj 13 367 tgl 24 0 empty ITDETonoffload =IT 2 12 0 10 -1 -260097
--260097 0 1;
+-260097 1 1;
 #X obj 226 485 incremNcoB;
 #X obj 76 511 mknob 40 2000 0 10 0 0 empty empty empty -2 -6 0 8 -260097
--1 -1 19990 1;
+-1 -1 13890 1;
 #X obj -769 283 r nextA;
 #X obj -773 483 r nextB;
 #X obj 2299 446 r invertonof1;
@@ -2207,7 +2207,7 @@
 #X obj 2466 453 r backandforthB;
 #X obj 2467 231 r backandforthA;
 #X obj 81 292 mknob 40 2000 0 10 0 0 empty empty empty -2 -6 0 8 -260097
--1 -1 16090 1;
+-1 -1 19990 1;
 #X obj 7840 480 r multiTA;
 #X obj 61 538 bng 15 250 50 0 empty empty empty 17 7 0 10 -260097 -1
 -1;

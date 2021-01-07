@@ -73,7 +73,7 @@
 1;
 #X obj 213 64 tgl 25 1 empty empty A 7 14 0 16 -1 -262144 -262144 0
 1;
-#X obj 30 90 tgl 25 0 empty empty B 8 14 0 16 -1 -262144 -262144 0
+#X obj 31 90 tgl 25 0 empty empty B 8 14 0 16 -1 -262144 -262144 0
 1;
 #X obj 54 90 tgl 25 0 empty empty B 8 14 1 16 -1 -262144 -262144 0
 1;
@@ -350,6 +350,7 @@
 #X msg 585 784 1;
 #X msg 621 787 2;
 #X floatatom 407 806 5 0 0 0 - - -;
+#X obj -103 95 s Abutton;
 #X connect 0 0 23 0;
 #X connect 1 0 23 0;
 #X connect 2 0 23 0;
@@ -437,6 +438,7 @@
 #X connect 51 0 75 0;
 #X connect 51 0 88 0;
 #X connect 51 0 283 0;
+#X connect 51 0 298 0;
 #X connect 52 0 8 1;
 #X connect 52 0 103 0;
 #X connect 53 0 119 0;
@@ -472,6 +474,7 @@
 #X connect 62 0 76 0;
 #X connect 62 0 89 0;
 #X connect 62 0 282 0;
+#X connect 62 0 298 0;
 #X connect 63 0 7 1;
 #X connect 63 0 105 0;
 #X connect 64 0 0 1;
