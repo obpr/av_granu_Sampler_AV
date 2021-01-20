@@ -1,7 +1,7 @@
-#N canvas 493 462 734 566 10;
+#N canvas 931 515 734 566 10;
 #X obj 172 263 list;
 #X obj 217 263 list;
-#X obj 292 229 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
+#X obj 290 198 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
 -33289;
 #X floatatom 74 346 5 0 0 0 - - -;
 #X obj 74 396 list;
@@ -97,7 +97,7 @@
 #X obj 406 105 symbol;
 #X obj 326 104 symbol \$1;
 #X obj 326 127 sel symbol;
-#X obj 56 92 inlet;
+#X obj 53 101 inlet;
 #X obj 91 234 min 1;
 #X obj 92 200 max 0;
 #X obj 45 127 route bang float;
@@ -110,12 +110,12 @@
 #X text 306 4 Argument \; \$1 : symbol folder/pattern;
 #X msg 597 235 label \$1;
 #X obj 478 196 pmenu;
-#X msg 478 89 clear;
+#X msg 478 100 clear;
 #X obj 338 351 list;
 #X obj 338 373 list-iter;
 #X obj 305 59 t b b b b;
 #X obj 60 53 hradio 10 1 0 9 \$1-bang empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 5;
 #X obj 237 380 list length;
 #X obj 172 229 folder_list;
 #X obj 305 34 loadbang, f 9;
@@ -127,7 +127,7 @@
 #X text 313 228 <-reset;
 #X floatatom 2 403 5 0 0 0 - - -;
 #X obj 3 438 outlet;
-#X obj 50 50 cnv 9 180 18 empty \$1-cnv Select... 6 9 1 12 -4034 -1
+#X obj 50 50 cnv 9 180 18 empty \$1-cnv domoUS.wav 2 9 1 12 -4034 -1
 0;
 #X obj 401 173 r \$1-bang;
 #X obj 597 257 s \$1-cnv;
@@ -142,12 +142,14 @@
 #X obj 513 318 splitfilename;
 #X obj 280 526 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 36 225 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 131 88 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 223 501 > 0;
 #X obj 232 522 sel;
 #X msg 313 208 0;
 #X obj 208 112 r folder1;
+#X obj 256 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 1 0;
 #X connect 0 0 4 1;
 #X connect 0 0 27 1;
@@ -175,6 +177,7 @@
 #X connect 16 1 15 0;
 #X connect 16 2 37 0;
 #X connect 17 0 38 0;
+#X connect 17 0 53 0;
 #X connect 21 0 25 0;
 #X connect 22 0 25 0;
 #X connect 24 0 44 0;
@@ -214,4 +217,5 @@
 #X connect 51 1 24 0;
 #X connect 54 0 55 0;
 #X connect 57 0 38 0;
+#X connect 57 0 58 0;
 #X coords 0 -1 1 1 180 18 1 50 50;

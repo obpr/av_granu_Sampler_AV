@@ -1,4 +1,4 @@
-#N canvas 340 150 1247 878 12;
+#N canvas 124 194 1496 878 12;
 #N canvas 67 224 450 432 :: 0;
 #X text 24 16 the format [pix_film] is able to decode depends on the
 system you are running Gem.;
@@ -55,8 +55,8 @@ that under linux i could play most formats...;
 #X obj 568 302 * 1;
 #X obj 0 203 folder2;
 #X obj 1 343 folder3;
-#X floatatom 204 282 5 0 0 2 - - -;
-#X obj 205 302 spigot-toggle_red;
+#X floatatom 207 272 5 0 0 2 - - -;
+#X obj 202 316 spigot-toggle_red;
 #X obj 203 383 outlet;
 #X obj 230 361 s soundfileA;
 #X msg 205 222 open \$1;
@@ -70,20 +70,18 @@ that under linux i could play most formats...;
 -1 0;
 #X obj 137 240 tgl 20 0 empty empty BA 3 10 1 12 -4034 -1 -1 0 1;
 #X floatatom 137 221 6 0 0 3 - - -;
-#X obj 58 239 tgl 20 0 empty empty A 5 9 1 12 -4034 -1 -1 1 1;
+#X obj 58 239 tgl 20 0 empty empty A 5 9 1 12 -4034 -1 -1 0 1;
 #X obj 75 239 tgl 20 0 empty empty B 6 9 0 12 -4034 -1 -1 0 1;
 #X floatatom 58 221 5 0 0 2 - - -;
 #X obj 158 240 tgl 20 0 empty empty BB 3 10 1 12 -4034 -1 -1 0 1;
-#X obj 58 362 cnv 15 120 20 empty sendV=A °________% 33 13 1 14 -24198
+#X obj 58 362 cnv 15 120 20 empty sendV=A °________% 33 13 1 14 -1
 -1 0;
-#X obj 137 383 tgl 20 0 empty sendV=A BA 3 9 1 12 -24198 -1 -1 0 1
-;
+#X obj 137 383 tgl 20 0 empty sendV=A BA 3 9 1 12 -1 -1 -1 0 1;
 #X floatatom 138 364 6 0 0 1 - - -;
-#X obj 61 382 tgl 20 0 empty sendV=A A 5 9 0 12 -24198 -1 -1 1 1;
-#X obj 79 382 tgl 20 0 empty sendV=A B 5 9 1 12 -24198 -1 -1 0 1;
+#X obj 61 382 tgl 20 0 empty sendV=A A 5 9 0 12 -1 -1 -1 0 1;
+#X obj 79 382 tgl 20 0 empty sendV=A B 5 9 1 12 -1 -1 -1 0 1;
 #X floatatom 61 364 5 0 0 2 - - -;
-#X obj 158 382 tgl 20 0 empty sendV=A BB 2 10 1 12 -24198 -1 -1 0 1
-;
+#X obj 158 382 tgl 20 0 empty sendV=A BB 2 10 1 12 -1 -1 -1 0 1;
 #X obj 642 255 spigot-toggle_red;
 #X obj 798 303 spigot-toggle_vert;
 #X obj 771 303 spigot-toggle_vert;
@@ -126,14 +124,14 @@ that under linux i could play most formats...;
 #X obj -277 299 sel;
 #X obj 96 221 bng 40 250 50 0 empty empty RDM 6 20 1 12 -4034 -1 -1
 ;
-#X obj 99 363 bng 38 250 50 0 empty sendV=A RDM 6 20 1 12 -24198 -1
--1;
+#X obj 99 363 bng 38 250 50 0 empty sendV=A RDM 6 20 1 12 -1 -1 -1
+;
 #X msg -242 330 22;
 #X msg 6 759 starter/*.wav;
 #X obj -280 263 r lo;
 #X symbolatom 2 167 25 0 0 0 - - -;
 #X msg 13 -641 starter/*.mov;
-#X obj 0 182 cnv 15 182 20 empty \$10-cnv dance/*.mov 4 10 0 12 -1
+#X obj 0 182 cnv 15 182 20 empty \$10-cnv starter/*.mov 4 10 0 12 -1
 -4034 0;
 #X obj 81 -365 s \$10-cnv;
 #X msg 64 -388 label \$1;
@@ -160,7 +158,7 @@ that under linux i could play most formats...;
 #X msg 12 -619 axe_reboot/*.mov;
 #X obj 6 85 bng 15 500 500 0 empty empty starter 18 6 1 10 -260097
 -1 -260097;
-#X obj 0 322 cnv 15 182 22 empty \$11-cnv dance/*.wav 7 12 0 12 -1
+#X obj 0 322 cnv 15 182 22 empty \$11-cnv starter/*.wav 7 12 0 12 -1
 -4034 0;
 #X symbolatom 3 307 25 0 0 0 - - -;
 #X msg 59 994 label \$1;
@@ -266,6 +264,7 @@ that under linux i could play most formats...;
 #X obj -82 288 spigot-toggle_red;
 #X obj -61 288 spigot-toggle_red;
 #X obj -43 288 spigot-toggle_red;
+#X obj 235 319 + 0;
 #X connect 1 0 3 0;
 #X connect 2 0 12 1;
 #X connect 5 0 11 0;
@@ -308,7 +307,7 @@ that under linux i could play most formats...;
 #X connect 32 1 4 0;
 #X connect 32 1 36 0;
 #X connect 32 2 18 0;
-#X connect 33 0 34 0;
+#X connect 33 0 205 0;
 #X connect 34 0 55 0;
 #X connect 37 0 41 0;
 #X connect 38 1 5 0;
@@ -510,4 +509,5 @@ that under linux i could play most formats...;
 #X connect 202 0 54 0;
 #X connect 203 0 51 0;
 #X connect 204 0 56 0;
+#X connect 205 0 34 0;
 #X coords 0 -1 1 1 182 558 2 0 0;

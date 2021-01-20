@@ -42,7 +42,7 @@
 #X obj 79 897 spigot-toggle_orange;
 #X obj 80 976 r lo;
 #X obj 78 920 spigot-toggle_orange;
-#X obj 48 887 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 1 1;
+#X obj 48 887 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 0 1;
 #X text -1259 965 >ø = stop at release;
 #X text -19 939 @A = reminds the last starting point and hangs on;
 #X text -1258 931 ø@ = reminds the last starting point and not hangs
@@ -263,7 +263,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 1040 195 s trgrafterBmod;
 #X obj 412 285 r posvisuB;
 #X obj 32 121 tgl 28 0 empty empty ∞ 6 15 2 25 -1 -260097 -260097
-1 1;
+0 1;
 #X obj 32 92 tgl 28 0 empty empty >๏ 5 13 1 15 -1 -260097 -260097
 0 1;
 #X obj 32 179 tgl 28 0 empty empty ø@S 6 15 0 11 -1 -4034 -4034 0
@@ -335,7 +335,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 ;
 #X obj 92 268 r envFRMsmplsendAB;
 #X obj 91 290 r envFRMsmplsendBB;
-#X obj 178 196 cnv 15 1 2 empty empty ω+♪ 1 12 0 14 -1 -260097 0
+#X obj 178 195 cnv 5 1 2 empty empty ω+♪ 1 12 0 14 -1 -260097 0
 ;
 #X obj 1 92 cnv 15 30 145 empty empty empty 20 12 0 14 -1 -66577 0
 ;
@@ -344,19 +344,12 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 0;
 #X obj 34 314 s envFRMsmplsendB;
 #X obj 709 424 r trgrafterBmod;
-#X obj 954 577 r trgrafterAmod;
-#X obj 954 555 r trgrAmodenv;
-#X obj 938 507 - 1;
-#X obj 937 530 * -1;
-#X obj 932 553 spigot-toggle_vert;
-#X obj 932 579 spigot-toggle_red;
-#X obj 934 610 s trgrafterAmod1;
-#X obj 936 476 r IT≠T1;
 #X obj -284 150 s Babutton;
 #X obj 162 458 r ABonoff;
 #X obj 158 490 r ABonoff;
 #X obj 267 864 spigot-toggle_orange;
 #X obj 291 862 onoff11x;
+#X obj 189 343 s Bbutton;
 #X connect 1 0 17 0;
 #X connect 1 0 282 0;
 #X connect 2 0 16 0;
@@ -408,12 +401,12 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 37 0 35 1;
 #X connect 37 0 36 1;
 #X connect 37 0 38 1;
-#X connect 37 0 308 1;
+#X connect 37 0 300 1;
 #X connect 38 0 85 0;
 #X connect 39 0 92 0;
 #X connect 39 0 93 0;
 #X connect 39 0 112 0;
-#X connect 39 0 309 0;
+#X connect 39 0 301 0;
 #X connect 47 0 48 0;
 #X connect 48 0 108 0;
 #X connect 49 0 70 0;
@@ -454,7 +447,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 77 0 201 0;
 #X connect 77 0 182 0;
 #X connect 77 0 240 0;
-#X connect 77 0 305 0;
+#X connect 77 0 297 0;
 #X connect 78 0 142 0;
 #X connect 78 0 201 0;
 #X connect 78 0 217 0;
@@ -629,7 +622,9 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 238 0 59 1;
 #X connect 238 0 139 0;
 #X connect 241 0 273 0;
+#X connect 241 0 302 0;
 #X connect 242 0 272 0;
+#X connect 242 0 302 0;
 #X connect 243 0 247 0;
 #X connect 244 0 243 0;
 #X connect 245 0 246 0;
@@ -685,18 +680,8 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 289 0 118 0;
 #X connect 290 0 82 0;
 #X connect 296 0 221 0;
-#X connect 297 0 302 0;
-#X connect 298 0 301 0;
-#X connect 299 0 300 0;
-#X connect 300 0 301 1;
-#X connect 301 0 303 0;
-#X connect 301 0 221 0;
-#X connect 302 0 303 0;
-#X connect 302 0 221 0;
-#X connect 304 0 299 0;
-#X connect 304 0 302 1;
-#X connect 306 0 58 0;
-#X connect 307 0 59 0;
-#X connect 308 0 77 0;
-#X connect 309 0 308 0;
+#X connect 298 0 58 0;
+#X connect 299 0 59 0;
+#X connect 300 0 77 0;
+#X connect 301 0 300 0;
 #X coords 0 -1 1 1 236 146 2 0 90;

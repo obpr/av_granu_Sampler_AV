@@ -1,4 +1,4 @@
-#N canvas 816 460 734 568 10;
+#N canvas 923 0 734 568 10;
 #X obj 172 263 list;
 #X obj 217 263 list;
 #X obj 292 229 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
@@ -117,7 +117,7 @@
 #X obj 338 373 list-iter;
 #X obj 305 59 t b b b b;
 #X obj 58 55 hradio 10 1 0 9 \$0-bang empty empty 0 -8 0 12 -262144
--1 -1 1;
+-1 -1 8;
 #X obj 237 380 list length;
 #X obj 172 229 folder_list;
 #X obj 305 34 loadbang, f 9;
@@ -138,10 +138,11 @@
 #X obj 48 309 random;
 #X obj 338 395 splitfilename;
 #X obj 513 318 splitfilename;
-#X obj 50 50 cnv 17 180 18 empty \$0-cnv Select... 9 10 1 12 -4034
+#X obj 50 50 cnv 17 180 18 empty \$0-cnv domoUS.mov 2 10 1 12 -4034
 -1 0;
 #X msg 294 249 0;
 #X obj 188 90 r folder0;
+#X msg 152 386 vide/*.mov;
 #X connect 0 0 1 0;
 #X connect 0 0 4 1;
 #X connect 0 0 29 1;
@@ -199,10 +200,12 @@
 #X connect 40 1 8 0;
 #X connect 42 0 44 0;
 #X connect 45 0 28 0;
+#X connect 45 0 54 0;
 #X connect 47 0 45 0;
 #X connect 48 0 3 0;
 #X connect 49 0 36 1;
 #X connect 49 1 21 0;
 #X connect 50 1 26 0;
 #X connect 53 0 40 0;
+#X connect 54 0 4 1;
 #X coords 0 -1 1 1 180 18 1 50 50;

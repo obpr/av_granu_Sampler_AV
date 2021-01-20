@@ -1,4 +1,4 @@
-#N canvas 714 35 1655 941 12;
+#N canvas 1873 117 1655 941 12;
 #X text -663 938 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text -1745 958 We've changed the control for "chunk size" to milliseconds
 for added convenience \, and delayed multiplying sample location by
@@ -113,7 +113,7 @@ push : off;
 0 1;
 #X obj 148 215 tgl 28 0 empty empty ∗ 8 12 1 24 -1 -260097 -260097
 0 1;
-#X obj 90 99 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 0 1
+#X obj 90 99 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 1 1
 ;
 #X obj 80 939 * -1;
 #X obj 82 910 - 1;
@@ -248,7 +248,7 @@ on;
 ;
 #X obj 1 98 cnv 15 30 145 empty empty empty 20 12 0 14 -1 -66577 0
 ;
-#X obj 177 215 tgl 28 0 empty empty • 5 15 1 50 -1 -260097 -260097
+#X obj 176 214 tgl 28 0 empty empty • 5 15 1 50 -1 -260097 -260097
 0 1;
 #X obj 177 186 tgl 28 0 empty empty • 5 15 1 50 -1 -260097 -260097
 0 1;
@@ -269,8 +269,8 @@ on;
 #X obj 434 418 r @reA;
 #X obj -299 183 s @reA;
 #X obj 664 194 r 0+;
-#X obj 286 216 s envAAM;
-#X obj 287 245 s envBAM;
+#X obj 327 222 s envAAM;
+#X obj 328 251 s envBAM;
 #X obj 1486 1 r trgrA;
 #X obj 1317 1 r BB;
 #X obj 1317 27 r BB1;
@@ -291,7 +291,7 @@ on;
 #X obj 1389 88 spigot-toggle_red;
 #X obj 1411 60 sel;
 #X msg 1408 109 1;
-#X obj 1324 144 spigot-toggle_vert;
+#X obj 1323 144 spigot-toggle_vert;
 #X obj 1486 27 r trgrB;
 #X obj 1126 2 r trgrAafter;
 #X obj 1128 60 spigot-toggle_vert;
@@ -331,7 +331,7 @@ on;
 #X obj 1482 427 r trgrB;
 #X obj 1484 349 spigot-toggle_vert;
 #X obj 1484 370 spigot-toggle_red;
-#X obj 178 203 cnv 15 1 2 empty empty ω+♪ 1 12 0 14 -1 -260097 0
+#X obj 178 202 cnv 5 1 2 empty empty ω+♪ 1 12 0 14 -1 -260097 0
 ;
 #X obj 147 98 cnv 15 58 17 empty empty ↬ 3 8 0 40 -1 -260097 0;
 #X obj 92 274 r envFRMsmplsendA;
@@ -339,15 +339,9 @@ on;
 #X obj 204 98 cnv 15 30 145 empty empty empty 20 12 0 14 -1 -66577
 0;
 #X obj 784 191 r stretchB;
-#X obj 763 538 r trgrafterAmod;
+#X obj 726 452 r trgrafterAmod;
 #X obj 1126 199 s trgrafterAmod;
-#X obj 763 516 r trgrAmodenv;
-#X obj 745 437 r IT≠T;
-#X obj 747 468 - 1;
-#X obj 746 491 * -1;
-#X obj 740 521 spigot-toggle_vert;
-#X obj 741 540 spigot-toggle_red;
-#X obj 743 571 s trgrafterAmod1;
+#X obj 269 300 s Abutton;
 #X connect 2 0 94 0;
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
@@ -578,7 +572,9 @@ on;
 #X connect 204 0 201 0;
 #X connect 205 0 87 0;
 #X connect 211 0 231 0;
+#X connect 211 0 299 0;
 #X connect 212 0 230 0;
+#X connect 212 0 299 0;
 #X connect 213 0 15 0;
 #X connect 214 0 153 0;
 #X connect 215 0 104 0;
@@ -676,14 +672,5 @@ on;
 #X connect 293 0 105 0;
 #X connect 294 0 72 0;
 #X connect 296 0 44 0;
-#X connect 297 0 304 0;
-#X connect 299 0 303 0;
-#X connect 300 0 301 0;
-#X connect 300 0 304 1;
-#X connect 301 0 302 0;
-#X connect 302 0 303 1;
-#X connect 303 0 257 0;
-#X connect 303 0 305 0;
-#X connect 304 0 257 0;
-#X connect 304 0 305 0;
+#X connect 297 0 257 0;
 #X coords 0 -1 1 1 235 145 2 0 98;
