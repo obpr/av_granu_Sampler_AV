@@ -1,4 +1,4 @@
-#N canvas 1873 117 1655 941 12;
+#N canvas 75 561 1401 386 12;
 #X text -663 938 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text -1745 958 We've changed the control for "chunk size" to milliseconds
 for added convenience \, and delayed multiplying sample location by
@@ -50,9 +50,9 @@ push : off;
 #X obj 644 161 spigot-toggle_vert;
 #X floatatom 624 295 8 0 3 0 - - -;
 #X obj 628 426 r lo;
-#X obj 765 162 spigot-toggle_jaunenoir;
-#X obj 764 189 spigot-toggle_jaunenoir;
-#X floatatom 766 232 12 0 0 0 - - -;
+#X obj 807 163 spigot-toggle_jaunenoir;
+#X obj 806 190 spigot-toggle_jaunenoir;
+#X floatatom 804 232 12 0 0 0 - - -;
 #X obj 145 525 spigot-toggle_orange;
 #X obj 146 553 spigot-toggle_orange;
 #X obj 368 489 t b f;
@@ -93,7 +93,7 @@ push : off;
 #X obj 61 215 tgl 28 0 empty empty ◐ 8 15 1 14 -1 -260097 -260097
 0 1;
 #X obj 148 128 tgl 28 0 empty empty ☞ 8 12 0 27 -1 -262144 -262144
-0 1;
+1 1;
 #X obj 61 128 tgl 28 0 empty empty @ 2 14 1 26 -260097 -1 -1 0 1;
 #X obj 61 157 tgl 28 0 empty empty ⤷@ -6 14 1 18 -260097 -1 -1 0
 1;
@@ -113,13 +113,13 @@ push : off;
 0 1;
 #X obj 148 215 tgl 28 0 empty empty ∗ 8 12 1 24 -1 -260097 -260097
 0 1;
-#X obj 90 99 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 1 1
+#X obj 90 99 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 0 1
 ;
 #X obj 80 939 * -1;
 #X obj 82 910 - 1;
 #X obj 157 -427 s reposetoinoffA;
 #X obj 160 -467 r send_reposetoinoffA;
-#X msg 641 217 0;
+#X msg 745 214 0;
 #X obj 119 99 bng 28 250 50 0 empty empty +0 9 14 2 10 -1 -260097 -260097
 ;
 #X obj 454 156 s posA;
@@ -161,7 +161,7 @@ push : off;
 #X obj 90 -1295 s save_BngAA;
 #X obj 90 -1243 r send_save_BngAB;
 #X obj 90 -1191 s save_BngAB;
-#X obj 766 258 s line_pauseA;
+#X obj 808 259 s line_pauseA;
 #X obj 90 -284 s lyrAposA;
 #X obj 90 -261 s lyrAposB;
 #X obj -183 103 r lo;
@@ -188,7 +188,7 @@ push : off;
 #X obj 761 356 - 1;
 #X obj 760 379 * -1;
 #X obj 90 -307 s ABselectA;
-#X obj 786 162 r stretchA;
+#X obj 828 163 r stretchA;
 #X floatatom 623 342 8 0 3 0 - - -;
 #X obj 653 20 sel;
 #X obj 670 47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -268,7 +268,7 @@ on;
 #X msg -473 279 0;
 #X obj 434 418 r @reA;
 #X obj -299 183 s @reA;
-#X obj 664 194 r 0+;
+#X obj 745 190 r 0+;
 #X obj 327 222 s envAAM;
 #X obj 328 251 s envBAM;
 #X obj 1486 1 r trgrA;
@@ -338,10 +338,15 @@ on;
 #X obj 91 296 r envFRMsmplsendB;
 #X obj 204 98 cnv 15 30 145 empty empty empty 20 12 0 14 -1 -66577
 0;
-#X obj 784 191 r stretchB;
+#X obj 826 192 r stretchB;
 #X obj 726 452 r trgrafterAmod;
 #X obj 1126 199 s trgrafterAmod;
 #X obj 269 300 s Abutton;
+#X obj -77 286 spigot-toggle_red;
+#X obj -92 326 r Bbutton;
+#X obj 747 63 r reposetoinoffA;
+#X obj 747 85 r reposetoinoffAB;
+#X obj 744 113 sel;
 #X connect 2 0 94 0;
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
@@ -432,6 +437,7 @@ on;
 #X connect 68 0 174 0;
 #X connect 68 0 177 0;
 #X connect 68 0 163 0;
+#X connect 68 0 300 1;
 #X connect 69 0 40 1;
 #X connect 69 0 108 0;
 #X connect 70 0 39 1;
@@ -673,4 +679,9 @@ on;
 #X connect 294 0 72 0;
 #X connect 296 0 44 0;
 #X connect 297 0 257 0;
+#X connect 300 0 299 0;
+#X connect 301 0 300 0;
+#X connect 302 0 304 0;
+#X connect 303 0 304 0;
+#X connect 304 0 92 0;
 #X coords 0 -1 1 1 235 145 2 0 98;
