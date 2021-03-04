@@ -1,4 +1,4 @@
-#N canvas 0 176 970 852 10;
+#N canvas 1792 714 970 852 10;
 #X declare -lib timbreID/timbreIDLib;
 #X obj -162 1073 pack 0 0;
 #X obj -162 1094 line;
@@ -186,9 +186,9 @@ size is not required to be a power of two.;
 #X restore 884 1601 pd synth-burst;
 #X floatatom 883 1574 5 0 0 1 ms - -;
 #X obj 929 1704 s fll0;
-#X floatatom 60 343 5 0 0 0 - - -;
+#X floatatom 59 354 5 0 0 0 - - -;
 #X floatatom -170 996 5 0 0 0 - - -;
-#X obj 60 368 tabread array3;
+#X obj 58 382 tabread array3;
 #X obj 58 281 f;
 #X obj 90 279 + 1;
 #X floatatom 57 324 0 0 0 0 - - -;
@@ -200,7 +200,7 @@ size is not required to be a power of two.;
 ;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array array3 8 float 3;
-#A 0 0.773913 0.234783 0.321739 0.252174 0.00869757 0 0 0;
+#A 0 0.773913 0.234783 0.321739 0.252174 0.00869757 -0.652174 0 0;
 #X coords 0 1 8 -1 90 115 1 0 0;
 #X restore 102 101 graph;
 #X floatatom 172 546 5 0 0 0 - - -;
@@ -218,7 +218,7 @@ size is not required to be a power of two.;
 #X text 409 146 Uses creation arguments to simplify creating parameters
 for sliders.;
 #X floatatom 322 107 5 0 0 0 - - -;
-#X floatatom 314 359 5 0 0 0 - - -;
+#X floatatom 311 346 5 0 0 0 - - -;
 #X msg 314 381 \; array3 resize \$1;
 #X obj -14 256 metro 200;
 #X obj -14 234 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0

@@ -1,4 +1,4 @@
-#N canvas 675 12 1680 1028 12;
+#N canvas 78 349 1680 1028 12;
 #X obj 101 101 cnv 15 232 53 empty empty empty 20 12 0 14 -1 -66577
 0;
 #X obj 20 -158 spigot-toggle_violet;
@@ -6,10 +6,10 @@
 #X floatatom 142 -326 5 0 0 0 - - -;
 #X obj 102 -323 / 127;
 #X obj 227 -195 tgl 20 0 empty empty ☞ 2 9 0 45 -1 -260097 -260097
-1 1;
+0 1;
 #X floatatom 213 49 22 0 0 0 - - -;
 #X obj 213 24 snapshot~;
-#X floatatom 99 -139 5 0 0 0 speed - -;
+#X floatatom 100 -128 5 0 0 0 speed - -;
 #X obj 106 -33 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom 102 -193 12 0 0 2 - - -;
@@ -24,13 +24,13 @@
 #X obj 138 105 tgl 20 0 empty empty A 7 10 1 10 -1 -260097 -262144
 0 1;
 #X obj 138 128 tgl 20 0 empty empty B 7 10 1 10 -1 -260097 -262144
-1 1;
+0 1;
 #X obj 164 128 bng 20 250 50 0 empty empty o 4 8 0 20 -1 -260097 -260097
 ;
 #X obj 187 113 mknob 28 1000 -0.1 0.1 0 0 empty empty empty -2 -6 0
-8 -260097 -33289 -1 55766 1;
+8 -260097 -33289 -1 15732 1;
 #X obj 164 107 mknob 20 1000 0 2 0 0 empty empty empty -2 -6 0 8 -1
--260097 -260097 38550 1;
+-260097 -260097 49950 1;
 #X obj 384 110 t b f;
 #X obj 384 138 * 1;
 #X floatatom 596 -145 22 0 0 0 - - -;
@@ -83,7 +83,7 @@ lie between output boundaries;
 #X floatatom 537 262 22 0 0 0 - - -;
 #X obj 108 9 spigot-toggle_violet;
 #X obj 219 102 vsl 28 48 0 1 0 0 empty empty empty 8 44 0 22 -16662
--260097 -260097 3890 1;
+-260097 -260097 0 1;
 #X msg 187 184 0;
 #X obj 109 113 bng 30 250 50 0 empty empty ☞ 5 15 0 35 -1 -260097
 -1;
@@ -108,6 +108,7 @@ lie between output boundaries;
 #X obj -23 -229 - 1;
 #X obj -23 -197 * 0.1;
 #X obj -23 -293 r A;
+#X obj 148 -152 * 0.1;
 #X connect 1 0 8 0;
 #X connect 2 0 8 0;
 #X connect 4 0 11 0;
@@ -152,7 +153,7 @@ lie between output boundaries;
 #X connect 52 0 26 0;
 #X connect 53 0 54 0;
 #X connect 54 0 10 0;
-#X connect 55 0 8 0;
+#X connect 55 0 81 0;
 #X connect 56 0 57 0;
 #X connect 58 0 7 0;
 #X connect 58 0 61 0;
@@ -179,4 +180,5 @@ lie between output boundaries;
 #X connect 78 0 79 0;
 #X connect 79 0 2 0;
 #X connect 80 0 77 0;
+#X connect 81 0 8 0;
 #X coords 0 -1 1 1 233 55 2 100 100;

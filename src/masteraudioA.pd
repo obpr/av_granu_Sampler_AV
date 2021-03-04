@@ -1,10 +1,10 @@
-#N canvas 0 77 1680 951 10;
+#N canvas 11 277 1680 951 10;
 #X obj 431 110 vsl 20 70 0 1 0 0 empty empty L 8 6 0 7 -16662 -260097
--260097 0 0;
+-260097 2554 0;
 #X obj 470 111 vsl 20 69 0 1 0 0 empty empty H 6 6 0 7 -16662 -260097
--260097 0 0;
+-260097 2249 0;
 #X obj 452 110 vsl 20 70 0 1 0 0 empty empty M 8 6 0 7 -16662 -260097
--260097 0 0;
+-260097 2771 0;
 #X obj -112 63 inlet;
 #X obj -72 63 inlet;
 #X obj -21 62 inlet;
@@ -103,11 +103,11 @@
 #X obj 341 151 hsl 84 16 0 6 0 0 empty empty shape_out 35 8 1 10 -16662
 -260097 -260097 1383 1;
 #X obj 219 151 hsl 84 16 0 6 0 0 empty empty shape_in 5 8 1 10 -16662
--260097 -260097 1383 1;
+-260097 -260097 3483 1;
 #X obj 219 107 hsl 100 22 0 1 0 0 empty empty fade_in 4 12 1 12 -16662
 -260097 -260097 990 1;
 #X obj 325 107 hsl 100 22 1 0 0 0 empty empty fade_out 50 12 1 12 -16662
--260097 -260097 8910 1;
+-260097 -260097 8439 1;
 #X floatatom 248 287 5 0 0 0 in - -;
 #X floatatom 283 305 5 0 0 0 out - -;
 #X floatatom 104 285 5 0 0 0 pow_in - -;
@@ -117,7 +117,7 @@
 #X obj 322 151 bng 16 250 50 0 empty empty empty 4 8 1 13 -12306 -260097
 -1;
 #X obj 219 130 hsl 206 20 0 1 0 0 empty empty sustain 85 9 1 12 -16662
--260097 -260097 14350 1;
+-260097 -260097 9800 1;
 #X obj 71 397 env_inout0Z;
 #X msg -63 118 0.1;
 #X floatatom 23 282 5 0 0 0 - - -;
@@ -132,7 +132,7 @@
 #X obj 1322 86 / 127;
 #X obj 329 526 *~;
 #X obj 518 109 vsl 20 70 0 1 0 0 empty empty db 2 9 0 13 -16662 -260097
--260097 0 0;
+-260097 4781 0;
 #X msg -61 89 0.7;
 #X msg 476 64 0.5;
 #X msg -183 162 1;
@@ -901,13 +901,13 @@ empty 0 -8 2 10 -228856 -1 -1 0 256;
 \; empty_slot \;;
 #X obj -6 432 *~;
 #X obj 104 183 hsl 499 61 0 1 0 0 empty empty empty -2 -8 0 10 -260097
--1 -1 0 1;
+-1 -1 17997 1;
 #X obj 124 564 tabwrite~ array1;
 #X obj 139 538 metro 100;
 #X msg 36 71 250;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array table23 1.029e+06 float 2;
-#X coords 0 1 1.029e+06 -1 503 61 2 0 0;
+#X array table23 289590 float 2;
+#X coords 0 1 289590 -1 503 61 2 0 0;
 #X restore 101 182 graph;
 #X obj 32 110 cnv 15 32 16 empty empty empty 20 12 0 14 -260097 -66577
 0;
@@ -1053,7 +1053,7 @@ empty 0 -8 2 10 -228856 -1 -1 0 256;
 #X obj 267 -22 * 1;
 #X obj 358 22 * 0.3;
 #X obj 134 -22 * 0.3;
-#N canvas 0 22 450 278 (subpatch) 0;
+#N canvas 2373 31 829 855 (subpatch) 0;
 #X array array1 8888 float 1;
 #A 0 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7

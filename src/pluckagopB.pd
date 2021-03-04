@@ -1,4 +1,4 @@
-#N canvas 176 81 1294 838 12;
+#N canvas 361 658 1294 838 12;
 #X text -1270 850 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X obj 1373 2 r trgrA;
 #X obj 1225 1 r BB;
@@ -84,16 +84,16 @@ push : off;
 #X obj 442 419 r lo;
 #X obj -81 55 r lo;
 #X obj 595 153 r B;
-#X obj 90 121 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 1
+#X obj 90 121 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 0
 1;
 #X obj 89 150 tgl 28 0 empty empty B 6 15 1 28 -1 -262144 -262144 0
 1;
 #X obj 176 125 tgl 28 0 empty empty A 6 12 1 22 -1 -262144 -262144
 0 1;
 #X obj 176 151 tgl 28 0 empty empty B 6 12 1 22 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 118 123 vsl 28 110 0 33 0 0 empty empty ÷ 8 44 0 22 -16662
--260097 -260097 237 1;
+-260097 -260097 159 1;
 #X obj 89 208 tgl 28 0 empty empty • 6 15 1 50 -1 -260097 -260097
 0 1;
 #X obj 147 125 tgl 28 0 empty empty ☞ 8 12 0 27 -1 -262144 -262144
@@ -145,7 +145,7 @@ the sample rate (44100) until the last moment \, so that calculations
 using "read-pt" and "chunk size" can be in the same units (seconds.)"
 ;
 #X obj 89 179 tgl 28 0 empty empty • 6 15 1 50 -1 -260097 -260097
-1 1;
+0 1;
 #X obj 321 69 * 1;
 #X obj 89 -660 r send_BA;
 #X obj 91 -637 s BA;
@@ -162,7 +162,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 173 -435 r send_modBB;
 #X obj 176 -383 s modBB;
 #X obj 145 -304 r send_reposetoinoffBB;
-#X obj 145 -277 s reposetoinoffBB;
+#X obj 144 -277 s reposetoinoffBB;
 #X obj 145 -358 r send_reposetoinoffBA;
 #X obj 145 -331 s reposetoinoffBA;
 #X obj 157 -509 r send_BøB;
@@ -269,7 +269,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 61 179 tgl 28 0 empty empty ◐ 8 15 1 14 -1 -260097 -260097
 0 1;
 #X obj 61 208 tgl 28 0 empty empty ◐ 8 15 1 14 -1 -260097 -260097
-0 1;
+1 1;
 #X obj 147 180 tgl 28 0 empty empty ∗ 8 12 1 24 -1 -260097 -260097
 0 1;
 #X obj 147 208 tgl 28 0 empty empty ∗ 8 12 1 24 -1 -260097 -260097
@@ -347,6 +347,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 732 232 sel;
 #X obj 732 182 r reposetoinoffB;
 #X obj 732 204 r reposetoinoffBA;
+#X floatatom 1382 133 5 0 0 0 - - -;
 #X connect 1 0 17 0;
 #X connect 1 0 277 0;
 #X connect 2 0 16 0;
@@ -667,6 +668,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 275 0 89 0;
 #X connect 277 0 276 0;
 #X connect 278 0 276 0;
+#X connect 278 0 301 0;
 #X connect 279 0 281 0;
 #X connect 280 0 282 0;
 #X connect 281 0 276 0;

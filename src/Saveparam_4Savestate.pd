@@ -7,7 +7,7 @@
 -260097 -1;
 #X obj 203 102 bng 18 250 50 0 \$0-load.s \$0-load.r L 5 10 1 14 -162280
 -260097 -1;
-#X obj -15 50 cnv 15 400 20 \$0-preset.name.s \$0-preset.name.r PRESET_FILE:jb2
+#X obj -15 50 cnv 15 400 20 \$0-preset.name.s \$0-preset.name.r PRESET_FILE:no_preset_loaded
 5 10 0 10 -86853 -261682 0;
 #N canvas 0 0 1531 1028 presets 0;
 #N canvas 27 528 666 385 read.write 0;
@@ -707,4 +707,4 @@ W.reposetoinoffA;
 ;
 #X floatatom 6013 174 5 0 0 2 W.save_every #0-save_every W.save_every
 ;
-#X coords 0 -1 1 1 120 22 1 100 100;
+#X coords 0 -1 1 1 120 22 2 100 100;

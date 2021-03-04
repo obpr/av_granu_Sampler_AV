@@ -1,4 +1,4 @@
-#N canvas 856 0 755 1028 10;
+#N canvas 264 0 755 1028 10;
 #X obj 340 149 hsl 84 16 0 6 0 0 empty empty shape_out 32 8 1 10 -16662
 -260097 -260097 1383 1;
 #X obj 221 149 hsl 84 16 0 6 0 0 empty empty shape_in 5 8 1 10 -16662
@@ -172,8 +172,8 @@
 #X obj 104 179 hsl 501 61 0 1 0 0 empty empty empty -2 -8 0 10 -260097
 -1 -1 0 1;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array table24 2.86944e+06 float 2;
-#X coords 0 1 2.86944e+06 -1 506 61 2 0 0;
+#X array table24 246960 float 2;
+#X coords 0 1 246960 -1 506 61 2 0 0;
 #X restore 101 180 graph;
 #X floatatom -301 -965 4 0 100 0 - - -;
 #X floatatom -268 -1039 0 0 200 0 - - -;

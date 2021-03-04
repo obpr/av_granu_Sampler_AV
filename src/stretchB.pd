@@ -1,4 +1,4 @@
-#N canvas 790 21 884 702 12;
+#N canvas 791 50 884 702 12;
 #X obj 101 101 cnv 15 235 53 empty empty empty 20 12 0 14 -1 -66577
 0;
 #X obj 143 -252 spigot-toggle_violet;
@@ -6,7 +6,7 @@
 #X floatatom 244 -463 5 0 0 0 - - -;
 #X obj 207 -426 / 127;
 #X obj 214 -176 tgl 20 0 empty empty ☞ 2 9 0 45 -1 -260097 -260097
-1 1;
+0 1;
 #X floatatom 220 56 22 0 0 0 - - -;
 #X obj 214 31 snapshot~;
 #X floatatom 197 -234 5 0 0 0 speed - -;
@@ -21,13 +21,13 @@
 #X obj 137 106 tgl 20 0 empty empty A 7 10 1 10 -1 -260097 -262144
 0 1;
 #X obj 137 129 tgl 20 0 empty empty B 7 10 1 10 -1 -260097 -262144
-1 1;
+0 1;
 #X obj 163 129 bng 20 250 50 0 empty empty o 4 8 0 20 -1 -260097 -260097
 ;
 #X obj 186 114 mknob 28 1000 -0.1 0.1 0 0 empty empty empty -2 -6 0
-8 -260097 -33289 -1 29970 1;
+8 -260097 -33289 -1 69222 1;
 #X obj 163 108 mknob 20 1000 0 2 0 0 empty empty empty -2 -6 0 8 -1
--260097 -260097 49950 1;
+-260097 -260097 24750 1;
 #X obj 413 118 t b f;
 #X obj 417 145 * 1;
 #X floatatom 596 -145 22 0 0 0 - - -;
@@ -74,14 +74,14 @@ lie between output boundaries;
 #X msg 761 79 1000;
 #X obj 196 -343 * 1;
 #X obj 198 -317 * 2;
-#X obj 192 -264 - 1;
+#X obj 199 -270 - 1;
 #X obj 482 231 - 100;
 #X floatatom 482 258 22 0 0 0 - - -;
 #X obj 213 -12 phasor~;
 #X obj 108 19 spigot-toggle_violet;
 #X obj 212 -43 sig~ 1;
 #X obj 217 102 vsl 28 48 0 1 0 0 empty empty empty 8 44 0 22 -16662
--260097 -260097 3145 1;
+-260097 -260097 0 1;
 #X msg 187 184 0;
 #X obj 107 113 bng 30 250 50 0 empty empty ☞ 5 15 0 35 -1 -260097
 -260097;
@@ -108,6 +108,7 @@ lie between output boundaries;
 #X obj 69 -287 * 0.1;
 #X obj 69 -383 r A;
 #X obj 249 -175 r reposetoinoffBB;
+#X obj 246 -260 * 0.1;
 #X connect 1 0 8 0;
 #X connect 2 0 8 0;
 #X connect 4 0 12 0;
@@ -134,6 +135,7 @@ lie between output boundaries;
 #X connect 21 0 22 0;
 #X connect 21 1 22 1;
 #X connect 22 0 68 1;
+#X connect 22 0 56 0;
 #X connect 23 0 31 0;
 #X connect 24 0 52 0;
 #X connect 25 0 46 0;
@@ -147,7 +149,7 @@ lie between output boundaries;
 #X connect 48 0 33 0;
 #X connect 49 0 50 0;
 #X connect 50 0 11 0;
-#X connect 51 0 8 0;
+#X connect 51 0 81 0;
 #X connect 52 0 53 0;
 #X connect 53 0 15 0;
 #X connect 54 0 7 0;
@@ -177,4 +179,5 @@ lie between output boundaries;
 #X connect 78 0 2 0;
 #X connect 79 0 76 0;
 #X connect 80 0 5 0;
+#X connect 81 0 8 0;
 #X coords 0 -1 1 1 235 55 2 100 100;

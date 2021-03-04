@@ -1,4 +1,4 @@
-#N canvas 75 561 1401 386 12;
+#N canvas 0 227 1524 592 12;
 #X text -663 938 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
 #X text -1745 958 We've changed the control for "chunk size" to milliseconds
 for added convenience \, and delayed multiplying sample location by
@@ -33,7 +33,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)
 #X obj 72 812 spigot-toggle_orange;
 #X obj 81 717 r lo;
 #X obj 72 834 spigot-toggle_orange;
-#X obj 43 800 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 43 800 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 1 1;
 #X obj 91 760 onoff0x;
 #X obj 90 808 onoff2x;
 #X obj 89 833 onoff3x;
@@ -52,7 +52,7 @@ push : off;
 #X obj 628 426 r lo;
 #X obj 807 163 spigot-toggle_jaunenoir;
 #X obj 806 190 spigot-toggle_jaunenoir;
-#X floatatom 804 232 12 0 0 0 - - -;
+#X floatatom 806 232 12 0 0 0 - - -;
 #X obj 145 525 spigot-toggle_orange;
 #X obj 146 553 spigot-toggle_orange;
 #X obj 368 489 t b f;
@@ -93,14 +93,14 @@ push : off;
 #X obj 61 215 tgl 28 0 empty empty ◐ 8 15 1 14 -1 -260097 -260097
 0 1;
 #X obj 148 128 tgl 28 0 empty empty ☞ 8 12 0 27 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 61 128 tgl 28 0 empty empty @ 2 14 1 26 -260097 -1 -1 0 1;
 #X obj 61 157 tgl 28 0 empty empty ⤷@ -6 14 1 18 -260097 -1 -1 0
 1;
 #X obj 148 157 tgl 28 0 empty empty ☞ 8 12 0 27 -1 -262144 -262144
 0 1;
 #X obj 32 128 tgl 28 0 empty empty ∞ 6 15 2 25 -1 -260097 -260097
-0 1;
+1 1;
 #X obj 32 99 tgl 28 0 empty empty >๏ 5 13 1 15 -1 -260097 -260097
 0 1;
 #X obj 61 99 tgl 28 0 empty empty raw 2 12 1 16 -260097 -1 -1 0 1;
@@ -326,7 +326,7 @@ on;
 #X text 1239 -123 playback position/ENTRY POINT send data to env;
 #X obj 1485 59 spigot-toggle_vert;
 #X obj 1486 88 spigot-toggle_red;
-#X obj 1486 198 s trgrAmodenv;
+#X obj 1486 199 s trgrAmodenv;
 #X obj 1483 400 r trgrA;
 #X obj 1482 427 r trgrB;
 #X obj 1484 349 spigot-toggle_vert;
