@@ -65,9 +65,9 @@
 #X obj 195 -17 t b f;
 #X floatatom 315 169 0 0 0 0 - - -;
 #X obj 195 -94 hsl 105 15 0 1 0 0 empty empty cut 12 8 0 10 -260097
--1 -1 2213 1;
+-1 -1 0 1;
 #X obj 304 -94 hsl 100 15 0 1 0 0 empty empty empty -2 8 0 10 -260097
--1 -1 7794 1;
+-1 -1 0 1;
 #X obj 243 -63 - 1;
 #X obj 243 -35 * -1;
 #X obj 296 -124 inlet;
