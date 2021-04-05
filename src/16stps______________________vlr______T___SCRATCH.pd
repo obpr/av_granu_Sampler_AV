@@ -1,4 +1,4 @@
-#N canvas -814 260 1647 973 12;
+#N canvas -240 768 1647 973 12;
 #X obj 419 171 line;
 #X obj 419 246 outlet;
 #X floatatom 483 119 5 0 0 0 - - -;
@@ -25,7 +25,7 @@
 -262144 -1 -1 0 256;
 #X obj 783 -23 f;
 #X obj 754 48 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 6.25 256;
+-262144 -1 -1 25.25 256;
 #X obj 840 -23 f;
 #X obj 809 48 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 12.5 256;
@@ -34,7 +34,7 @@
 -262144 -1 -1 18.75 256;
 #X obj 994 -23 f;
 #X obj 946 48 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 25 256;
 #X obj 1042 -23 f;
 #X obj 1004 48 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
@@ -69,7 +69,7 @@
 #X obj 1653 48 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 790 -51 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 6.25 256;
+-262144 -1 -1 25.25 256;
 #X obj 847 -51 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 12.5 256;
 #X obj 905 -51 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
@@ -167,13 +167,13 @@
 #X obj 768 389 * 1;
 #X obj 716 322 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 774 323 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 774 323 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 828 322 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 828 322 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 882 322 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 949 322 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 949 322 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 1009 322 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 1 1;
@@ -497,23 +497,13 @@ passe sur la stp suivante à chaques valeurds de temps;
 #X obj 1622 12 spigot-toggle_red;
 #X obj 1698 12 spigot-toggle_red;
 #X obj 167 145 r nbrSTPA;
-#X obj -159 310 r IT≠T;
-#X obj -98 375 spigot-toggle_red;
-#X obj -159 336 - 1;
-#X obj -159 362 * -1;
-#X obj -168 391 spigot-toggle_red;
-#X obj -98 419 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
 #X obj -24 97 r lo;
 #X obj -5 -10 r BBmod;
-#X obj -95 471 + 1;
 #X floatatom -68 61 5 0 0 0 - - -;
 #X obj 0 1039 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj -244 360 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj -246 279 r ITBAngafterAselect;
 #X obj -94 328 r ITBAngAselect;
+#X obj -95 471 + 1;
 #X connect 0 0 355 0;
 #X connect 2 0 3 1;
 #X connect 3 0 0 0;
@@ -971,14 +961,15 @@ passe sur la stp suivante à chaques valeurds de temps;
 #X connect 349 0 222 0;
 #X connect 350 0 254 0;
 #X connect 351 0 371 1;
+#X connect 351 0 392 0;
 #X connect 352 0 2 0;
 #X connect 352 0 156 0;
 #X connect 354 0 361 0;
 #X connect 355 0 151 0;
 #X connect 356 0 350 0;
-#X connect 357 0 398 0;
+#X connect 357 0 395 0;
 #X connect 358 0 289 0;
-#X connect 359 0 391 0;
+#X connect 359 0 357 0;
 #X connect 360 0 337 0;
 #X connect 360 1 338 0;
 #X connect 360 2 339 0;
@@ -1003,7 +994,7 @@ passe sur la stp suivante à chaques valeurds de temps;
 #X connect 368 0 246 1;
 #X connect 369 0 352 0;
 #X connect 370 0 371 0;
-#X connect 371 0 399 0;
+#X connect 371 0 392 0;
 #X connect 372 0 70 0;
 #X connect 373 0 372 0;
 #X connect 373 0 22 0;
@@ -1038,18 +1029,9 @@ passe sur la stp suivante à chaques valeurds de temps;
 #X connect 388 0 372 0;
 #X connect 388 0 52 0;
 #X connect 389 0 247 0;
-#X connect 390 0 392 0;
-#X connect 390 0 391 1;
-#X connect 391 0 395 0;
-#X connect 392 0 393 0;
-#X connect 393 0 394 1;
-#X connect 394 0 395 0;
-#X connect 395 0 357 0;
-#X connect 396 0 358 1;
-#X connect 397 0 370 0;
-#X connect 398 0 346 0;
-#X connect 399 0 358 0;
-#X connect 399 0 357 1;
-#X connect 401 0 394 0;
-#X connect 402 0 401 0;
-#X connect 403 0 359 0;
+#X connect 390 0 358 1;
+#X connect 391 0 370 0;
+#X connect 392 0 358 0;
+#X connect 392 0 357 1;
+#X connect 394 0 359 0;
+#X connect 395 0 346 0;

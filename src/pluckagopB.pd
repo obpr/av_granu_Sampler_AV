@@ -1,25 +1,25 @@
-#N canvas 361 190 1294 838 12;
+#N canvas 0 190 1679 838 12;
 #X text -1270 850 TIME COMPRESSION/EXPANSION BY LOOPED SAMPLING;
-#X obj 1616 2 r trgrA;
-#X obj 1468 1 r BB;
-#X obj 1468 27 r BB1;
-#X obj 1395 1 r T$;
-#X obj 1395 27 r T1;
-#X obj 1473 306 outlet;
-#X obj 1397 307 outlet;
-#X obj 1396 88 spigot-toggle_red;
-#X obj 1396 59 spigot-toggle_vert;
-#X floatatom 1397 149 5 0 0 0 - - -;
-#X floatatom 1542 123 2 0 0 0 - - -;
-#X obj 1475 172 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1470 2 r trgrA;
+#X obj 1318 1 r BB;
+#X obj 1318 27 r BB1;
+#X obj 1245 1 r T$;
+#X obj 1245 27 r T1;
+#X obj 1323 306 outlet;
+#X obj 1267 308 outlet;
+#X obj 1246 88 spigot-toggle_red;
+#X obj 1246 59 spigot-toggle_vert;
+#X floatatom 1247 149 5 0 0 0 - - -;
+#X floatatom 1392 123 2 0 0 0 - - -;
+#X obj 1328 194 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1543 308 outlet;
+#X obj 1393 308 outlet;
 #X floatatom 321 99 12 0 0 0 - - -;
 #X msg -71 84 0;
-#X obj 1471 59 spigot-toggle_vert;
-#X obj 1540 59 spigot-toggle_vert;
-#X obj 1471 88 spigot-toggle_red;
-#X obj 1540 88 spigot-toggle_red;
+#X obj 1321 59 spigot-toggle_vert;
+#X obj 1390 59 spigot-toggle_vert;
+#X obj 1321 88 spigot-toggle_red;
+#X obj 1390 88 spigot-toggle_red;
 #X obj 255 581 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 395 448 - 0;
@@ -42,7 +42,7 @@
 #X obj 58 897 spigot-toggle_orange;
 #X obj 63 985 r lo;
 #X obj 58 920 spigot-toggle_orange;
-#X obj 28 887 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 1 1;
+#X obj 28 887 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 0 1;
 #X text -1259 965 >ø = stop at release;
 #X text -19 939 @A = reminds the last starting point and hangs on;
 #X text -1258 931 ø@ = reminds the last starting point and not hangs
@@ -84,18 +84,18 @@ push : off;
 #X obj 442 419 r lo;
 #X obj -81 55 r lo;
 #X obj 595 153 r B;
-#X obj 90 121 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 1
+#X obj 90 121 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 0
 1;
-#X obj 89 150 tgl 28 0 empty empty B 6 15 1 28 -1 -262144 -262144 0
+#X obj 89 150 tgl 28 0 empty empty B 6 15 1 28 -1 -262144 -262144 1
 1;
 #X obj 176 125 tgl 28 0 empty empty A 6 12 1 22 -1 -262144 -262144
 0 1;
 #X obj 176 151 tgl 28 0 empty empty B 6 12 1 22 -1 -262144 -262144
 0 1;
 #X obj 118 123 vsl 28 110 0 33 0 0 empty empty ÷ 8 44 0 22 -16662
--260097 -260097 26 1;
+-260097 -260097 0 1;
 #X obj 89 208 tgl 28 0 empty empty • 6 15 1 50 -1 -260097 -260097
-0 1;
+1 1;
 #X obj 147 125 tgl 28 0 empty empty ☞ 8 12 0 27 -1 -262144 -262144
 0 1;
 #X obj 61 121 tgl 28 0 empty empty @ 2 14 1 26 -260097 -1 -1 0 1;
@@ -103,10 +103,10 @@ push : off;
 1;
 #X obj 147 151 tgl 28 0 empty empty ☞ 8 12 0 27 -1 -262144 -262144
 0 1;
-#X obj 60 92 tgl 28 0 empty empty raw 2 12 1 16 -260097 -1 -45076 0
+#X obj 60 92 tgl 28 0 empty empty raw 2 12 1 16 -260097 -1 -45076 1
 1;
 #X floatatom 147 109 8 0 0 0 - - -;
-#X obj 89 92 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 0 1
+#X obj 89 92 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 1 1
 ;
 #X msg 662 18 0;
 #X obj 118 843 onoff12x;
@@ -124,16 +124,16 @@ push : off;
 #X obj 148 -246 r send_reposetoinoffB;
 #X obj 483 595 r @B;
 #X obj 367 338 r B;
-#X obj 1398 194 s T$mod1;
+#X obj 1268 193 s T$mod1;
 #X obj 322 125 s posB;
-#X obj 63 -235 s øBtiTS1>ø;
+#X obj 60 -228 s øBtiTS1>ø;
 #X obj 150 -76 s TmstrchBTR1;
 #X obj 58 598 s trgrvolee1;
 #X obj -150 100 s @B;
 #X obj 120 871 onoff13x;
 #X obj 419 116 outlet;
 #X obj 497 121 s øAtiTS2;
-#X obj 90 -42 s onofdispay1;
+#X obj 498 98 s onofdispay1;
 #X text -1775 850 "Here \, rather than ask you to push the read pointer
 back and forth in the sample \, we use a phasor~. This makes it possible
 to avoid the samphold~ on the read pointer (r~ read-pt) \, since \,
@@ -145,7 +145,7 @@ the sample rate (44100) until the last moment \, so that calculations
 using "read-pt" and "chunk size" can be in the same units (seconds.)"
 ;
 #X obj 89 179 tgl 28 0 empty empty • 6 15 1 50 -1 -260097 -260097
-1 1;
+0 1;
 #X obj 321 69 * 1;
 #X obj 89 -660 r send_BA;
 #X obj 91 -637 s BA;
@@ -192,17 +192,17 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 873 72 r stretchB;
 #X obj 873 48 r stretchA;
 #X obj 642 318 + 0;
-#X obj 1474 193 s BBBmod;
-#X obj 1582 110 sel;
-#X msg 1580 162 1;
-#X obj 1475 144 spigot-toggle_vert;
-#X obj 1616 28 r trgrB;
+#X obj 1345 256 s BBBmod;
+#X obj 1432 110 sel;
+#X msg 1430 162 1;
+#X obj 1327 166 spigot-toggle_vert;
+#X obj 1470 28 r trgrB;
 #X obj -283 207 s sl_bngAB;
 #X obj -283 233 s sl_bngBB;
 #X floatatom 967 -184 2 0 0 0 - - -;
-#X obj 1279 1 r trgrAafter;
-#X obj 1281 59 spigot-toggle_vert;
-#X obj 1281 88 spigot-toggle_red;
+#X obj 1129 1 r trgrAafter;
+#X obj 1131 59 spigot-toggle_vert;
+#X obj 1131 88 spigot-toggle_red;
 #X obj 964 -213 r sl_trgAB;
 #X obj 1046 -213 r sl_trgBB;
 #X obj 969 -161 s trgrtoenvonoffB;
@@ -210,10 +210,10 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj -373 180 s BBonoff;
 #X obj 481 360 r ABonoff;
 #X obj 481 385 r BBonoff;
-#X floatatom 641 489 12 0 0 0 - - -;
+#X floatatom 641 492 12 0 0 0 - - -;
 #X obj 643 516 s Bmod;
-#X obj 1570 -98 r sl_trgAB;
-#X obj 1572 -70 r sl_trgBB;
+#X obj 1393 -2 r sl_trgAB;
+#X obj 1395 26 r sl_trgBB;
 #X obj -373 207 s sl_trgAB;
 #X obj -373 233 s sl_trgBB;
 #X obj 648 60 r ABonoff;
@@ -228,7 +228,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 -1 -1;
 #X obj 151 34 spigot-toggle_orange;
 #X obj 647 -36 r rawB;
-#X obj 1579 133 r lo;
+#X obj 1429 133 r lo;
 #X obj 354 -130 notein;
 #X floatatom 379 -95 5 0 0 0 - - -;
 #X floatatom 331 -95 5 0 0 0 - - -;
@@ -246,20 +246,20 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 331 -70 == 55;
 #X obj 150 7 spigot-toggle_orange;
 #X msg 693 230 0;
-#X obj 1757 40 r ABonoff;
-#X obj 1757 68 r BBonoff;
-#X floatatom 664 455 2 0 0 0 - - -;
-#X obj 1279 27 r trgrBafter;
+#X obj 1607 40 r ABonoff;
+#X obj 1607 68 r BBonoff;
+#X floatatom 746 483 2 0 0 0 - - -;
+#X obj 1129 27 r trgrBafter;
 #X obj 86 389 spigot-toggle_orange;
 #X obj 86 416 delay;
 #X obj 90 365 sel;
 #X msg 85 438 1;
 #X obj 119 391 r t$mod1;
 #X obj 150 -98 s TStrchonoffB;
-#X obj 1283 195 s trgrafterBmod;
+#X obj 1130 226 s trgrafterBmod;
 #X obj 412 285 r posvisuB;
 #X obj 32 121 tgl 28 0 empty empty ∞ 6 15 2 25 -1 -260097 -260097
-1 1;
+0 1;
 #X obj 32 92 tgl 28 0 empty empty >๏ 5 13 1 15 -1 -260097 -260097
 0 1;
 #X obj 32 179 tgl 28 0 empty empty ø@S 6 15 0 11 -1 -4034 -4034 0
@@ -298,33 +298,33 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj -533 112 r sl_bngAB;
 #X obj -536 193 r sl_bngBB;
 #X text 785 -255 env selct from A position n after AB;
-#X obj 1284 348 spigot-toggle_vert;
-#X obj 1284 369 spigot-toggle_red;
-#X obj 1475 347 spigot-toggle_vert;
-#X obj 1475 368 spigot-toggle_red;
+#X obj 1134 348 spigot-toggle_vert;
+#X obj 1134 369 spigot-toggle_red;
+#X obj 1325 347 spigot-toggle_vert;
+#X obj 1325 368 spigot-toggle_red;
 #X text 1102 -253 env selct from audio mod module;
-#X obj 1397 369 spigot-toggle_red;
-#X obj 1397 348 spigot-toggle_vert;
-#X obj 1718 329 spigot-toggle_vert;
-#X obj 1718 350 spigot-toggle_red;
-#X obj 1766 329 r envBAAM;
-#X obj 1767 350 r envBBAM;
+#X obj 1247 369 spigot-toggle_red;
+#X obj 1247 348 spigot-toggle_vert;
+#X obj 1568 329 spigot-toggle_vert;
+#X obj 1568 350 spigot-toggle_red;
+#X obj 1616 329 r envBAAM;
+#X obj 1617 350 r envBBAM;
 #X obj 279 206 s envBAAM;
 #X obj 280 235 s envBBAM;
-#X obj 1717 247 r BAbuttonAM;
-#X obj 1717 272 r BbuttonAM;
+#X obj 1567 247 r BAbuttonAM;
+#X obj 1567 272 r BbuttonAM;
 #X obj -195 100 s 0+B;
 #X obj 693 183 r 0+B;
 #X obj -113 100 r 0+B;
-#X obj 1545 194 s trgrBmod;
+#X obj 1395 194 s trgrBmod;
 #X obj -180 71 r trgrBmod;
-#X obj 1621 160 s trgrBmodenv;
-#X obj 1612 59 spigot-toggle_vert;
-#X obj 1614 88 spigot-toggle_red;
-#X obj 1617 398 r trgrA;
-#X obj 1616 425 r trgrB;
-#X obj 1618 347 spigot-toggle_vert;
-#X obj 1618 368 spigot-toggle_red;
+#X obj 1476 190 s trgrBmodenv;
+#X obj 1466 59 spigot-toggle_vert;
+#X obj 1468 88 spigot-toggle_red;
+#X obj 1467 398 r trgrA;
+#X obj 1466 425 r trgrB;
+#X obj 1468 347 spigot-toggle_vert;
+#X obj 1468 368 spigot-toggle_red;
 #X obj 32 208 tgl 28 0 empty empty • 6 15 1 50 -1 -4034 -4034 0 1
 ;
 #X obj 92 268 r envFRMsmplsendAB;
@@ -337,7 +337,6 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 204 92 cnv 15 30 145 empty empty empty 20 12 0 14 -1 -66577
 0;
 #X obj 34 314 s envFRMsmplsendB;
-#X obj 684 454 r trgrafterBmod;
 #X obj -284 150 s Babutton;
 #X obj 162 498 r ABonoff;
 #X obj 158 530 r ABonoff;
@@ -347,17 +346,18 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X obj 732 232 sel;
 #X obj 732 182 r reposetoinoffB;
 #X obj 732 204 r reposetoinoffBA;
-#X floatatom 1625 133 5 0 0 0 - - -;
-#X obj 1046 -13 r ITBAng;
-#X obj 1115 -13 r ITBAngafter;
-#X obj 1115 11 r ITBAngafterB;
-#X obj 1045 10 r ITBAngB;
-#X obj 1114 60 spigot-toggle_vert;
-#X obj 1114 89 spigot-toggle_red;
-#X obj 1044 60 spigot-toggle_vert;
-#X obj 1044 89 spigot-toggle_red;
-#X obj 1042 187 s ITBAngBselect;
-#X obj 1111 157 s ITBAngafterBselect;
+#X floatatom 1479 133 5 0 0 0 - - -;
+#X obj 1016 -3 r ITBAng;
+#X obj 1015 20 r ITBAngB;
+#X obj 1014 60 spigot-toggle_vert;
+#X obj 1014 89 spigot-toggle_red;
+#X obj 1012 187 s ITBAngBselect;
+#X floatatom 1135 176 5 0 0 0 - - -;
+#X obj 1329 212 spigot-toggle_vert;
+#X obj 723 452 r trgrBmodenv;
+#X obj 1360 206 r øAtiTS2;
+#X obj 1333 -125 r sl_bngAB;
+#X obj 1333 -99 r sl_bngBB;
 #X connect 1 0 17 0;
 #X connect 1 0 277 0;
 #X connect 2 0 16 0;
@@ -370,12 +370,13 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 5 0 261 0;
 #X connect 8 0 10 0;
 #X connect 9 0 10 0;
-#X connect 10 0 106 0;
 #X connect 10 0 7 0;
-#X connect 11 0 13 0;
+#X connect 10 0 106 0;
 #X connect 11 0 274 0;
+#X connect 11 0 167 1;
+#X connect 11 0 13 0;
 #X connect 12 0 6 0;
-#X connect 12 0 164 0;
+#X connect 12 0 307 0;
 #X connect 14 0 113 0;
 #X connect 14 0 107 0;
 #X connect 15 0 81 0;
@@ -409,12 +410,12 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 37 0 35 1;
 #X connect 37 0 36 1;
 #X connect 37 0 38 1;
-#X connect 37 0 295 1;
+#X connect 37 0 294 1;
 #X connect 38 0 85 0;
 #X connect 39 0 92 0;
 #X connect 39 0 93 0;
 #X connect 39 0 112 0;
-#X connect 39 0 296 0;
+#X connect 39 0 295 0;
 #X connect 47 0 48 0;
 #X connect 48 0 108 0;
 #X connect 49 0 70 0;
@@ -455,7 +456,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 77 0 197 0;
 #X connect 77 0 178 0;
 #X connect 77 0 235 0;
-#X connect 77 0 292 0;
+#X connect 77 0 291 0;
 #X connect 78 0 197 0;
 #X connect 78 0 213 0;
 #X connect 78 0 82 0;
@@ -548,6 +549,7 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 172 0 173 0;
 #X connect 172 0 256 0;
 #X connect 173 0 225 0;
+#X connect 173 0 306 0;
 #X connect 174 0 225 0;
 #X connect 175 0 171 0;
 #X connect 176 0 171 0;
@@ -596,14 +598,12 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 215 0 16 1;
 #X connect 215 0 173 1;
 #X connect 215 0 277 1;
-#X connect 215 0 306 1;
-#X connect 215 0 308 1;
+#X connect 215 0 303 1;
 #X connect 216 0 8 1;
 #X connect 216 0 18 1;
 #X connect 216 0 174 1;
 #X connect 216 0 278 1;
-#X connect 216 0 307 1;
-#X connect 216 0 309 1;
+#X connect 216 0 304 1;
 #X connect 217 0 61 1;
 #X connect 218 0 174 0;
 #X connect 218 0 257 0;
@@ -632,9 +632,9 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 234 0 59 1;
 #X connect 234 0 139 0;
 #X connect 236 0 268 0;
-#X connect 236 0 297 0;
+#X connect 236 0 296 0;
 #X connect 237 0 267 0;
-#X connect 237 0 297 0;
+#X connect 237 0 296 0;
 #X connect 238 0 242 0;
 #X connect 239 0 238 0;
 #X connect 240 0 241 0;
@@ -681,8 +681,9 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 273 0 81 0;
 #X connect 275 0 89 0;
 #X connect 277 0 276 0;
+#X connect 277 0 300 0;
 #X connect 278 0 276 0;
-#X connect 278 0 301 0;
+#X connect 278 0 300 0;
 #X connect 279 0 281 0;
 #X connect 280 0 282 0;
 #X connect 281 0 276 0;
@@ -690,20 +691,20 @@ using "read-pt" and "chunk size" can be in the same units (seconds.)"
 #X connect 283 0 290 0;
 #X connect 284 0 118 0;
 #X connect 285 0 82 0;
-#X connect 291 0 217 0;
-#X connect 293 0 58 0;
-#X connect 294 0 59 0;
-#X connect 295 0 77 0;
-#X connect 296 0 295 0;
-#X connect 298 0 214 0;
-#X connect 299 0 298 0;
-#X connect 300 0 298 0;
-#X connect 302 0 308 0;
-#X connect 303 0 306 0;
-#X connect 304 0 307 0;
-#X connect 305 0 309 0;
-#X connect 306 0 311 0;
-#X connect 307 0 311 0;
-#X connect 308 0 310 0;
-#X connect 309 0 310 0;
+#X connect 292 0 58 0;
+#X connect 293 0 59 0;
+#X connect 294 0 77 0;
+#X connect 295 0 294 0;
+#X connect 297 0 214 0;
+#X connect 298 0 297 0;
+#X connect 299 0 297 0;
+#X connect 301 0 303 0;
+#X connect 302 0 304 0;
+#X connect 303 0 305 0;
+#X connect 304 0 305 0;
+#X connect 307 0 164 0;
+#X connect 308 0 217 0;
+#X connect 309 0 307 1;
+#X connect 310 0 16 1;
+#X connect 311 0 18 1;
 #X coords 0 -1 1 1 236 146 2 0 90;
