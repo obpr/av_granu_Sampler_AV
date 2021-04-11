@@ -25,9 +25,9 @@
 #X obj 163 129 bng 20 250 50 0 empty empty o 4 8 0 20 -1 -260097 -260097
 ;
 #X obj 186 114 mknob 28 1000 -0.1 0.1 0 0 empty empty empty -2 -6 0
-8 -260097 -33289 -1 69222 1;
+8 -260097 -33289 -1 49950 1;
 #X obj 163 108 mknob 20 1000 0 2 0 0 empty empty empty -2 -6 0 8 -1
--260097 -260097 24750 1;
+-260097 -260097 49950 1;
 #X obj 413 118 t b f;
 #X obj 417 145 * 1;
 #X floatatom 596 -145 22 0 0 0 - - -;
@@ -80,7 +80,7 @@ lie between output boundaries;
 #X obj 213 -12 phasor~;
 #X obj 108 19 spigot-toggle_violet;
 #X obj 212 -43 sig~ 1;
-#X obj 217 102 vsl 28 48 0 1 0 0 empty empty empty 8 44 0 22 -16662
+#X obj 219 102 vsl 28 48 0 1 0 0 empty empty empty 8 44 0 22 -16662
 -260097 -260097 0 1;
 #X msg 187 184 0;
 #X obj 107 113 bng 30 250 50 0 empty empty ☞ 5 15 0 35 -1 -260097
