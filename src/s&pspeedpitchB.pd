@@ -1,4 +1,4 @@
-#N canvas 400 22 1280 1006 10;
+#N canvas 641 448 1280 1006 10;
 #X obj 250 73 r lo;
 #X obj 156 1046 spigot-toggle_orange;
 #X obj 156 1069 spigot-toggle_orange;
@@ -49,7 +49,7 @@
 #X obj 157 189 tgl 25 0 empty empty B 8 14 0 16 -1 -262144 -262144
 0 1;
 #X obj 133 214 tgl 25 0 empty empty ''a 8 14 1 16 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 157 214 tgl 25 0 empty empty "a 3 14 0 16 -1 -262144 -262144
 0 1;
 #X obj 133 239 tgl 25 0 empty empty ''b 8 14 1 16 -1 -262144 -262144
@@ -57,7 +57,7 @@
 #X obj 157 239 tgl 25 0 empty empty "b 3 14 0 16 -1 -262144 -262144
 0 1;
 #X floatatom 137 131 8 0 0 0 - - -;
-#X obj 115 1088 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 0 1
+#X obj 115 1088 tgl 15 0 empty empty loc 2 7 0 10 -262144 -1 -1 1 1
 ;
 #X obj 163 1001 * -1;
 #X obj 164 942 r freestepsouts1;
@@ -143,9 +143,9 @@
 #X obj 513 -150 * 0.0078741;
 #X obj 425 -149 * 0.0078741;
 #X obj 175 148 tgl 20 0 empty empty 88 6 9 1 10 -1 -262144 -262144
-0 1;
-#X obj 119 147 tgl 20 0 empty empty bck 1 9 1 10 -1 -262144 -262144
 1 1;
+#X obj 119 147 tgl 20 0 empty empty bck 1 9 1 10 -1 -262144 -262144
+0 1;
 #X obj 277 149 tgl 20 0 empty empty bck 3 9 1 9 -1 -262144 -262144
 0 1;
 #X obj 336 149 tgl 20 0 empty empty pad 2 9 1 9 -1 -262144 -262144
@@ -206,13 +206,13 @@
 #X obj 183 1096 onoff10x;
 #X msg 636 153 0.75;
 #X obj 181 171 vsl 15 91 -2 2 0 1 empty empty md 2 95 1 8 -16662 -262144
--262144 4500 1;
+-262144 3800 1;
 #X obj 118 170 vsl 15 91 -2 2 0 0 empty empty raw 1 95 0 8 -16662 -262144
--262144 6187 1;
+-262144 4887 1;
 #X obj 339 168 vsl 15 91 -4 4 0 0 empty empty empty 2 95 1 8 -16662
--262144 -262144 5525 1;
+-262144 -262144 5625 1;
 #X obj 276 168 vsl 15 91 -2 2 0 0 empty empty empty 1 95 0 8 -16662
--262144 -262144 4500 1;
+-262144 -262144 6041 1;
 #X msg 681 153 0.75;
 #X msg 433 151 0.75;
 #X obj 619 770 spigot-toggle_jaunenoir;
@@ -337,8 +337,8 @@
 #X floatatom 209 886 5 0 0 0 - - -;
 #X msg 498 151 0;
 #X obj -3 275 s Bbutton;
-#X obj -110 756 r trgrAafter;
-#X obj 7 755 r trgrBafter;
+#X obj 7 756 r lo;
+#X obj -110 755 r lo;
 #X connect 0 0 124 0;
 #X connect 0 0 125 0;
 #X connect 1 0 22 0;
@@ -677,6 +677,6 @@
 #X connect 276 0 167 0;
 #X connect 277 0 167 0;
 #X connect 279 0 181 0;
-#X connect 281 0 163 1;
-#X connect 282 0 162 1;
+#X connect 281 0 162 1;
+#X connect 282 0 163 1;
 #X coords 0 -1 1 1 271 228 1 100 100;

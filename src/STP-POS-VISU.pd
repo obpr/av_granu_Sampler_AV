@@ -1,4 +1,4 @@
-#N canvas -157 172 1624 698 10;
+#N canvas -106 535 1624 698 10;
 #X obj 1151 78 pack f f;
 #X obj 1190 37 t b f;
 #X msg 1152 119 \; /receive_symbol/toggle pos \$1 \$2;
@@ -73,6 +73,9 @@
 #X obj 1124 14 * 42.8;
 #X msg 1190 -10 329;
 #X obj 825 22 r trgrmodenvA;
+#X obj 834 -33 r ABonoff;
+#X obj 850 -16 r trgrmodenvB;
+#X obj 827 1 spigot-toggle_jaune;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 1 1 0 1;
@@ -123,3 +126,6 @@
 #X connect 58 0 57 0;
 #X connect 59 0 37 0;
 #X connect 60 0 43 0;
+#X connect 61 0 63 1;
+#X connect 62 0 63 0;
+#X connect 63 0 43 0;

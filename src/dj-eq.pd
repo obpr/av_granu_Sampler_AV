@@ -1,4 +1,4 @@
-#N canvas -4 720 718 329 10;
+#N canvas 0 699 718 329 10;
 #X obj 10 3 cnv 15 150 300 empty empty empty 20 12 0 14 -24198 -66577
 0;
 #X obj 233 23 tgl 15 1 empty empty empty 0 -6 0 8 -258699 -1 -1 1 1
@@ -44,11 +44,11 @@
 #X obj 21 165 hsl 128 15 0 1 0 1 empty empty dry/wet -2 -6 0 8 -241291
 -1 -1 12700 1;
 #X obj 21 17 vsl 15 128 0 2 0 1 empty empty BASS 0 -8 0 8 -44926 -1
--1 479 1;
+-1 4233 1;
 #X obj 76 17 vsl 15 128 0 2 0 1 empty empty MIDS 0 -8 0 8 -44926 -1
--1 543 1;
+-1 4233 1;
 #X obj 135 17 vsl 15 128 0 2 0 1 empty empty HIGHS 0 -8 0 8 -44926
--1 -1 865 1;
+-1 -1 4202 1;
 #N canvas 402 619 528 469 output_mixer 0;
 #X obj 39 11 inlet dry/wet;
 #X obj 22 -19 inlet~ dry;

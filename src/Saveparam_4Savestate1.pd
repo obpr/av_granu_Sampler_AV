@@ -1,9 +1,9 @@
-#N canvas 0 118 1384 878 12;
+#N canvas 43 150 1384 878 12;
 #X obj 100 100 cnv 15 120 21 empty empty ------to.txt----- 22 10 1
 13 -1 -162280 0;
 #X obj 101 102 bng 18 250 50 0 \$0-saveB.s \$0-saveB.r S 4 9 1 14 -162280
 -260097 -1;
-#X obj 201 102 bng 18 250 50 0 \$0-loadB.s \$0-loadB.r L 6 9 1 14 -162280
+#X obj 210 102 bng 18 250 50 0 \$0-loadB.s \$0-loadB.r L 6 9 1 14 -162280
 -260097 -1;
 #X obj -9 50 cnv 15 400 20 \$0-preset.name.s \$0-preset.name.r PRESET_FILE:no_preset_loaded
 5 10 0 10 -86853 -261682 0;
@@ -680,4 +680,4 @@ W.reposetoinoffB;
 #X floatatom -613 526 5 0 0 3 S.IT1≠T1 S.IT1≠T1 #0-IT1≠T1.s;
 #X floatatom -64 283 5 0 0 2 W.ITB≠TB #0-ITB≠TB.r W.ITB≠TB;
 #X floatatom -64 305 5 0 0 3 S.ITB≠TB S.ITB≠TB #0-ITB≠TB.s;
-#X coords 0 -1 1 1 120 22 2 100 100;
+#X coords 0 -1 1 1 129 22 2 100 100;

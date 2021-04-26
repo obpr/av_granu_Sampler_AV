@@ -1129,18 +1129,18 @@ hf-damping lf-damping center curve slope width transition-time, f
 #X connect 25 0 12 0;
 #X restore 980 -29 pd in;
 #N canvas 50 60 475 205 \$0-rev~ 1;
-#N canvas 11 375 866 485 mask 1;
+#N canvas 11 375 866 485 mask 0;
 #X obj 100 100 cnv 15 459 189 empty empty empty 2 2 0 14 -262144 -66577
 0;
 #X obj 218 179 nbx 4 12 0 100 0 0 \$0-hf-damping \$0-hf-dampingr %
-41 7 2 10 -262144 -1 -1 50 256;
+41 7 2 10 -262144 -1 -1 2.0202 256;
 #X obj 112 179 hsl 100 12 0 100 0 0 \$0-hfdgui \$0-hfdguir HF-Damping
--2 -6 2 10 -262144 -1 -1 4950 1;
+-2 -6 2 10 -262144 -1 -1 200 1;
 #X msg 46 175 set \$1;
 #X obj 218 154 nbx 5 12 0 20000 0 0 \$0-lop \$0-lopr hz. 50 7 2 10
--262144 -1 -1 3000 256;
+-262144 -1 -1 11319.3 256;
 #X obj 112 154 hsl 100 12 0 1 0 0 \$0-lopgui \$0-lopguir Lop-Frequency
--2 -6 2 10 -262144 -1 -1 4427 1;
+-2 -6 2 10 -262144 -1 -1 8600 1;
 #N canvas 439 215 450 300 map 0;
 #X obj 105 33 inlet;
 #X msg 105 180 set \$1;
@@ -1160,9 +1160,9 @@ hf-damping lf-damping center curve slope width transition-time, f
 #X connect 8 0 3 0;
 #X restore 45 151 pd map;
 #X obj 218 128 nbx 4 12 0 100 0 0 \$0-feedback \$0-feedbackr % 41 7
-2 10 -262144 -1 -1 50 256;
+2 10 -262144 -1 -1 79.798 256;
 #X obj 112 128 hsl 100 12 0 100 0 0 \$0-fbgui \$0-fbuir Feedback -2
--6 2 10 -262144 -1 -1 4950 1;
+-6 2 10 -262144 -1 -1 7900 1;
 #X msg 45 125 set \$1;
 #X obj 378 129 cnv 15 152 102 empty empty empty 20 12 0 14 -128992
 -66577 0;
@@ -1213,7 +1213,7 @@ hf-damping lf-damping center curve slope width transition-time, f
 2 10 -262144 -1 -1 9900 1;
 #X msg 53 253 set \$1;
 #X obj 499 270 nbx 4 12 0 100 0 0 \$0-drywet \$0-drywetr % 41 7 2 10
--262144 -1 -1 100 256;
+-262144 -1 -1 23.2558 256;
 #X obj 499 258 cnv 10 10 10 empty empty Dry/Wet 0 5 2 10 -262144 -1
 0;
 #X obj 217 230 nbx 4 12 0 100 0 0 \$0-lf-damping \$0-lf-dampingr %
@@ -1221,9 +1221,9 @@ hf-damping lf-damping center curve slope width transition-time, f
 #X obj 111 230 hsl 100 12 0 100 0 0 \$0-lfdgui \$0-lfdguir LF-Damping
 -2 -6 2 10 -262144 -1 -1 0 1;
 #X obj 217 205 nbx 5 12 0 20000 0 0 \$0-hip \$0-hipr hz. 50 7 2 10
--262144 -1 -1 0 256;
+-262144 -1 -1 11319.3 256;
 #X obj 111 205 hsl 100 12 0 1 0 0 \$0-hipgui \$0-hipguir Hip-Frequency
--2 -6 2 10 -262144 -1 -1 0 1;
+-2 -6 2 10 -262144 -1 -1 8600 1;
 #X msg 47 230 set \$1;
 #N canvas 439 215 450 300 map 0;
 #X obj 105 33 inlet;
@@ -2029,16 +2029,16 @@ http://www.rs-met.com/documents/tutorials/StereoProcessing.pdf, f
 #X obj 684 -53 line~;
 #N canvas 686 449 454 180 message-out 0;
 #X obj 20 20 inlet;
-#X msg 20 45 dry/wet 100 \, feedback 50 \, lop-frequency 3000 \, hf-damping
-50 \, hip-frequency 0 \, lf-damping 0 \, center 75 \, curve 10 \, slope
-130 \, width 100 \, transition-time 50 \, early 0 1.42763 3.23873 5.2345
-7.82312 \, tail 10 11.6356 13.4567 16.7345 20.1862 25.7417 31.4693
-38.2944 46.6838 55.4567 65.1755 76.8243 88.5623 101.278 115.397 130.502
-\,;
+#X msg 20 45 dry/wet 23.2558 \, feedback 79.798 \, lop-frequency 11319.3
+\, hf-damping 2.0202 \, hip-frequency 11319.3 \, lf-damping 0 \, center
+75 \, curve 10 \, slope 130 \, width 100 \, transition-time 50 \, early
+0 1.42763 3.23873 5.2345 7.82312 \, tail 10 11.6356 13.4567 16.7345
+20.1862 25.7417 31.4693 38.2944 46.6838 55.4567 65.1755 76.8243 88.5623
+101.278 115.397 130.502 \,;
 #X connect 0 0 1 0;
 #X restore 975 295 pd message-out;
 #X obj 113 101 hsl 44 15 0 100 0 0 empty empty % 5 8 0 10 -16662 -260097
--260097 0 1;
+-260097 1043 1;
 #X obj 277 -25 r lo;
 #X obj 181 105 s dry/wetB;
 #X connect 19 0 36 0;

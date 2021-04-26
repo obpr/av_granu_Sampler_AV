@@ -30,6 +30,9 @@
 #X obj 1128 32 + 335.5;
 #X msg 1191 -12 549;
 #X obj 825 22 r trgrmodenvB;
+#X obj 832 -20 spigot-toggle_jaune;
+#X obj 855 -37 r trgrmodenvA;
+#X obj 839 -54 r BAonoff;
 #X connect 0 0 1 0;
 #X connect 1 0 9 0;
 #X connect 2 0 4 0;
@@ -60,3 +63,6 @@
 #X connect 26 0 12 0;
 #X connect 27 0 13 0;
 #X connect 28 0 2 0;
+#X connect 29 0 2 0;
+#X connect 30 0 29 0;
+#X connect 31 0 29 1;
