@@ -13,8 +13,8 @@
 #X obj 481 583 inlet;
 #X obj 590 665 r fll1;
 #X obj 588 640 r fll0;
-#X obj 538 641 * 0.01;
-#X obj 541 665 * 0.01;
+#X obj 539 641 * 1;
+#X obj 541 665 * 1;
 #X connect 0 0 4 0;
 #X connect 1 0 4 0;
 #X connect 2 0 4 0;

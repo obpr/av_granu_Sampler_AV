@@ -1,4 +1,4 @@
-#N canvas 385 0 928 1028 10;
+#N canvas 385 30 928 1028 10;
 #X obj 214 125 inlet;
 #X obj 151 589 inlet;
 #X obj 224 729 outlet~;
@@ -8,7 +8,7 @@
 #X floatatom 332 610 7 0 0 0 - - -;
 #X obj 224 595 vline~;
 #X obj 225 710 pow~ 2;
-#X obj 155 410 bng 20 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+#X obj 177 410 bng 20 250 50 0 empty empty empty 17 7 0 10 -4034 -1
 -1;
 #X floatatom 213 159 5 0 0 0 - - -;
 #X obj 320 461 bng 20 250 50 0 empty empty empty 17 7 0 10 -260097
@@ -59,9 +59,9 @@
 #X obj 195 -17 t b f;
 #X floatatom 330 158 0 0 0 0 - - -;
 #X obj 195 -94 hsl 105 15 0 1 0 0 empty empty cut 12 8 0 10 -260097
--1 -1 151 1;
+-1 -1 3651 1;
 #X obj 304 -94 hsl 100 15 0 1 0 0 empty empty empty -2 8 0 10 -260097
--1 -1 9245 1;
+-1 -1 4107 1;
 #X obj 243 -63 - 1;
 #X obj 243 -35 * -1;
 #X obj 296 -124 inlet;
