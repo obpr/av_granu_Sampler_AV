@@ -20,7 +20,55 @@ Very versatile object for playing sound and video clip simultaniusmly, av_granu 
 Compose in two complex step sequencer and apply the results on the playhead scrolling through audio sample or to the synthesizers. Analyse the results and send back the traduction to module the sounds between each others.
 
 
+## Step sequencers
+(3)  
 
+![Alt text](/doc/img/avgra_step.jpeg)  
+
+
+Two Step sequencers called A and B generating number sequence according to:
+
+A number sequence of time
+A number sequence of iteration
+A number sequence of progressivity
+A number sequence to be added or subtract
+
+*`$` = value, each step got a value*
+
+### `[=IT]`
+- Play all `$` of time (all `$` of Step sequencerT)
+at each value of the general Step Sequencer (top line) ... allT `$ / G $`
+- If it is not triggered = Play a `$` of the Step sequencerT at every `$` of the general sequencer Step ... `T $ / G $`
+
+### `[≠IT]`
+- Change steps on the step sequencer (s) in accordance with a fixed $ of time (1000) by default).
+- Column still on the right: go to the value gradually (1000) by default)
+
+### `[%T]`
+- Divides time by the `$` from Step Sequencer `IT` ... `T` `$% IT`
+
+### `[/Tb/]`
+Receive the time of Step sequencer B
+
+### `[A]`
+On/off
+
+### `[nxt]`
+Step forward
+
+### `[INV]`
+Inverse steps off and steps on
+
+### `[⇋]`
+Send a step on two opposite values
+
+### `[/step]`
+Move linearly on the sequence.
+- One step all 6.25`$` (100%16 = 6.25)
+- if the tempo = loop length of the sequence%10
+
+### `[O]`
+Turn this step mute
 
 #Dynamic enveloppe
 
