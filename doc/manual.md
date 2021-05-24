@@ -20,8 +20,7 @@ Very versatile object for playing sound and video clip simultaniusmly, av_granu 
 Compose in two complex step sequencer and apply the results on the playhead scrolling through audio sample or to the synthesizers. Analyse the results and send back the traduction to module the sounds between each others.
 
 
-## Step sequencers
-(3)  
+## Step sequencers 
 
 ![Alt text](/doc/img/avgra_step.jpeg)  
 
