@@ -1,21 +1,48 @@
 # AV_GRANU
 
 Double tracks AV sampler
-In real time, Sample, Scratch, Pitch and change the playback speed
-and module your parameters with 2 complex step-sequencers and an audio analyzer.
+
 
 ![Alt text](/doc/img/avgra_tout.jpeg)
 
 
 Play music with video samples.
 Realize live montages and generative installations.
-Choose sounds and vidéos and find interactions among them:
-- Two audio/video tracks (right:A left:B)
-- (1) Sound analyse modules
-- (2) Time stresh modules
-- (3) Step Sequencers
-- (4) Synthetizers
-- (10) Speed and Pitch playback
+Choose sounds and vidéos and find interactions among them.
+
+Two audio/video tracks (right:A left:B)
+Two Sound analyse modules (up:a' down:b')
+Two Synthetizers (up:C down:D)
+ 
+
+Very versatile object for playing sound and video clip simultaniusmly, av_granu allow you to specify the starting point of a repeating loop within the sample. The playback speed (either forward or backward) and also the playback speed separtly from the pitch.
+
+Compose in two complex step sequencer and apply the result on the playhead scrolling through audio sample, to synthesizer. Analyse the results and send back the traduction to module the sounds between each others.
+
+
+ 
+Dynamic enveloppe, Equalizer and reverb
+
+Dynamic enveloppe
+
+According to the speed of the source selected, draw envelopes from regular one to granular.
+
+
+Left/up column : raw data between each other.
+Right/down column : mod raw data
+
+
+
+Looping 
+
+Audiomods 
+
+Synths
+
+Attack interpret
+
+Video 
+
 
 
 (https://obpr.balik.network)
