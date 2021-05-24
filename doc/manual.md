@@ -120,9 +120,9 @@ Send enveloppe from A, B
 Send enveloppe from a’, b’, C or D
 
 
-###  green `[ø@S]` If you choose to select files with A or B CVs or randomly with A or`B triggers the sample sent will be played at its beginning
+###  green `[ø@S]` If you choose to select files with A or B CVs or randomly with A or B triggers the sample sent will be played at its beginning
 
-###  green `[•]` If you choose to select files with A or B CVs or randomly with A or`B triggers the enveloppe will be triggered.
+###  green `[•]` If you choose to select files with A or B CVs or randomly with A or B triggers the enveloppe will be triggered.
 
 
 ## Time stretch  `[☞]`
