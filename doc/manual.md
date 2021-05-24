@@ -28,9 +28,13 @@ Compose in two complex step sequencer and apply the results on the playhead scro
 Two Step sequencers called A and B generating number sequence according to:
 
 A number sequence of time
+
 A number sequence of iteration
-A number sequence of progressivity
+
+A number sequence of progresivity
+
 A number sequence to be added or subtract
+
 
 *`$` = value, each step got a value*
 
@@ -168,7 +172,7 @@ Choose between `44100`/`88200` hz
 
 
 ## Synthetizers: C and D
-(4)  
+
 
 ![Alt text](/doc/img/avgra_synths.jpeg)  
 
@@ -177,7 +181,6 @@ Send D thought C
 
 ##Attack interpret
 
-(1)  
 
 ![Alt text](/doc/img/avgra_audioanlalyse.jpeg)
 
@@ -233,7 +236,6 @@ Set video specifications. Dimension, frame rate, incrustations ( high-threshold_
 
 ## Files selection  
 
-(14)  
 
 ![Alt text](/doc/img/avgra_fileselection.jpeg)  
 
