@@ -155,12 +155,10 @@ Back to default `$` after selection released
 ##### [O]
 Go back to default `$`
 
-##### slider
-set value
 
 ##### `[44]`
 
-Choose between `44100`/`88200` hz
+Choose between `44100`/`88200` Hz
 
 ##### `[O]`
 
@@ -196,16 +194,18 @@ Upper synthetiser in purewave-synth
 #### `Mode scratch` / `[sctch]`
 Suite de valeurs opposées `0-100`, `25-75`, etc.
 
-#### Sensibility
+#### [snslbt] 
+Sensibility, every how much attack detect forward to next value
 
-#### Gate
+#### [*%Gate]
+Module the enveloppe lenght 
 
-#### Progressivity
+#### [Glide]
+Progressivity
 
-#### [stp]
-- 
-- Mode steps: numbers of sequence
-- number of step$ 
+#### [*stp]
+Number of step
+
 
 
 
@@ -221,7 +221,7 @@ Apply trigger, cv ,gate and enveloppe to the video opacity accordingly to audio:
 AV receive gain 
 /2 receive half the gain 
 
-Set video specifications. Dimension, frame rate, incrustations ( high-threshold_) and image modulations
+Set video specifications. Dimension, frame rate, incrustations (threshold) and image modulations
 
 - Threshold: Turn pixel transparent according to the color
 - Change ratio height/width
