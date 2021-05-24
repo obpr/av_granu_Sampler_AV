@@ -75,6 +75,8 @@ Turn this step mute
 
 #Dynamic enveloppe
 
+![Alt text](avgra_EQ_ENV_Reverb.jpeg)
+
 According to the speed of the source selected, draw envelopes from regular one to granular.
 
 
