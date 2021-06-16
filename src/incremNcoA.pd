@@ -1,11 +1,11 @@
-#N canvas -16 22 1236 739 12;
-#X obj 251 100 tgl 24 0 empty empty ⇋ 3 12 1 20 -1 -260097 -260097
+#N canvas 444 289 1236 739 12;
+#X obj 176 100 tgl 24 0 empty empty ⇋ 3 12 1 20 -1 -260097 -260097
 0 1;
 #X obj 429 359 t b f;
 #X floatatom 436 627 12 0 0 0 - - -;
-#X obj 301 100 tgl 24 0 empty empty /stp 2 11 1 12 -260097 -1 -1 0
-1;
-#X obj 376 100 bng 24 250 50 0 empty empty 1X 4 12 1 12 -1 -260097
+#X obj 226 100 tgl 24 0 empty empty /stp 2 11 1 12 -1 -260097 -260097
+0 1;
+#X obj 301 100 bng 24 250 50 0 empty empty 1X 4 12 1 10 -1 -260097
 -260097;
 #X floatatom 617 543 5 0 0 0 - - -;
 #X obj 552 516 t b f;
@@ -13,12 +13,12 @@
 #X obj 429 331 f;
 #X obj 431 307 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 326 100 mknob 24 2000 0 2 0 0 empty empty empty -2 -6 0 8 -1
+#X obj 251 100 mknob 24 2000 0 2 0 0 empty empty empty -2 -6 0 8 -1
 -260097 -260097 99950 1;
 #X obj 366 302 f;
 #X obj 316 271 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 351 100 mknob 24 2000 0 1.5 0 0 empty empty empty -2 -6 0 8
+#X obj 276 100 mknob 24 2000 0 1.5 0 0 empty empty empty -2 -6 0 8
 -260097 -1 -1 133267 1;
 #X obj 550 405 t b f;
 #X obj 553 439 * 1;
@@ -33,12 +33,12 @@
 #X obj 281 0 r lo;
 #X msg 280 28 0;
 #X msg 334 10 0;
-#X obj 101 100 bng 24 250 50 0 empty empty NXT 3 12 0 11 -1 -260097
--260097;
-#X obj 201 100 tgl 24 0 empty empty INV 4 12 1 11 -258113 -1 -1 0 1
+#X obj 126 100 bng 24 250 50 0 empty empty NXT 3 12 0 10 -260097 -1
+-1;
+#X obj 101 100 tgl 24 0 empty empty INV 4 12 1 11 -258113 -1 -1 0 1
 ;
-#X obj 151 100 tgl 24 0 empty empty RDM 0 12 1 11 -1 -260097 -260097
-0 1;
+#X obj 151 100 tgl 24 0 empty empty RDM 1 12 1 10 -260097 -1 -1 0 1
+;
 #X obj 575 115 s backandforthA;
 #X obj 576 151 s invertonof;
 #X obj 587 182 s ctnlstepA;
@@ -54,10 +54,7 @@
 #X floatatom 243 358 12 0 0 0 - - -;
 #X obj 241 332 + 1;
 #X obj 615 513 * 100;
-#X obj 126 100 tgl 24 0 empty empty RDM 0 12 1 11 -1 -1 -1 0 1;
-#X obj 176 100 tgl 24 0 empty empty RDM 0 12 1 11 -1 -1 -1 0 1;
-#X obj 226 100 tgl 24 0 empty empty RDM 0 12 1 11 -1 -1 -1 0 1;
-#X obj 276 100 tgl 24 0 empty empty RDM 0 12 1 11 -1 -1 -1 1 1;
+#X obj 201 100 tgl 24 0 empty empty RDM 0 12 1 11 -1 -1 -1 0 1;
 #X connect 0 0 30 0;
 #X connect 1 0 21 0;
 #X connect 1 1 21 1;
@@ -105,4 +102,4 @@
 #X connect 42 0 41 1;
 #X connect 43 0 42 0;
 #X connect 44 0 5 0;
-#X coords 0 -1 1 1 300 25 1 100 100;
+#X coords 0 -1 1 1 225 25 1 100 100;

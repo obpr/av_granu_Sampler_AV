@@ -1,5 +1,5 @@
 #N canvas 0 112 1645 916 12;
-#X obj 100 100 cnv 15 76 63 empty empty empty 20 12 0 14 -1 -66577
+#X obj 100 100 cnv 15 78 63 empty empty empty 20 12 0 14 -1 -66577
 0;
 #X msg -473 543 record;
 #X floatatom -362 188 5 0 0 0 - - -;
@@ -206,4 +206,4 @@
 #X connect 84 0 14 0;
 #X connect 86 0 44 0;
 #X connect 86 1 22 0;
-#X coords 0 -1 1 1 77 64 2 100 100;
+#X coords 0 -1 1 1 78 64 2 100 100;

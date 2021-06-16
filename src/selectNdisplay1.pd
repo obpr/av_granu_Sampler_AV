@@ -23,7 +23,7 @@ that under linux i could play most formats...;
 #X restore 244 711 pd :: FORMATS;
 #X msg 273 790 label \$1;
 #X msg 273 872 label \$1;
-#X obj -9 348 openpanel;
+#X obj -35 223 openpanel;
 #X obj -4 480 openpanel;
 #X obj -59 386 r lo;
 #X floatatom 334 257 5 0 0 0 - - -;
@@ -41,13 +41,17 @@ that under linux i could play most formats...;
 #X floatatom 152 317 6 0 0 2 - - -;
 #X obj 258 336 tgl 20 0 empty empty BB 3 11 1 12 -4034 -1 -1 0 1;
 #X obj 154 475 cnv 17 124 18 empty sendV1=A1 °_________% 31 13 0 14
--1 -1 0;
-#X obj 237 493 tgl 20 0 empty sendV1=A1 BA 3 10 0 12 -1 -1 -1 0 1;
+-24198 -1 0;
+#X obj 237 493 tgl 20 0 empty sendV1=A1 BA 3 10 0 12 -24198 -1 -1 0
+1;
 #X floatatom 236 475 6 0 0 1 - - -;
-#X obj 154 493 tgl 20 0 empty sendV1=A1 A 6 11 0 12 -1 -1 -1 0 1;
-#X obj 175 493 tgl 20 0 empty sendV1=A1 B 6 11 0 12 -1 -1 -1 0 1;
+#X obj 154 493 tgl 20 0 empty sendV1=A1 A 6 11 0 12 -24198 -1 -1 0
+1;
+#X obj 175 493 tgl 20 0 empty sendV1=A1 B 6 11 0 12 -24198 -1 -1 0
+1;
 #X floatatom 153 475 6 0 0 2 - - -;
-#X obj 258 493 tgl 20 0 empty sendV1=A1 BB 3 10 0 12 -1 -1 -1 0 1;
+#X obj 258 493 tgl 20 0 empty sendV1=A1 BB 3 10 0 12 -24198 -1 -1 0
+1;
 #X obj 324 473 s soundfileB;
 #X obj 332 333 s movieB;
 #X obj 273 900 s \$1-cnv;
@@ -84,8 +88,8 @@ that under linux i could play most formats...;
 #X obj 100 416 cnv 10 180 18 empty empty empty 0 14 1 14 -4034 -1 0
 ;
 #X symbolatom 102 418 25 0 0 0 - - -;
-#X obj 196 475 bng 40 250 50 0 empty sendV1=A1 RDM 8 20 1 10 -1 -1
--1;
+#X obj 196 475 bng 40 250 50 0 empty sendV1=A1 RDM 8 20 1 10 -24198
+-1 -1;
 #X obj 103 475 cnv 10 50 40 empty empty empty 60 22 1 10 -1 -262144
 0;
 #X obj 135 336 bng 18 500 500 0 empty empty load -28 9 1 12 -4034 -1
@@ -94,7 +98,7 @@ that under linux i could play most formats...;
 -1 -4034;
 #X obj 102 354 cnv 12 180 45 empty empty empty 1 24 1 8 -1 -260097
 0;
-#X obj 176 361 tgl 25 0 empty empty V 3 14 1 28 -1 -4034 -4034 1 1
+#X obj 176 361 tgl 25 0 empty empty V 3 14 1 28 -1 -4034 -4034 0 1
 ;
 #X obj 100 513 cnv 33 182 144 empty empty empty 6 12 1 14 -1 -66577
 0;
