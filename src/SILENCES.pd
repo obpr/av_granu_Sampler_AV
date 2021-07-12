@@ -1,4 +1,4 @@
-#N canvas 806 170 971 934 10;
+#N canvas 709 94 971 934 10;
 #X obj 655 181 s fll0;
 #X obj 787 43 *~;
 #X obj 792 215 *~;
@@ -47,11 +47,11 @@
 #X floatatom 117 537 4 0 0 1 glide - -;
 #X floatatom 117 522 4 0 0 1 *stps - -;
 #X obj 179 472 tgl 20 0 empty empty ⇋ 2 11 1 16 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 117 471 tgl 20 0 empty empty D 6 10 1 12 -1 -262144 -262144
 0 1;
 #X obj 117 452 tgl 20 0 empty empty B 6 10 1 12 -1 -262144 -262144
-1 1;
+0 1;
 #X floatatom 117 492 4 0 0 1 snslbt - -;
 #X obj 179 452 tgl 20 0 empty empty stp 3 10 1 12 -1 -262144 -262144
 0 1;

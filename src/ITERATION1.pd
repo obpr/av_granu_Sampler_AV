@@ -1,4 +1,4 @@
-#N canvas -20 505 650 763 12;
+#N canvas 696 154 650 763 12;
 #X obj -16721 -492 f;
 #X obj -16663 -492 f;
 #X obj -16606 -492 f;
@@ -15,13 +15,13 @@
 #X obj -15736 -492 f;
 #X obj -15669 -492 f;
 #X obj -16710 -516 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 1 256;
+0 10 -262144 -1 -1 4 256;
 #X obj -16652 -516 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 1 256;
 #X obj -16595 -516 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 1 256;
+0 10 -262144 -1 -1 2 256;
 #X obj -16537 -516 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 1 256;
+0 10 -262144 -1 -1 3 256;
 #X obj -16443 -516 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 1 256;
 #X obj -16265 -516 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -92,7 +92,7 @@
 #X obj -16553 -985 spigot-toggle_red;
 #X obj -16580 -1031 r lo;
 #X obj -16559 -831 nbx 2 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -228856 -1 -1 0 256;
+0 10 -228856 -1 -1 1 256;
 #X obj -16551 -935 bng 19 250 50 0 empty empty empty 17 7 0 10 -228856
 -1 -1;
 #X text -16528 -938 <= next value;

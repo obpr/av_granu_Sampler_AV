@@ -15,7 +15,7 @@
 #X obj -15905 -1183 f;
 #X obj -15845 -1183 f;
 #X obj -16718 -1210 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 91788.1 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16660 -1210 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj -16603 -1210 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -60,7 +60,7 @@
 #X floatatom -16986 -755 5 0 0 0 - - -;
 #X obj -15686 -911 outlet;
 #X obj -16939 -881 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1
--1 1 1;
+-1 0 1;
 #X floatatom -15682 -939 5 0 0 0 - - -;
 #X obj -15680 -992 pack \$1 \$2;
 #X obj -15555 -1170 inlet;
@@ -109,7 +109,7 @@
 0 10 -262144 -1 -1 1 256;
 #X obj -16751 -1276 t b f;
 #X obj -16750 -1299 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 91788.1 256;
+0 10 -262144 -1 -1 200 256;
 #X obj -16751 -1250 * 1;
 #X obj -16691 -1276 t b f;
 #X obj -16690 -1299 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8
@@ -222,6 +222,7 @@
 #X obj -16960 -620 f;
 #X obj -16595 -689 t b b;
 #X obj -16591 -714 r pitchrawA;
+#X obj -16902 -822 r tstDenv;
 #X connect 0 0 1 0;
 #X connect 0 0 175 0;
 #X connect 0 1 2 0;
@@ -463,3 +464,4 @@
 #X connect 178 0 66 0;
 #X connect 178 1 66 0;
 #X connect 179 0 178 0;
+#X connect 180 0 61 0;

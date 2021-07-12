@@ -1,4 +1,4 @@
-#N canvas 0 0 928 1028 10;
+#N canvas 8 776 928 1028 10;
 #X obj 215 180 inlet;
 #X obj 175 686 inlet;
 #X obj 303 679 outlet~;
@@ -27,7 +27,7 @@
 #X floatatom 596 308 5 0 0 0 - - -;
 #X obj 319 781 line;
 #X obj 320 805 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 172 735 f;
 #X obj 430 706 f;
 #X obj 436 476 delay 0;

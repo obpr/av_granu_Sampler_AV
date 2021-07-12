@@ -1,7 +1,7 @@
-#N canvas 501 460 734 568 10;
+#N canvas 169 5 753 563 10;
 #X obj 172 263 list;
 #X obj 217 263 list;
-#X obj 229 214 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
+#X obj 230 203 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
 -33289;
 #X floatatom 44 349 5 0 0 0 - - -;
 #X obj 43 416 list;
@@ -103,7 +103,7 @@
 #X obj 92 200 max 0;
 #X obj 62 127 route bang float;
 #X obj 219 106 inlet folder;
-#X obj 44 475 outlet file;
+#X obj 43 492 outlet file;
 #X text 132 452 // from list-abs/list-idx;
 #X obj 240 417 outlet nb;
 #X msg 513 156 add \$1;
@@ -116,7 +116,7 @@
 #X obj 338 373 list-iter;
 #X obj 374 63 t b b b b;
 #X obj 65 51 hradio 17 1 0 9 \$2-bang empty empty 0 -3 0 10 -260097
--1 -1 0;
+-1 -1 6;
 #X obj 237 380 list length;
 #X obj 172 236 folder_list;
 #X obj 374 38 loadbang, f 9;
@@ -129,27 +129,27 @@
 #X floatatom -28 403 5 0 0 0 - - -;
 #X obj -27 438 outlet;
 #X obj 401 173 r \$2-bang;
-#X obj 578 116 bng 12 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 497 61 bng 12 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X obj 602 51 inlet;
 #X obj 338 395 splitfilename;
 #X obj 513 318 splitfilename;
 #X floatatom 421 143 5 0 0 0 - - -;
 #X floatatom 272 401 5 0 0 0 - - -;
 #X floatatom 23 149 5 0 0 0 - - -;
-#X floatatom 614 94 5 0 0 0 - - -;
-#X obj 603 262 s \$2-cnv;
-#X obj 50 50 cnv 15 181 18 empty \$2-cnv trianglebleu_1_1.mov 9 10
-1 12 -4034 -1 0;
+#X obj 50 50 cnv 15 181 18 empty \$12-cnv Select... 9 10 1 12 -4034
+-1 0;
 #X msg 313 208 0;
-#X obj 216 15 r folder2;
+#X obj 191 84 r folder2;
+#X msg 127 384 vide/*.mov;
+#X obj 603 262 s \$12-cnv;
 #X connect 0 0 1 0;
 #X connect 0 0 4 1;
 #X connect 0 0 28 1;
 #X connect 1 0 0 1;
 #X connect 2 0 1 1;
 #X connect 2 0 0 1;
-#X connect 2 0 54 0;
+#X connect 2 0 52 0;
 #X connect 3 0 5 0;
 #X connect 4 0 7 0;
 #X connect 5 0 4 0;
@@ -164,6 +164,7 @@
 #X connect 12 0 13 0;
 #X connect 13 1 9 0;
 #X connect 14 0 50 0;
+#X connect 14 0 17 0;
 #X connect 16 0 15 0;
 #X connect 17 0 6 0;
 #X connect 17 1 16 0;
@@ -171,7 +172,7 @@
 #X connect 18 0 39 0;
 #X connect 22 0 26 0;
 #X connect 23 0 26 0;
-#X connect 25 0 52 0;
+#X connect 25 0 55 0;
 #X connect 26 0 41 0;
 #X connect 26 1 25 0;
 #X connect 26 1 35 0;
@@ -202,14 +203,13 @@
 #X connect 43 0 23 0;
 #X connect 43 0 48 0;
 #X connect 44 0 27 0;
+#X connect 44 0 54 0;
 #X connect 44 0 2 0;
 #X connect 45 0 44 0;
-#X connect 45 0 51 0;
 #X connect 46 0 35 1;
 #X connect 46 1 22 0;
 #X connect 47 1 25 0;
-#X connect 50 0 17 0;
 #X connect 50 0 3 0;
-#X connect 50 0 41 0;
-#X connect 55 0 39 0;
+#X connect 53 0 39 0;
+#X connect 54 0 4 1;
 #X coords 0 -1 1 1 182 18 1 50 50;
