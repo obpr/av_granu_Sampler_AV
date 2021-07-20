@@ -1,4 +1,4 @@
-#N canvas 8 776 928 1028 10;
+#N canvas 690 0 928 1028 10;
 #X obj 215 180 inlet;
 #X obj 175 686 inlet;
 #X obj 303 679 outlet~;
@@ -136,6 +136,12 @@
 #X obj -112 929 spigot-toggle_vert;
 #X obj -162 774 metro 250;
 #X obj -162 817 s metroenvAetBenv;
+#X obj 395 914 sel;
+#X obj 370 945 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 409 955 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 387 884 r recmodulenvA;
 #X connect 0 0 12 0;
 #X connect 1 0 6 0;
 #X connect 3 0 7 0;
@@ -277,3 +283,12 @@
 #X connect 115 0 118 0;
 #X connect 116 0 114 0;
 #X connect 117 0 115 0;
+#X connect 119 0 121 0;
+#X connect 119 1 120 0;
+#X connect 120 0 24 0;
+#X connect 120 0 109 0;
+#X connect 120 0 70 0;
+#X connect 121 0 25 0;
+#X connect 121 0 71 0;
+#X connect 121 0 63 0;
+#X connect 122 0 119 0;

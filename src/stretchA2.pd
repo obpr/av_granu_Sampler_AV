@@ -1,4 +1,4 @@
-#N canvas -75 687 1680 1028 12;
+#N canvas 0 0 1680 1028 12;
 #X obj 101 101 cnv 15 232 53 empty empty empty 20 12 0 14 -1 -66577
 0;
 #X obj 20 -158 spigot-toggle_violet;
@@ -27,9 +27,9 @@
 #X obj 164 128 bng 20 250 50 0 empty empty o 4 8 0 20 -1 -260097 -260097
 ;
 #X obj 187 113 mknob 28 1000 -0.1 0.1 0 0 empty empty empty -2 -6 0
-8 -260097 -33289 -1 49950 1;
+8 -260097 -33289 -1 0 1;
 #X obj 164 107 mknob 20 1000 0 2 0 0 empty empty empty -2 -6 0 8 -1
--260097 -260097 49950 1;
+-260097 -260097 0 1;
 #X obj 384 110 t b f;
 #X obj 390 142 * 1;
 #X obj 102 -245 * 1;

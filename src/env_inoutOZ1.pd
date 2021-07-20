@@ -1,4 +1,4 @@
-#N canvas 355 93 1472 878 10;
+#N canvas 555 232 1472 878 10;
 #X obj 406 567 inlet;
 #X obj 275 657 outlet~;
 #X obj 447 53 inlet;
@@ -23,7 +23,7 @@
 #X floatatom 112 132 5 0 0 0 - - -;
 #X obj 275 725 line;
 #X obj 277 745 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 188 615 f;
 #X obj 395 612 f;
 #X obj 279 477 bng 44 250 50 0 empty empty empty 17 7 0 10 -4034 -1
@@ -87,7 +87,7 @@
 #X floatatom 537 452 5 0 0 0 - - -;
 #X obj 535 431 r trgrmodenvB;
 #X obj 340 360 sel;
-#X obj 412 457 spigot-toggle_vert;
+#X obj 424 469 spigot-toggle_vert;
 #X floatatom 477 366 5 0 0 0 - - -;
 #X obj 355 382 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -141,12 +141,14 @@
 #X obj 69 409 spigot-toggle_vert;
 #X obj 70 381 r restartenv1;
 #X obj -218 513 r metroenvAetBenv;
-#X obj 290 927 sel;
-#X obj 265 958 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 94 784 sel;
+#X obj 69 815 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 110 821 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 657 593 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 282 896 r recmodulenvB;
+#X obj 86 753 r recmodulenvB;
+#X obj 237 361 r lo;
+#X obj 344 275 r øAtiTS2;
 #X connect 0 0 5 0;
 #X connect 2 0 24 0;
 #X connect 3 0 4 0;
@@ -201,6 +203,7 @@
 #X connect 41 0 25 0;
 #X connect 42 0 9 0;
 #X connect 43 0 71 1;
+#X connect 43 0 44 0;
 #X connect 44 0 12 0;
 #X connect 45 0 84 1;
 #X connect 46 0 45 0;
@@ -295,3 +298,5 @@
 #X connect 127 0 13 0;
 #X connect 127 0 83 0;
 #X connect 128 0 125 0;
+#X connect 130 0 71 1;
+#X connect 130 0 74 0;
