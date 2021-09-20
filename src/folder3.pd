@@ -1,4 +1,4 @@
-#N canvas 946 373 734 568 10;
+#N canvas 624 187 734 568 10;
 #X obj 172 263 list;
 #X obj 217 263 list;
 #X obj 292 229 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
@@ -132,8 +132,8 @@
 #X obj 587 33 inlet;
 #X obj 224 350 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 53 50 hradio 17 1 0 9 \$3-bang empty empty 0 -3 0 10 -260097
--1 -1 1;
+#X obj 54 51 hradio 17 1 0 9 \$3-bang empty empty 0 -3 0 10 -260097
+-1 -1 0;
 #X obj 338 395 splitfilename;
 #X obj 513 318 splitfilename;
 #X floatatom 21 504 5 0 0 0 - - -;
@@ -143,8 +143,8 @@
 #X floatatom 237 111 5 0 0 0 - - -;
 #X floatatom 4 112 5 0 0 0 - - -;
 #X floatatom 614 94 5 0 0 0 - - -;
-#X obj 51 51 cnv 15 179 20 empty \$3-cnv AKAI_44.wav 6 10 1 14 -4034
--1 0;
+#X obj 51 51 cnv 15 179 20 empty \$3-cnv pub70(41)_1.wav 4 10 0 13
+-262144 -1 0;
 #X msg 288 191 0;
 #X obj 159 111 r folder3;
 #X obj 109 534 s soundfileA;

@@ -674,10 +674,10 @@ W.reposetoinoffB;
 #X floatatom -613 526 5 0 0 3 S.IT1≠T1 S.IT1≠T1 #0-IT1≠T1.s;
 #X floatatom -64 283 5 0 0 2 W.ITB≠TB #0-ITB≠TB.r W.ITB≠TB;
 #X floatatom -64 305 5 0 0 3 S.ITB≠TB S.ITB≠TB #0-ITB≠TB.s;
-#X obj 100 100 cnv 15 150 21 empty empty savestate.to.tx 10 10 1 13
--1 -162280 0;
-#X obj 203 102 bng 18 250 50 0 \$0-saveB.s \$0-saveB.r S 5 10 1 14
--162280 -260097 -1;
-#X obj 227 102 bng 18 250 50 0 \$0-loadB.s \$0-loadB.r L 5 10 1 14
--162280 -260097 -1;
+#X obj 100 100 cnv 15 150 21 empty empty S.to.tx 62 10 1 13 -1 -162280
+0;
+#X obj 203 102 bng 18 250 50 0 \$0-saveB.s \$0-saveB.r S 4 9 1 14 -162280
+-260097 -1;
+#X obj 227 102 bng 18 250 50 0 \$0-loadB.s \$0-loadB.r L 5 9 1 14 -162280
+-260097 -1;
 #X coords 0 -1 1 1 149 22 2 100 100;

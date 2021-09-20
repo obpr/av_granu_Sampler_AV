@@ -49,8 +49,8 @@
 #X floatatom -782 -176 5 0 0 0 - - -;
 #X floatatom -365 -201 5 0 0 0 - - -;
 #X floatatom -412 -203 5 0 0 0 - - -;
-#X obj -890 -199 pix_movie;
 #X obj -721 348 r colorInv;
+#X obj -890 -199 pix_film;
 #X connect 0 0 42 0;
 #X connect 1 0 43 0;
 #X connect 2 0 3 0;
@@ -58,7 +58,7 @@
 #X connect 4 0 8 0;
 #X connect 5 0 4 0;
 #X connect 6 0 7 0;
-#X connect 7 0 50 1;
+#X connect 7 0 51 1;
 #X connect 8 0 6 0;
 #X connect 9 0 10 3;
 #X connect 9 0 10 2;
@@ -101,9 +101,9 @@
 #X connect 41 0 37 0;
 #X connect 42 0 10 0;
 #X connect 43 0 0 0;
-#X connect 44 0 50 0;
-#X connect 45 0 50 0;
-#X connect 50 0 2 0;
-#X connect 50 1 29 0;
-#X connect 50 2 47 0;
-#X connect 51 0 33 0;
+#X connect 44 0 51 0;
+#X connect 45 0 51 0;
+#X connect 50 0 33 0;
+#X connect 51 0 2 0;
+#X connect 51 1 29 0;
+#X connect 51 2 47 0;

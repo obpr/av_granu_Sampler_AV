@@ -1,4 +1,4 @@
-#N canvas 169 5 753 563 10;
+#N canvas 377 218 753 563 10;
 #X obj 172 263 list;
 #X obj 217 263 list;
 #X obj 230 203 bng 15 250 50 0 empty empty empty 17 7 1 9 -187776 -33289
@@ -115,8 +115,8 @@
 #X obj 338 351 list;
 #X obj 338 373 list-iter;
 #X obj 374 63 t b b b b;
-#X obj 65 51 hradio 17 1 0 9 \$2-bang empty empty 0 -3 0 10 -260097
--1 -1 6;
+#X obj 53 50 hradio 17 1 0 9 \$2-bang empty empty 0 -3 0 10 -260097
+-1 -1 1;
 #X obj 237 380 list length;
 #X obj 172 236 folder_list;
 #X obj 374 38 loadbang, f 9;
@@ -137,7 +137,7 @@
 #X floatatom 421 143 5 0 0 0 - - -;
 #X floatatom 272 401 5 0 0 0 - - -;
 #X floatatom 23 149 5 0 0 0 - - -;
-#X obj 50 50 cnv 15 181 18 empty \$12-cnv Select... 9 10 1 12 -4034
+#X obj 51 50 cnv 15 181 18 empty \$12-cnv Select... 4 10 0 13 -262144
 -1 0;
 #X msg 313 208 0;
 #X obj 191 84 r folder2;
@@ -212,4 +212,4 @@
 #X connect 50 0 3 0;
 #X connect 53 0 39 0;
 #X connect 54 0 4 1;
-#X coords 0 -1 1 1 182 18 1 50 50;
+#X coords 0 -1 1 1 180 18 1 50 50;

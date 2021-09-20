@@ -1,4 +1,4 @@
-#N canvas 792 137 888 891 12;
+#N canvas 792 46 888 891 12;
 #N canvas 67 224 450 432 :: 0;
 #X text 24 16 the format [pix_film] is able to decode depends on the
 system you are running Gem.;
@@ -34,35 +34,35 @@ that under linux i could play most formats...;
 #X obj 186 761 splitfilename;
 #X obj 153 316 cnv 17 126 19 empty empty °_________% 31 13 1 14 -4034
 -1 0;
-#X obj 237 336 tgl 20 0 empty empty BA 3 11 1 12 -4034 -1 -1 0 1;
+#X obj 237 334 tgl 20 0 empty empty BA 3 11 1 12 -4034 -1 -1 0 1;
 #X floatatom 236 317 6 0 0 1 - - -;
 #X obj 154 335 tgl 20 0 empty empty A 6 11 1 12 -4034 -1 -1 0 1;
 #X obj 175 335 tgl 20 0 empty empty B 6 11 1 12 -4034 -1 -1 0 1;
-#X floatatom 152 317 6 0 0 2 - - -;
-#X obj 258 336 tgl 20 0 empty empty BB 3 11 1 12 -4034 -1 -1 0 1;
-#X obj 154 475 cnv 17 124 18 empty sendV1=A1 °_________% 31 13 0 14
+#X floatatom 153 317 6 0 0 2 - - -;
+#X obj 258 334 tgl 20 0 empty empty BB 3 11 1 12 -4034 -1 -1 0 1;
+#X obj 155 485 cnv 17 124 18 empty sendV1=A1 °_________% 31 13 0 14
 -24198 -1 0;
-#X obj 237 493 tgl 20 0 empty sendV1=A1 BA 3 10 0 12 -24198 -1 -1 0
+#X obj 238 503 tgl 20 0 empty sendV1=A1 BA 3 10 0 12 -24198 -1 -1 0
 1;
-#X floatatom 236 475 6 0 0 1 - - -;
-#X obj 154 493 tgl 20 0 empty sendV1=A1 A 6 11 0 12 -24198 -1 -1 0
+#X floatatom 240 486 6 0 0 1 - - -;
+#X obj 157 503 tgl 20 0 empty sendV1=A1 A 6 11 0 12 -24198 -1 -1 0
 1;
-#X obj 175 493 tgl 20 0 empty sendV1=A1 B 6 11 0 12 -24198 -1 -1 0
+#X obj 178 503 tgl 20 0 empty sendV1=A1 B 6 11 0 12 -24198 -1 -1 0
 1;
-#X floatatom 153 475 6 0 0 2 - - -;
-#X obj 258 493 tgl 20 0 empty sendV1=A1 BB 3 10 0 12 -24198 -1 -1 0
+#X floatatom 158 486 6 0 0 2 - - -;
+#X obj 259 503 tgl 20 0 empty sendV1=A1 BB 3 10 0 12 -24198 -1 -1 0
 1;
 #X obj 324 473 s soundfileB;
 #X obj 332 333 s movieB;
 #X obj 273 900 s \$1-cnv;
 #X obj 272 813 s \$0-cnv;
-#X obj 100 298 folder;
-#X obj 102 456 folder1;
+#X obj 103 287 folder;
+#X obj 103 456 folder1;
 #X obj -423 1474 s folder3;
 #X floatatom 2 317 5 0 0 2 - - -;
-#X obj 102 261 cnv 5 180 18 empty empty empty 0 14 1 14 -4034 -1 0
+#X obj 102 251 cnv 5 200 18 empty empty empty 0 14 1 14 -4034 -1 0
 ;
-#X symbolatom 103 262 25 0 0 0 - - -;
+#X symbolatom 103 252 28 0 0 0 - - -;
 #X obj 196 317 bng 40 250 50 0 empty empty RDM 8 20 1 10 -4034 -1 -1
 ;
 #X obj 103 316 cnv 10 31 38 empty empty empty 60 22 1 10 -1 -262144
@@ -85,39 +85,39 @@ that under linux i could play most formats...;
 #X obj -460 405 s save_sNd_every;
 #X obj -456 538 r send_save_every;
 #X obj -454 573 s save_every;
-#X obj 100 416 cnv 10 180 18 empty empty empty 0 14 1 14 -4034 -1 0
+#X obj 100 416 cnv 10 200 18 empty empty empty 0 14 1 14 -4034 -1 0
 ;
-#X symbolatom 102 418 25 0 0 0 - - -;
-#X obj 196 475 bng 40 250 50 0 empty sendV1=A1 RDM 8 20 1 10 -24198
+#X symbolatom 102 418 28 0 0 0 - - -;
+#X obj 199 485 bng 40 250 50 0 empty sendV1=A1 RDM 8 20 1 10 -24198
 -1 -1;
-#X obj 103 475 cnv 10 50 40 empty empty empty 60 22 1 10 -1 -262144
+#X obj 103 485 cnv 10 50 40 empty empty empty 60 22 1 10 -1 -262144
 0;
-#X obj 135 336 bng 18 500 500 0 empty empty load -28 9 1 12 -4034 -1
+#X obj 135 335 bng 18 500 500 0 empty empty load -28 9 1 12 -4034 -1
 -4034;
-#X obj 135 317 bng 18 500 500 0 empty empty clear -28 9 1 12 -4034
+#X obj 135 316 bng 18 500 500 0 empty empty clear -28 9 1 12 -4034
 -1 -4034;
 #X obj 102 354 cnv 12 180 45 empty empty empty 1 24 1 8 -1 -260097
 0;
-#X obj 176 361 tgl 25 0 empty empty V 3 14 1 28 -1 -4034 -4034 0 1
-;
-#X obj 100 513 cnv 33 182 144 empty empty empty 6 12 1 14 -1 -66577
+#X obj 239 360 tgl 20 0 empty empty V 3 11 1 22 -262144 -4034 -4034
+0 1;
+#X obj 100 523 cnv 33 200 134 empty empty empty 6 12 1 14 -1 -66577
 0;
-#X obj 100 100 cnv 15 181 164 empty empty OPEN_VIDEO__Write/select
-6 159 1 12 -1 -4034 0;
-#X obj 100 277 cnv 15 182 20 empty \$20-cnv starter/*.mov 4 10 0 12
+#X obj 100 100 cnv 15 200 153 empty empty OPEN_VIDEO__Write/select
+6 144 1 12 -1 -4034 0;
+#X obj 100 268 cnv 15 200 20 empty \$20-cnv starter/*.mov 4 10 0 12
 -1 -4034 0;
-#X obj 100 434 cnv 15 182 22 empty \$21-cnv starter1/*.wav 7 12 0 12
+#X obj 100 434 cnv 15 200 22 empty \$21-cnv starter/*.wav 7 12 0 12
 -1 -4034 0;
-#X obj 135 495 bng 18 500 500 0 empty empty load -28 9 1 12 -4034 -1
+#X obj 139 505 bng 18 500 500 0 empty empty load -28 9 1 12 -4034 -1
 -4034;
-#X obj 135 476 bng 18 500 500 0 empty empty clear -28 9 1 12 -4034
+#X obj 139 486 bng 18 500 500 0 empty empty clear -28 9 1 12 -4034
 -1 -4034;
-#X obj 100 388 cnv 15 181 32 empty empty OPEN_AUDIO__Write/select 5
+#X obj 100 388 cnv 15 200 32 empty empty OPEN_AUDIO__Write/select 5
 27 1 12 -1 -4034 0;
 #X obj 791 -56 s \$21-cnv;
-#X obj 100 124 cnv 3 3 530 empty empty empty 20 12 0 14 -1 -66577 0
+#X obj 100 114 cnv 3 3 530 empty empty empty 20 12 0 14 -1 -66577 0
 ;
-#X obj 278 122 cnv 2 3 530 empty empty empty 20 12 0 14 -1 -66577 0
+#X obj 348 129 cnv 2 3 530 empty empty empty 20 12 0 14 -1 -66577 0
 ;
 #X obj -165 844 cnv 6 180 9 empty empty empty 10 9 1 12 -1 -260097
 0;
@@ -179,76 +179,76 @@ that under linux i could play most formats...;
 #X obj 549 607 s r envFRMsmplsendBB;
 #X obj 567 583 s envFRMsmplsendAB;
 #X obj 597 556 s TRGnB_@load;
-#X msg 107 -240 nada_here;
-#X msg 106 -212 starter/*.mov;
-#X msg 157 41 label \$1;
-#X obj 105 41 symbol;
-#X obj 107 124 bng 15 500 500 0 empty empty avBO2 18 6 1 10 -260097
+#X msg 107 -250 nada_here;
+#X msg 106 -222 starter/*.mov;
+#X msg 157 31 label \$1;
+#X obj 105 31 symbol;
+#X obj 107 131 bng 15 500 500 0 empty empty avBO2 18 6 1 10 -260097
 -1 -260097;
-#X msg 103 -55 avBO2/*.mov;
-#X obj 107 141 bng 15 500 500 0 empty empty avBO3 18 6 1 10 -260097
+#X msg 103 -65 avBO2/*.mov;
+#X obj 107 148 bng 15 500 500 0 empty empty avBO3 18 6 1 10 -260097
 -1 -260097;
-#X msg 103 -33 avBO3/*.mov;
-#X obj 107 107 bng 15 500 500 0 empty empty tocata 18 6 1 10 -260097
+#X msg 103 -43 avBO3/*.mov;
+#X obj 107 114 bng 15 500 500 0 empty empty tocata 18 6 1 10 -260097
 -1 -260097;
-#X obj 107 158 bng 15 500 500 0 empty empty avBO4 18 6 1 10 -260097
+#X obj 107 165 bng 15 500 500 0 empty empty avBO4 18 6 1 10 -260097
 -1 -260097;
-#X msg 102 -10 avBO4/*.mov;
-#X obj 109 210 bng 15 500 500 0 empty empty axe_reboot 18 6 1 10 -260097
+#X msg 102 -20 avBO4/*.mov;
+#X obj 191 166 bng 15 500 500 0 empty empty axe_reboot 18 6 1 10 -260097
 -1 -260097;
-#X obj 191 107 bng 15 500 500 0 empty empty greenscreen 18 6 1 10 -260097
+#X obj 191 114 bng 15 500 500 0 empty empty greenscreen 18 6 1 10 -260097
 -1 -260097;
-#X obj 109 193 bng 15 500 500 0 empty empty dance 18 6 1 10 -260097
+#X obj 191 149 bng 15 500 500 0 empty empty dance 18 6 1 10 -260097
 -1 -260097;
-#X obj 191 124 bng 15 500 500 0 empty empty vsmpl 18 6 1 10 -260097
+#X obj 191 131 bng 15 500 500 0 empty empty vsmpl 18 6 1 10 -260097
 -1 -260097;
-#X msg 105 -190 axe_reboot/*.mov;
-#X obj 107 176 bng 15 500 500 0 empty empty starter 18 6 1 10 -260097
+#X msg 105 -200 axe_reboot/*.mov;
+#X obj 107 183 bng 15 500 500 0 empty empty starter 18 6 1 10 -260097
 -1 -260097;
-#X msg 105 -148 vsmpl/*.mov;
-#X msg 255 -219 starter/*.wav;
-#X msg 254 -197 axe_reboot/*.wav;
-#X msg 257 -152 vsmpl/*.wav;
-#X msg 254 -22 avBO4/*.wav;
-#X msg 255 -41 avBO3/*.wav;
-#X msg 255 -63 avBO2/*.wav;
-#X obj 255 40 symbol;
-#X msg 304 40 label \$1;
-#X msg 254 -177 greenscreen/*.wav;
-#X msg 105 -169 greenscreen/*.mov;
-#X msg 103 -101 dance/*.mov;
-#X msg 256 -103 dance/*.wav;
-#X msg 103 -77 tocata/*.mov;
-#X msg 255 -83 tocata/*.wav;
-#X obj 255 9 spigot-toggle_vert;
-#X msg 103 -124 starter1/*.mov;
-#X msg 256 -123 starter1/*.wav;
-#X obj 255 66 s folder1;
-#X obj 104 65 s folder0;
+#X msg 105 -158 vsmpl/*.mov;
+#X msg 255 -229 starter/*.wav;
+#X msg 254 -207 axe_reboot/*.wav;
+#X msg 257 -162 vsmpl/*.wav;
+#X msg 254 -32 avBO4/*.wav;
+#X msg 255 -51 avBO3/*.wav;
+#X msg 255 -73 avBO2/*.wav;
+#X obj 255 30 symbol;
+#X msg 304 30 label \$1;
+#X msg 254 -187 greenscreen/*.wav;
+#X msg 105 -179 greenscreen/*.mov;
+#X msg 103 -111 dance/*.mov;
+#X msg 256 -113 dance/*.wav;
+#X msg 103 -87 tocata/*.mov;
+#X msg 255 -93 tocata/*.wav;
+#X obj 255 -1 spigot-toggle_vert;
+#X msg 103 -134 starter1/*.mov;
+#X msg 256 -133 starter1/*.wav;
+#X obj 255 56 s folder1;
+#X obj 104 55 s folder0;
 #X obj 327 66 s \$21-cnv;
 #X msg 103 967 nada_here;
 #X msg 104 870 starter/*.wav;
 #X msg 157 1105 label \$1;
 #X obj 104 1104 symbol;
-#X obj 107 548 bng 15 500 500 0 empty empty kitchina 18 6 1 10 -260097
+#X obj 107 594 bng 15 500 500 0 empty empty kitchina 18 6 1 10 -260097
 -1 -260097;
-#X obj 107 565 bng 15 500 500 0 empty empty axe_reboot 18 6 1 10 -260097
+#X obj 107 611 bng 15 500 500 0 empty empty axe_reboot 18 6 1 10 -260097
 -1 -260097;
-#X obj 107 531 bng 15 500 500 0 empty empty starter1 18 6 1 10 -260097
+#X obj 107 577 bng 15 500 500 0 empty empty starter1 18 6 1 10 -260097
 -1 -260097;
-#X obj 107 582 bng 15 500 500 0 empty empty pub70 18 6 1 10 -260097
+#X obj 188 558 bng 15 500 500 0 empty empty pub70 18 6 1 10 -260097
 -1 -260097;
 #X msg 103 989 starter/*.wav;
-#X obj 107 514 bng 15 500 500 0 empty empty starter 18 6 1 10 -260097
+#X obj 107 560 bng 15 500 500 0 empty empty starter 18 6 1 10 -260097
 -1 -260097;
 #X msg 103 1033 kitchina/*.wav;
 #X msg 103 1054 axe_reboot/*.wav;
 #X msg 103 1075 pub70/*.wav;
-#X obj 107 617 bng 15 500 500 0 empty empty asmlp2 18 6 1 10 -260097
+#X obj 188 593 bng 15 500 500 0 empty empty asmlp2 18 6 1 10 -260097
 -1 -260097;
-#X obj 107 633 bng 15 500 500 0 empty empty DrumaBank 18 6 1 10 -260097
+#X obj 188 609 bng 15 500 500 0 empty empty DrumaBank 18 6 1 10 -260097
 -1 -260097;
-#X obj 107 601 bng 15 500 500 0 empty empty asmpl 18 6 1 10 -260097
+#X obj 188 577 bng 15 500 500 0 empty empty asmpl 18 6 1 10 -260097
 -1 -260097;
 #X msg 104 942 DrumaBank/*.wav;
 #X msg 104 918 asmlp2/*.wav;
@@ -268,8 +268,28 @@ that under linux i could play most formats...;
 #X msg -251 213 76;
 #X msg -253 269 color \$1 22;
 #X obj -255 300 s sendV1=A1;
-#X obj 174 64 s \$20-cnv;
+#X obj 174 54 s \$20-cnv;
 #X obj 717 265 spigot-toggle_red;
+#X obj 195 361 cnv 15 40 17 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X floatatom 194 361 6 0 0 0 - - -;
+#X obj 199 527 cnv 15 40 17 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X floatatom 198 527 6 0 0 0 - - -;
+#X obj 100 305 cnv 15 200 12 empty empty empty 4 10 0 12 -1 -4034 0
+;
+#X obj 101 475 cnv 15 200 12 empty empty empty 4 10 0 12 -1 -4034 0
+;
+#X obj -169 751 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 278 318 tgl 23 0 empty empty empty 17 7 0 10 -1 -1 -1 0 1;
+#X obj 278 341 tgl 23 0 empty empty empty 17 7 0 10 -1 -1 -1 0 1;
+#X obj 278 365 tgl 23 0 empty empty empty 17 7 0 10 -1 -1 -1 0 1;
+#X obj 278 486 tgl 23 0 empty empty empty 17 7 0 10 -1 -1 -1 0 1;
+#X obj 278 510 tgl 23 0 empty empty empty 17 7 0 10 -1 -1 -1 0 1;
+#X obj 278 534 tgl 23 0 empty empty empty 17 7 0 10 -1 -1 -1 0 1;
+#X obj 480 111 tgl 20 0 empty empty V 3 11 1 22 -262144 -1 -4034 0
+1;
 #X connect 1 0 29 0;
 #X connect 2 0 28 0;
 #X connect 3 0 30 0;
@@ -309,9 +329,11 @@ that under linux i could play most formats...;
 #X connect 25 0 122 0;
 #X connect 25 0 115 1;
 #X connect 30 0 33 0;
+#X connect 30 0 204 0;
 #X connect 30 1 9 0;
 #X connect 30 1 11 0;
 #X connect 30 2 75 0;
+#X connect 31 0 206 0;
 #X connect 31 1 10 0;
 #X connect 31 1 26 0;
 #X connect 31 2 87 0;
@@ -491,4 +513,4 @@ that under linux i could play most formats...;
 #X connect 198 0 194 0;
 #X connect 199 0 200 0;
 #X connect 202 0 21 0;
-#X coords 0 -1 1 1 182 558 1 100 100;
+#X coords 0 -1 1 1 201 558 1 100 100;
