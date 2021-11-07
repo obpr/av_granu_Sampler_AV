@@ -1,4 +1,4 @@
-#N canvas 217 25 1231 1003 12;
+#N canvas 760 361 1231 1003 12;
 #X msg -348 321 record;
 #X obj -368 298 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -7,9 +7,9 @@
 #X obj -349 298 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom -371 250 5 0 0 0 - - -;
-#X obj 101 158 tgl 28 0 empty empty ↺ 7 11 1 28 -1 -262144 -262144
+#X obj 159 129 tgl 28 0 empty empty ↺ 7 11 1 28 -1 -262144 -262144
 0 1;
-#X obj 130 101 bng 28 250 50 0 empty empty ► 9 15 1 14 -1 -262144
+#X obj 101 130 bng 28 250 50 0 empty empty ► 9 15 1 14 -1 -262144
 -262144;
 #X obj 48 170 tgl 28 0 empty empty midi 6 15 1 8 -1 -260097 -260097
 1 1;
@@ -20,7 +20,7 @@
 #X obj -175 619 spigot-toggle_violet;
 #X obj 33 37 r lo;
 #X floatatom -324 728 7 0 0 0 - - -;
-#X obj 101 130 tgl 28 0 empty empty rec 3 14 0 12 -260097 -1 -1 0 1
+#X obj 130 101 tgl 28 0 empty empty rec 3 14 0 12 -260097 -1 -1 0 1
 ;
 #X obj -148 621 sel;
 #X obj 240 125 sel;
@@ -67,7 +67,7 @@
 0 1;
 #X obj 234 359 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 130 158 bng 28 250 50 0 empty empty ○ 7 13 1 26 -1 -262144
+#X obj 159 100 bng 28 250 50 0 empty empty ○ 7 13 1 26 -1 -262144
 -262144;
 #X obj -320 663 cyclone/seq seq13.mid;
 #X obj 241 103 s trgrmidirecmodulA;
@@ -156,4 +156,4 @@
 #X connect 57 0 33 0;
 #X connect 58 0 22 1;
 #X connect 58 0 21 1;
-#X coords 0 -1 1 1 60 88 2 100 100;
+#X coords 0 -1 1 1 88 58 2 100 100;

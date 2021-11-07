@@ -1,4 +1,4 @@
-#N canvas 368 0 1137 1028 12;
+#N canvas 303 0 1137 878 12;
 #X obj 1262 -17 r trgrA;
 #X obj 1147 -10 r BB;
 #X obj 1147 16 r BB1;
@@ -37,7 +37,7 @@
 #X obj 668 223 + 0;
 #X obj -16 -7 r lo;
 #X obj 622 170 r B;
-#X obj 59 132 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 1
+#X obj 59 132 tgl 28 0 empty empty A 6 15 1 26 -1 -262144 -262144 0
 1;
 #X obj 59 161 tgl 28 0 empty empty B 6 15 1 28 -1 -262144 -262144 0
 1;
@@ -55,7 +55,7 @@
 #X obj 102 161 tgl 28 0 empty empty ❄ 6 14 0 26 -1 -262144 -262144
 0 1;
 #X obj 30 103 tgl 28 0 empty empty raw 4 12 1 14 -260097 -1 -45076
-1 1;
+0 1;
 #X floatatom 130 107 8 0 0 0 - - -;
 #X obj 59 103 tgl 28 0 empty empty ๏ -4 10 1 50 -260097 -1 -1 1 1
 ;
@@ -63,7 +63,7 @@
 #X obj 71 739 s trgrvolee1;
 #X obj 444 134 outlet;
 #X obj 159 132 tgl 28 0 empty empty • 5 14 1 50 -1 -260097 -260097
-1 1;
+0 1;
 #X obj 348 92 * 1;
 #X obj 86 684 s trgrvolee;
 #X obj 621 144 r A;
@@ -245,7 +245,7 @@ mod source selection;
 #X obj 159 249 tgl 28 0 bonkuptoenvA empty • 6 15 1 50 -1 -260097
 -260097 0 1;
 #X obj 166 275 cnv 5 1 2 empty empty ∝ 1 2 0 21 -1 -260097 0;
-#X obj 30 190 tgl 28 0 empty empty ⥁ 1 12 1 28 -1 -260097 -260097
+#X obj 1 278 tgl 28 0 empty empty ⥁ 1 12 1 28 -1 -260097 -260097
 0 1;
 #X obj 158 189 cnv 5 58 6 empty empty empty 20 12 0 14 -1 -66577 0
 ;
@@ -259,7 +259,7 @@ mod source selection;
 #X msg -263 410 22;
 #X msg -226 411 30;
 #X obj 188 103 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
-#X obj 87 105 vsl 14 196 0 100 0 0 empty empty + 5 56 0 12 -1 -262144
+#X obj 87 105 vsl 14 138 0 100 0 0 empty empty + 5 56 0 12 -1 -262144
 -262144 0 1;
 #X obj 129 123 cnv 7 58 10 empty empty empty 18 -28 2 25 -1 -260097
 0;
@@ -270,16 +270,16 @@ mod source selection;
 ;
 #X obj 0 90 cnv 6 216 12 empty empty playback_point 120 10 0 10 -1
 -260097 0;
-#X obj 59 190 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
+#X obj 59 249 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
 #X msg 243 46 100;
 #X obj 131 247 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
 #X obj 131 276 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
-#X obj 102 247 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
-#X obj 102 276 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
-#X obj 0 219 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
-#X obj 0 248 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
-#X obj 1 277 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
-#X obj 1 190 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
+#X obj 30 278 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
+#X obj 59 278 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
+#X obj 1 249 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
+#X obj 0 193 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
+#X obj 86 247 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
+#X obj 115 247 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
 #X obj -561 230 r Bbutton;
 #X obj -267 496 s tmstrtchAvisu;
 #X obj -479 175 s Abutton;
@@ -384,7 +384,7 @@ mod source selection;
 #X obj 1327 -72 r sl_trgA;
 #X obj 1329 -44 r sl_trgB;
 #X obj 146 508 r T$mod;
-#X obj 29 218 manualposloopmidiA;
+#X obj 1 190 manualposloopmidiA;
 #X obj -401 344 r reposetoinoffAA;
 #X obj 418 441 r A@;
 #X obj 410 417 r A;
@@ -396,6 +396,8 @@ mod source selection;
 #X obj 656 41 + 0;
 #X obj 688 43 t b f;
 #X obj 682 -36 r send_rawA;
+#X obj 86 276 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
+#X obj 115 276 tgl 28 0 empty empty empty 8 15 1 14 -1 -1 -1 0 1;
 #X connect 0 0 105 0;
 #X connect 0 0 107 0;
 #X connect 0 0 147 0;

@@ -1,2 +1,9 @@
-#N canvas 244 32 1440 1004 10;
-#X obj -672 71 avgranu_edit;
+#N canvas 1152 644 1440 878 10;
+#X obj 1548 274 avgranu_edit;
+#N canvas 981 91 450 300 lfoA 1;
+#X obj 128 107 miditocv;
+#X obj 302 136 r slidEXT1;
+#X obj 245 71 r slidnormal;
+#X restore 1774 777 pd lfoA;
+#X obj 1783 772 cnv 5 28 28 empty empty LFO 3 14 0 14 -260097 -66577
+0;
