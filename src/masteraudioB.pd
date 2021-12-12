@@ -1,4 +1,4 @@
-#N canvas -51 623 1440 878 10;
+#N canvas 105 164 1440 878 10;
 #X obj 340 150 hsl 84 16 0 6 0 0 empty empty shape_out 32 8 1 10 -16662
 -260097 -260097 1383 1;
 #X obj 221 150 hsl 84 16 0 6 0 0 empty empty shape_in 5 8 1 10 -16662
@@ -468,7 +468,7 @@
 ;
 #X msg 4 69 0.95;
 #X obj 90 608 *~ 1;
-#X obj 193 134 tgl 23 0 empty empty a+b 3 11 0 10 -260097 -1 -1 0 1
+#X obj 193 134 tgl 23 0 empty empty a+b 3 11 0 10 -260097 -1 -1 1 1
 ;
 #X msg -18 181 1.2;
 #X msg -63 151 1.2;

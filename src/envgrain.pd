@@ -1,4 +1,4 @@
-#N canvas 73 0 928 878 10;
+#N canvas 0 22 1435 856 12;
 #X obj 215 180 inlet;
 #X obj 175 686 inlet;
 #X obj 303 679 outlet~;
@@ -68,7 +68,7 @@
 #X obj -13 816 spigot-toggle_vert;
 #X obj 4 794 inlet;
 #X obj -98 890 tgl 23 0 empty empty empty 17 7 0 10 -1 -260097 -260097
-1 1;
+0 1;
 #X msg -55 913 8000;
 #X floatatom 771 208 5 0 0 0 - - -;
 #X obj 490 617 f;
@@ -143,11 +143,11 @@
 -1 -1;
 #X obj 387 884 r recmodulenvA;
 #X obj 166 54 r TTgate;
-#X obj 302 132 r BBst;
+#X obj 251 78 r BBst;
 #X obj 58 426 t f b;
 #X obj 111 177 f;
-#X obj 134 306 r granujittertoenv;
-#X obj 166 73 r granutimetoenv;
+#X obj 166 73 r jitermletrotoenv;
+#X obj 138 316 r granujittertoenv;
 #X connect 0 0 12 0;
 #X connect 1 0 6 0;
 #X connect 3 0 7 0;
@@ -298,6 +298,9 @@
 #X connect 121 0 71 0;
 #X connect 121 0 63 0;
 #X connect 122 0 119 0;
+#X connect 123 0 20 0;
 #X connect 125 0 104 0;
 #X connect 125 1 126 0;
 #X connect 126 0 20 0;
+#X connect 127 0 20 0;
+#X connect 128 0 11 0;

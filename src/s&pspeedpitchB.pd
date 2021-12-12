@@ -1,4 +1,4 @@
-#N canvas 160 5 1280 873 10;
+#N canvas 105 0 1280 873 10;
 #X obj 250 65 r lo;
 #X obj 145 1165 spigot-toggle_orange;
 #X obj 145 1188 spigot-toggle_orange;
@@ -41,7 +41,7 @@
 #X obj 158 178 tgl 25 0 empty empty B 8 14 0 16 -1 -262144 -262144
 0 1;
 #X obj 132 204 tgl 25 0 empty empty a 8 14 1 16 -1 -262144 -262144
-1 1;
+0 1;
 #X obj 132 230 tgl 25 0 empty empty b 8 14 1 16 -1 -262144 -262144
 0 1;
 #X floatatom 137 117 8 0 0 0 - - -;
@@ -494,7 +494,6 @@
 #X connect 109 0 110 0;
 #X connect 111 0 171 0;
 #X connect 112 0 190 0;
-#X connect 113 0 170 0;
 #X connect 114 0 111 0;
 #X connect 115 0 112 0;
 #X connect 116 0 113 0;
